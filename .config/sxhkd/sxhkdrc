@@ -1,0 +1,83 @@
+#
+# berry hotkeys
+#
+super + {h, j, k, l}
+    berryc window_move {-25 0, 0 25, 0 -25, 25 0}
+
+super + shift + {h, j, k, l}
+    berryc window_resize {-25 0, 0 25, 0 -25, 25 0}
+
+super + {1-5}
+    berryc switch_workspace {0-4}
+
+super + shift + {1-5}
+    berryc send_to_workspace {0-4}
+
+super + Tab
+    berryc cycle_focus
+
+super + q
+    berryc window_close
+
+super + c
+    berryc window_center
+
+super + b
+    berryc toggle_decorations
+
+#
+# Special hotkeys
+#
+
+# eww sidebar
+super + @space
+    eww --config "$HOME/.config/eww/arin/sidebar" open-many --toggle \
+        powermenu \
+        resources \
+        quotes
+
+# terminal emulator
+super + Return
+	alacritty
+
+# program launcher
+super + d
+	rofi -modi drun -show drun -line-padding 4 \
+        -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
+        -show-icons -drun-icon-theme "Arc-X-D" -font "MesloLGS NF 11"
+
+# Multimedia keys
+XF86AudioRaiseVolume
+    amixer -q set Master 5%+ unmute
+
+# Still multimedia
+XF86AudioLowerVolume
+    amixer -q set Master 5%- unmute
+
+# still
+XF86AudioMute
+    amixer -D pulse sset Master toggle-mute
+
+# Brightness up
+XF86MonBrightnessUp
+    xbacklight -inc 5
+
+# brightness down
+XF86MonBrightnessDown
+    xbacklight -dec 5
+
+# Screenshot
+Print
+    ~/.config/berry/scripts/screenshot.sh
+
+# lock
+super + Escape
+    ~/.config/berry/scripts/i3lock-fancy/i3lock-fancy.sh
+
+# Internet
+super + w 
+    google-chrome-stable --new-tab "https://google.com"
+
+# Files
+super + n 
+    thunar

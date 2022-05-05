@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Set decoration geometry
+berryc border_width 		0
+berryc inner_border_width 	10
+berryc title_height 		15
+berryc edge_gap 			60 30 30 30
+
+# Set decoration colors
+berryc focus_color              b16286
+berryc unfocus_color            665c54
+berryc inner_focus_color        b16286
+berryc inner_unfocus_color      665c54
+berryc text_focus_color         b16286
+berryc text_unfocus_color       665c54
+
+# Other options
+berryc set_font             "MesloLGS NF"
+berryc smart_place 			"true"
+berryc draw_text 			"true"
+berryc edge_lock 			"true"
+berryc json_status 			"true"
+berryc decorate_new 		"true"
+berryc pointer_interval 	0
+
+# Other applications
+# Picom
+picom --experimental-backends --config $HOME/.config/picom.conf &
+
+# Wallpaper
+feh --bg-fill /home/younix/Dropbox/Pictures/Wallpapers/gruvbox/annie-spratt-3vFbHoKYltE-unsplash.jpg
+
+# Bar
+sh ~/.config/eww/arin/launch_bar
+
+# Notifications
+dunst &
+
+# Network Applet
+nm-applet --indicator &
+
+# Keybinds
+sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
