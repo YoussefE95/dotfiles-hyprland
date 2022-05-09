@@ -41,3 +41,6 @@ nm-applet --indicator &
 
 # Keybinds
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
+
+# Dropbox
+dropbox &
