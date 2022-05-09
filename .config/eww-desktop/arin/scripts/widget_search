@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ "$1" == "--menu" ]]; then
+    rofi -modi drun -show drun -line-padding 4 \
+            -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
+            -show-icons -drun-icon-theme "Arc-X-D" -font "MesloLGS NF 11"
+
+elif [[ "$1" == "--search" ]]; then
+	google-chrome-stable --new-tab "https://google.com"
+
+fi

@@ -1,0 +1,95 @@
+;; **
+;; ** Widgets config for EWW
+;; ** Created by : @adi1090x
+;; **
+
+;; ** Variables ***********************************************************************
+
+;; System vars
+(defpoll HOST :interval "5s" `hostname`)
+(defpoll CPU_USAGE :interval "1s" `../scripts/sys_info --cpu`)
+(defpoll MEM_USAGE :interval "1s" `../scripts/sys_info --mem`)
+(defpoll DISK_USAGE :interval "1s" `../scripts/sys_info --disk`)
+(defpoll BLIGHT :interval "1s" `../scripts/sys_info --blight`)
+(defpoll BATTERY :interval "5s" `../scripts/sys_info --bat`)
+(defpoll QUOTE :interval "5m" `../scripts/quotes quote`)
+(defpoll AUTHOR :interval "5m" `../scripts/quotes author`)
+
+;; ** Widgets *************************************************************************
+
+;; resources
+(defwidget resources [] 
+		(box :class "winbox"
+			(centerbox :orientation "h"
+				(box :class "res_box" :orientation "v" :valign "center" :halign "center" :spacing 15 :space-evenly "false"
+					(box :class "res_circle" :orientation "v" :valign "center" :halign "center"
+						(circular-progress :class "res_cpu" :value CPU_USAGE :thickness 5
+							(label :class "res_circle_small" :text "CPU")))
+					(label :class "res_text" :valign "end" :halign "center" :text "${CPU_USAGE}%"))
+				(box :class "res_box" :orientation "v" :valign "center" :halign "center" :spacing 15 :space-evenly "false"
+					(box :class "res_circle" :orientation "v" :valign "center" :halign "center"
+						(circular-progress :class "res_mem" :value MEM_USAGE :thickness 5
+							(label :class "res_circle_small" :text "MEMORY")))
+					(label :class "res_text" :valign "end" :halign "center" :text "${MEM_USAGE}%"))
+				(box :class "res_box" :orientation "v" :valign "center" :halign "center" :spacing 15 :space-evenly "false"
+					(box :class "res_circle" :orientation "v" :valign "center" :halign "center"
+						(circular-progress :class "res_disk" :value DISK_USAGE :thickness 5
+							(label :class "res_circle_small" :text "DISK")))
+					(label :class "res_text" :valign "end" :halign "center" :text "${DISK_USAGE}%")))))
+
+;; powermenus
+(defwidget powermenu []
+    (box :class "winbox" :orientation "v" :valign "center" :halign "center" :spacing 10 :space-evenly "false"
+        (button :style "background-image: url('../images/icons/system/sys-exit.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --logout")
+        (button :style "background-image: url('../images/icons/system/sys-sleep.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --suspend")
+        (button :style "background-image: url('../images/icons/system/sys-lock.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --lock")
+        (button :style "background-image: url('../images/icons/system/sys-reboot.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --reboot")
+        (button :style "background-image: url('../images/icons/system/poweroff.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --shutdown")
+    )
+)
+
+;; quotes
+(defwidget quotes [] 
+		(box :class "winbox"
+			(box :class "quote_box" :orientation "v" :valign "center" :halign "center" :spacing 10 :space-evenly "false"
+				(label :class "quote_text" :valign "center" :halign "center" :text QUOTE :wrap true )
+                (label :class "quote_author" :valign "center" :halign "center" :text AUTHOR :wrap true))))
+
+;; ** Windows *************************************************************************
+
+;; powermenu
+(defwindow powermenu
+           :monitor 0
+           :geometry (geometry :x "1700px"
+                               :y "90px"
+                               :width "60px"
+                               :height "360px"
+                               :anchor "top left")
+           :stacking "fg"
+           :wm-ignore false
+(powermenu))
+
+;; resources
+(defwindow resources
+           :monitor 0
+           :geometry (geometry :x "1785px"
+                               :y "90px"
+                               :width "480px"
+                               :height "200px"
+                               :anchor "top left")
+           :stacking "fg"
+           :wm-ignore false
+(resources))
+
+
+;; quotes
+(defwindow quotes
+           :monitor 0
+           :geometry (geometry :x "1785px"
+                               :y "300px"
+                               :width "480px"
+                               :height "150px"
+                               :anchor "top left")
+           :stacking "fg"
+           :wm-ignore false
+(quotes))

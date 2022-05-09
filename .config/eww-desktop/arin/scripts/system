@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+close_eww() {
+    eww --config "$HOME/.config/eww/arin/sidedar" open-many --toggle \
+        resources \
+        logout \
+        suspend \
+        lock \
+        reboot \
+        shutdown \
+        quotes
+}
+
+## Options #############################################
+if  [[ $1 = "--lock" ]]; then
+	close_eww
+    $HOME/.config/bspwm/scripts/i3lock-fancy/i3lock-fancy.sh
+
+elif  [[ $1 = "--logout" ]]; then
+	close_eww
+    berryc quit
+
+elif  [[ $1 = "--suspend" ]]; then
+	close_eww
+	amixer set Master mute
+	systemctl suspend
+
+elif  [[ $1 = "--reboot" ]]; then
+	close_eww
+    systemctl reboot
+
+elif  [[ $1 = "--shutdown" ]]; then
+	close_eww
+    systemctl poweroff
+
+## Help Menu #############################################
+else
+echo "
+Available options:
+--lock	--logout	--suspend	--reboot	--shutdown
+"
+fi
