@@ -1,6 +1,6 @@
 yay -Syyu
 
-yay -S berry-git alacritty picom-ibhagwan-git nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq google-chrome gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl xclip eww scrot cron pipewire-pulse lightdm xorg-server lightdm-gtk-greeter
+yay -S berry-git alacritty picom-ibhagwan-git nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq google-chrome gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl wmctrl xclip eww scrot cron pipewire-pulse lightdm xorg-server lightdm-gtk-greeter
 
 yay -S --noconfirm zsh-theme-powerlevel10k-git
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
@@ -15,23 +15,14 @@ sudo rm -rf ~/Documents ~/Music ~/Public ~/Videos ~/Templates ~/Pictures
 sudo systemctl enable expressvpn cronie.service
 sudo systemctl start expressvpn cronie.service
 
-yay -R firefox
-
 # sudo nano /etc/lightdm/lightdm.conf
 # greeter-session=lightdm-gtk-greeter
-# sudo cp berry.desktop /usr/share/xsessions
+sudo cp berry.desktop /usr/share/xsessions
 
 # set up eww cache
 touch /home/younix/.cache/eww.quote
 touch /home/younix/.cache/eww.author
 ~/.config/eww/arin/scripts/quotes update
-
-mkdir /home/younix/.cache/eww/weather
-touch /home/younix/.cache/eww/weather/weather-stat
-touch /home/younix/.cache/eww/weather/weather-degree
-touch /home/younix/.cache/eww/weather/weather-quote
-touch /home/younix/.cache/eww/weather/weather-hex
-touch /home/younix/.cache/eww/weather/weather-icon
 ~/.config/eww/arin/scripts/weather_info --getdata
 
 # set crontab to update quotes every 10 minutes
