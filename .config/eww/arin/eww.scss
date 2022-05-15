@@ -124,12 +124,12 @@
 }
 
 /** System *************************************************/
-.trayicon {
+.batteryicon {
     background-repeat: no-repeat;
-    background-size: 24px;
-    min-height: 24px;
-    min-width: 24px;
-    margin: 8px 0px 0px 0px;
+    background-size: 25px;
+    min-height: 25px;
+    min-width: 25px;
+    margin: 6px 0px 0px 0px;
 }
 
 .brightnessicon {
@@ -140,14 +140,20 @@
     margin: 8px 0px 0px 0px;
 }
 
-.infotext {
-    background-color: $background-alt;
-    border: 0px solid $background;
-    border-radius: 16px;
-    font-size: 14px;
-    padding: 0px 5px 0px 5px;
-    margin: 10px 0px 10px 0px;
-    font-weight: bold;
+.volumeicon {
+    background-repeat: no-repeat;
+    background-size: 22px;
+    min-height: 22px;
+    min-width: 22px;
+    margin: 8px 0px 0px 0px;
+}
+
+.trayicon {
+    background-repeat: no-repeat;
+    background-size: 24px;
+    min-height: 24px;
+    min-width: 24px;
+    margin: 8px 0px 0px 0px;
 }
 
 .face {
@@ -156,6 +162,16 @@
     min-width: 24px;
     margin: 8px 0px 8px 0px;
     border-radius: 100%;
+}
+
+.infotext {
+    background-color: $background-alt;
+    border: 0px solid $background;
+    border-radius: 16px;
+    font-size: 14px;
+    padding: 0px 5px 0px 5px;
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
 }
 
 /** EOF *************************************************/

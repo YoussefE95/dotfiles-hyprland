@@ -13,12 +13,12 @@ env:
 ## Terminal window settings
 window:
   dimensions:
-    columns: 74
-    lines: 24
+    columns: 78
+    lines: 26
 
   padding:
-    x: 25
-    y: 25
+    x: 15
+    y: 15
 
   decorations: full
   startup_mode: Windowed

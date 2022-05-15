@@ -116,7 +116,7 @@ get_weather_data() {
 		fi
 		echo "$weather_icon" >  ${cache_weather_icon}
 		echo "$weather_description" > ${cache_weather_stat}
-		echo "$weather_temp""°C" > ${cache_weather_degree}
+		echo "$weather_temp""°F" > ${cache_weather_degree}
 		echo -e "$weather_quote" > ${cache_weather_quote}
 		echo "$weather_hex" > ${cache_weather_hex}
 	else

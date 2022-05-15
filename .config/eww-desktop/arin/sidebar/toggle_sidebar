@@ -1,4 +1,0 @@
-eww --config "$HOME/.config/eww/arin/sidebar" open-many --toggle \
-    powermenu \
-    resources \
-    quotes

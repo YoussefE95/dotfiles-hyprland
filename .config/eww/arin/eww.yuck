@@ -93,7 +93,7 @@
 			(box :orientation "h" :spacing 16 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
 				(button :onclick "scripts/widget_apps --pow"
 					(box :orientation "h" :spacing 8 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
-						(box :style "background-image: url('${BATICON}');" :class "trayicon")
+						(box :style "background-image: url('${BATICON}');" :class "batteryicon")
 							(label :class "infotext" :halign "start" :text BATPERC)))
 				(button :onclick "scripts/widget_apps --pow"
 					(box :orientation "h" :spacing 8 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
@@ -101,7 +101,7 @@
 							(label :class "infotext" :halign "start" :text "${BRIGHTNESS}%")))
 				(button :onclick "scripts/volume --toggle"
 					(box :orientation "h" :spacing 8 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
-						(box :style "background-image: url('${VOLICON}');" :class "trayicon")
+						(box :style "background-image: url('${VOLICON}');" :class "volumeicon")
 							(label :class "infotext" :halign "start" :text VOLUME)))
 				(button :onclick "scripts/widget_apps --nm"
 					(box :orientation "h" :spacing 8 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"

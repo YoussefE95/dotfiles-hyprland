@@ -7,8 +7,8 @@ berry="$HOME/.config/berry/"
 sed -i /feh.*/c\\"feh --bg-fill $rand_wall" "$berry/autostart"
 feh --bg-fill "$rand_wall"
 
-focus_color="$(jq -r ".colors.\"$1\".magenta" "$info")"
-unfocus_color="$(jq -r ".colors.\"$1\".cyan" "$info")"
+focus_color="$(jq -r ".colors.\"$1\".cyan" "$info")"
+unfocus_color="$(jq -r ".colors.\"$1\".gray" "$info")"
 
 sed -i /.*" focus_color".*/c\\"berryc focus_color              $focus_color" "$berry/autostart"
 sed -i /.*" unfocus_color".*/c\\"berryc unfocus_color            $unfocus_color" "$berry/autostart"
