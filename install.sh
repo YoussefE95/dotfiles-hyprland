@@ -1,6 +1,6 @@
 yay -Syyu
 
-yay -S berry-git alacritty picom-ibhagwan-git nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq google-chrome gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl wmctrl xclip eww scrot cron pipewire-pulse lightdm xorg-server lightdm-gtk-greeter
+yay -S berry-git alacritty picom-ibhagwan-git nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq google-chrome gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl wmctrl xclip eww scrot cron pipewire-pulse lightdm xorg-server lightdm-gtk-greeter ueberzug
 
 yay -S --noconfirm zsh-theme-powerlevel10k-git
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
