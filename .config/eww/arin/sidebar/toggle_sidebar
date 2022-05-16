@@ -2,3 +2,9 @@ eww --config "$HOME/.config/eww/arin/sidebar" open-many --toggle \
     powermenu \
     resources \
     quotes
+
+if [[ $(pgrep stalonetray) ]]; then
+    killall stalonetray
+else
+    stalonetray
+fi

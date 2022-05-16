@@ -17,11 +17,6 @@ run_eww() {
         weather \
         music \
         system
-
-    eww --config "$side" open-many \
-        powermenu \
-        resources \
-        quotes
 }
 
 ## Launch or close widgets accordingly

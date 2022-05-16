@@ -1,0 +1,15 @@
+decorations none
+transparent false
+dockapp_mode simple
+geometry 5x1-25+410
+background "#fbf1c7"
+kludges force_icons_size
+grow_gravity NE
+icon_gravity NE
+icon_size 30
+sticky true
+#window_strut none
+window_type dock
+window_layer bottom
+no_shrink true
+skip_taskbar true

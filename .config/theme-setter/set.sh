@@ -34,12 +34,17 @@ berryc inner_unfocus_color "$unfocus_color"
 berryc text_focus_color    "$focus_color"
 berryc text_unfocus_color  "$unfocus_color"
 
+# gtk apps
+sed -i /gtk-theme-name.*/c\\"gtk-theme-name=$theme" "$HOME/.config/gtk-3.0/settings.ini"
+
+# system tray
+sed -i /background.*/c\\"background \"#$(jq -r ".colors.\"$theme\".background" "$info")\"" "$HOME/.stalonetrayrc"
+
 $templates/vs_code.sh "$theme" "$info" "$vs_settings"
+$templates/alacritty.sh "$theme" "$info"
 
 $templates/svg.sh "$theme" "$info"
 $templates/eww.sh "$theme" "$info"
-
-$templates/alacritty.sh "$theme" "$info"
 
 $templates/spotify.sh "$theme" "$info"
 spicetify update -q
@@ -49,4 +54,4 @@ $templates/discord.sh "$theme" "$info"
 $templates/rofi.sh "$theme" "$info"
 
 $templates/dunst.sh "$theme" "$info"
-# killall -q dunst
+killall -q dunst
