@@ -55,6 +55,15 @@ XF86AudioLowerVolume
 XF86AudioMute
     amixer -D pulse sset Master toggle-mute
 
+XF86AudioPlay
+    playerctl play-pause
+
+XF86AudioPrev
+    playerctl previous
+
+XF86AudioNext
+    playerctl next
+
 # Brightness up
 XF86MonBrightnessUp
     xbacklight -inc 5
