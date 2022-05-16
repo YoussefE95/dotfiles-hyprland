@@ -31,10 +31,7 @@ super + b
 
 # eww sidebar
 super + @space
-    eww --config "$HOME/.config/eww/arin/sidebar" open-many --toggle \
-        powermenu \
-        resources \
-        quotes
+    $HOME/.config/eww/arin/laptop/sidebar/toggle_sidebar
 
 # terminal emulator
 super + Return
@@ -76,7 +73,7 @@ super + Escape
 
 # Internet
 super + w 
-    google-chrome-stable --new-tab "https://google.com"
+    google-chrome-stable --new-tab ""
 
 # Files
 super + n 
