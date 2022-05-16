@@ -1,0 +1,10 @@
+eww --config "$HOME/.config/eww/arin/laptop/sidebar" open-many --toggle \
+    powermenu \
+    resources \
+    quotes
+
+if [[ $(pgrep stalonetray) ]]; then
+    killall stalonetray
+else
+    stalonetray
+fi

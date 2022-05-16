@@ -32,7 +32,7 @@ picom --config $HOME/.config/picom.conf &
 feh --bg-fill /home/younix/Dropbox/Pictures/Wallpapers/gruvbox/light/aaron-VNHHxsVEUho-unsplash.jpg
 
 # Bar
-sh ~/.config/eww/arin/launch_bar
+sh ~/.config/eww/arin/laptop/launch_bar
 
 # Notifications
 dunst &

@@ -12,9 +12,9 @@ MUSIC_DIR="$HOME/Music"
 
 ## Get status
 get_status() {
-    icon="images/icons/music/stop.svg"
-    [ $(playerctl --player=$Control status) = "Playing" ] && icon="images/icons/music/pause.svg"
-    [ $(playerctl --player=$Control status) = "Paused" ] && icon="images/icons/music/play.svg"
+    icon="../images/icons/music/stop.svg"
+    [ $(playerctl --player=$Control status) = "Playing" ] && icon="../images/icons/music/pause.svg"
+    [ $(playerctl --player=$Control status) = "Paused" ] && icon="../images/icons/music/play.svg"
     echo "$icon"
 }
 

@@ -1,6 +1,6 @@
 # Idea from: https://github.com/dylanaraps/pywal/issues/264
 
-dest_dir="$HOME/.config/eww/arin/"
+dest_dir="$HOME/.config/eww/arin"
 dest_file="variables.scss"
 
 [[ -d "$dest_dir" ]] || mkdir -pv "$dest_dir"
@@ -21,5 +21,7 @@ output="$(cat << THEME
 THEME
 )"
 
-printf '%s' "$output" > "${dest_dir}${dest_file}"
-printf '%s' "$output" > "${dest_dir}sidebar/${dest_file}"
+printf '%s' "$output" > "${dest_dir}/desktop/${dest_file}"
+printf '%s' "$output" > "${dest_dir}/desktop/sidebar/${dest_file}"
+printf '%s' "$output" > "${dest_dir}/laptop/${dest_file}"
+printf '%s' "$output" > "${dest_dir}/laptop/sidebar/${dest_file}"

@@ -6,20 +6,20 @@ CHARGE="$(acpi | awk -F ' ' 'END {print $3}' | tr -d \,)"
 
 main() {
 	if [[ ($CHARGE = *"Charging"*) && ($BATTERY -lt "100") ]]; then
-		echo "images/icons/battery/battery-c.svg"
+		echo "../images/icons/battery/battery-c.svg"
 	elif [[ $CHARGE = *"Full"* ]]; then
-		echo "images/icons/battery/battery-f.svg"
+		echo "../images/icons/battery/battery-f.svg"
 	else
 		if [[ ($BATTERY -lt 99) && (($BATTERY -gt 80) || ($BATTERY -eq 80)) ]]; then
-			echo "images/icons/battery/battery-f.svg"
+			echo "../images/icons/battery/battery-f.svg"
 		elif [[ ($BATTERY -lt 80) && (($BATTERY -gt 50) || ($BATTERY -eq 50)) ]]; then
-			echo "images/icons/battery/battery-3.svg"
+			echo "../images/icons/battery/battery-3.svg"
 		elif [[ ($BATTERY -lt 50) && (($BATTERY -gt 20) || ($BATTERY -eq 20)) ]]; then
-			echo "images/icons/battery/battery-2.svg"
+			echo "../images/icons/battery/battery-2.svg"
 		elif [[ ($BATTERY -lt 50) && (($BATTERY -gt 20) || ($BATTERY -eq 20)) ]]; then
-			echo "images/icons/battery/battery-1.svg"
+			echo "../images/icons/battery/battery-1.svg"
 		elif [[ ($BATTERY -lt 20) && (($BATTERY -gt 0) || ($BATTERY -eq 0)) ]]; then
-			echo "images/icons/battery/battery-0.svg"
+			echo "../images/icons/battery/battery-0.svg"
 		fi
 	fi
 }

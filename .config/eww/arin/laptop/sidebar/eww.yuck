@@ -7,13 +7,13 @@
 
 ;; System vars
 (defpoll HOST :interval "5s" `hostname`)
-(defpoll CPU_USAGE :interval "1s" `../scripts/sys_info --cpu`)
-(defpoll MEM_USAGE :interval "1s" `../scripts/sys_info --mem`)
-(defpoll DISK_USAGE :interval "1s" `../scripts/sys_info --disk`)
-(defpoll BLIGHT :interval "1s" `../scripts/sys_info --blight`)
-(defpoll BATTERY :interval "5s" `../scripts/sys_info --bat`)
-(defpoll QUOTE :interval "5m" `../scripts/quotes quote`)
-(defpoll AUTHOR :interval "5m" `../scripts/quotes author`)
+(defpoll CPU_USAGE :interval "1s" `../../scripts/sys_info --cpu`)
+(defpoll MEM_USAGE :interval "1s" `../../scripts/sys_info --mem`)
+(defpoll DISK_USAGE :interval "1s" `../../scripts/sys_info --disk`)
+(defpoll BLIGHT :interval "1s" `../../scripts/sys_info --blight`)
+(defpoll BATTERY :interval "5s" `../../scripts/sys_info --bat`)
+(defpoll QUOTE :interval "5m" `../../scripts/quotes quote`)
+(defpoll AUTHOR :interval "5m" `../../scripts/quotes author`)
 
 ;; ** Widgets *************************************************************************
 
@@ -40,11 +40,11 @@
 ;; powermenus
 (defwidget powermenu []
     (box :class "winbox" :orientation "v" :valign "center" :halign "center" :spacing 10 :space-evenly "false"
-        (button :style "background-image: url('../images/icons/system/sys-exit.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --logout")
-        (button :style "background-image: url('../images/icons/system/sys-sleep.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --suspend")
-        (button :style "background-image: url('../images/icons/system/sys-lock.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --lock")
-        (button :style "background-image: url('../images/icons/system/sys-reboot.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --reboot")
-        (button :style "background-image: url('../images/icons/system/poweroff.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --shutdown")
+        (button :style "background-image: url('../../images/icons/system/sys-exit.png');" :class "powericons" :valign "center" :halign "center" :onclick "../../scripts/system --logout")
+        (button :style "background-image: url('../../images/icons/system/sys-sleep.png');" :class "powericons" :valign "center" :halign "center" :onclick "../../scripts/system --suspend")
+        (button :style "background-image: url('../../images/icons/system/sys-lock.png');" :class "powericons" :valign "center" :halign "center" :onclick "../../scripts/system --lock")
+        (button :style "background-image: url('../../images/icons/system/sys-reboot.png');" :class "powericons" :valign "center" :halign "center" :onclick "../../scripts/system --reboot")
+        (button :style "background-image: url('../../images/icons/system/poweroff.png');" :class "powericons" :valign "center" :halign "center" :onclick "../../scripts/system --shutdown")
     )
 )
 

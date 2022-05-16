@@ -2,51 +2,51 @@ focused="$(wmctrl -d | grep '*' | cut -d ' ' -f13)"
 
 get_one() {
     if [[ $focused == "0" ]]; then
-        echo "images/icons/workspace/focused-workspace.svg"
+        echo "../images/icons/workspace/focused-workspace.svg"
     elif wmctrl -l | cut -b '13' | grep -q "0"; then
-        echo "images/icons/workspace/active-workspace.svg"
+        echo "../images/icons/workspace/active-workspace.svg"
     else
-        echo "images/icons/workspace/inactive-workspace.svg"
+        echo "../images/icons/workspace/inactive-workspace.svg"
     fi
 }
 
 get_two() {
     if [[ $focused == "1" ]]; then
-        echo "images/icons/workspace/focused-workspace.svg"
+        echo "../images/icons/workspace/focused-workspace.svg"
     elif wmctrl -l | cut -b '13' | grep -q "1"; then
-        echo "images/icons/workspace/active-workspace.svg"
+        echo "../images/icons/workspace/active-workspace.svg"
     else
-        echo "images/icons/workspace/inactive-workspace.svg"
+        echo "../images/icons/workspace/inactive-workspace.svg"
     fi
 }
 
 get_three() {
     if [[ $focused == "2" ]]; then
-        echo "images/icons/workspace/focused-workspace.svg"
+        echo "../images/icons/workspace/focused-workspace.svg"
     elif wmctrl -l | cut -b '13' | grep -q "2"; then
-        echo "images/icons/workspace/active-workspace.svg"
+        echo "../images/icons/workspace/active-workspace.svg"
     else
-        echo "images/icons/workspace/inactive-workspace.svg"
+        echo "../images/icons/workspace/inactive-workspace.svg"
     fi
 }
 
 get_four() {
     if [[ $focused == "3" ]]; then
-        echo "images/icons/workspace/focused-workspace.svg"
+        echo "../images/icons/workspace/focused-workspace.svg"
     elif wmctrl -l | cut -b '13' | grep -q "3"; then
-        echo "images/icons/workspace/active-workspace.svg"
+        echo "../images/icons/workspace/active-workspace.svg"
     else
-        echo "images/icons/workspace/inactive-workspace.svg"
+        echo "../images/icons/workspace/inactive-workspace.svg"
     fi
 }
 
 get_five() {
     if [[ $focused == "4" ]]; then
-        echo "images/icons/workspace/focused-workspace.svg"
+        echo "../images/icons/workspace/focused-workspace.svg"
     elif wmctrl -l | cut -b '13' | grep -q "4"; then
-        echo "images/icons/workspace/active-workspace.svg"
+        echo "../images/icons/workspace/active-workspace.svg"
     else
-        echo "images/icons/workspace/inactive-workspace.svg"
+        echo "../images/icons/workspace/inactive-workspace.svg"
     fi
 }
 

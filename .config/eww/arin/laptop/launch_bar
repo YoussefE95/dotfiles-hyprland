@@ -1,0 +1,23 @@
+#!/bin/bash
+
+main="$HOME/.config/eww/arin/laptop"
+side="$main/sidebar"
+
+## Run eww daemon if not running already
+if [[ ! `pidof eww` ]]; then
+	eww daemon
+	sleep 1
+fi
+
+## Open widgets 
+run_eww() {
+	eww --config "$main" open-many \
+        search \
+        workspace \
+        weather \
+        music \
+        system
+}
+
+## Launch or close widgets accordingly
+run_eww
