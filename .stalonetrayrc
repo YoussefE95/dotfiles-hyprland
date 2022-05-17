@@ -1,11 +1,11 @@
 decorations none
 transparent false
 dockapp_mode simple
-geometry 5x1-25+410
-background "#fbf1c7"
+geometry 1x6-600+85
+background "#282828"
 kludges force_icons_size
-grow_gravity E
-icon_gravity E
+grow_gravity S
+icon_gravity N
 icon_size 30
 sticky true
 #window_strut none
