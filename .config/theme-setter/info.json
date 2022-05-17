@@ -6,6 +6,7 @@
         "gruvbox": "Gruvbox Material Dark",
         "gruvbox-light": "Gruvbox Material Light",
         "nord": "Nord",
+        "nord-light": "Nord Light Brighter",
         "tokyo": "Tokyo Night",
         "tokyo-light": "Tokyo Night Light"
     },
@@ -93,6 +94,20 @@
             "cyan": "8fbcbb",
             "orange": "d08770",
             "gray": "4c566a"
+        },
+        "nord-light": {
+            "background": "ffffff",
+            "foreground": "2E3440",
+            "black": "D8DEE9",
+            "white": "2E3440",
+            "red": "b1616a",
+            "green": "a3be8c",
+            "yellow": "ebcb8b",
+            "blue": "5e81ac",
+            "magenta": "b48ead",
+            "cyan": "8fbcbb",
+            "orange": "d08770",
+            "gray": "4C566A"
         },
         "tokyo": {
             "background": "1a1b26",
