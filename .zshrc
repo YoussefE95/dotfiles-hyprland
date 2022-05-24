@@ -9,7 +9,6 @@ USE_POWERLINE="true"
 alias rang='source ranger'
 alias vpn='expressvpn'
 alias py='python3'
-alias theme='sh $HOME/.config/theme-setter/set.sh'
 
 bindkey "^[[3~" delete-char
 

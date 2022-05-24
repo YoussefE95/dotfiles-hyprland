@@ -1,0 +1,1 @@
+sh $HOME/.config/theme-setter/set.sh $1 $2

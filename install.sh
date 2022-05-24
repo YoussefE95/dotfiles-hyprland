@@ -9,6 +9,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
 
 rsync -a .p10k.zsh .zshrc .stalonetrayrc .config .themes ~/
+sudo cp .config/theme-setter/set-theme /usr/local/bin/
 
 sudo rm -rf ~/Documents ~/Music ~/Public ~/Videos ~/Templates ~/Pictures
 
