@@ -41,7 +41,7 @@ dunst &
 nm-applet --indicator &
 
 # Keybinds
-sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
+sxhkd -c $HOME/.config/berry/sxhkdrc &
 
 # Dropbox
 dropbox &

@@ -1,0 +1,1 @@
+sh /home/younix/.config/theme-setter/set.sh $1 $2
