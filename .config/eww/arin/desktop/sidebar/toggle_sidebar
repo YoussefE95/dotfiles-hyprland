@@ -1,10 +1,13 @@
 eww --config "$HOME/.config/eww/arin/desktop/sidebar" open-many --toggle \
     powermenu \
     resources \
+    theme \
+    theme-mode \
+    weather \
+    weather-text \
     quotes
-
-if [[ $(pgrep stalonetray) ]]; then
-    killall stalonetray
-else
-    stalonetray
-fi
+# if [[ $(pgrep stalonetray) ]]; then
+#     killall stalonetray
+# else
+#     stalonetray
+# fi

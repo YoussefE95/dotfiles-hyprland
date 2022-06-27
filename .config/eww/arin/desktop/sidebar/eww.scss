@@ -23,6 +23,7 @@
     border: 1px solid $background-alt;
     border-radius: 12px;
     padding: 14px 18px 14px 18px;
+    font-size: 15px;
 }
 
 .res_circle {
@@ -68,6 +69,68 @@
     min-height: 42px;
     min-width: 42px;
     margin: 11px 14px 11px 14px;
+}
+
+/** Theme Buttons ***********************************/
+.theme-option-box {
+    min-width: 125px;
+    min-height: 200px;
+}
+
+.theme-mode-box {
+    min-width: 125px;
+    min-height: 150px;
+}
+
+.theme-option {
+    background-repeat: no-repeat;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 15px;
+}
+
+.theme-mode {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+/** Weather ***********************************/
+.weather-box-left {
+    min-width: 170px;
+    min-height: 150px;
+}
+
+.weather-box-right {
+    min-width: 300px;
+    min-height: 150px;
+}
+
+.weather-icon {
+    font-size: 46px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.weather-text {
+    font-family: MesloLGS NF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weather-quote {
+    font-family: MesloLGS NF;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.weather-quote-two {
+    font-family: MesloLGS NF;
+    font-size: 15px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /** Quotes ***********************************/

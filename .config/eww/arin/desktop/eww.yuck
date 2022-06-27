@@ -15,23 +15,11 @@
 (defpoll TIME :interval "5s" `date +\"%I:%M %p\"`)
 (defpoll DATE :interval "5s" `date +\"%A, %B %d\"`)
 
-;; Weather vars
-(defpoll ICON :interval "10m" `../scripts/weather_info --icon`)
-(defpoll TEMP :interval "10m" `../scripts/weather_info --temp`)
-(defpoll HEX :interval "10m" `../scripts/weather_info --hex`)
-
 ;; Music vars
 (defpoll SONG :interval "1s" `../scripts/music_info --song`)
 (defpoll ARTIST :interval "1s" `../scripts/music_info --artist`)
 (defpoll COVER :interval "1s" `../scripts/music_info --cover`)
 (defpoll STATUS :interval "1s" `../scripts/music_info --status`)
-
-;; Battery vars
-(defpoll BATICON :interval "1m" `../scripts/battery --icon`)
-(defpoll BATPERC :interval "1m" `../scripts/battery --perc`)
-
-;; Brightness vars
-(defpoll BRIGHTNESS :interval "1s" `brightnessctl -m -d intel_backlight | awk -F, '{print substr($4, 0, length($4)-1)}'`)
 
 ;; Volume vars
 (defpoll VOLICON :interval "1s" `../scripts/volume --icon`)
@@ -64,15 +52,12 @@
                 (button :style "background-image: url('${WSFOUR}');" :class "workspaceicon" :onclick "wmctrl -s 3")
                 (button :style "background-image: url('${WSFIVE}');" :class "workspaceicon" :onclick "wmctrl -s 4"))))
 
-;; weather
-(defwidget weather [] 
+
+(defwidget datetime [] 
 		(box :class "dockbox"
 			(box :class "clockbox" :orientation "v" :spacing 0 :valign "center" :halign "start" :space-evenly "false" :vexpand "false" :hexpand "false"
 				(label :class "time" :halign "start" :wrap "true" :limit-width 25 :text TIME)
-				(label :class "date" :halign "start" :wrap "true" :limit-width 25 :text DATE))
-			(box :class "weatherbox" :orientation "h" :spacing 0 :valign "center" :halign "end" :space-evenly "false" :vexpand "false" :hexpand "false"
-				(label :class "weathericon" :style "color: ${HEX};" :text ICON)
-				(label :class "weathertemp" :text TEMP))))
+				(label :class "date" :halign "start" :wrap "true" :limit-width 25 :text DATE))))
 
 ;; music
 (defwidget music [] 
@@ -134,24 +119,10 @@
            :wm-ignore false
 (workspace))
 
-;; weather
-(defwindow weather
-           :monitor 0
-           :geometry (geometry :x "780px"
-                               :y "10px"
-                               :width "500px"
-                               :height "60px"
-                               :anchor "top left")
-           :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
-           :windowtype "dock"
-           :wm-ignore false
-(weather))
-
 ;; music
 (defwindow music
            :monitor 0
-           :geometry (geometry :x "1290px"
+           :geometry (geometry :x "780px"
                                :y "10px"
                                :width "540px"
                                :height "60px"
@@ -161,6 +132,19 @@
            :windowtype "dock"
            :wm-ignore false
 (music))
+
+(defwindow datetime
+           :monitor 0
+           :geometry (geometry :x "1330px"
+                               :y "10px"
+                               :width "500px"
+                               :height "60px"
+                               :anchor "top left")
+           :stacking "fg"
+           :reserve (struts :distance "80px" :side "top")
+           :windowtype "dock"
+           :wm-ignore false
+(datetime))
 
 ;; system
 (defwindow system

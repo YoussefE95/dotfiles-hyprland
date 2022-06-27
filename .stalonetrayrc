@@ -1,6 +1,7 @@
 decorations none
 transparent false
 dockapp_mode simple
+#geometry 4x1-3300+25
 geometry 4x1-610+25
 background "#24273a"
 kludges force_icons_size
@@ -10,6 +11,6 @@ icon_size 28
 sticky true
 #window_strut none
 window_type dock
-window_layer top
+#window_layer top
 no_shrink true
 skip_taskbar true

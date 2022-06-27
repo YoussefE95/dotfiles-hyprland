@@ -1,4 +1,6 @@
 focused="$(wmctrl -d | grep '*' | cut -d ' ' -f13)"
+# focused="$(wmctrl -d | grep '*' | cut -d ' ' -f16)"
+
 
 get_one() {
     if [[ $focused == "0" ]]; then
