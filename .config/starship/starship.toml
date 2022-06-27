@@ -1,0 +1,18 @@
+# Don't print a new line at the start of the prompt
+add_newline = true
+
+# Prompt
+format = """
+$directory$git_branch$git_status
+$cmd_duration[](green) (none)"""
+
+# Modules
+[cmd_duration]
+disabled = false
+
+[directory]
+home_symbol = "~"
+format = "[$path]($style) "
+
+[time]
+disabled = false

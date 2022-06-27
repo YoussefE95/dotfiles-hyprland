@@ -1,8 +1,7 @@
 yay -Syyu
 
-yay -S alacritty picom-ibhagwan-git nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq google-chrome gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl wmctrl xclip eww scrot cron ueberzug stalonetray
+yay -S alacritty starship nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq google-chrome gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl wmctrl xclip eww scrot cron ueberzug stalonetray
 
-yay -S --noconfirm zsh-theme-powerlevel10k-git
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
