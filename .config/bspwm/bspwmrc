@@ -14,9 +14,9 @@ bspc config pointer_follows_focus true
 bspc config focus_follows_pointer true
 
 # Border
-bspc config focused_border_color        '#98971a'
-bspc config normal_border_color         '#665c54'
-bspc config active_border_color         '#98971a'
+bspc config focused_border_color        '#a6da95'
+bspc config normal_border_color         '#5b6078'
+bspc config active_border_color         '#a6da95'
 
 #
 # Autostart
@@ -25,7 +25,7 @@ bspc config active_border_color         '#98971a'
 picom --config $HOME/.config/picom.conf &
 
 # Wallpaper
-feh --bg-fill /home/younix/Dropbox/Pictures/Wallpapers/gruvbox/normal/Sx7TXK0.png
+feh --bg-fill /home/younix/Dropbox/Pictures/Wallpapers/catppuccin/normal/wavy_lines_v01_5120x2880.png
 
 # Bar
 sh ~/.config/eww/arin/laptop/launch_bar
@@ -33,14 +33,16 @@ sh ~/.config/eww/arin/laptop/launch_bar
 # Notifications
 dunst &
 
-# Network Applet
-nm-applet --indicator &
-
 # Keybinds
 sxhkd -c $HOME/.config/bspwm/sxhkdrc &
 
-# Dropbox
-dropbox &
-
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+sleep 8
+
+# System Tray
+stalonetray &
+
+# Dropbox
+dropbox &

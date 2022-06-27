@@ -1,0 +1,5 @@
+scripts_path='/home/younix/.config/eww/arin/scripts/'
+
+sed -i /.*theme.*/c\\"\t\"theme\": \"$1\"," $scripts_path/theme.json
+
+set-theme "$1" $(jq -r '.mode' $scripts_path/theme.json)

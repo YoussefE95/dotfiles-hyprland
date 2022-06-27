@@ -65,14 +65,13 @@
                 (button :style "background-image: url('${WSFIVE}');" :class "workspaceicon" :onclick "wmctrl -s 4"))))
 
 ;; weather
-(defwidget weather [] 
+(defwidget datetime [] 
 		(box :class "dockbox"
 			(box :class "clockbox" :orientation "v" :spacing 0 :valign "center" :halign "start" :space-evenly "false" :vexpand "false" :hexpand "false"
 				(label :class "time" :halign "start" :wrap "true" :limit-width 25 :text TIME)
 				(label :class "date" :halign "start" :wrap "true" :limit-width 25 :text DATE))
-			(box :class "weatherbox" :orientation "h" :spacing 0 :valign "center" :halign "end" :space-evenly "false" :vexpand "false" :hexpand "false"
-				(label :class "weathericon" :style "color: ${HEX};" :text ICON)
-				(label :class "weathertemp" :text TEMP))))
+		)
+    )
 
 ;; music
 (defwidget music [] 
@@ -123,7 +122,7 @@
                                :height "60px"
                                :anchor "top left")
            :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
+           :reserve (struts :distance "70px" :side "top")
            :windowtype "dock"
            :wm-ignore false
 (search))
@@ -137,38 +136,39 @@
                                :height "60px"
                                :anchor "top left")
            :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
+           :reserve (struts :distance "70px" :side "top")
            :windowtype "dock"
            :wm-ignore false
 (workspace))
 
-;; weather
-(defwindow weather
-           :monitor 0
-           :geometry (geometry :x "420px"
-                               :y "10px"
-                               :width "400px"
-                               :height "60px"
-                               :anchor "top left")
-           :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
-           :windowtype "dock"
-           :wm-ignore false
-(weather))
-
 ;; music
 (defwindow music
            :monitor 0
-           :geometry (geometry :x "830px"
+           :geometry (geometry :x "420px"
                                :y "10px"
                                :width "490px"
                                :height "60px"
                                :anchor "top left")
            :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
+           :reserve (struts :distance "70px" :side "top")
            :windowtype "dock"
            :wm-ignore false
 (music))
+
+;; date and time
+(defwindow datetime
+           :monitor 0
+           :geometry (geometry :x "920px"
+                               :y "10px"
+                               :width "400px"
+                               :height "60px"
+                               :anchor "top left")
+           :stacking "fg"
+           :reserve (struts :distance "70px" :side "top")
+           :windowtype "dock"
+           :wm-ignore false
+(datetime))
+
 
 ;; system
 (defwindow system
@@ -179,7 +179,7 @@
                                :height "60px"
                                :anchor "top left")
            :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
+           :reserve (struts :distance "70px" :side "top")
            :windowtype "dock"
            :wm-ignore false
 (system))

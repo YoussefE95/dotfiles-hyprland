@@ -17,8 +17,8 @@ window:
     lines: 26
 
   padding:
-    x: 15
-    y: 15
+    x: 20
+    y: 20
 
   decorations: full
   startup_mode: Windowed

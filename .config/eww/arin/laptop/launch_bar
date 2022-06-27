@@ -14,7 +14,7 @@ run_eww() {
 	eww --config "$main" open-many \
         search \
         workspace \
-        weather \
+        datetime \
         music \
         system
 }

@@ -52,32 +52,15 @@
 }
 
 .time {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: normal;
 }
 
 .date {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: normal;
 }
 
-/** Weather ********************************************/
-.weatherbox {
-    margin: 0px 0px 0px -90px;
-}
-
-.weathericon {
-    font-family: MesloLGS NF;
-    font-size: 36px;
-    font-weight: bold;
-    padding-right: 4px;
-}
-
-.weathertemp {
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0px 0px 0px -5px;
-}
 
 /** Music *************************************************/
 .album_art {
@@ -94,17 +77,17 @@
 }
 
 .song {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: normal;
 }
 
 .artist {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
 }
 
 .musicbuttons {
-    margin: 2px 0px 0px -110px;
+    margin: 2px 0px 0px -90px;
 }
 
 .playbutton {
@@ -168,7 +151,7 @@
     background-color: $background-alt;
     border: 0px solid $background;
     border-radius: 16px;
-    font-size: 14px;
+    font-size: 15px;
     padding: 0px 5px 0px 5px;
     margin: 10px 0px 10px 0px;
     font-weight: bold;

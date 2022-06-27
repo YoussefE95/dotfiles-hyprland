@@ -61,3 +61,6 @@ $templates/rofi.sh "$theme" "$info"
 $templates/dunst.sh "$theme" "$info"
 killall -q dunst
 notify-send "Successfully set $theme"
+
+killall stalonetray
+stalonetray &

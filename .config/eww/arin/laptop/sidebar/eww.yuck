@@ -6,14 +6,19 @@
 ;; ** Variables ***********************************************************************
 
 ;; System vars
-(defpoll HOST :interval "5s" `hostname`)
 (defpoll CPU_USAGE :interval "1s" `../../scripts/sys_info --cpu`)
 (defpoll MEM_USAGE :interval "1s" `../../scripts/sys_info --mem`)
 (defpoll DISK_USAGE :interval "1s" `../../scripts/sys_info --disk`)
-(defpoll BLIGHT :interval "1s" `../../scripts/sys_info --blight`)
-(defpoll BATTERY :interval "5s" `../../scripts/sys_info --bat`)
+
+;; Quote vars
 (defpoll QUOTE :interval "5m" `../../scripts/quotes quote`)
 (defpoll AUTHOR :interval "5m" `../../scripts/quotes author`)
+
+;; Weather vars
+(defpoll WEATHERICON :interval "10m" `../../scripts/weather_info --icon`)
+(defpoll WEATHERTEMP :interval "10m" `../../scripts/weather_info --temp`)
+(defpoll WEATHERQUOTE :interval "10m" `../../scripts/weather_info --quote`)
+(defpoll WEATHERQUOTETWO :interval "10m" `../../scripts/weather_info --quote2`)
 
 ;; ** Widgets *************************************************************************
 
@@ -55,16 +60,65 @@
 				(label :class "quote_text" :valign "center" :halign "center" :text QUOTE :wrap true )
                 (label :class "quote_author" :valign "center" :halign "center" :text AUTHOR :wrap true))))
 
+(defwidget theme []
+    (box :class "winbox theme-option-box" :orientation "v" :valign "center" :halign "center" :spacing 10 :space-evenly "false"
+        (button :class "theme-option" :valign "center" :halign "center" :onclick "../../scripts/update-theme catppuccin"
+            (label :class "theme-text" :valign "center" :halign "center" :text "Catppuccin" :wrap true)
+        )
+        (button :class "theme-option" :valign "center" :halign "center" :onclick "../../scripts/update-theme everforest"
+            (label :class "theme-text" :valign "center" :halign "center" :text "Everforest" :wrap true)
+        )
+        (button :class "theme-option" :valign "center" :halign "center" :onclick "../../scripts/update-theme gruvbox"
+            (label :class "theme-text" :valign "center" :halign "center" :text "Gruvbox" :wrap true)
+        )
+        (button :class "theme-option" :valign "center" :halign "center" :onclick "../../scripts/update-theme nord"
+            (label :class "theme-text" :valign "center" :halign "center" :text "Nord" :wrap true)
+        )
+        (button :class "theme-option" :valign "center" :halign "center" :onclick "../../scripts/update-theme tokyo"
+            (label :class "theme-text" :valign "center" :halign "center" :text "Tokyo" :wrap true)
+        )
+    )
+)
+
+(defwidget theme-mode []
+    (box :class "winbox theme-mode-box" :orientation "v" :valign "center" :halign "center" :spacing 10 :space-evenly "false"
+        (button :class "theme-mode" :valign "center" :halign "center" :onclick "../../scripts/update-mode dark"
+            (label :class "theme-text" :valign "center" :halign "center" :text "Dark" :wrap true)
+        )
+        (button :class "theme-mode" :valign "center" :halign "center" :onclick "../../scripts/update-mode"
+            (label :class "theme-text" :valign "center" :halign "center" :text "Mid" :wrap true)
+        )
+        (button :class "theme-mode" :valign "center" :halign "center" :onclick "../../scripts/update-mode light"
+            (label :class "theme-text" :valign "center" :halign "center" :text "Light" :wrap true)
+        )
+        
+    )
+)
+
+(defwidget weather []
+    (box :class "winbox weather-box-left" :orientation "v" :valign "center" :halign "left" :spacing 10 :space-evenly "false"
+        (label :class "weather-icon" :valign "center" :halign "center" :wrap true :text WEATHERICON)
+        (label :class "weather-text" :valign "center" :halign "center" :wrap true :text WEATHERTEMP)
+    )
+)
+
+(defwidget weather-text []
+    (box :class "winbox weather-box-right" :orientation "v" :valign "center" :halign "right" :spacing 10 :space-evenly "false"
+        (label :class "weather-quote" :valign "center" :halign "center" :wrap true :text WEATHERQUOTE)
+        (label :class "weather-quote-two" :valign "center" :halign "center" :wrap true :text WEATHERQUOTETWO)
+    )
+)
+
 ;; ** Windows *************************************************************************
 
 ;; powermenu
 (defwindow powermenu
            :monitor 0
-           :geometry (geometry :x "1335px"
-                               :y "80px"
+           :geometry (geometry :x "-315px"
+                               :y "350px"
                                :width "60px"
                                :height "360px"
-                               :anchor "top left")
+                               :anchor "top center")
            :stacking "fg"
            :wm-ignore false
 (powermenu))
@@ -72,24 +126,66 @@
 ;; resources
 (defwindow resources
            :monitor 0
-           :geometry (geometry :x "1420px"
-                               :y "80px"
+           :geometry (geometry :x "-30px"
+                               :y "350px"
                                :width "480px"
                                :height "200px"
-                               :anchor "top left")
+                               :anchor "top center")
            :stacking "fg"
            :wm-ignore false
 (resources))
 
+(defwindow weather
+           :monitor 0
+           :geometry (geometry :x "-185px"
+                               :y "560px"
+                               :width "170px"
+                               :height "150px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(weather))
 
-;; quotes
+(defwindow weather-text
+           :monitor 0
+           :geometry (geometry :x "60px"
+                               :y "560px"
+                               :width "300px"
+                               :height "150px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(weather-text))
+
+(defwindow theme
+           :monitor 0
+           :geometry (geometry :x "283px"
+                               :y "350px"
+                               :width "125px"
+                               :height "200px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(theme))
+
+(defwindow theme-mode
+           :monitor 0
+           :geometry (geometry :x "283px"
+                               :y "560px"
+                               :width "125px"
+                               :height "150px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(theme-mode))
+
 (defwindow quotes
            :monitor 0
-           :geometry (geometry :x "1420px"
-                               :y "290px"
-                               :width "480px"
+           :geometry (geometry :x "0px"
+                               :y "720px"
+                               :width "700px"
                                :height "150px"
-                               :anchor "top left")
+                               :anchor "top center")
            :stacking "fg"
            :wm-ignore false
 (quotes))
