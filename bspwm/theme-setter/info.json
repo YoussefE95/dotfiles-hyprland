@@ -1,7 +1,7 @@
 {
     "vs_themes": {
-        "catppuccin": "Catppuccin",
-        "catppuccin-light": "Catppuccin",
+        "catppuccin": "Catppuccin Macchiato",
+        "catppuccin-light": "Catppuccin Latte",
         "everforest": "Everforest Dark",
         "everforest-light": "Everforest Light",
         "gruvbox": "Gruvbox Material Dark",
@@ -13,18 +13,18 @@
     },
     "colors": {
         "catppuccin": {
-            "background": "1E1E2E",
-            "foreground": "D9E0EE",
-            "black": "302D41",
-            "white": "D9E0EE",
-            "red": "F28FAD",
-            "green": "ABE9B3",
-            "yellow": "FAE3B0",
-            "blue": "96CDFB",
-            "magenta": "D97E96",
-            "cyan": "B5E8E0",
-            "orange": "F8BD96",
-            "gray": "6E6C7E"
+            "background": "24273a",
+            "foreground": "cad3f5",
+            "black": "363a4f",
+            "white": "cad3f5",
+            "red": "ed8796",
+            "green": "a6da95",
+            "yellow": "eed49f",
+            "blue": "8aadf4",
+            "magenta": "c6a0f6",
+            "cyan": "8bd5ca",
+            "orange": "f5a97f",
+            "gray": "5b6078"
         },
         "catppuccin-light": {
             "background": "eff1f5",
