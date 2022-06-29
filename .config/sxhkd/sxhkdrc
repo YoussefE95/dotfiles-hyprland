@@ -10,8 +10,14 @@ super + {_,shift + }q
 	bspc node -{c,k}
 
 # resize window
-super + alt + {h,j,k,l}
-	bspc node -z {left 20 0,bottom 0 20,bottom 0 -20,left -20 0}
+super + alt + h
+    /bin/sh $HOME/.config/bspwm/scripts/resize/shrinkx.sh
+super + alt + l
+    /bin/sh $HOME/.config/bspwm/scripts/resize/expandx.sh
+super + alt + k
+    /bin/sh $HOME/.config/bspwm/scripts/resize/shrinky.sh
+super + alt + j
+    /bin/sh $HOME/.config/bspwm/scripts/resize/expandy.sh
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
