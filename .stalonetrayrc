@@ -2,11 +2,11 @@ decorations none
 transparent false
 dockapp_mode simple
 #geometry 4x1-3300+25
-geometry 4x1-610+25
-background "#24273a"
+geometry 4x1-1425+25
+background "#282828"
 kludges force_icons_size
-grow_gravity E
-icon_gravity E
+grow_gravity W
+icon_gravity W
 icon_size 28
 sticky true
 #window_strut none
