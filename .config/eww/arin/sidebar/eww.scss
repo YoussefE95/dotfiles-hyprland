@@ -13,7 +13,6 @@
 /** Boxes ***********************************/
 .winbox {
     background-color: $background;
-    border: 1px solid $background-alt;
     border-radius: 12px;
 }
 
@@ -72,14 +71,24 @@
 }
 
 /** Theme Buttons ***********************************/
-.theme-option-box {
+.theme-box {
     min-width: 125px;
-    min-height: 200px;
+    min-height: 360px;
 }
 
-.theme-mode-box {
-    min-width: 125px;
-    min-height: 150px;
+.theme-box .selected-theme,
+.theme-box .selected-mode {
+    color: $green;
+    border-bottom: 1px solid $green;
+    font-weight: bold;
+}
+
+.theme-box-inner {
+    min-width: 113px;
+    min-height: 130px;
+    border: 6px solid $background-alt;
+    border-radius: 12px;
+    background: $background-alt;
 }
 
 .theme-option {
@@ -90,32 +99,33 @@
 }
 
 .theme-mode {
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 9px;
     font-size: 15px;
 }
 
 /** Weather ***********************************/
-.weather-box-left {
-    min-width: 170px;
+.weather-box {
+    min-width: 480px;
     min-height: 150px;
 }
 
-.weather-box-right {
+.weather-box-inner {
     min-width: 300px;
-    min-height: 150px;
+    min-height: 149px;
 }
 
 .weather-icon {
-    font-size: 46px;
+    font-size: 50px;
     font-weight: bold;
-    margin-left: 25px;
-    margin-top: 20px;
+    margin-left: 30px;
 }
 
 .weather-text {
     font-family: MesloLGS NF;
     font-size: 20px;
     font-weight: bold;
+    margin-left: -15px;
 }
 
 .weather-quote {
@@ -146,6 +156,32 @@
 .quote_author {
     font-size: 15px;
     font-style: italic;
+    font-weight: bold;
+}
+
+/** Quotes ***********************************/
+.picom-box {
+    min-width: 125px;
+    min-height: 40px;
+}
+
+.picom-text {
+    font-size: 15px;
+}
+
+/** Clock ********************************************/
+.date-time {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.date {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.time {
+    font-size: 15px;
     font-weight: normal;
 }
 

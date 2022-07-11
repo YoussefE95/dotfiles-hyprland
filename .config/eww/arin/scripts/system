@@ -18,7 +18,7 @@ if  [[ $1 = "--lock" ]]; then
 
 elif  [[ $1 = "--logout" ]]; then
 	close_eww
-    berryc quit
+    bspc quit
 
 elif  [[ $1 = "--suspend" ]]; then
 	close_eww

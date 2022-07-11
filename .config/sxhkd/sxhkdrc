@@ -49,7 +49,7 @@ super + ctrl + shift + space
 
 # eww sidebar
 super + @space
-    $HOME/.config/eww/arin/desktop/sidebar/toggle_sidebar
+    $HOME/.config/eww/arin/sidebar/toggle_sidebar
 
 # terminal emulator
 super + Return

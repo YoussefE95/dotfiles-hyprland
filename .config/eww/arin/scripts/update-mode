@@ -1,5 +1,18 @@
 scripts_path='/home/younix/.config/eww/arin/scripts/'
+sidebar_path='/home/younix/.config/eww/arin/sidebar'
 
 sed -i /.*mode.*/c\\"\t\"mode\": \"$1\"" $scripts_path/theme.json
+
+if [[ "$1" == "dark" ]]; then
+    python3 $scripts_path/update-selected.py "mode" "Dark"
+elif [[ "$1" == "light" ]]; then
+    python3 $scripts_path/update-selected.py "mode" "Light"
+else
+    python3 $scripts_path/update-selected.py "mode" "Mid"
+fi
+
+mv $sidebar_path/eww.yuck.new $sidebar_path/eww.yuck
+
+$sidebar_path/toggle_sidebar
 
 set-theme $(jq -r '.theme' $scripts_path/theme.json) "$1"

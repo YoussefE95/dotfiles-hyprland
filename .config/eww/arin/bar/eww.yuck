@@ -9,17 +9,16 @@
 (defpoll WSTWO :interval "1s" `../scripts/workspace_info 2`)
 (defpoll WSTHREE :interval "1s" `../scripts/workspace_info 3`)
 (defpoll WSFOUR :interval "1s" `../scripts/workspace_info 4`)
-(defpoll WSFIVE :interval "1s" `../scripts/workspace_info 5`)
 
-;; Time vars
-(defpoll TIME :interval "5s" `date +\"%I:%M %p\"`)
-(defpoll DATE :interval "5s" `date +\"%A, %B %d\"`)
+;; Fuzzy time vars
+(defpoll FUZZYTIME :interval "3m" `python3 ../scripts/fuzzytime.py`)
 
-;; Music vars
-(defpoll SONG :interval "1s" `../scripts/music_info --song`)
-(defpoll ARTIST :interval "1s" `../scripts/music_info --artist`)
-(defpoll COVER :interval "1s" `../scripts/music_info --cover`)
-(defpoll STATUS :interval "1s" `../scripts/music_info --status`)
+;; Battery vars
+(defpoll BATICON :interval "30s" `../scripts/battery --icon`)
+(defpoll BATPERC :interval "30s" `../scripts/battery --perc`)
+
+;; Brightness vars
+(defpoll BRIGHTNESS :interval "1s" `brightnessctl -m -d intel_backlight | awk -F, '{print substr($4, 0, length($4)-1)}'`)
 
 ;; Volume vars
 (defpoll VOLICON :interval "1s" `../scripts/volume --icon`)
@@ -49,33 +48,31 @@
                 (button :style "background-image: url('${WSONE}');" :class "workspaceicon" :onclick "wmctrl -s 0")
                 (button :style "background-image: url('${WSTWO}');" :class "workspaceicon" :onclick "wmctrl -s 1")
                 (button :style "background-image: url('${WSTHREE}');" :class "workspaceicon" :onclick "wmctrl -s 2")
-                (button :style "background-image: url('${WSFOUR}');" :class "workspaceicon" :onclick "wmctrl -s 3")
-                (button :style "background-image: url('${WSFIVE}');" :class "workspaceicon" :onclick "wmctrl -s 4"))))
+                (button :style "background-image: url('${WSFOUR}');" :class "workspaceicon" :onclick "wmctrl -s 3"))))
 
+;; system tray
+(defwidget sys_tray [] 
+    (box :class "dockbox" :orientation "v" :space-evenly "true")
+)
 
-(defwidget datetime [] 
+(defwidget fuzzytime [] 
 		(box :class "dockbox"
-			(box :class "clockbox" :orientation "v" :spacing 0 :valign "center" :halign "start" :space-evenly "false" :vexpand "false" :hexpand "false"
-				(label :class "time" :halign "start" :wrap "true" :limit-width 25 :text TIME)
-				(label :class "date" :halign "start" :wrap "true" :limit-width 25 :text DATE))))
-
-;; music
-(defwidget music [] 
-		(box :class "dockbox"
-			(box :orientation "h" :spacing 0 :valign "center" :halign "start" :space-evenly "false" :vexpand "false" :hexpand "false"
-				(box :class "album_art" :vexpand "false" :hexpand "false" :style "background-image: url('${COVER}');")
-				(box :class "musicbox" :orientation "v" :spacing 0 :valign "center" :halign "start" :space-evenly "false" :vexpand "false" :hexpand "false"
-					(label :class "song" :halign "start" :wrap "false" :limit-width 20 :text SONG)
-					(label :class "artist" :halign "start" :wrap "false" :limit-width 20 :text ARTIST)))
-			(box :class "musicbuttons" :orientation "h" :spacing 10 :valign "center" :halign "end" :space-evenly "false" :vexpand "false" :hexpand "false"
-				(button :style "background-image: url('../images/icons/music/previous.svg');" :class "trackbutton" :onclick "../scripts/music_info --prev")
-				(button :style "background-image: url('${STATUS}');" :class "playbutton" :onclick "../scripts/music_info --toggle")
-				(button :style "background-image: url('../images/icons/music/next.svg');" :class "trackbutton" :onclick "../scripts/music_info --next"))))
+            (label :class "fuzzy-time" :wrap "true" :text FUZZYTIME)
+		)
+    )
 
 ;; system
 (defwidget system [] 
 		(box :class "dockbox"
 			(box :orientation "h" :spacing 16 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
+				(button :onclick "../scripts/widget_apps --pow"
+					(box :orientation "h" :spacing 8 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
+						(box :style "background-image: url('${BATICON}');" :class "batteryicon")
+							(label :class "infotext" :halign "start" :text BATPERC)))
+				(button :onclick "../scripts/widget_apps --pow"
+					(box :orientation "h" :spacing 8 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
+						(box :style "background-image: url('../images/icons/brightness.svg');" :class "brightnessicon")
+							(label :class "infotext" :halign "start" :text "${BRIGHTNESS}%")))
 				(button :onclick "../scripts/volume --toggle"
 					(box :orientation "h" :spacing 8 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
 						(box :style "background-image: url('${VOLICON}');" :class "volumeicon")
@@ -84,7 +81,7 @@
 					(box :orientation "h" :spacing 8 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
 						(box :style "background-image: url('${WIFIICON}');" :class "trayicon")
 							(label :class "infotext" :halign "start" :text NETSTAT)))
-				(button :onclick "sidebar/toggle_sidebar"
+				(button :onclick "../sidebar/toggle_sidebar"
 					(box :orientation "h" :spacing 8 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
 						(box :style "background-image: url('${IMAGE}');" :class "face")
 							(label :class "infotext" :halign "start" :text USER))))))
@@ -94,13 +91,13 @@
 ;; search
 (defwindow search
            :monitor 0
-           :geometry (geometry :x "370px"
+           :geometry (geometry :x "10px"
                                :y "10px"
-                               :width "120px"
+                               :width "130px"
                                :height "60px"
                                :anchor "top left")
            :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
+           :reserve (struts :distance "70px" :side "top")
            :windowtype "dock"
            :wm-ignore false
 (search))
@@ -108,54 +105,54 @@
 ;; workspace
 (defwindow workspace
            :monitor 0
-           :geometry (geometry :x "500px"
+           :geometry (geometry :x "150px"
                                :y "10px"
-                               :width "270px"
+                               :width "210px"
                                :height "60px"
                                :anchor "top left")
            :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
+           :reserve (struts :distance "70px" :side "top")
            :windowtype "dock"
            :wm-ignore false
 (workspace))
 
-;; music
-(defwindow music
+;; system tray
+(defwindow sys_tray
            :monitor 0
-           :geometry (geometry :x "780px"
+           :geometry (geometry :x "370px"
                                :y "10px"
-                               :width "540px"
+                               :width "230px"
                                :height "60px"
                                :anchor "top left")
            :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
+           :reserve (struts :distance "70px" :side "top")
            :windowtype "dock"
            :wm-ignore false
-(music))
+(sys_tray))
 
-(defwindow datetime
+(defwindow fuzzytime
            :monitor 0
-           :geometry (geometry :x "1330px"
+           :geometry (geometry :x "0px"
                                :y "10px"
                                :width "500px"
                                :height "60px"
-                               :anchor "top left")
+                               :anchor "top center")
            :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
+           :reserve (struts :distance "70px" :side "top")
            :windowtype "dock"
            :wm-ignore false
-(datetime))
+(fuzzytime))
 
 ;; system
 (defwindow system
            :monitor 0
-           :geometry (geometry :x "1840px"
+           :geometry (geometry :x "-10px"
                                :y "10px"
-                               :width "360px"
+                               :width "590px"
                                :height "60px"
-                               :anchor "top left")
+                               :anchor "top right")
            :stacking "fg"
-           :reserve (struts :distance "80px" :side "top")
+           :reserve (struts :distance "70px" :side "top")
            :windowtype "dock"
            :wm-ignore false
 (system))

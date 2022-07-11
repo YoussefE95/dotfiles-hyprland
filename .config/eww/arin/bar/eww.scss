@@ -41,22 +41,13 @@
 
 .workspaceicon {
     background-repeat: no-repeat;
-    background-size: 22px;
-    min-height: 22px;
-    min-width: 22px;
+    background-size: 20px;
+    min-height: 20px;
+    min-width: 20px;
 }
 
 /** Clock ********************************************/
-.clockbox {
-    margin: 0px 0px 0px 20px;
-}
-
-.time {
-    font-size: 15px;
-    font-weight: normal;
-}
-
-.date {
+.fuzzy-time {
     font-size: 15px;
     font-weight: normal;
 }
@@ -76,12 +67,12 @@
 }
 
 .song {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
 }
 
 .artist {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
 }
 
@@ -139,9 +130,9 @@
 }
 
 .face {
-    background-size: 28px;
-    min-height: 28px;
-    min-width: 28px;
+    background-size: 24px;
+    min-height: 24px;
+    min-width: 24px;
     margin: 8px 0px 8px 0px;
     border-radius: 100%;
 }

@@ -21,7 +21,5 @@ output="$(cat << THEME
 THEME
 )"
 
-printf '%s' "$output" > "${dest_dir}/desktop/${dest_file}"
-printf '%s' "$output" > "${dest_dir}/desktop/sidebar/${dest_file}"
-printf '%s' "$output" > "${dest_dir}/laptop/${dest_file}"
-printf '%s' "$output" > "${dest_dir}/laptop/sidebar/${dest_file}"
+printf '%s' "$output" > "${dest_dir}/bar/${dest_file}"
+printf '%s' "$output" > "${dest_dir}/sidebar/${dest_file}"

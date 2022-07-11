@@ -1,6 +1,6 @@
 yay -Syyu
 
-yay -S alacritty zsh starship nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq google-chrome gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl wmctrl xclip eww scrot cron ueberzug stalonetray
+yay -S berry-git alacritty zsh starship nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq google-chrome gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl wmctrl xclip eww scrot cron ueberzug stalonetray
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
@@ -8,13 +8,16 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
 
 sudo rsync -a ../.zshrc ../.stalonetrayrc ../.config ../.themes ~/
-sudo cp theme-setter/set-theme /usr/local/bin/
+sudo cp .config/theme-setter/set-theme /usr/local/bin/
+sudo cp .config/theme-setter/reload-picom /usr/local/bin/
 sudo rsync -a theme-setter ~/.config
 
 sudo rm -rf ~/Documents ~/Music ~/Public ~/Videos ~/Templates ~/Pictures
 
 sudo systemctl enable expressvpn cronie.service
 sudo systemctl start expressvpn cronie.service
+
+sudo cp berry.desktop /usr/share/xsessions
 
 # set up eww cache
 touch /home/younix/.cache/eww.quote

@@ -1,7 +1,6 @@
 #!/bin/bash
 
-main="$HOME/.config/eww/arin/desktop"
-side="$main/sidebar"
+main="$HOME/.config/eww/arin/bar"
 
 ## Run eww daemon if not running already
 if [[ ! `pidof eww` ]]; then
@@ -14,8 +13,8 @@ run_eww() {
 	eww --config "$main" open-many \
         search \
         workspace \
-        datetime \
-        music \
+        sys_tray \
+        fuzzytime \
         system
 }
 

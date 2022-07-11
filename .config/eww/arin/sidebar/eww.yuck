@@ -1,0 +1,238 @@
+;; **
+;; ** Widgets config for EWW
+;; ** Created by : @adi1090x
+;; **
+
+;; ** Variables ***********************************************************************
+
+;; System vars
+(defpoll CPU_USAGE :interval "1s" `../scripts/sys_info --cpu`)
+(defpoll MEM_USAGE :interval "1s" `../scripts/sys_info --mem`)
+(defpoll DISK_USAGE :interval "1s" `../scripts/sys_info --disk`)
+
+;; Quote vars
+(defpoll QUOTE :interval "10m" `../scripts/quotes quote`)
+(defpoll AUTHOR :interval "10m" `../scripts/quotes author`)
+
+;; Weather vars
+(defpoll WEATHERICON :interval "10m" `../scripts/weather_info --icon`)
+(defpoll WEATHERTEMP :interval "10m" `../scripts/weather_info --temp`)
+(defpoll WEATHERQUOTE :interval "10m" `../scripts/weather_info --quote`)
+(defpoll WEATHERQUOTETWO :interval "10m" `../scripts/weather_info --quote2`)
+
+;; Time vars
+(defpoll DATETIME :interval "30s" `date +\"It's %I:%M %p on %A, %B %d\"`)
+
+;; ** Widgets *************************************************************************
+
+;; resources
+(defwidget resources [] 
+    (box :class "winbox"
+        (centerbox :orientation "h"
+            (box :class "res_box" :orientation "v" :valign "center" :halign "center" :spacing 15 :space-evenly "false"
+                (box :class "res_circle" :orientation "v" :valign "center" :halign "center"
+                    (circular-progress :class "res_cpu" :value CPU_USAGE :thickness 5
+                        (label :class "res_circle_small" :text "CPU")
+                    )
+                )
+                (label :class "res_text" :valign "end" :halign "center" :text "${CPU_USAGE}%")
+            )
+            (box :class "res_box" :orientation "v" :valign "center" :halign "center" :spacing 15 :space-evenly "false"
+                (box :class "res_circle" :orientation "v" :valign "center" :halign "center"
+                    (circular-progress :class "res_mem" :value MEM_USAGE :thickness 5
+                        (label :class "res_circle_small" :text "MEMORY")
+                    )
+                )
+                (label :class "res_text" :valign "end" :halign "center" :text "${MEM_USAGE}%")
+            )
+            (box :class "res_box" :orientation "v" :valign "center" :halign "center" :spacing 15 :space-evenly "false"
+                (box :class "res_circle" :orientation "v" :valign "center" :halign "center"
+                    (circular-progress :class "res_disk" :value DISK_USAGE :thickness 5
+                        (label :class "res_circle_small" :text "DISK")))
+                (label :class "res_text" :valign "end" :halign "center" :text "${DISK_USAGE}%")
+            )
+        )
+    )
+)
+
+;; powermenus
+(defwidget powermenu []
+    (box :class "winbox" :orientation "v" :valign "center" :halign "center" :spacing 10 :space-evenly "false"
+        (button :style "background-image: url('../images/icons/system/sys-exit.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --logout")
+        (button :style "background-image: url('../images/icons/system/sys-sleep.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --suspend")
+        (button :style "background-image: url('../images/icons/system/sys-lock.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --lock")
+        (button :style "background-image: url('../images/icons/system/sys-reboot.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --reboot")
+        (button :style "background-image: url('../images/icons/system/poweroff.png');" :class "powericons" :valign "center" :halign "center" :onclick "../scripts/system --shutdown")
+    )
+)
+
+;; quotes
+(defwidget quotes [] 
+    (box :class "winbox"
+        (box :class "quote_box" :orientation "v" :valign "center" :halign "center" :spacing 10 :space-evenly "false"
+            (label :class "quote_text" :valign "center" :halign "center" :text QUOTE :wrap true )
+            (label :class "quote_author" :valign "center" :halign "center" :text AUTHOR :wrap true)
+        )
+    )
+)
+
+;; theme setter
+(defwidget theme []
+    (box :class "winbox theme-box" :orientation "v" :valign "center" :halign "center" :spacing 10 :space-evenly "false"
+        (button :class "theme-option" :valign "center" :halign "center" :onclick "../scripts/update-theme catppuccin"
+			(label :class "theme-text" :valign "center" :halign "center" :text "Catppuccin" :wrap true) 
+        )
+        (button :class "theme-option" :valign "center" :halign "center" :onclick "../scripts/update-theme everforest"
+			(label :class "theme-text" :valign "center" :halign "center" :text "Everforest" :wrap true) 
+        )
+        (button :class "theme-option" :valign "center" :halign "center" :onclick "../scripts/update-theme gruvbox"
+			(label :class "theme-text selected-theme" :valign "center" :halign "center" :text "Gruvbox" :wrap true) 
+        )
+        (button :class "theme-option" :valign "center" :halign "center" :onclick "../scripts/update-theme nord"
+			(label :class "theme-text" :valign "center" :halign "center" :text "Nord" :wrap true) 
+        )
+        (button :class "theme-option" :valign "center" :halign "center" :onclick "../scripts/update-theme tokyo"
+			(label :class "theme-text" :valign "center" :halign "center" :text "Tokyo" :wrap true) 
+        )
+        (box :class "theme-box-inner" :orientation "v" :valign "center" :halign "center" :spacing 10 :space-evenly "false"
+            (button :class "theme-mode" :valign "center" :halign "center" :onclick "../scripts/update-mode dark"
+				(label :class "theme-text" :valign "center" :halign "center" :text "Dark" :wrap true) 
+            )
+            (button :class "theme-mode" :valign "center" :halign "center" :onclick "../scripts/update-mode"
+				(label :class "theme-text selected-mode" :valign "center" :halign "center" :text "Mid" :wrap true) 
+            )
+            (button :class "theme-mode" :valign "center" :halign "center" :onclick "../scripts/update-mode light"
+				(label :class "theme-text" :valign "center" :halign "center" :text "Light" :wrap true) 
+            )
+        )
+    )
+)
+
+;; weather
+(defwidget weather []
+    (box :class "winbox weather-box" :orientation "h" :valign "center" :halign "left" :spacing 10 :space-evenly "false"
+        (label :class "weather-icon" :valign "center" :halign "center" :wrap true :text WEATHERICON)
+        (label :class "weather-text" :valign "center" :halign "center" :wrap true :text WEATHERTEMP)
+        (box :class "weather-box-inner" :orientation "v" :valign "center" :halign "right" :spacing 10 :space-evenly "false"
+            (label :class "weather-quote" :valign "center" :halign "center" :wrap true :text WEATHERQUOTE)
+            (label :class "weather-quote-two" :valign "center" :halign "center" :wrap true :text WEATHERQUOTETWO)
+        )
+    )
+)
+
+;; picom reloader
+(defwidget picom-reload []
+    (box :class "winbox picom-box" :orientation "h" :valign "center" :halign "center"
+        (button :class "picom-button" :valign "center" :halign "center" :onclick "../scripts/reload-picom"
+            (label :class "picom-text" :valign "center" :halign "center" :text "Reload Picom" :wrap true)
+        )
+    )
+)
+
+(defwidget datetime [] 
+		(box :class "winbox"
+            (label :class "date-time" :wrap "true" :text DATETIME)
+		)
+    )
+
+;; blur background
+(defwidget blur_full [] 
+    (box :orientation "v" :space-evenly "true")
+)
+
+;; ** Windows *************************************************************************
+
+;; powermenu
+(defwindow powermenu
+           :monitor 0
+           :geometry (geometry :x "-315px"
+                               :y "350px"
+                               :width "60px"
+                               :height "360px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(powermenu))
+
+;; date time
+(defwindow datetime
+           :monitor 0
+           :geometry (geometry :x "-30px"
+                               :y "300px"
+                               :width "480px"
+                               :height "40px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(datetime))
+
+;; resources
+(defwindow resources
+           :monitor 0
+           :geometry (geometry :x "-30px"
+                               :y "350px"
+                               :width "480px"
+                               :height "200px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(resources))
+
+;; weather
+(defwindow weather
+           :monitor 0
+           :geometry (geometry :x "-30px"
+                               :y "560px"
+                               :width "480px"
+                               :height "150px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(weather))
+
+;; theme setter
+(defwindow theme
+           :monitor 0
+           :geometry (geometry :x "283px"
+                               :y "350px"
+                               :width "125px"
+                               :height "360px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(theme))
+
+;; quotes
+(defwindow quotes
+           :monitor 0
+           :geometry (geometry :x "0px"
+                               :y "720px"
+                               :width "700px"
+                               :height "150px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(quotes))
+
+;; picom reload
+(defwindow picom-reload
+           :monitor 0
+           :geometry (geometry :x "283px"
+                               :y "300px"
+                               :width "125px"
+                               :height "40px"
+                               :anchor "top center")
+           :stacking "fg"
+           :wm-ignore false
+(picom-reload))
+
+;; blur background
+(defwindow blur_full 
+            :monitor 0
+            :geometry (geometry :x "0px"
+                                :y "0px"
+                                :width "100%"
+                                :height "100%")
+            :stacking "fg"  
+            :wm-ignore false
+(blur_full))

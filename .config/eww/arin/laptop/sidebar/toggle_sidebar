@@ -1,8 +1,0 @@
-eww --config "$HOME/.config/eww/arin/laptop/sidebar" open-many --toggle \
-    powermenu \
-    resources \
-    theme \
-    theme-mode \
-    weather \
-    weather-text \
-    quotes
