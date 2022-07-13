@@ -11,7 +11,7 @@
 (defpoll WSFOUR :interval "1s" `../scripts/workspace_info 4`)
 
 ;; Fuzzy time vars
-(defpoll FUZZYTIME :interval "3m" `python3 ../scripts/fuzzytime.py`)
+(defpoll FUZZYTIME :interval "1m" `python3 ../scripts/fuzzytime.py`)
 
 ;; Battery vars
 (defpoll BATICON :interval "30s" `../scripts/battery --icon`)
@@ -134,7 +134,7 @@
            :monitor 0
            :geometry (geometry :x "0px"
                                :y "10px"
-                               :width "500px"
+                               :width "340px"
                                :height "60px"
                                :anchor "top center")
            :stacking "fg"

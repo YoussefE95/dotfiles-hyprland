@@ -22,31 +22,20 @@ def FuzzyTime():
         15: "a quarter",
         20: "a third",
         25: "twenty five",
-        30: "a half",
-        35: "thirty five",
-        40: "two thirds",
-        45: "three quarters",
-        50: "fifty",
-        55: "fifty five"
+        30: "half"
     }
 
     now = datetime.now()
     hour = int(now.strftime("%I"))
     min = int(now.strftime("%M"))
-    cycle = now.strftime("%P")
-    suffix = ""
+    rounded_min = 5 * round(min/5)
 
-    if cycle == "am":
-        suffix = "morning"
-    elif cycle == "pm" and (hour == 12 or (hour >= 1 and hour <= 5)):
-        suffix = "afternoon"
-    elif cycle == "pm" and (hour >= 6 and hour <= 11):
-        suffix = "evening"
-
-    if (min >= 1 and min < 5) or round(min/5) == 60:
-        return f"It's {hour_text[hour]} o'clock in the {suffix}"
-    else:
-        return f"It's {min_text[5 * round(min/5)]} past {hour_text[hour]} in the {suffix}"
+    if (min >= 1 and min < 5) or rounded_min == 60:
+        return f"It's {hour_text[hour]} o'clock"
+    elif rounded_min <= 30:
+        return f"It's {min_text[rounded_min]} past {hour_text[hour]}"
+    elif rounded_min > 30:
+        return f"It's {min_text[60 - rounded_min]} til {hour_text[hour]}"
 
 if __name__ =='__main__':
     print(FuzzyTime())
