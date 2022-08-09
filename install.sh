@@ -1,6 +1,6 @@
 yay -Syyu
 
-yay -S awesome-git alacritty zsh starship apple-fonts nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq google-chrome gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl wmctrl xclip scrot cron ueberzug xorg-xinit polkit-gnome acpi ttf-font-awesome-5 lightdm lightdm-mini-greeter
+yay -S awesome-git alacritty zsh starship apple-fonts nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq google-chrome gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl wmctrl xclip scrot cron ueberzug xorg-xinit polkit-gnome acpi ttf-font-awesome-5 lightdm lightdm-mini-greeter i3lock
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
