@@ -1180,9 +1180,9 @@ local uptime_popup = awful.popup {
     preferred_positions = "bottom",
     preferred_anchors = "front",
     minimum_width = 300,
-    minimum_height = 135,
+    minimum_height = 130,
     maximum_width = 300,
-    maximum_height = 135,
+    maximum_height = 130,
     offset       = {
         y = 10,
     },
@@ -1385,9 +1385,9 @@ local specs_popup = awful.popup {
     preferred_positions = "bottom",
     preferred_anchors = "front",
     minimum_width = 300,
-    minimum_height = 135,
+    minimum_height = 140,
     maximum_width = 300,
-    maximum_height = 135,
+    maximum_height = 140,
     offset       = {
         y = 10,
     },
