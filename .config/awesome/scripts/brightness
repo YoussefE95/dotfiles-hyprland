@@ -1,0 +1,45 @@
+#!/bin/bash
+
+brightness="$(brightnessctl | grep '%' | awk '{ print $4 }' | sed 's/(//' | sed 's/)//' | sed 's/%//')"
+
+get_icon () {
+    if [[ ($brightness -le "100" && $brightness -ge "81") ]]; then
+        echo "盛"
+    elif [[ ($brightness -le "80" && $brightness -ge "61") ]]; then
+        echo "盛"
+    elif [[ ($brightness -le "60" && $brightness -ge "41") ]]; then
+        echo ""
+    elif [[ ($brightness -le "40" && $brightness -ge "21") ]]; then
+        echo ""
+    elif [[ ($brightness -le "20" && $brightness -ge "0") ]]; then
+        echo ""
+    fi
+}
+
+get_num () {
+    if [[ ($brightness -le "9" && $brightness -ge "0") ]]; then
+        echo "0${brightness}"
+    elif [[ ($brightness -eq "100") ]]; then
+        echo "99"
+    else
+        echo "${brightness}"
+    fi
+}
+
+get_dec () {
+    if [[ ($brightness -le "9" && $brightness -ge "0") ]]; then
+        echo ".0${brightness}"
+    elif [[ ($brightness -eq "100") ]]; then
+        echo ".99"
+    else
+        echo ".${brightness}"
+    fi
+}
+
+if [[ $1 == '--num' ]]; then
+	get_num
+elif [[ $1 == '--dec' ]]; then
+	get_dec
+elif [[ $1 == '--icon' ]]; then
+	get_icon
+fi

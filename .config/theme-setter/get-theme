@@ -1,0 +1,19 @@
+#!/bin/bash
+
+info="$HOME/.config/theme-setter/info.json"
+theme=$(jq ".current.theme" "$info")
+mode=$(jq ".current.mode" "$info")
+
+get_theme () {
+    echo "$theme" | sed 's/"//' | sed 's/"//'
+}
+
+get_mode () {
+    echo "$mode" | sed 's/"//' | sed 's/"//'
+}
+
+if [[ $1 == '--mode' ]]; then
+	get_mode
+else
+	get_theme
+fi

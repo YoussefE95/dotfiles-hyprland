@@ -1,9 +1,0 @@
-eww --config "$HOME/.config/eww/arin/sidebar" open-many --toggle \
-    blur_full \
-    powermenu \
-    resources \
-    theme \
-    weather \
-    quotes \
-    picom-reload \
-    datetime

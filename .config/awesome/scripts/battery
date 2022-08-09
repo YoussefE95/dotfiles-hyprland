@@ -1,0 +1,50 @@
+#!/bin/bash
+
+BATTERY="$(acpi | awk -F ' ' 'END {print $4}' | tr -d \%,)"
+CHARGE="$(acpi | awk -F ' ' 'END {print $3}' | tr -d \,)"
+
+get_icon () {
+    if [[ ($CHARGE = *"Charging"*) ]]; then
+        echo ""
+    else
+        if [[ ($BATTERY -le "100" && $BATTERY -gt "80") ]]; then
+            echo ""
+        elif [[ ($BATTERY -le "80" && $BATTERY -gt "50") ]]; then
+            echo ""
+        elif [[ ($BATTERY -le "50" && $BATTERY -gt "20") ]]; then
+            echo ""
+        elif [[ ($BATTERY -le "20" && $BATTERY -gt "5") ]]; then
+            echo ""
+        elif [[ ($BATTERY -le "5" && $BATTERY -ge "0") ]]; then
+            echo ""
+        fi
+    fi
+}
+
+get_num () {
+    if [[ ($BATTERY -le "9" && $BATTERY -ge "0") ]]; then
+        echo "0${BATTERY}"
+    elif [[ ($BATTERY -eq "100") ]]; then
+        echo "99"
+    else
+        echo "${BATTERY}"
+    fi
+}
+
+get_dec () {
+    if [[ ($BATTERY -le "9" && $BATTERY -ge "0") ]]; then
+        echo ".0${BATTERY}"
+    elif [[ ($BATTERY -eq "100") ]]; then
+        echo ".99"
+    else
+        echo ".${BATTERY}"
+    fi
+}
+
+if [[ $1 == '--num' ]]; then
+	get_num
+elif [[ $1 == '--dec' ]]; then
+	get_dec
+elif [[ $1 == '--icon' ]]; then
+	get_icon
+fi

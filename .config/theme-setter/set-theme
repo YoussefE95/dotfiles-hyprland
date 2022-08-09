@@ -1,1 +1,3 @@
-sh /home/younix/.config/theme-setter/set.sh $1 $2
+#!/bin/bash
+
+sh /home/$USER/.config/theme-setter/set.sh $1 $2

@@ -1,5 +1,3 @@
-# Idea from: https://github.com/dylanaraps/pywal/issues/264
-
 dest_dir="$HOME/.config/alacritty/"
 dest_file="colors.yml"
 

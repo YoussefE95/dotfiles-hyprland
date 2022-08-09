@@ -1,0 +1,17 @@
+#!/bin/bash
+
+full_screen() {
+    sleep 3
+    scrot ~/"$(date +'%d-%m-%y--%H-%M-%S').png"
+}
+
+section() {
+    sleep 3
+    scrot -s ~/"$(date +'%d-%m-%y--%H-%M-%S').png"
+}
+
+if [[ $1 == '--full' ]]; then
+	full_screen
+elif [[ $1 == '--sec' ]]; then
+	section
+fi
