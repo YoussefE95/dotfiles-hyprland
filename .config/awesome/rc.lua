@@ -29,7 +29,7 @@ local dpi = beautiful.xresources.apply_dpi
 require("awful.hotkeys_popup.keys")
 
 -- Start Picom
-awful.spawn("reload-picom")
+awful.util.spawn_with_shell("picom --config ~/.config/picom.conf")
 awful.spawn.once("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
 awful.spawn.once("sh /home/younix/.config/awesome/scripts/start_dropbox &")
 
@@ -1746,28 +1746,28 @@ local powermenu_popup = awful.popup {
             lock_icon,
             margins = {
                 top = 35,
-                left = 65,
+                left = 70,
             },
             widget  = wibox.container.margin
         },
         {
             logout_icon,
             margins = {
-                left = 65,
+                left = 70,
             },
             widget  = wibox.container.margin
         },
         {
             reboot_icon,
             margins = {
-                left = 65,
+                left = 70,
             },
             widget  = wibox.container.margin
         },
         {
             power_icon,
             margins = {
-                left = 65,
+                left = 70,
             },
             widget  = wibox.container.margin
         },

@@ -20,6 +20,7 @@ $templates/awesome.sh "$theme" "$info"
 sed -i /theme.wallpaper.*/c\\"theme.wallpaper = '$rand_wall'" "$awesome/theme.lua"
 
 sed -i /gtk-theme-name.*/c\\"gtk-theme-name=$theme" "$HOME/.config/gtk-3.0/settings.ini"
+sed -i /gtk-cursor-theme-name.*/c\\"gtk-cursor-theme-name=cursors-$theme" "$HOME/.config/gtk-3.0/settings.ini"
 
 echo 'awesome.restart()' | awesome-client
 

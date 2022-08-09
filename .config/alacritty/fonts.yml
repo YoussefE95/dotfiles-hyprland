@@ -5,22 +5,22 @@
 font:
   # Normal (roman) font face
   normal:
-    family: "MesloLGS NF"
+    family: "SFMono"
     #style: Regular
 
   # Bold font face
   bold:
-    family: "MesloLGS NF"
+    family: "SFMono"
     #style: Bold
 
   # Italic font face
   italic:
-    family: "MesloLGS NF"
+    family: "SFMono"
     #style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: "MesloLGS NF"
+    family: "SFMono"
     #style: Bold Italic
 
   # Point size
