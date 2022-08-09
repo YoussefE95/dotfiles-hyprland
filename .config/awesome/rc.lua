@@ -522,9 +522,12 @@ local sysdashboard_popup = awful.popup {
         },
         widget  = wibox.container.margin,
     },
-    -- placement    = awful.placement.top_right,
-    x            = 1790,
-    y            = 45,
+    preferred_positions = "bottom",
+    preferred_anchors = "back",
+    offset = {
+        x = -12,
+        y = 12,
+    },
     shape        = gears.shape.rounded_rect,
     visible      = false,
     ontop        = true,
@@ -538,14 +541,6 @@ local sysdashboard = wibox.widget {
     volume,
     network,
 }
-
-sysdashboard:connect_signal('mouse::enter', function()
-    sysdashboard_popup.visible = true
-end)
-
-sysdashboard:connect_signal('mouse::leave', function()
-    sysdashboard_popup.visible = false
-end)
 -- -- End System Dashboard
 
 screen.connect_signal("request::desktop_decoration", function(s)
@@ -613,6 +608,15 @@ screen.connect_signal("request::desktop_decoration", function(s)
             },
         }
     }
+
+    sysdashboard:connect_signal('mouse::enter', function()
+        sysdashboard_popup.visible = true
+        sysdashboard_popup:move_next_to(s.mywibox)
+    end)
+    
+    sysdashboard:connect_signal('mouse::leave', function()
+        sysdashboard_popup.visible = false
+    end)
 end)
 
 -- -- Info Dashboard
