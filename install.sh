@@ -10,7 +10,9 @@ python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/ma
 sudo rsync -a .zshrc .config .themes .icons .xinitrc .xserverrc .bash_profile ~/
 sudo cp .config/theme-setter/set-theme /usr/local/bin/
 sudo cp .config/theme-setter/get-theme /usr/local/bin/
-sudo cp xsettingsd.conf ~/.config/xsettingsd/xsettingsd.conf
+
+mkdir ~/.config/xsettingsd/
+sudo cp xsettingsd.conf ~/.config/xsettingsd/
 
 sudo rm -rf ~/Documents ~/Music ~/Public ~/Videos ~/Templates ~/Pictures
 
@@ -18,8 +20,8 @@ sudo rm -rf ~/Documents ~/Music ~/Public ~/Videos ~/Templates ~/Pictures
 touch /home/younix/.cache/widget.quote
 touch /home/younix/.cache/widget.author
 
-# enable bluetooth
 sudo systemctl enable bluetooth
+sudo systemctl enable expressvpn
 
 # copy login screen files
 sudo cp lightdm.conf lightdm-mini-greeter.conf /etc/lightdm/
