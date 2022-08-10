@@ -1914,6 +1914,13 @@ awful.keyboard.append_global_keybindings({
 })
 -- End Lock Screen Toggle
 
+-- Thunar Keybind
+awful.keyboard.append_global_keybindings({
+    awful.key({ modkey,           }, "n", function () awful.spawn("thunar") end,
+              {description = "file manager", group = "awesome"}),
+})
+-- End Thunar Keybind
+
 -- {{{ Mouse bindings
 awful.mouse.append_global_mousebindings({
     awful.button({ }, 3, function () mymainmenu:toggle() end),
