@@ -1220,6 +1220,20 @@ screen.connect_signal("request::desktop_decoration", function(s)
 end)
 
 -- -- Keybinds
+-- Screen Shot
+awful.keyboard.append_global_keybindings({
+    awful.key({            }, "Print", function() 
+        awful.util.spawn_with_shell("sleep 1 && scrot $(date +'%a:%b:%d-%H:%M:%S').png") 
+        end,
+        {description = "full screenshot", group = "awesome"}),
+
+    awful.key({ "Shift"    }, "Print", function() 
+        awful.util.spawn_with_shell("sleep 1 && scrot -s $(date +'%a:%b:%d-%H:%M:%S').png") 
+        end,
+        {description = "selection screenshot", group = "awesome"}),
+})
+-- End Screen Shot
+
 -- Lock Screen Toggle
 awful.keyboard.append_global_keybindings({
     awful.key({ modkey,           }, "Escape", function() 
