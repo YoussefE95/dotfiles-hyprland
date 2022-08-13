@@ -769,17 +769,17 @@ timer {
 
         awful.spawn.easy_async("get-theme --mode", function(stdout)
             if stdout == "light\n" then
-                mode_light:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'>Light</span>")
+                mode_light:set_markup("<span font-weight='bold' foreground='"..beautiful.blue.."'>Light</span>")
                 mode_normal:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Normal</span>")
                 mode_dark:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Dark</span>")
             elseif stdout == "\n" then
                 mode_light:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Light</span>")
-                mode_normal:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'>Normal</span>")
+                mode_normal:set_markup("<span font-weight='bold' foreground='"..beautiful.blue.."'>Normal</span>")
                 mode_dark:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Dark</span>")
             elseif stdout == "dark\n" then
                 mode_light:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Light</span>")
                 mode_normal:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Normal</span>")
-                mode_dark:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'>Dark</span>")
+                mode_dark:set_markup("<span font-weight='bold' foreground='"..beautiful.blue.."'>Dark</span>")
             end
         end)
     end
@@ -1087,6 +1087,7 @@ local sidebar = awful.popup {
             layout = wibox.layout.fixed.vertical,
         },
         expand = 'none',
+        spacing = dpi(10),
         layout = wibox.layout.align.vertical,
     },
 	bg = beautiful.bg_normal,
@@ -1195,9 +1196,13 @@ screen.connect_signal("request::desktop_decoration", function(s)
         end)
 
         local toggle_sidebar = function()
-            sidebar.visible = not sidebar.visible
-            if sidebar.visible then 
+            if not sidebar.visible then
+                sidebar.visible = true
                 sidebar:move_next_to(s.mywibox)
+                s.sidebar_icon:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'></span>")
+            else
+                sidebar.visible = false
+                s.sidebar_icon:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'></span>")
             end
         end
 
