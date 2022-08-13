@@ -440,6 +440,7 @@ local sysdashboard_popup = awful.popup {
     shape        = gears.shape.rounded_rect,
     visible      = false,
     ontop        = true,
+	type = 'dock',
 }
 
 local sysdashboard = wibox.widget {
@@ -531,6 +532,7 @@ local cal_popup = awful.popup {
     },
     visible      = false,
     ontop        = true,
+	type = 'dock',
 }
 -- -- End Calendar
 
