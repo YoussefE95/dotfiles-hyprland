@@ -831,6 +831,7 @@ end)
 -- Quote
 local quote_text = wibox.widget {
     widget = wibox.widget.textbox,
+    align = "center",
 }
 
 local author_text = wibox.widget {
@@ -917,7 +918,7 @@ local sidebar = awful.popup {
                     {
                         uptime_text,
                         margins = {
-                            left = dpi(12),
+                            left = dpi(15),
                             top = dpi(18),
                         },
                         widget  = wibox.container.margin,
@@ -1059,12 +1060,11 @@ local sidebar = awful.popup {
                     quote_text,
                     margins = {
                         top = dpi(50),
-                        left = dpi(8),
-                        right = dpi(8),
+                        left = dpi(15),
+                        right = dpi(15),
                     },
                     widget  = wibox.container.margin,
-                },
-                author_text,
+                },                author_text,
                 spacing = dpi(20),
                 forced_height = dpi(255),
                 layout = wibox.layout.fixed.vertical,
@@ -1103,109 +1103,113 @@ local sidebar = awful.popup {
 -- -- End Sidebar
 
 screen.connect_signal("request::desktop_decoration", function(s)
-    -- Each screen has its own tag table.
-    awful.tag({ "one", "two", "three", "four" }, s, awful.layout.layouts[1])
+    if s == screen[1] then
+        -- Each screen has its own tag table.
+        awful.tag({ "one", "two", "three", "four" }, s, awful.layout.layouts[1])
 
-    -- Create a promptbox for each screen
-    s.mypromptbox = awful.widget.prompt()
+        -- Create a promptbox for each screen
+        s.mypromptbox = awful.widget.prompt()
 
-    -- Create an imagebox widget which will contain an icon indicating which layout we're using.
-    -- We need one layoutbox per screen.
-    s.mylayoutbox = awful.widget.layoutbox {
-        screen  = s,
-        buttons = {
-            awful.button({ }, 1, function () awful.layout.inc( 1) end),
-            awful.button({ }, 3, function () awful.layout.inc(-1) end),
+        -- Create an imagebox widget which will contain an icon indicating which layout we're using.
+        -- We need one layoutbox per screen.
+        s.mylayoutbox = awful.widget.layoutbox {
+            screen  = s,
+            buttons = {
+                awful.button({ }, 1, function () awful.layout.inc( 1) end),
+                awful.button({ }, 3, function () awful.layout.inc(-1) end),
+            }
         }
-    }
 
-    -- Create a taglist widget
-    s.mytaglist = awful.widget.taglist {
-        screen  = s,
-        filter  = awful.widget.taglist.filter.all,
-        layout   = {
-            spacing = dpi(8),
-            layout  = wibox.layout.fixed.horizontal
-        },
-        buttons = {
-            awful.button({ }, 1, function(t) t:view_only() end),
-            awful.button({ modkey }, 1, function(t)
-                                            if client.focus then
-                                                client.focus:move_to_tag(t)
-                                            end
-                                        end),
-            awful.button({ }, 3, awful.tag.viewtoggle),
-            awful.button({ modkey }, 3, function(t)
-                                            if client.focus then
-                                                client.focus:toggle_tag(t)
-                                            end
-                                        end),
+        -- Create a taglist widget
+        s.mytaglist = awful.widget.taglist {
+            screen  = s,
+            filter  = awful.widget.taglist.filter.all,
+            layout   = {
+                spacing = dpi(8),
+                layout  = wibox.layout.fixed.horizontal
+            },
+            buttons = {
+                awful.button({ }, 1, function(t) t:view_only() end),
+                awful.button({ modkey }, 1, function(t)
+                                                if client.focus then
+                                                    client.focus:move_to_tag(t)
+                                                end
+                                            end),
+                awful.button({ }, 3, awful.tag.viewtoggle),
+                awful.button({ modkey }, 3, function(t)
+                                                if client.focus then
+                                                    client.focus:toggle_tag(t)
+                                                end
+                                            end),
+            }
         }
-    }
 
-    s.sidebar_icon = wibox.widget {
-        widget = wibox.widget.textbox,
-        font = "SFMono "..tostring(dpi(34)),
-        markup = "<span font-weight='bold' foreground='"..beautiful.gray.."'></span>"
-    }
-
-    -- Create the wibox
-    s.mywibox = awful.wibar {
-        position = "top",
-        screen   = s,
-        height = dpi(38),
-        widget   = {
-            layout = wibox.layout.align.horizontal,
-            expand = "none",
-            { -- Left widgets
-                layout = wibox.layout.fixed.horizontal,
-                wibox.layout.margin(s.sidebar_icon, dpi(10)),
-                wibox.layout.margin(s.mytaglist, dpi(10)),
-            },
-            { -- Middle widgets
-                layout = wibox.layout.fixed.horizontal,
-                clock,
-            },
-            { -- Right widgets
-                layout = wibox.layout.fixed.horizontal,
-                -- s.mylayoutbox,
-                wibox.layout.margin(systray, dpi(5), dpi(5), dpi(6), 0),
-                wibox.layout.margin(sysdashboard, dpi(5), dpi(10), 0, 0),
-            },
+        s.sidebar_icon = wibox.widget {
+            widget = wibox.widget.textbox,
+            font = "SFMono "..tostring(dpi(34)),
+            markup = "<span font-weight='bold' foreground='"..beautiful.gray.."'></span>"
         }
-    }
-    
-    sysdashboard:connect_signal('mouse::enter', function()
-        sysdashboard_popup.visible = true
-        sysdashboard_popup:move_next_to(s.mywibox)
-    end)
-    
-    sysdashboard:connect_signal('mouse::leave', function()
-        sysdashboard_popup.visible = false
-    end)
 
-    clock:connect_signal('mouse::enter', function()
-        cal_popup.visible = true
-        cal_popup:move_next_to(s.mywibox)
-    end)
-    
-    clock:connect_signal('mouse::leave', function()
-        cal_popup.visible = false
-    end)
+        -- Create the wibox
+        s.mywibox = awful.wibar {
+            position = "top",
+            screen   = s,
+            height = dpi(38),
+            widget   = {
+                layout = wibox.layout.align.horizontal,
+                expand = "none",
+                { -- Left widgets
+                    layout = wibox.layout.fixed.horizontal,
+                    wibox.layout.margin(s.sidebar_icon, dpi(10)),
+                    wibox.layout.margin(s.mytaglist, dpi(10)),
+                },
+                { -- Middle widgets
+                    layout = wibox.layout.fixed.horizontal,
+                    clock,
+                },
+                { -- Right widgets
+                    layout = wibox.layout.fixed.horizontal,
+                    -- s.mylayoutbox,
+                    wibox.layout.margin(systray, dpi(5), dpi(5), dpi(6), 0),
+                    wibox.layout.margin(sysdashboard, dpi(5), dpi(10), 0, 0),
+                },
+            }
+        }
+        
+        sysdashboard:connect_signal('mouse::enter', function()
+            sysdashboard_popup.visible = true
+            sysdashboard_popup:move_next_to(s.mywibox)
+        end)
+        
+        sysdashboard:connect_signal('mouse::leave', function()
+            sysdashboard_popup.visible = false
+        end)
 
-    local toggle_sidebar = function()
-        sidebar.visible = not sidebar.visible
-        if sidebar.visible then 
-            sidebar:move_next_to(s.mywibox)
+        clock:connect_signal('mouse::enter', function()
+            cal_popup.visible = true
+            cal_popup:move_next_to(s.mywibox)
+        end)
+        
+        clock:connect_signal('mouse::leave', function()
+            cal_popup.visible = false
+        end)
+
+        local toggle_sidebar = function()
+            sidebar.visible = not sidebar.visible
+            if sidebar.visible then 
+                sidebar:move_next_to(s.mywibox)
+            end
         end
+
+        awful.keyboard.append_global_keybindings({
+            awful.key({ modkey,           }, "Tab", toggle_sidebar,
+                    {description = "toggle sidebar", group = "awesome"}),
+        })
+
+        s.sidebar_icon:connect_signal('button::press', toggle_sidebar)
+    else
+        awful.tag({ "one" }, s, awful.layout.layouts[1])
     end
-
-    awful.keyboard.append_global_keybindings({
-        awful.key({ modkey,           }, "Tab", toggle_sidebar,
-                  {description = "toggle sidebar", group = "awesome"}),
-    })
-
-    s.sidebar_icon:connect_signal('button::press', toggle_sidebar)
 end)
 
 -- -- Keybinds

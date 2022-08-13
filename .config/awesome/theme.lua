@@ -56,6 +56,7 @@ theme.systray_icon_spacing = 5
 -- prompt_[fg|bg|fg_cursor|bg_cursor|font]
 -- hotkeys_[bg|fg|border_width|border_color|shape|opacity|modifiers_fg|label_bg|label_fg|group_margin|font|description_font]
 -- Example:
+theme.taglist_fg_empty = theme.gray
 theme.taglist_bg_focus = theme.bg_focus
 theme.taglist_fg_focus = theme.fg_focus
 theme.taglist_bg_occupied = theme.bg_occupied
@@ -79,7 +80,7 @@ theme.menu_width  = dpi(100)
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
 
-theme.wallpaper = '/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/dark/gruv-end-v.png'
+theme.wallpaper = '/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/normal/forest2.jpg'
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"

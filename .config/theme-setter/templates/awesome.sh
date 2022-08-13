@@ -16,7 +16,7 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font             = "SFMono 12.5"
+theme.font             = "SFMono "..tostring(dpi(12.5))
 
 theme.bg_normal        = "#$(jq -r ".colors.\"$1\".background" "$2")"
 theme.bg_focus         = "#$(jq -r ".colors.\"$1\".background" "$2")"
@@ -60,6 +60,7 @@ theme.systray_icon_spacing = 5
 -- prompt_[fg|bg|fg_cursor|bg_cursor|font]
 -- hotkeys_[bg|fg|border_width|border_color|shape|opacity|modifiers_fg|label_bg|label_fg|group_margin|font|description_font]
 -- Example:
+theme.taglist_fg_empty = theme.gray
 theme.taglist_bg_focus = theme.bg_focus
 theme.taglist_fg_focus = theme.fg_focus
 theme.taglist_bg_occupied = theme.bg_occupied
