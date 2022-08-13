@@ -20,7 +20,7 @@ quote)
 echo $quote
 ;;
 author)
-echo "~ $author ~"
+echo "$author"
 ;;
 update)
   updatequotes

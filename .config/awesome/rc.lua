@@ -706,43 +706,36 @@ timer {
 local theme_catppuccin = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
-    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local theme_everforest = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
-    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local theme_gruvbox = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
-    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local theme_nord = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
-    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local mode_light = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
-    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local mode_normal = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
-    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local mode_dark = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
-    font   = 'SFMono '..tostring(dpi(14))
 }
 
 timer {
@@ -852,11 +845,11 @@ timer {
     callback = function()
         awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/quotes update", function()
             awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/quotes quote", function(stdout)
-                quote_text:set_markup("<span  foreground='"..beautiful.fg_normal.."'>"..stdout:gsub("[\n\r]", "").."</span>")
+                quote_text:set_markup("<span foreground='"..beautiful.fg_normal.."'>"..stdout:gsub("[\n\r]", "").."</span>")
             end)
     
             awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/quotes author", function(stdout)
-                author_text:set_markup("<span foreground='"..beautiful.fg_normal.."'>"..stdout:gsub("[\n\r]", "").."</span>")
+                author_text:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stdout:gsub("[\n\r]", "").."</span>")
             end)
         end)
     end
@@ -866,19 +859,19 @@ timer {
 -- Power Menu
 local lock_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "SFMono "..tostring(dpi(38)),
+    font = "SFMono "..tostring(dpi(34)),
     markup = "<span font-weight='bold' foreground='"..beautiful.green.."'></span>"
 }
 
 local reboot_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "SFMono "..tostring(dpi(42)),
+    font = "SFMono "..tostring(dpi(38)),
     markup = "<span font-weight='bold' foreground='"..beautiful.orange.."'></span>"
 }
 
 local power_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "SFMono "..tostring(dpi(46)),
+    font = "SFMono "..tostring(dpi(42)),
     markup = "<span font-weight='bold' foreground='"..beautiful.red.."'></span>"
 }
 
@@ -897,7 +890,7 @@ end)
 -- -- End Sidebar Widgets
 
 -- -- Sidebar
-local sidebar_width = dpi(360)
+local sidebar_width = dpi(325)
 local sidebar_height = awful.screen.focused().geometry.height - dpi(38)
 
 local sidebar = awful.popup {
@@ -907,7 +900,7 @@ local sidebar = awful.popup {
                 user_image,
                 margins = {
                     top = dpi(30),
-                    left = dpi(87.5),
+                    left = dpi(70),
                 },
                 widget  = wibox.container.margin,
             },
@@ -949,8 +942,8 @@ local sidebar = awful.popup {
                         cpu_progress,
                         margins = {
                             left = dpi(10),
-                            top = dpi(20),
-                            bottom = dpi(20),
+                            top = dpi(22),
+                            bottom = dpi(22),
                         },
                         widget  = wibox.container.margin,
                     },
@@ -982,8 +975,8 @@ local sidebar = awful.popup {
                         mem_progress,
                         margins = {
                             left = dpi(10),
-                            top = dpi(20),
-                            bottom = dpi(20),
+                            top = dpi(22),
+                            bottom = dpi(22),
                         },
                         widget  = wibox.container.margin,
                     },
@@ -1066,8 +1059,8 @@ local sidebar = awful.popup {
                     quote_text,
                     margins = {
                         top = dpi(50),
-                        left = dpi(15),
-                        right = dpi(15),
+                        left = dpi(8),
+                        right = dpi(8),
                     },
                     widget  = wibox.container.margin,
                 },
@@ -1085,7 +1078,7 @@ local sidebar = awful.popup {
                     layout = wibox.layout.fixed.horizontal,
                 },
                 margins = {
-                    left = dpi(80),
+                    left = dpi(65),
                     top = dpi(20),
                     bottom = dpi(10),
                 },
@@ -1150,6 +1143,12 @@ screen.connect_signal("request::desktop_decoration", function(s)
         }
     }
 
+    s.sidebar_icon = wibox.widget {
+        widget = wibox.widget.textbox,
+        font = "SFMono "..tostring(dpi(34)),
+        markup = "<span font-weight='bold' foreground='"..beautiful.gray.."'></span>"
+    }
+
     -- Create the wibox
     s.mywibox = awful.wibar {
         position = "top",
@@ -1160,6 +1159,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
             expand = "none",
             { -- Left widgets
                 layout = wibox.layout.fixed.horizontal,
+                wibox.layout.margin(s.sidebar_icon, dpi(10)),
                 wibox.layout.margin(s.mytaglist, dpi(10)),
             },
             { -- Middle widgets
@@ -1174,7 +1174,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
             },
         }
     }
-
+    
     sysdashboard:connect_signal('mouse::enter', function()
         sysdashboard_popup.visible = true
         sysdashboard_popup:move_next_to(s.mywibox)
@@ -1204,6 +1204,8 @@ screen.connect_signal("request::desktop_decoration", function(s)
         awful.key({ modkey,           }, "Tab", toggle_sidebar,
                   {description = "toggle sidebar", group = "awesome"}),
     })
+
+    s.sidebar_icon:connect_signal('button::press', toggle_sidebar)
 end)
 
 -- -- Keybinds
