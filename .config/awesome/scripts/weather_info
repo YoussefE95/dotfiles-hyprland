@@ -30,87 +30,87 @@ get_weather_data() {
 
 		#Big long if statement of doom
 		if [ "$weather_icon_code" == "50d"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a misty day \nMake sure you don't get lost on your way!"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "50n"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a misty night \nYou probably wanna stay home and vibe in bed"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "01d"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a sunny day \nGo out, skate, and catch some sunshine, dude!"
 			weather_hex="#$(jq -r ".colors.$(get-theme).yellow" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "01n"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a clear night \nYou might want to take an evening stroll to relax"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "02d"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a cloudy day \nGrab a nice book with coffee and enjoy the breeze"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "02n"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a cloudy night \nHow about some hot chocolate and a warm bed?"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "03d"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a cloudy day \nGrab a nice book with coffee and enjoy the breeze"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "03n"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a cloudy night \nHow about some hot chocolate and a warm bed?"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "04d"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a cloudy day \nGrab a nice book with coffee and enjoy the breeze"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "04n"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a cloudy night \nHow about some hot chocolate and a warm bed?"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "09d"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a rainy day \nCrack the window and listen to the beautiful sounds"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "09n"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a rainy night \nDon't forget to close the windows before sleeping!"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "10d"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a rainy day \nCrack the window and listen to the beautiful sounds"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "10n"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote"It's a rainy night \nDon't forget to close the windows before sleeping!"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "11d"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a stormy day \nMake sure you don't get blown away!"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "11n"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a stormy night \nMake sure you're warm in bed and the windows are shut!"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "13d"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a snowy day \nYou'd better wear thick clothes and make a snowman as well!"
 			weather_hex="#$(jq -r ".colors.$(get-theme).white" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "13n"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a snowy night \nMake sure you get up early tomorrow to see the sights!"
 			weather_hex="#$(jq -r ".colors.$(get-theme).white" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "40d"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a misty day \nMake sure you don't get lost on your way!"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		elif [ "$weather_icon_code" == "40n"  ]; then
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="It's a misty night \nYou probably wanna stay home and vibe in bed"
 			weather_hex="#$(jq -r ".colors.$(get-theme).blue" ~/.config/theme-setter/info.json)"
 		else 
-			weather_icon=" "
+			weather_icon=""
 			weather_quote="I'm not sure \nMake sure you stay safe and have a good time!"
 			weather_hex="#$(jq -r ".colors.$(get-theme).magenta" ~/.config/theme-setter/info.json)"
 		fi

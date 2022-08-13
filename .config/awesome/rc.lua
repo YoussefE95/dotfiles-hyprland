@@ -62,29 +62,6 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 -- }}}
 
--- {{{ Menu
--- Create a launcher widget and a main menu
-myawesomemenu = {
-   { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
-   { "manual", terminal .. " -e man awesome" },
-   { "edit config", editor_cmd .. " " .. awesome.conffile },
-   { "restart", awesome.restart },
-   { "quit", function() awesome.quit() end },
-}
-
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal }
-                                  }
-                        })
-
-mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
-                                     menu = mymainmenu })
-
-
--- Menubar configuration
-menubar.utils.terminal = terminal -- Set the terminal for applications that require it
--- }}}
-
 -- {{{ Tag layout
 -- Table of layouts to cover with awful.layout.inc, order matters.
 tag.connect_signal("request::default_layouts", function()
@@ -120,58 +97,28 @@ screen.connect_signal("request::wallpaper", function(s)
 end)
 -- }}}
 
--- {{{ Wibar
-
--- Fuzzy clock
-local fuzzy_clock = wibox.widget {
-    widget = wibox.widget.textbox,
-}
-
-timer {
-    timeout = 60,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("python3 /home/younix/.config/awesome/scripts/fuzzytime.py", function(stdout)
-            fuzzy_clock:set_text(stdout)
-        end)
-    end
-}
--- End Fuzzy Clock
-
--- System Tray
+-- -- System Tray
 local systray = wibox.widget.systray()
-systray:set_base_size(28)
--- End System Tray
+systray:set_base_size(dpi(28))
+-- -- End System Tray
 
 -- -- System Dashboard
 -- Battery
 local battery_progress = wibox.widget {
     max_value             = 1,
     value                 = 0.65,
-    forced_height         = 20,
-    forced_width          = 175,
+    forced_height         = dpi(20),
+    forced_width          = dpi(175),
     shape                 = gears.shape.rounded_bar,
     color                 = beautiful.green,
     background_color      = beautiful.gray,
     widget                = wibox.widget.progressbar,
 }
 
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/battery --dec", function(stdout)
-            battery_progress.value = tonumber(stdout)
-        end)
-    end
-}
-
 local rotated_battery_progress = {
     battery_progress,
-    forced_height = 175,
-    forced_width  = 20,
+    forced_height = dpi(175),
+    forced_width  = dpi(20),
     direction     = 'east',
     layout        = wibox.container.rotate,
 }
@@ -181,20 +128,9 @@ local battery_text = wibox.widget {
     valign = "center"
 }
 
-timer {
-    timeout = 5,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/battery --num", function(stdout)
-            battery_text:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'>"..stdout.."</span>")
-        end)
-    end
-}
-
 local battery_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "MesloLGS 34",
+    font = "MesloLGS "..tostring(dpi(34)),
     markup = "<span foreground='"..beautiful.cyan.."'></span>",
 }
 
@@ -202,7 +138,15 @@ timer {
     timeout = 1,
     call_now  = true,
     autostart = true,
-    callback = function() 
+    callback = function()
+        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/battery --dec", function(stdout)
+            battery_progress.value = tonumber(stdout)
+        end)
+
+        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/battery --num", function(stdout)
+            battery_text:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'>"..stdout.."</span>")
+        end)
+
         awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/battery --icon", function(stdout)
             battery_icon:set_markup("<span foreground='"..beautiful.green.."'>"..stdout.."</span>")
         end)
@@ -213,18 +157,18 @@ local battery_popup = wibox.widget {
     {
         rotated_battery_progress,
         margins = {
-            left = 5,
-            right = 5,
-            top = 20,
+            left = dpi(5),
+            right = dpi(5),
+            top = dpi(20),
         },
         widget = wibox.layout.margin,
     },
     {
         battery_text,
         margins = {
-            left = 5,
-            right = 5,
-            top = 8,
+            left = dpi(5),
+            right = dpi(5),
+            top = dpi(8),
         },
         widget = wibox.layout.margin,
     },
@@ -233,7 +177,7 @@ local battery_popup = wibox.widget {
 
 local battery = wibox.widget {
     layout = wibox.layout.fixed.horizontal,
-    spacing = 8,
+    spacing = dpi(8),
     battery_icon,
 }
 -- End Battery
@@ -242,29 +186,18 @@ local battery = wibox.widget {
 local brightness_progress = wibox.widget {
     max_value             = 1,
     value                 = 0.65,
-    forced_height         = 20,
-    forced_width          = 175,
+    forced_height         = dpi(20),
+    forced_width          = dpi(175),
     shape                 = gears.shape.rounded_bar,
     color                 = beautiful.yellow,
     background_color      = beautiful.gray,
     widget                = wibox.widget.progressbar,
 }
 
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/brightness --dec", function(stdout)
-            brightness_progress.value = tonumber(stdout)
-        end)
-    end
-}
-
 local rotated_brightness_progress = {
     brightness_progress,
-    forced_height = 175,
-    forced_width  = 20,
+    forced_height = dpi(175),
+    forced_width  = dpi(20),
     direction     = 'east',
     layout        = wibox.container.rotate,
 }
@@ -274,20 +207,9 @@ local brightness_text = wibox.widget {
     valign = "center",
 }
 
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/brightness --num", function(stdout)
-            brightness_text:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'>"..stdout.."</span>")
-        end)
-    end
-}
-
 local brightness_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "MesloLGS 26",
+    font = "MesloLGS "..tostring(dpi(26)),
     markup = "<span foreground='"..beautiful.yellow.."'></span>",
 }
 
@@ -295,7 +217,15 @@ timer {
     timeout = 1,
     call_now  = true,
     autostart = true,
-    callback = function() 
+    callback = function()
+        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/brightness --dec", function(stdout)
+            brightness_progress.value = tonumber(stdout)
+        end)
+
+        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/brightness --num", function(stdout)
+            brightness_text:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'>"..stdout.."</span>")
+        end)
+
         awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/brightness --icon", function(stdout)
             brightness_icon:set_markup("<span foreground='"..beautiful.yellow.."'>"..stdout.."</span>")
         end)
@@ -306,18 +236,18 @@ local brightness_popup = wibox.widget {
     {
         rotated_brightness_progress,
         margins = {
-            left = 5,
-            right = 5,
-            top = 20,
+            left = dpi(5),
+            right = dpi(5),
+            top = dpi(20),
         },
         widget = wibox.layout.margin,
     },
     {
         brightness_text,
         margins = {
-            left = 5,
-            right = 5,
-            top = 8,
+            left = dpi(5),
+            right = dpi(5),
+            top = dpi(8),
         },
         widget = wibox.layout.margin,
     },
@@ -326,7 +256,7 @@ local brightness_popup = wibox.widget {
 
 local brightness = wibox.widget {
     layout = wibox.layout.fixed.horizontal,
-    spacing = 8,
+    spacing = dpi(8),
     brightness_icon,
     buttons = {
         awful.button({}, 4, function()
@@ -343,29 +273,18 @@ local brightness = wibox.widget {
 local volume_progress = wibox.widget {
     max_value             = 1,
     value                 = 0.65,
-    forced_height         = 20,
-    forced_width          = 175,
+    forced_height         = dpi(20),
+    forced_width          = dpi(175),
     shape                 = gears.shape.rounded_bar,
     color                 = beautiful.cyan,
     background_color      = beautiful.gray,
     widget                = wibox.widget.progressbar,
 }
 
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/volume --deci", function(stdout)
-            volume_progress.value = tonumber(stdout)
-        end)
-    end
-}
-
 local rotated_volume_progress = {
     volume_progress,
-    forced_height = 175,
-    forced_width  = 20,
+    forced_height = dpi(175),
+    forced_width  = dpi(20),
     direction     = 'east',
     layout        = wibox.container.rotate,
 }
@@ -374,27 +293,24 @@ local volume_text = wibox.widget {
     widget = wibox.widget.textbox,
 }
 
+local volume_icon = wibox.widget {
+    widget = wibox.widget.textbox,
+    font = "Font Awesome 5 Free "..tostring(dpi(16)),
+}
+
 timer {
     timeout = 1,
     call_now  = true,
     autostart = true,
-    callback = function() 
+    callback = function()
+        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/volume --deci", function(stdout)
+            volume_progress.value = tonumber(stdout)
+        end)
+
         awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/volume --num", function(stdout)
             volume_text:set_markup("<span font-weight='bold' foreground='"..beautiful.cyan.."'>"..stdout.."</span>")
         end)
-    end
-}
 
-local volume_icon = wibox.widget {
-    widget = wibox.widget.textbox,
-    font = "Font Awesome 5 Free 16",
-}
-
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
         awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/volume --icon", function(stdout)
             volume_icon:set_markup("<span foreground='"..beautiful.cyan.."'>"..stdout.."</span>")
         end)
@@ -405,18 +321,18 @@ local volume_popup = wibox.widget {
     {
         rotated_volume_progress,
         margins = {
-            left = 5,
-            right = 5,
-            top = 20,
+            left = dpi(5),
+            right = dpi(5),
+            top = dpi(20),
         },
         widget = wibox.layout.margin,
     },
     {
         volume_text,
         margins = {
-            left = 5,
-            right = 5,
-            top = 8,
+            left = dpi(5),
+            right = dpi(5),
+            top = dpi(8),
         },
         widget = wibox.layout.margin,
     },
@@ -425,7 +341,7 @@ local volume_popup = wibox.widget {
 
 local volume = wibox.widget {
     layout = wibox.layout.fixed.horizontal,
-    spacing = 8,
+    spacing = dpi(8),
     volume_icon,
     -- volume_text,
     buttons = {
@@ -446,24 +362,13 @@ local volume = wibox.widget {
 local network_text = wibox.widget {
     widget = wibox.widget.textbox,
     align = "center",
-    forced_width = 20,
+    forced_width = dpi(20),
     markup = "<span font-weight='bold' foreground='"..beautiful.magenta.."'>Connecting</span>"
-}
-
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/network --text", function(stdout)
-            network_text:set_markup("<span font-weight='bold' foreground='"..beautiful.magenta.."'>"..stdout.."</span>")
-        end)
-    end
 }
 
 local network_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "Font Awesome 5 Free 14",
+    font = "Font Awesome 5 Free "..tostring(dpi(14)),
     markup = "<span foreground='"..beautiful.magenta.."'></span>",
 }
 
@@ -471,7 +376,11 @@ timer {
     timeout = 1,
     call_now  = true,
     autostart = true,
-    callback = function() 
+    callback = function()
+        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/network --text", function(stdout)
+            network_text:set_markup("<span font-weight='bold' foreground='"..beautiful.magenta.."'>"..stdout.."</span>")
+        end)
+
         awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/network --icon", function(stdout)
             network_icon:set_markup("<span foreground='"..beautiful.magenta.."'>"..stdout.."</span>")
         end)
@@ -480,7 +389,7 @@ timer {
 
 local network = wibox.widget {
     layout = wibox.layout.fixed.horizontal,
-    spacing = 8,
+    spacing = dpi(8),
     network_icon,
     -- network_text,
     buttons = {
@@ -497,8 +406,8 @@ local sysdashboard_popup = awful.popup {
             {
                 network_text,
                 margins = {
-                    top = 20,
-                    bottom = -25,
+                    top = dpi(20),
+                    bottom = dpi(-25),
                 },
                 widget  = wibox.container.margin,
             },
@@ -510,23 +419,23 @@ local sysdashboard_popup = awful.popup {
                     layout = wibox.layout.fixed.horizontal,
                 },
                 margins = {
-                    bottom = 13,
+                    bottom = dpi(13),
                 },
                 widget  = wibox.container.margin,
             },
             layout = wibox.layout.fixed.vertical,
         },
         margins = {
-            left = 17,
-            right = 17,
+            left = dpi(17),
+            right = dpi(17),
         },
         widget  = wibox.container.margin,
     },
     preferred_positions = "bottom",
     preferred_anchors = "back",
     offset = {
-        x = -12,
-        y = 12,
+        x = dpi(-12),
+        y = dpi(12),
     },
     shape        = gears.shape.rounded_rect,
     visible      = false,
@@ -535,7 +444,7 @@ local sysdashboard_popup = awful.popup {
 
 local sysdashboard = wibox.widget {
     layout = wibox.layout.fixed.horizontal,
-    spacing = 8,
+    spacing = dpi(8),
     battery,
     brightness,
     volume,
@@ -543,86 +452,26 @@ local sysdashboard = wibox.widget {
 }
 -- -- End System Dashboard
 
-screen.connect_signal("request::desktop_decoration", function(s)
-    -- Each screen has its own tag table.
-    awful.tag({ "one", "two", "three", "four" }, s, awful.layout.layouts[1])
+-- -- Clock
+local clock = wibox.widget {
+    widget = wibox.widget.textbox,
+}
 
-    -- Create a promptbox for each screen
-    s.mypromptbox = awful.widget.prompt()
+timer {
+    timeout = 30,
+    call_now  = true,
+    autostart = true,
+    callback = function() 
+        awful.spawn.easy_async("date +'%I:%M'", function(stdout)
+            clock:set_text(stdout)
+        end)
+    end
+}
+-- -- End Clock
 
-    -- Create an imagebox widget which will contain an icon indicating which layout we're using.
-    -- We need one layoutbox per screen.
-    s.mylayoutbox = awful.widget.layoutbox {
-        screen  = s,
-        buttons = {
-            awful.button({ }, 1, function () awful.layout.inc( 1) end),
-            awful.button({ }, 3, function () awful.layout.inc(-1) end),
-        }
-    }
-
-    -- Create a taglist widget
-    s.mytaglist = awful.widget.taglist {
-        screen  = s,
-        filter  = awful.widget.taglist.filter.all,
-        layout   = {
-            spacing = 8,
-            layout  = wibox.layout.fixed.horizontal
-        },
-        buttons = {
-            awful.button({ }, 1, function(t) t:view_only() end),
-            awful.button({ modkey }, 1, function(t)
-                                            if client.focus then
-                                                client.focus:move_to_tag(t)
-                                            end
-                                        end),
-            awful.button({ }, 3, awful.tag.viewtoggle),
-            awful.button({ modkey }, 3, function(t)
-                                            if client.focus then
-                                                client.focus:toggle_tag(t)
-                                            end
-                                        end),
-        }
-    }
-
-    -- Create the wibox
-    s.mywibox = awful.wibar {
-        position = "top",
-        screen   = s,
-        height = 38,
-        widget   = {
-            layout = wibox.layout.align.horizontal,
-            expand = "none",
-            { -- Left widgets
-                layout = wibox.layout.fixed.horizontal,
-                wibox.layout.margin(s.mytaglist, 10),
-            },
-            { -- Middle widgets
-                layout = wibox.layout.fixed.horizontal,
-                fuzzy_clock,
-            },
-            { -- Right widgets
-                layout = wibox.layout.fixed.horizontal,
-                -- s.mylayoutbox,
-                wibox.layout.margin(systray, 5, 5, 6, 0),
-                wibox.layout.margin(sysdashboard, 5, 10, 0, 0),
-            },
-        }
-    }
-
-    sysdashboard:connect_signal('mouse::enter', function()
-        sysdashboard_popup.visible = true
-        sysdashboard_popup:move_next_to(s.mywibox)
-    end)
-    
-    sysdashboard:connect_signal('mouse::leave', function()
-        sysdashboard_popup.visible = false
-    end)
-end)
-
--- -- Info Dashboard
--- Calendar
+-- -- Calendar
 local styles = {}
-styles.month   = { padding  = 5,
+styles.month   = { padding  = dpi(5),
 }
 styles.focus   = { fg_color = beautiful.orange,
                    markup   = function(t) return '<b>' .. t .. '</b>' end,
@@ -633,6 +482,7 @@ styles.header  = { fg_color = beautiful.magenta,
 styles.weekday = { fg_color = beautiful.blue,
                    markup   = function(t) return '<b>' .. t .. '</b>' end,
 }
+
 local function decorate_cell(widget, flag, date)
     if flag=='monthheader' and not styles.monthheader then
         flag = 'header'
@@ -647,7 +497,7 @@ local function decorate_cell(widget, flag, date)
     local ret = wibox.widget {
         {
             widget,
-            margins = 3,
+            margins = dpi(3),
             widget  = wibox.container.margin
         },
         shape              = props.shape,
@@ -660,185 +510,239 @@ end
 
 local cal = wibox.widget {
     date           = os.date('*t'),
-    -- long_weekdays  = true,
-    font           = "SFMono 14",
+    long_weekdays  = true,
+    start_sunday   = true,
+    font           = beautiful.font,
     fn_embed       = decorate_cell,
     widget         = wibox.widget.calendar.month
 }
 
 local cal_popup = awful.popup {
     widget = {
-        {
-            {
-                cal,
-                margins = {
-                    left = 10,
-                    right = 10,
-                    top = 20,
-                    bottom = 20,
-                },
-                widget  = wibox.container.margin,
-            },
-            layout = wibox.layout.fixed.vertical,
-        },
-        margins = {
-            left = 17,
-            right = 17,
-        },
+        cal,
+        margins = dpi(15),
         widget  = wibox.container.margin,
     },
-    placement    = awful.placement.centered,
-    shape        = gears.shape.rounded_rect,
-    minimum_width = 300,
-    minimum_height = 280,
-    maximum_width = 300,
-    maximum_height = 280,
+    shape = gears.shape.rounded_rect,
+    preferred_positions = "bottom",
+    preferred_anchors = "middle",
     offset       = {
-        x = 50,
+        y = dpi(12),
     },
     visible      = false,
     ontop        = true,
 }
--- End Calendar
+-- -- End Calendar
 
--- clock
-local time = wibox.widget {
-    font = "SFMono 28",
+-- -- Sidebar Widgets
+-- User Info
+local user_text = wibox.widget {
     widget = wibox.widget.textbox,
+    align = "center",
+    font = "SFMono "..tostring(dpi(15))
+}
+
+awful.spawn.easy_async("whoami", function(stdout)
+    user_text:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stdout.."</span>")
+end)
+
+local user_image = wibox.widget {
+    image  = "/home/younix/.config/awesome/images/profile.jpg",
+    forced_width = dpi(185),
+    forced_height = dpi(185),
+    clip_shape = gears.shape.rounded_rect,
+    widget = wibox.widget.imagebox,
+}
+-- End User Info
+
+-- Uptime
+local uptime_text = wibox.widget {
+    widget = wibox.widget.textbox,
+    wrap = true,
+    valign = "center",
 }
 
 timer {
-    timeout = 1,
+    timeout = 30,
     call_now  = true,
     autostart = true,
     callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/time --text", function(stdout)
-            time:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stdout.."</span>")
+        awful.spawn.easy_async("uptime -p", function(stdout)
+            uptime_text:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stdout.."</span>")
         end)
     end
 }
 
-local am = wibox.widget {
-    font = "SFMono 18",
+local uptime_icon = wibox.widget {
     widget = wibox.widget.textbox,
+    wrap = true,
+    markup = "<span foreground='"..beautiful.magenta.."'>ﲾ</span>",
+    font = "SFMono "..tostring(dpi(28)),
+    valign = "center",
+}
+-- End Uptime
+
+-- CPU
+local cpu_progress = wibox.widget {
+    max_value             = 1,
+    value                 = 0.65,
+    forced_height         = dpi(10),
+    forced_width          = dpi(215),
+    shape                 = gears.shape.rounded_bar,
+    color                 = beautiful.orange,
+    background_color      = beautiful.gray,
+    widget                = wibox.widget.progressbar,
 }
 
-local pm = wibox.widget {
-    font = "SFMono 18",
+local cpu_text = wibox.widget {
     widget = wibox.widget.textbox,
+    markup = "<span font-weight='bold' foreground='"..beautiful.orange.."'></span>",
 }
 
 timer {
     timeout = 1,
     call_now  = true,
     autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/time --ampm", function(stdout)
-            if stdout == "am\n" then
-                am:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'>AM</span>")
-                pm:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>PM</span>")
+    callback = function()
+        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/system --cpu", function(stdout)
+            if tonumber(stdout) <= 9 then
+                cpu_progress.value = tonumber(".0"..stdout)
+                cpu_text:set_markup("<span font-weight='bold' foreground='"..beautiful.orange.."'>0"..stdout.."</span>")
+            elseif tonumber(stdout) == 100 then
+                cpu_progress.value = tonumber(1)
+                cpu_text:set_markup("<span font-weight='bold' foreground='"..beautiful.orange.."'>99</span>")
             else
-                am:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>AM</span>")
-                pm:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'>PM</span>")
+                cpu_progress.value = tonumber("."..stdout)
+                cpu_text:set_markup("<span font-weight='bold' foreground='"..beautiful.orange.."'>"..stdout.."</span>")
             end
         end)
     end
 }
 
-local clock = {
-    {
-        time,
-        margins = {
-            top = 10,
-            right = 20,
-        },
-        widget  = wibox.container.margin,
-    },
-    {
-        {
-            am,
-            pm,
-            layout = wibox.layout.fixed.vertical,
-        },
-        margins = {
-            top = 5,
-        },
-        widget  = wibox.container.margin,
-    },
-    layout = wibox.layout.fixed.horizontal,
+local cpu_icon = wibox.widget {
+    widget = wibox.widget.textbox,
+    markup = "<span font-weight='bold' foreground='"..beautiful.orange.."'></span>",
+    font = "SFMono "..tostring(dpi(26)),
+}
+-- End CPU
+
+-- RAM
+local mem_progress = wibox.widget {
+    max_value             = 1,
+    value                 = 0.65,
+    forced_height         = dpi(10),
+    forced_width          = dpi(215),
+    shape                 = gears.shape.rounded_bar,
+    color                 = beautiful.cyan,
+    background_color      = beautiful.gray,
+    widget                = wibox.widget.progressbar,
 }
 
-local clock_popup = awful.popup {
-    widget = {
-        {
-            {
-                clock,
-                margins = {
-                    left = 50,
-                    right = 50,
-                    top = 30,
-                    -- bottom = 20,
-                },
-                widget  = wibox.container.margin,
-            },
-            layout = wibox.layout.fixed.vertical,
-        },
-        margins = {
-            left = 17,
-            right = 17,
-        },
-        widget  = wibox.container.margin,
-    },
-    -- placement    = awful.placement.centered,
-    preferred_positions = "top",
-    preferred_anchors = "front",
-    minimum_width = 300,
-    minimum_height = 130,
-    maximum_width = 300,
-    maximum_height = 130,
-    offset       = {
-        y = -10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
+local mem_text = wibox.widget {
+    widget = wibox.widget.textbox,
+    markup = "<span font-weight='bold' foreground='"..beautiful.cyan.."'></span>",
 }
--- End Clock
+
+timer {
+    timeout = 1,
+    call_now  = true,
+    autostart = true,
+    callback = function()
+        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/system --mem", function(stdout)
+            if tonumber(stdout) <= 9 then
+                mem_progress.value = tonumber(".0"..stdout)
+                mem_text:set_markup("<span font-weight='bold' foreground='"..beautiful.cyan.."'>0"..stdout.."</span>")
+            elseif tonumber(stdout) == 100 then
+                mem_progress.value = tonumber(1)
+                mem_text:set_markup("<span font-weight='bold' foreground='"..beautiful.cyan.."'>99</span>")
+            else
+                mem_progress.value = tonumber("."..stdout)
+                mem_text:set_markup("<span font-weight='bold' foreground='"..beautiful.cyan.."'>"..stdout.."</span>")
+            end
+        end)
+    end
+}
+
+local mem_icon = wibox.widget {
+    widget = wibox.widget.textbox,
+    markup = "<span font-weight='bold' foreground='"..beautiful.cyan.."'></span>",
+    font = "SFMono "..tostring(dpi(26)),
+}
+-- End RAM
+
+-- Weather
+local weather_icon = wibox.widget {
+    widget = wibox.widget.textbox,
+    font = "SFMono "..tostring(dpi(28)),
+}
+
+local weather_stat = wibox.widget {
+    widget = wibox.widget.textbox,
+}
+
+timer {
+    timeout = 300,
+    call_now  = true,
+    autostart = true,
+    callback = function()
+        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --getdata", function()
+            awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --icon", function(icon)
+                awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --hex", function(hex)
+                    weather_icon:set_markup("<span font-weight='bold' foreground='"..hex:gsub("[\n\r]", "").."'>"..icon:gsub("[\n\r]", "").."</span>")
+                end)
+            end)
+
+            awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --stat", function(stat)
+                awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --temp", function(temp)
+                    weather_stat:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stat:gsub("[\n\r]", "")..", "..temp:gsub("[\n\r]", "").."</span>")
+                end)
+            end)
+        end)
+    end
+}
+-- End Weather
 
 -- Theme Setter
 local theme_catppuccin = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
+    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local theme_everforest = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
+    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local theme_gruvbox = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
+    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local theme_nord = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
+    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local mode_light = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
+    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local mode_normal = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
+    font   = 'SFMono '..tostring(dpi(14))
 }
 
 local mode_dark = wibox.widget {
     widget = wibox.widget.textbox,
     align  = 'center',
+    font   = 'SFMono '..tostring(dpi(14))
 }
 
 timer {
@@ -869,901 +773,117 @@ timer {
                 theme_nord:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'>Nord</span>")
             end
         end)
-    end
-}
 
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
         awful.spawn.easy_async("get-theme --mode", function(stdout)
             if stdout == "light\n" then
-                mode_light:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'>Light</span>")
+                mode_light:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'>Light</span>")
                 mode_normal:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Normal</span>")
                 mode_dark:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Dark</span>")
             elseif stdout == "\n" then
                 mode_light:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Light</span>")
-                mode_normal:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'>Normal</span>")
+                mode_normal:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'>Normal</span>")
                 mode_dark:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Dark</span>")
             elseif stdout == "dark\n" then
                 mode_light:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Light</span>")
                 mode_normal:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Normal</span>")
-                mode_dark:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'>Dark</span>")
+                mode_dark:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'>Dark</span>")
             end
         end)
     end
 }
 
-local theme_setter_popup = awful.popup {
-    widget = {
-        {
-            {
-                theme_catppuccin,
-                margins = {
-                    top = 15,
-                    bottom = 15,
-                },
-                widget  = wibox.container.margin,
-            },
-            {
-                theme_gruvbox,
-                margins = {
-                    top = 15,
-                    bottom = 15,
-                },
-                widget  = wibox.container.margin,
-            },
-            {
-                theme_everforest,
-                margins = {
-                    -- left = 20,
-                    -- right = 20,
-                    top = 15,
-                    bottom = 15,
-                },
-                widget  = wibox.container.margin,
-            },
-            {
-                theme_nord,
-                margins = {
-                    -- left = 20,
-                    -- right = 20,
-                    top = 15,
-                    bottom = 15,
-                },
-                widget  = wibox.container.margin,
-            },
-            layout = wibox.layout.fixed.vertical,
-        },
-        margins = {
-            left = 20,
-            right = 20,
-            top = 14,
-            bottom = 13,
-        },
-        widget  = wibox.container.margin,
-    },
-    -- placement    = awful.placement.centered,
-    preferred_positions = "right",
-    preferred_anchors = "front",
-    minimum_width = 140,
-    minimum_height = 230,
-    maximum_width = 140,
-    maximum_height = 230,
-    offset       = {
-        x = 10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
-}
-
-local mode_setter_popup = awful.popup {
-    widget = {
-        {
-            {
-                mode_light,
-                margins = {
-                    top = 15,
-                    bottom = 15,
-                },
-                widget  = wibox.container.margin,
-            },
-            {
-                mode_normal,
-                margins = {
-                    top = 15,
-                    bottom = 15,
-                },
-                widget  = wibox.container.margin,
-            },
-            {
-                mode_dark,
-                margins = {
-                    top = 15,
-                    bottom = 15,
-                },
-                widget  = wibox.container.margin,
-            },
-            layout = wibox.layout.fixed.vertical,
-        },
-        margins = {
-            left = 40,
-            right = 40,
-            top = 13,
-            bottom = 14,
-        },
-        widget  = wibox.container.margin,
-    },
-    -- placement    = awful.placement.centered,
-    preferred_positions = "bottom",
-    preferred_anchors = "front",
-    minimum_width = 140,
-    minimum_height = 180,
-    maximum_width = 140,
-    maximum_height = 180,
-    offset       = {
-        y = 10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
-}
-
 theme_catppuccin:connect_signal('button::press', function()
     awful.spawn.easy_async_with_shell("get-theme --mode", function(stdout)
-        awful.spawn.easy_async_with_shell("set-theme catppuccin "..stdout)
+        awful.spawn.easy_async_with_shell("set-theme catppuccin "..stdout:gsub("[\n\r]", ""))
     end)
 end)
 
 theme_everforest:connect_signal('button::press', function()
     awful.spawn.easy_async_with_shell("get-theme --mode", function(stdout)
-        awful.spawn.easy_async_with_shell("set-theme everforest "..stdout)
+        awful.spawn.easy_async_with_shell("set-theme everforest "..stdout:gsub("[\n\r]", ""))
     end)
 end)
 
 theme_gruvbox:connect_signal('button::press', function()
     awful.spawn.easy_async_with_shell("get-theme --mode", function(stdout)
-        awful.spawn.easy_async_with_shell("set-theme gruvbox "..stdout)
+        awful.spawn.easy_async_with_shell("set-theme gruvbox "..stdout:gsub("[\n\r]", ""))
     end)
 end)
 
 theme_nord:connect_signal('button::press', function()
     awful.spawn.easy_async_with_shell("get-theme --mode", function(stdout)
-        awful.spawn.easy_async_with_shell("set-theme nord "..stdout)
+        awful.spawn.easy_async_with_shell("set-theme nord "..stdout:gsub("[\n\r]", ""))
     end)
 end)
 
 mode_light:connect_signal('button::press', function()
     awful.spawn.easy_async_with_shell("get-theme", function(stdout)
-        awful.spawn.easy_async_with_shell("set-theme "..stdout:gsub("[\n\r]", " ") .." light")
+        awful.spawn.easy_async_with_shell("set-theme "..stdout:gsub("[\n\r]", "") .." light")
     end)
 end)
 
 mode_normal:connect_signal('button::press', function()
     awful.spawn.easy_async_with_shell("get-theme", function(stdout)
-        awful.spawn.easy_async_with_shell("set-theme "..stdout:gsub("[\n\r]", " ") .."")
+        awful.spawn.easy_async_with_shell("set-theme "..stdout:gsub("[\n\r]", "") .."")
     end)
 end)
 
 mode_dark:connect_signal('button::press', function()
     awful.spawn.easy_async_with_shell("get-theme", function(stdout)
-        awful.spawn.easy_async_with_shell("set-theme "..stdout:gsub("[\n\r]", " ") .." dark")
+        awful.spawn.easy_async_with_shell("set-theme "..stdout:gsub("[\n\r]", "") .." dark")
     end)
 end)
 -- End Theme Setter
 
--- User Info
-local user_text = wibox.widget {
-    widget = wibox.widget.textbox,
-    font = "SFMono 16",
-}
-
-timer {
-    timeout = 600,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("whoami", function(stdout)
-            user_text:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stdout.."</span>")
-        end)
-    end
-}
-
-local user_image = wibox.widget {
-    image  = "/home/younix/.config/awesome/images/profile.jpg",
-    forced_width = 84,
-    forced_height = 84,
-    clip_shape = gears.shape.circle,
-    widget = wibox.widget.imagebox,
-}
-
-local user_popup = awful.popup {
-    widget = {
-        {
-            {
-                user_image,
-                margins = {
-                    left = 25,
-                    right = 30,
-                },
-                widget  = wibox.container.margin,
-            },
-            {
-                user_text,
-                margins = {
-                    left = 10,
-                    right = 25,
-                    top = 20,
-                },
-                widget  = wibox.container.margin,
-            },
-            layout = wibox.layout.fixed.horizontal,
-        },
-        margins = {
-            left = 20,
-            right = 20,
-            top = 24,
-            bottom = 24,
-        },
-        widget  = wibox.container.margin,
-    },
-    -- placement    = awful.placement.centered,
-    preferred_positions = "left",
-    preferred_anchors = "front",
-    minimum_width = 300,
-    minimum_height = 130,
-    maximum_width = 300,
-    maximum_height = 130,
-    offset       = {
-        x = -10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
-}
--- End User Info
-
--- Uptime
-local uptime_text = wibox.widget {
-    widget = wibox.widget.textbox,
-    wrap = true,
-    forced_width = 250,
-    align = "center",
-    valign = "center",
-    font = "SFMono 13",
-}
-
-timer {
-    timeout = 30,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("uptime -p", function(stdout)
-            uptime_text:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stdout.."</span>")
-        end)
-    end
-}
-
-local uptime_icon = wibox.widget {
-    widget = wibox.widget.textbox,
-    wrap = true,
-    markup = "<span font-weight='bold' foreground='"..beautiful.blue.."'>ﲾ</span>",
-    forced_width = 250,
-    align = "center",
-    valign = "center",
-    font = "SFMono 42",
-}
-
-local uptime_popup = awful.popup {
-    widget = {
-        {
-            uptime_icon,
-            margins = {
-                left = 21,
-                right = 21,
-            },
-            widget  = wibox.container.margin,
-        },
-        {
-            uptime_text,
-            margins = {
-                left = 21,
-                right = 21,
-            },
-            widget  = wibox.container.margin,
-        },
-        layout = wibox.layout.fixed.vertical,
-    },
-    -- placement    = awful.placement.centered,
-    preferred_positions = "bottom",
-    preferred_anchors = "front",
-    minimum_width = 300,
-    minimum_height = 130,
-    maximum_width = 300,
-    maximum_height = 130,
-    offset       = {
-        y = 10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
-}
--- End Uptime
-
--- System Specs
-local cpu_progress = wibox.widget {
-    max_value             = 1,
-    value                 = 0.65,
-    forced_height         = 10,
-    forced_width          = 185,
-    shape                 = gears.shape.rounded_bar,
-    color                 = beautiful.orange,
-    background_color      = beautiful.gray,
-    widget                = wibox.widget.progressbar,
-}
-
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/system --cpu", function(stdout)
-            if tonumber(stdout) <= 9 then
-                cpu_progress.value = tonumber(".0"..stdout)
-            else
-                cpu_progress.value = tonumber("."..stdout)
-            end
-        end)
-    end
-}
-
-local cpu_text = wibox.widget {
-    widget = wibox.widget.textbox,
-    markup = "<span font-weight='bold' foreground='"..beautiful.orange.."'></span>",
-}
-
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/system --cpu", function(stdout)
-            if tonumber(stdout) <= 9 then
-                cpu_text:set_markup("<span font-weight='bold' foreground='"..beautiful.orange.."'>0"..stdout.."</span>")
-            elseif tonumber(stdout) == 100 then
-                cpu_text:set_markup("<span font-weight='bold' foreground='"..beautiful.orange.."'>99</span>")
-            else
-                cpu_text:set_markup("<span font-weight='bold' foreground='"..beautiful.orange.."'>"..stdout.."</span>")
-            end
-        end)
-    end
-}
-
-local cpu_icon = wibox.widget {
-    widget = wibox.widget.textbox,
-    markup = "<span font-weight='bold' foreground='"..beautiful.orange.."'></span>",
-    font = "SFMono 26",
-}
-
-local cpu_popup = {
-    {
-        {
-            cpu_icon,
-            margins = {
-                right = 5,
-            },
-            widget  = wibox.container.margin,
-        },
-        {
-            cpu_progress,
-            margins = {
-                left = 10,
-                right = 10,
-                top = 20,
-                bottom = 20,
-            },
-            widget  = wibox.container.margin,
-        },
-        {
-            cpu_text,
-            margins = {
-                top = 20,
-                left = 5,
-            },
-            widget  = wibox.container.margin,
-        },
-        layout = wibox.layout.fixed.horizontal,
-    },
-    margins = {
-        left = 18,
-        right = 18,
-        top = 6,
-    },
-    widget  = wibox.container.margin,
-}
-
-local mem_progress = wibox.widget {
-    max_value             = 1,
-    value                 = 0.65,
-    forced_height         = 10,
-    forced_width          = 185,
-    shape                 = gears.shape.rounded_bar,
-    color                 = beautiful.cyan,
-    background_color      = beautiful.gray,
-    widget                = wibox.widget.progressbar,
-}
-
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/system --mem", function(stdout)
-            if tonumber(stdout) <= 9 then
-                mem_progress.value = tonumber(".0"..stdout)
-            else
-                mem_progress.value = tonumber("."..stdout)
-            end
-        end)
-    end
-}
-
-local mem_text = wibox.widget {
-    widget = wibox.widget.textbox,
-    markup = "<span font-weight='bold' foreground='"..beautiful.cyan.."'></span>",
-}
-
-timer {
-    timeout = 1,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/system --mem", function(stdout)
-            if tonumber(stdout) <= 9 then
-                mem_text:set_markup("<span font-weight='bold' foreground='"..beautiful.cyan.."'>0"..stdout.."</span>")
-            elseif tonumber(stdout) == 100 then
-                mem_text:set_markup("<span font-weight='bold' foreground='"..beautiful.orange.."'>99</span>")
-            else
-                mem_text:set_markup("<span font-weight='bold' foreground='"..beautiful.cyan.."'>"..stdout.."</span>")
-            end
-        end)
-    end
-}
-
-local mem_icon = wibox.widget {
-    widget = wibox.widget.textbox,
-    markup = "<span font-weight='bold' foreground='"..beautiful.cyan.."'></span>",
-    font = "SFMono 26",
-}
-
-local mem_popup = {
-    {
-        {
-            mem_icon,
-            margins = {
-                right = 5,
-            },
-            widget  = wibox.container.margin,
-        },
-        {
-            mem_progress,
-            margins = {
-                left = 10,
-                right = 10,
-                top = 20,
-                bottom = 20,
-            },
-            widget  = wibox.container.margin,
-        },
-        {
-            mem_text,
-            margins = {
-                top = 20,
-                left = 5,
-            },
-            widget  = wibox.container.margin,
-        },
-        layout = wibox.layout.fixed.horizontal,
-    },
-    margins = {
-        left = 18,
-        right = 18,
-        bottom = 6,
-    },
-    widget  = wibox.container.margin,
-}
-
-local specs_popup = awful.popup {
-    widget = {
-        cpu_popup,
-        mem_popup,
-        layout = wibox.layout.fixed.vertical,
-    },
-    -- placement    = awful.placement.centered,
-    preferred_positions = "bottom",
-    preferred_anchors = "front",
-    minimum_width = 300,
-    minimum_height = 140,
-    maximum_width = 300,
-    maximum_height = 140,
-    offset       = {
-        y = 10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
-}
--- End System Specs
-
--- Weather
-local weather_icon = wibox.widget {
-    widget = wibox.widget.textbox,
-    font = "SFMono 54",
-}
-
-timer {
-    timeout = 300,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --icon", function(icon)
-            awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --hex", function(hex)
-                weather_icon:set_markup("<span font-weight='bold' foreground='"..hex:gsub("[\n\r]", "").."'>"..icon:gsub("[\n\r]", "").."</span>")
-            end)
-        end)
-    end
-}
-
-local weather_temp = wibox.widget {
-    widget = wibox.widget.textbox,
-    font = "SFMono 14",
-}
-
-timer {
-    timeout = 300,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --temp", function(stdout)
-            weather_temp:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stdout.."</span>")
-        end)
-    end
-}
-
-local weather_stat = wibox.widget {
-    widget = wibox.widget.textbox,
-    font = "SFMono 14",
-    align = "center",
-    valign = "center",
-}
-
-timer {
-    timeout = 300,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --stat", function(stdout)
-            weather_stat:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stdout.."</span>")
-        end)
-    end
-}
-
-local weather_quote = wibox.widget {
-    widget = wibox.widget.textbox,
-    align = "center",
-    valign = "center",
-}
-
-timer {
-    timeout = 300,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --quote2", function(stdout)
-            weather_quote:set_markup("<span foreground='"..beautiful.fg_normal.."'>"..stdout.."</span>")
-        end)
-    end
-}
-
-local weather_popup = awful.popup {
-    widget = {
-        {
-            {
-                weather_icon,
-                margins = {
-                    left = 86,
-                    right = -26,
-                    top = -15,
-                },
-                widget  = wibox.container.margin,
-            },
-            {
-                weather_temp,
-                margins = {
-                    top = 10,
-                },
-                widget  = wibox.container.margin,
-            },
-            align = "center",
-            valign = "center",
-            layout = wibox.layout.fixed.horizontal,
-        },
-        {
-            weather_stat,
-            margins = {
-                top = -14,
-            },
-            widget  = wibox.container.margin,
-        },
-        {
-            weather_quote,
-            margins = {
-                top = -20,
-                left = 10,
-                right = 10,
-            },
-            widget  = wibox.container.margin,
-        },
-        layout = wibox.layout.fixed.vertical,
-    },
-    preferred_positions = "right",
-    preferred_anchors = "front",
-    minimum_width = 310,
-    minimum_height = 190,
-    maximum_width = 310,
-    maximum_height = 190,
-    offset       = {
-        x = 10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
-}
--- End Weather
-
 -- Quote
 local quote_text = wibox.widget {
     widget = wibox.widget.textbox,
-    markup = "<span  foreground='"..beautiful.fg_normal.."'></span>",
-    forced_width = 400,
-    forced_height = 130,
-}
-
-timer {
-    timeout = 600,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/quotes quote", function(stdout)
-            quote_text:set_markup("<span  foreground='"..beautiful.fg_normal.."'>"..stdout:gsub("[\n\r]", "").."</span>")
-        end)
-    end
 }
 
 local author_text = wibox.widget {
     widget = wibox.widget.textbox,
-    markup = "<span font-weight='bold' foreground='"..beautiful.fg_normal.."'></span>",
     align = "center",
-    valign = "center",
 }
 
-timer {
-    timeout = 600,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/quotes author", function(stdout)
-            author_text:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stdout:gsub("[\n\r]", "").."</span>")
-        end)
-    end
-}
-
-local quote_popup = awful.popup {
-    widget = {
-        {
-            {
-                quote_text,
-                margins = {
-                    left = 20,
-                    right = 20,
-                    top = -20,
-                },
-                widget  = wibox.container.margin,
-            },
-            {
-                author_text,
-                margins = {
-                },
-                widget  = wibox.container.margin,
-            },
-            layout = wibox.layout.fixed.vertical,
-        },
-        margins = 10,
-        widget  = wibox.container.margin,
-    },
-    preferred_positions = "bottom",
-    preferred_anchors = "front",
-    offset       = {
-        y = 10,
-    },
-    minimum_width = 440,
-    minimum_height = 190,
-    maximum_width = 440,
-    maximum_height = 190,
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
-}
--- End Quote
-
--- Quote and Author Timers
 timer {
     timeout = 300,
     call_now  = true,
     autostart = true,
-    callback = function() 
-        awful.spawn("sh /home/younix/.config/awesome/scripts/weather_info --getdata")
+    callback = function()
+        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/quotes update", function()
+            awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/quotes quote", function(stdout)
+                quote_text:set_markup("<span  foreground='"..beautiful.fg_normal.."'>"..stdout:gsub("[\n\r]", "").."</span>")
+            end)
+    
+            awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/quotes author", function(stdout)
+                author_text:set_markup("<span foreground='"..beautiful.fg_normal.."'>"..stdout:gsub("[\n\r]", "").."</span>")
+            end)
+        end)
     end
 }
-
-timer {
-    timeout = 600,
-    call_now  = true,
-    autostart = true,
-    callback = function() 
-        awful.spawn("sh /home/younix/.config/awesome/scripts/quotes update")
-    end
-}
--- End Quote and Author Items
-
--- Endeavour Logo Popup
-local endeavour_icon = wibox.widget {
-    widget = wibox.widget.imagebox,
-    image = "/home/younix/.config/awesome/images/icons/EndeavourOS_Logo.svg"
-}
-
-local endeavour_popup = awful.popup {
-    widget = {
-        endeavour_icon,
-        margins = 10,
-        widget  = wibox.container.margin
-    },
-    preferred_positions = "right",
-    preferred_anchors = "front",
-    minimum_width = 80,
-    minimum_height = 80,
-    maximum_width = 80,
-    maximum_height = 80,
-    offset       = {
-        x = 10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
-}
--- End Endeavour Logo Popup
-
--- Exit Popup
-local exit_icon = wibox.widget {
-    widget = wibox.widget.textbox,
-    font = "SFMono 52",
-    markup = "<span font-weight='bold' foreground='"..beautiful.red.."'></span>"
-}
-
-local exit_popup = awful.popup {
-    widget = {
-        exit_icon,
-        margins = {
-            top = 10,
-            bottom = 10,
-            left = 20,
-        },
-        widget  = wibox.container.margin
-    },
-    preferred_positions = "right",
-    preferred_anchors = "front",
-    minimum_width = 80,
-    minimum_height = 80,
-    maximum_width = 80,
-    maximum_height = 80,
-    offset       = {
-        x = 10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
-}
--- -- End Exit Popup
-
--- Screen Caputer
-local full_screenshot_icon = wibox.widget {
-    widget = wibox.widget.textbox,
-    font = "SFMono 52",
-    markup = "<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>濾</span>"
-}
-
-local section_screenshot_icon = wibox.widget {
-    widget = wibox.widget.textbox,
-    font = "SFMono 52",
-    markup = "<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>礪</span>"
-}
-
-full_screenshot_icon:connect_signal("button::press", function()
-    naughty.notify({ title = "Screenshot", text = "Full screenshot in 3 seconds", timeout = 2 })
-    awful.spawn("sh /home/younix/.config/awesome/scripts/screenshot --full")
-end)
-
-section_screenshot_icon:connect_signal("button::press", function()
-    naughty.notify({ title = "Screenshot", text = "Selection screenshot in 3 seconds", timeout = 2 })
-    awful.util.spawn_with_shell("sh /home/younix/.config/awesome/scripts/screenshot --sec")
-end)
-
-local screencapture_popup = awful.popup {
-    widget = {
-        {
-            full_screenshot_icon,
-            margins = {
-                left = 30,
-            },
-            widget  = wibox.container.margin
-        },
-        {
-            section_screenshot_icon,
-            margins = {
-                left = 28,
-            },
-            widget  = wibox.container.margin
-        },
-        layout = wibox.layout.fixed.horizontal,
-    },
-    preferred_positions = "bottom",
-    preferred_anchors = "front",
-    minimum_width = 170,
-    minimum_height = 100,
-    maximum_width = 170,
-    maximum_height = 100,
-    offset       = {
-        y = 10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
-}
--- End Screen Capture
+-- End Quote
 
 -- Power Menu
 local lock_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "SFMono 42",
+    font = "SFMono "..tostring(dpi(38)),
     markup = "<span font-weight='bold' foreground='"..beautiful.green.."'></span>"
-}
-
-local logout_icon = wibox.widget {
-    widget = wibox.widget.textbox,
-    font = "SFMono 42",
-    markup = "<span font-weight='bold' foreground='"..beautiful.magenta.."'>﫼</span>"
 }
 
 local reboot_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "SFMono 42",
+    font = "SFMono "..tostring(dpi(42)),
     markup = "<span font-weight='bold' foreground='"..beautiful.orange.."'></span>"
 }
 
 local power_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "SFMono 42",
+    font = "SFMono "..tostring(dpi(46)),
     markup = "<span font-weight='bold' foreground='"..beautiful.red.."'></span>"
 }
 
 lock_icon:connect_signal("button::press", function()
     awful.util.spawn_with_shell("sh ~/.config/awesome/scripts/lockscreen")
-end)
-
-logout_icon:connect_signal("button::press", function()
-    awesome.quit()
 end)
 
 reboot_icon:connect_signal("button::press", function()
@@ -1773,110 +893,320 @@ end)
 power_icon:connect_signal("button::press", function()
     awful.spawn("poweroff")
 end)
+-- End Power Menu
+-- -- End Sidebar Widgets
 
-local powermenu_popup = awful.popup {
+-- -- Sidebar
+local sidebar_width = dpi(360)
+local sidebar_height = awful.screen.focused().geometry.height - dpi(38)
+
+local sidebar = awful.popup {
     widget = {
         {
-            lock_icon,
-            margins = {
-                top = 35,
-                left = 70,
+            {
+                user_image,
+                margins = {
+                    top = dpi(30),
+                    left = dpi(87.5),
+                },
+                widget  = wibox.container.margin,
             },
-            widget  = wibox.container.margin
-        },
-        {
-            logout_icon,
-            margins = {
-                left = 70,
+            {
+                user_text,
+                margins = {
+                    top = dpi(5),
+                },
+                widget  = wibox.container.margin,
             },
-            widget  = wibox.container.margin
-        },
-        {
-            reboot_icon,
-            margins = {
-                left = 70,
+            {
+                {
+                    uptime_icon,
+                    {
+                        uptime_text,
+                        margins = {
+                            left = dpi(12),
+                            top = dpi(18),
+                        },
+                        widget  = wibox.container.margin,
+                    },
+                    layout = wibox.layout.fixed.horizontal,
+                },
+                margins = {
+                    left = dpi(20),
+                },
+                widget  = wibox.container.margin,
             },
-            widget  = wibox.container.margin
-        },
-        {
-            power_icon,
-            margins = {
-                left = 70,
+            {
+                {
+                    {
+                        cpu_icon,
+                        margins = {
+                            right = dpi(5),
+                        },
+                        widget  = wibox.container.margin,
+                    },
+                    {
+                        cpu_progress,
+                        margins = {
+                            left = dpi(10),
+                            top = dpi(20),
+                            bottom = dpi(20),
+                        },
+                        widget  = wibox.container.margin,
+                    },
+                    {
+                        cpu_text,
+                        margins = {
+                            top = dpi(25),
+                            left = dpi(10),
+                        },
+                        widget  = wibox.container.margin,
+                    },
+                    layout = wibox.layout.fixed.horizontal,
+                },
+                margins = {
+                    left = dpi(20),
+                },
+                widget  = wibox.container.margin,
             },
-            widget  = wibox.container.margin
+            {
+                {
+                    {
+                        mem_icon,
+                        margins = {
+                            right = dpi(5),
+                        },
+                        widget  = wibox.container.margin,
+                    },
+                    {
+                        mem_progress,
+                        margins = {
+                            left = dpi(10),
+                            top = dpi(20),
+                            bottom = dpi(20),
+                        },
+                        widget  = wibox.container.margin,
+                    },
+                    {
+                        mem_text,
+                        margins = {
+                            top = dpi(25),
+                            left = dpi(10),
+                        },
+                        widget  = wibox.container.margin,
+                    },
+                    layout = wibox.layout.fixed.horizontal,
+                },
+                margins = {
+                    left = dpi(20),
+                },
+                widget  = wibox.container.margin,
+            },
+            {
+                {
+                    weather_icon,
+                    {
+                        weather_stat,
+                        margins = {
+                            left = dpi(12),
+                        },
+                        widget  = wibox.container.margin,
+                    },
+                    layout = wibox.layout.fixed.horizontal,
+                },
+                margins = {
+                    top = dpi(30),
+                    left = dpi(50),
+                },
+                widget  = wibox.container.margin,
+            },
+            {
+                {
+                    {
+                        theme_catppuccin,
+                        theme_gruvbox,
+                        spacing = dpi(20),
+                        layout = wibox.layout.fixed.horizontal,
+                    },
+                    {
+                        {
+                            theme_everforest,
+                            theme_nord,
+                            spacing = dpi(20),
+                            layout = wibox.layout.fixed.horizontal,
+                        },
+                        margins = {
+                            top = dpi(20),
+                        },
+                        widget  = wibox.container.margin,
+                    },
+                    {
+                        {
+                            mode_dark,
+                            mode_normal,
+                            mode_light,
+                            spacing = dpi(20),
+                            layout = wibox.layout.fixed.horizontal,
+                        },
+                        margins = {
+                            top = dpi(20),
+                        },
+                        widget  = wibox.container.margin,
+                    },
+                    layout = wibox.layout.fixed.vertical,
+                },
+                margins = {
+                    top = dpi(30),
+                    left = dpi(50),
+                },
+                widget  = wibox.container.margin,
+            },
+            {
+                {
+                    quote_text,
+                    margins = {
+                        top = dpi(50),
+                        left = dpi(15),
+                        right = dpi(15),
+                    },
+                    widget  = wibox.container.margin,
+                },
+                author_text,
+                spacing = dpi(20),
+                forced_height = dpi(255),
+                layout = wibox.layout.fixed.vertical,
+            },
+            {
+                {
+                    power_icon,
+                    reboot_icon,
+                    lock_icon,
+                    spacing = dpi(45),
+                    layout = wibox.layout.fixed.horizontal,
+                },
+                margins = {
+                    left = dpi(80),
+                    top = dpi(20),
+                    bottom = dpi(10),
+                },
+                widget  = wibox.container.margin,
+            },
+            layout = wibox.layout.fixed.vertical,
         },
-        layout = wibox.layout.fixed.vertical,
+        expand = 'none',
+        layout = wibox.layout.align.vertical,
     },
+	bg = beautiful.bg_normal,
+	minimum_width = sidebar_width,
+	minimum_height = sidebar_height,
+	maximum_width = sidebar_width,
+	maximum_height = sidebar_height,
     preferred_positions = "bottom",
     preferred_anchors = "front",
-    minimum_width = 170,
-    minimum_height = 420,
-    maximum_width = 170,
-    maximum_height = 420,
-    offset       = {
-        y = 10,
-    },
-    shape        = gears.shape.rounded_rect,
-    visible      = false,
-    ontop        = true,
+    visible = false,
+	ontop = true,
+	type = 'dock',
 }
--- End Power Menu
+-- -- End Sidebar
 
--- Toggle
-local toggle_popup = function ()
-    if not cal_popup.visible then
+screen.connect_signal("request::desktop_decoration", function(s)
+    -- Each screen has its own tag table.
+    awful.tag({ "one", "two", "three", "four" }, s, awful.layout.layouts[1])
+
+    -- Create a promptbox for each screen
+    s.mypromptbox = awful.widget.prompt()
+
+    -- Create an imagebox widget which will contain an icon indicating which layout we're using.
+    -- We need one layoutbox per screen.
+    s.mylayoutbox = awful.widget.layoutbox {
+        screen  = s,
+        buttons = {
+            awful.button({ }, 1, function () awful.layout.inc( 1) end),
+            awful.button({ }, 3, function () awful.layout.inc(-1) end),
+        }
+    }
+
+    -- Create a taglist widget
+    s.mytaglist = awful.widget.taglist {
+        screen  = s,
+        filter  = awful.widget.taglist.filter.all,
+        layout   = {
+            spacing = dpi(8),
+            layout  = wibox.layout.fixed.horizontal
+        },
+        buttons = {
+            awful.button({ }, 1, function(t) t:view_only() end),
+            awful.button({ modkey }, 1, function(t)
+                                            if client.focus then
+                                                client.focus:move_to_tag(t)
+                                            end
+                                        end),
+            awful.button({ }, 3, awful.tag.viewtoggle),
+            awful.button({ modkey }, 3, function(t)
+                                            if client.focus then
+                                                client.focus:toggle_tag(t)
+                                            end
+                                        end),
+        }
+    }
+
+    -- Create the wibox
+    s.mywibox = awful.wibar {
+        position = "top",
+        screen   = s,
+        height = dpi(38),
+        widget   = {
+            layout = wibox.layout.align.horizontal,
+            expand = "none",
+            { -- Left widgets
+                layout = wibox.layout.fixed.horizontal,
+                wibox.layout.margin(s.mytaglist, dpi(10)),
+            },
+            { -- Middle widgets
+                layout = wibox.layout.fixed.horizontal,
+                clock,
+            },
+            { -- Right widgets
+                layout = wibox.layout.fixed.horizontal,
+                -- s.mylayoutbox,
+                wibox.layout.margin(systray, dpi(5), dpi(5), dpi(6), 0),
+                wibox.layout.margin(sysdashboard, dpi(5), dpi(10), 0, 0),
+            },
+        }
+    }
+
+    sysdashboard:connect_signal('mouse::enter', function()
+        sysdashboard_popup.visible = true
+        sysdashboard_popup:move_next_to(s.mywibox)
+    end)
+    
+    sysdashboard:connect_signal('mouse::leave', function()
+        sysdashboard_popup.visible = false
+    end)
+
+    clock:connect_signal('mouse::enter', function()
         cal_popup.visible = true
-        clock_popup.visible = true
-        theme_setter_popup.visible = true
-        mode_setter_popup.visible = true
-        user_popup.visible = true
-        uptime_popup.visible = true
-        specs_popup.visible = true
-        weather_popup.visible = true
-        quote_popup.visible = true
-        endeavour_popup.visible = true
-        exit_popup.visible = true
-        screencapture_popup.visible = true
-        powermenu_popup.visible = true
-
-        clock_popup:move_next_to(cal_popup)
-        theme_setter_popup:move_next_to(clock_popup)
-        mode_setter_popup:move_next_to(theme_setter_popup)
-        user_popup:move_next_to(clock_popup)
-        uptime_popup:move_next_to(user_popup)
-        specs_popup:move_next_to(uptime_popup)
-        quote_popup:move_next_to(specs_popup)
-        weather_popup:move_next_to(quote_popup)
-        endeavour_popup:move_next_to(theme_setter_popup)
-        exit_popup:move_next_to(endeavour_popup)
-        screencapture_popup:move_next_to(endeavour_popup)
-        powermenu_popup:move_next_to(screencapture_popup)
-    else
+        cal_popup:move_next_to(s.mywibox)
+    end)
+    
+    clock:connect_signal('mouse::leave', function()
         cal_popup.visible = false
-        clock_popup.visible = false
-        theme_setter_popup.visible = false
-        mode_setter_popup.visible = false
-        user_popup.visible = false
-        uptime_popup.visible = false
-        specs_popup.visible = false
-        weather_popup.visible = false
-        quote_popup.visible = false
-        endeavour_popup.visible = false
-        exit_popup.visible = false
-        screencapture_popup.visible = false
-        powermenu_popup.visible = false
+    end)
+
+    local toggle_sidebar = function()
+        sidebar.visible = not sidebar.visible
+        if sidebar.visible then 
+            sidebar:move_next_to(s.mywibox)
+        end
     end
-end
 
-exit_icon:connect_signal("button::press", toggle_popup)
+    awful.keyboard.append_global_keybindings({
+        awful.key({ modkey,           }, "Tab", toggle_sidebar,
+                  {description = "toggle sidebar", group = "awesome"}),
+    })
+end)
 
-awful.keyboard.append_global_keybindings({
-    awful.key({ modkey,           }, "space", toggle_popup,
-              {description = "toggle info dashboard", group = "awesome"}),
-})
--- End Toggle
--- -- End Info Dashboard
-
+-- -- Keybinds
 -- Lock Screen Toggle
 awful.keyboard.append_global_keybindings({
     awful.key({ modkey,           }, "Escape", function() 
@@ -1892,14 +1222,6 @@ awful.keyboard.append_global_keybindings({
               {description = "file manager", group = "awesome"}),
 })
 -- End Thunar Keybind
-
--- {{{ Mouse bindings
-awful.mouse.append_global_mousebindings({
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
-})
--- }}}
-
--- {{{ Key bindings
 
 -- General Awesome keys
 awful.keyboard.append_global_keybindings({
@@ -2063,14 +1385,14 @@ client.connect_signal("request::default_keybindings", function()
     })
 end)
 
--- }}}
+-- -- End Keybinds
 
+-- -- Rules
 -- Rounded corners
 client.connect_signal("manage", function (c)
     c.shape = gears.shape.rounded_rect
 end)
 
--- {{{ Rules
 -- Rules to apply to new clients.
 ruled.client.connect_signal("request::rules", function()
     -- All clients will match this rule.
@@ -2115,49 +1437,9 @@ ruled.client.connect_signal("request::rules", function()
         properties = { titlebars_enabled = true      }
     }
 end)
--- }}}
+-- -- End Rules
 
--- {{{ Titlebars
--- Add a titlebar if titlebars_enabled is set to true in the rules.
--- client.connect_signal("request::titlebars", function(c)
---     -- buttons for the titlebar
---     local buttons = {
---         awful.button({ }, 1, function()
---             c:activate { context = "titlebar", action = "mouse_move"  }
---         end),
---         awful.button({ }, 3, function()
---             c:activate { context = "titlebar", action = "mouse_resize"}
---         end),
---     }
-
---     awful.titlebar(c).widget = {
---         { -- Left
---             awful.titlebar.widget.iconwidget(c),
---             buttons = buttons,
---             layout  = wibox.layout.fixed.horizontal
---         },
---         { -- Middle
---             { -- Title
---                 align  = "center",
---                 widget = awful.titlebar.widget.titlewidget(c)
---             },
---             buttons = buttons,
---             layout  = wibox.layout.flex.horizontal
---         },
---         { -- Right
---             awful.titlebar.widget.floatingbutton (c),
---             awful.titlebar.widget.maximizedbutton(c),
---             awful.titlebar.widget.stickybutton   (c),
---             awful.titlebar.widget.ontopbutton    (c),
---             awful.titlebar.widget.closebutton    (c),
---             layout = wibox.layout.fixed.horizontal()
---         },
---         layout = wibox.layout.align.horizontal
---     }
--- end)
--- }}}
-
--- {{{ Notifications
+-- Notifications
 ruled.notification.connect_signal('request::rules', function()
     -- All notifications will match this rule.
     ruled.notification.append_rule {
@@ -2173,7 +1455,7 @@ naughty.connect_signal("request::display", function(n)
     naughty.layout.box { notification = n }
 end)
 
--- }}}
+-- End Notifications
 
 -- Enable sloppy focus, so that focus follows mouse.
 client.connect_signal("mouse::enter", function(c)
