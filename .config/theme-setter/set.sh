@@ -26,6 +26,9 @@ sed -i /Net/c\\"Net/ThemeName \"$theme\"" "$HOME/.config/xsettingsd/xsettingsd.c
 sed -i /CursorThemeName/c\\"Gtk/CursorThemeName \"cursors-$theme\"" "$HOME/.config/xsettingsd/xsettingsd.conf"
 xsettingsd &
 
+sed -i /Xcursor.theme/c\\"Xcursor.theme: cursors-$theme" "$HOME/.Xresources"
+xrdb ~/.Xresources
+
 echo 'awesome.restart()' | awesome-client
 
 $templates/vs_code.sh "$theme" "$info" "$vs_settings"

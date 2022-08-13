@@ -7,7 +7,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 
 python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
 
-sudo rsync -a .zshrc .config .themes .icons .xinitrc .xserverrc .bash_profile ~/
+sudo rsync -a .zshrc .config .themes .icons .xinitrc .xserverrc .Xresources .bash_profile ~/
 sudo cp .config/theme-setter/set-theme /usr/local/bin/
 sudo cp .config/theme-setter/get-theme /usr/local/bin/
 
