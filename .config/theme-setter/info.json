@@ -1,13 +1,11 @@
 {
   "current": {
-    "theme": "gruvbox",
-    "mode": ""
+    "theme": "catppuccin",
+    "mode": "dark"
   },
   "vs_themes": {
     "catppuccin": "Catppuccin Macchiato",
     "catppuccin-light": "Catppuccin Latte",
-    "everforest": "Everforest Dark",
-    "everforest-light": "Everforest Light",
     "gruvbox": "Gruvbox Material Dark",
     "gruvbox-light": "Gruvbox Material Light",
     "nord": "Nord",
@@ -41,34 +39,6 @@
       "cyan": "209fb5",
       "orange": "fe640b",
       "gray": "bcc0cc"
-    },
-    "everforest": {
-      "background": "2f383e",
-      "foreground": "d3c6aa",
-      "black": "404c51",
-      "white": "d3c6aa",
-      "red": "e67e80",
-      "green": "a7c080",
-      "yellow": "dbbc7f",
-      "blue": "7fbbb3",
-      "magenta": "d699b6",
-      "cyan": "83c092",
-      "orange": "e69875",
-      "gray": "7a8478"
-    },
-    "everforest-light": {
-      "background": "f8f0dc",
-      "foreground": "5c6a72",
-      "black": "dcd8c4",
-      "white": "5c6a72",
-      "red": "e67e80",
-      "green": "a7c080",
-      "yellow": "dbbc7f",
-      "blue": "7fbbb3",
-      "magenta": "d699b6",
-      "cyan": "83c092",
-      "orange": "e69875",
-      "gray": "7a8478"
     },
     "gruvbox": {
       "background": "282828",

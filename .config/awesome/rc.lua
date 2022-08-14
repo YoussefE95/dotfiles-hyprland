@@ -707,12 +707,7 @@ timer {
 -- Theme Setter
 local theme_catppuccin = wibox.widget {
     widget = wibox.widget.textbox,
-    align  = 'center',
-}
-
-local theme_everforest = wibox.widget {
-    widget = wibox.widget.textbox,
-    align  = 'center',
+    -- align  = 'center',
 }
 
 local theme_gruvbox = wibox.widget {
@@ -748,22 +743,14 @@ timer {
         awful.spawn.easy_async("get-theme", function(stdout)
             if stdout == "catppuccin\n" then
                 theme_catppuccin:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'>Catppuccin</span>")
-                theme_everforest:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Everforest</span>")
-                theme_gruvbox:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Gruvbox</span>")
-                theme_nord:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Nord</span>")
-            elseif stdout == "everforest\n" then
-                theme_catppuccin:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Catppuccin</span>")
-                theme_everforest:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'>Everforest</span>")
                 theme_gruvbox:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Gruvbox</span>")
                 theme_nord:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Nord</span>")
             elseif stdout == "gruvbox\n" then
                 theme_catppuccin:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Catppuccin</span>")
-                theme_everforest:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Everforest</span>")
                 theme_gruvbox:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'>Gruvbox</span>")
                 theme_nord:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Nord</span>")
             elseif stdout == "nord\n" then
                 theme_catppuccin:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Catppuccin</span>")
-                theme_everforest:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Everforest</span>")
                 theme_gruvbox:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>Gruvbox</span>")
                 theme_nord:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'>Nord</span>")
             end
@@ -790,12 +777,6 @@ timer {
 theme_catppuccin:connect_signal('button::press', function()
     awful.spawn.easy_async_with_shell("get-theme --mode", function(stdout)
         awful.spawn.easy_async_with_shell("set-theme catppuccin "..stdout:gsub("[\n\r]", ""))
-    end)
-end)
-
-theme_everforest:connect_signal('button::press', function()
-    awful.spawn.easy_async_with_shell("get-theme --mode", function(stdout)
-        awful.spawn.easy_async_with_shell("set-theme everforest "..stdout:gsub("[\n\r]", ""))
     end)
 end)
 
@@ -1012,6 +993,7 @@ local sidebar = awful.popup {
                 },
                 margins = {
                     top = dpi(30),
+                    bottom = dpi(30),
                     left = dpi(50),
                 },
                 widget  = wibox.container.margin,
@@ -1021,20 +1003,9 @@ local sidebar = awful.popup {
                     {
                         theme_catppuccin,
                         theme_gruvbox,
-                        spacing = dpi(20),
+                        theme_nord,
+                        spacing = dpi(10),
                         layout = wibox.layout.fixed.horizontal,
-                    },
-                    {
-                        {
-                            theme_everforest,
-                            theme_nord,
-                            spacing = dpi(20),
-                            layout = wibox.layout.fixed.horizontal,
-                        },
-                        margins = {
-                            top = dpi(20),
-                        },
-                        widget  = wibox.container.margin,
                     },
                     {
                         {
@@ -1046,6 +1017,7 @@ local sidebar = awful.popup {
                         },
                         margins = {
                             top = dpi(20),
+                            left = dpi(25),
                         },
                         widget  = wibox.container.margin,
                     },
@@ -1053,7 +1025,8 @@ local sidebar = awful.popup {
                 },
                 margins = {
                     top = dpi(30),
-                    left = dpi(50),
+                    bottom = dpi(60),
+                    left = dpi(30),
                 },
                 widget  = wibox.container.margin,
             },
@@ -1061,14 +1034,14 @@ local sidebar = awful.popup {
                 {
                     quote_text,
                     margins = {
-                        top = dpi(50),
+                        top = dpi(15),
                         left = dpi(15),
                         right = dpi(15),
                     },
                     widget  = wibox.container.margin,
                 },                author_text,
                 spacing = dpi(20),
-                forced_height = dpi(255),
+                forced_height = dpi(225),
                 layout = wibox.layout.fixed.vertical,
             },
             {

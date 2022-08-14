@@ -14,35 +14,35 @@ local theme = {}
 
 theme.font             = "SFMono "..tostring(dpi(12.5))
 
-theme.bg_normal        = "#282828"
-theme.bg_focus         = "#282828"
-theme.bg_occupied      = "#282828"
-theme.bg_urgent        = "#282828"
-theme.bg_minimize      = "#282828"
+theme.bg_normal        = "#24273a"
+theme.bg_focus         = "#24273a"
+theme.bg_occupied      = "#24273a"
+theme.bg_urgent        = "#24273a"
+theme.bg_minimize      = "#24273a"
 theme.bg_systray       = theme.bg_normal
 
-theme.fg_normal        = "#ebdbb2"
-theme.fg_focus         = "#d65d0e"
-theme.fg_occupied      = "#83a598"
-theme.fg_urgent        = "#ebdbb2"
-theme.fg_minimize      = "#ebdbb2"
+theme.fg_normal        = "#cad3f5"
+theme.fg_focus         = "#f5a97f"
+theme.fg_occupied      = "#8aadf4"
+theme.fg_urgent        = "#cad3f5"
+theme.fg_minimize      = "#cad3f5"
 
 theme.useless_gap         = dpi(6)
 theme.border_width        = dpi(0)
-theme.border_color_normal = "#665c54"
-theme.border_color_active = "#98971a"
-theme.border_color_marked = "#98971a"
+theme.border_color_normal = "#5b6078"
+theme.border_color_active = "#a6da95"
+theme.border_color_marked = "#a6da95"
 
-theme.black   = "#3c3836"
-theme.white   = "#ebdbb2"
-theme.red     = "#cc241d"
-theme.green   = "#98971a"
-theme.yellow  = "#d79921"
-theme.blue    = "#83a598"
-theme.magenta = "#b16286"
-theme.cyan    = "#689d6a"
-theme.orange  = "#d65d0e"
-theme.gray    = "#665c54"
+theme.black   = "#363a4f"
+theme.white   = "#cad3f5"
+theme.red     = "#ed8796"
+theme.green   = "#a6da95"
+theme.yellow  = "#eed49f"
+theme.blue    = "#8aadf4"
+theme.magenta = "#c6a0f6"
+theme.cyan    = "#8bd5ca"
+theme.orange  = "#f5a97f"
+theme.gray    = "#5b6078"
 
 theme.systray_icon_spacing = 5
 
@@ -80,7 +80,7 @@ theme.menu_width  = dpi(100)
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
 
-theme.wallpaper = '/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/normal/forest2.jpg'
+theme.wallpaper = '/home/younix/Dropbox/Pictures/Wallpapers/catppuccin/dark/endeavour-black-4k.png'
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
