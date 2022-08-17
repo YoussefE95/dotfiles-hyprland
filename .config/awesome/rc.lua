@@ -468,6 +468,8 @@ timer {
         end)
     end
 }
+
+clock:connect_signal('button::press', function() awful.spawn("google-chrome-stable 'https://calendar.google.com/calendar'") end)
 -- -- End Clock
 
 -- -- Calendar
@@ -682,6 +684,11 @@ local weather_stat = wibox.widget {
     widget = wibox.widget.textbox,
 }
 
+local weather_stat_range = wibox.widget {
+    widget = wibox.widget.textbox,
+    align = "center"
+}
+
 timer {
     timeout = 300,
     call_now  = true,
@@ -697,6 +704,12 @@ timer {
             awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --stat", function(stat)
                 awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --temp", function(temp)
                     weather_stat:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stat:gsub("[\n\r]", "")..", "..temp:gsub("[\n\r]", "").."</span>")
+                end)
+            end)
+
+            awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --temp-min", function(min)
+                awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --temp-max", function(max)
+                    weather_stat_range:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>"..min:gsub("[\n\r]", "").." "..max:gsub("[\n\r]", "").."</span>")
                 end)
             end)
         end)
@@ -883,7 +896,7 @@ local sidebar = awful.popup {
             {
                 user_image,
                 margins = {
-                    top = dpi(30),
+                    top = dpi(50),
                     left = dpi(70),
                 },
                 widget  = wibox.container.margin,
@@ -891,7 +904,7 @@ local sidebar = awful.popup {
             {
                 user_text,
                 margins = {
-                    top = dpi(5),
+                    top = dpi(8),
                 },
                 widget  = wibox.container.margin,
             },
@@ -910,6 +923,7 @@ local sidebar = awful.popup {
                 },
                 margins = {
                     left = dpi(20),
+                    top = dpi(10),
                 },
                 widget  = wibox.container.margin,
             },
@@ -943,6 +957,7 @@ local sidebar = awful.popup {
                 },
                 margins = {
                     left = dpi(20),
+                    top = dpi(-20),
                 },
                 widget  = wibox.container.margin,
             },
@@ -976,6 +991,7 @@ local sidebar = awful.popup {
                 },
                 margins = {
                     left = dpi(20),
+                    top = dpi(-20),
                 },
                 widget  = wibox.container.margin,
             },
@@ -993,8 +1009,15 @@ local sidebar = awful.popup {
                 },
                 margins = {
                     top = dpi(30),
-                    bottom = dpi(30),
                     left = dpi(50),
+                },
+                widget  = wibox.container.margin,
+            },
+            {
+                weather_stat_range,
+                margins = {
+                    top = dpi(-8),
+                    bottom = dpi(30),
                 },
                 widget  = wibox.container.margin,
             },
@@ -1004,7 +1027,7 @@ local sidebar = awful.popup {
                         theme_catppuccin,
                         theme_gruvbox,
                         theme_nord,
-                        spacing = dpi(10),
+                        spacing = dpi(12),
                         layout = wibox.layout.fixed.horizontal,
                     },
                     {
@@ -1012,11 +1035,11 @@ local sidebar = awful.popup {
                             mode_dark,
                             mode_normal,
                             mode_light,
-                            spacing = dpi(20),
+                            spacing = dpi(12),
                             layout = wibox.layout.fixed.horizontal,
                         },
                         margins = {
-                            top = dpi(20),
+                            top = dpi(10),
                             left = dpi(25),
                         },
                         widget  = wibox.container.margin,
@@ -1024,9 +1047,9 @@ local sidebar = awful.popup {
                     layout = wibox.layout.fixed.vertical,
                 },
                 margins = {
-                    top = dpi(30),
-                    bottom = dpi(60),
                     left = dpi(30),
+                    top = dpi(30),
+                    bottom = dpi(45),
                 },
                 widget  = wibox.container.margin,
             },
@@ -1034,14 +1057,15 @@ local sidebar = awful.popup {
                 {
                     quote_text,
                     margins = {
-                        top = dpi(15),
                         left = dpi(15),
                         right = dpi(15),
                     },
+                    forced_height = dpi(176),
                     widget  = wibox.container.margin,
-                },                author_text,
+                },
+                author_text,
                 spacing = dpi(20),
-                forced_height = dpi(225),
+                forced_height = dpi(220),
                 layout = wibox.layout.fixed.vertical,
             },
             {
@@ -1055,7 +1079,7 @@ local sidebar = awful.popup {
                 margins = {
                     left = dpi(65),
                     top = dpi(20),
-                    bottom = dpi(10),
+                    bottom = dpi(20),
                 },
                 widget  = wibox.container.margin,
             },
@@ -1174,7 +1198,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
             if not sidebar.visible then
                 sidebar.visible = true
                 sidebar:move_next_to(s.mywibox)
-                s.sidebar_icon:set_markup("<span font-weight='bold' foreground='"..beautiful.yellow.."'></span>")
+                s.sidebar_icon:set_markup("<span font-weight='bold' foreground='"..beautiful.green.."'></span>")
             else
                 sidebar.visible = false
                 s.sidebar_icon:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'></span>")
@@ -1226,7 +1250,7 @@ awful.keyboard.append_global_keybindings({
 -- General Awesome keys
 awful.keyboard.append_global_keybindings({
     awful.key({ modkey,           }, "w", function () awful.spawn("google-chrome-stable") end,
-              {description = "show main menu", group = "awesome"}),
+              {description = "web browser", group = "awesome"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey            }, "r", function() menubar.show() end,
@@ -1391,6 +1415,19 @@ end)
 -- Rounded corners
 client.connect_signal("manage", function (c)
     c.shape = gears.shape.rounded_rect
+end)
+
+client.connect_signal("manage", function (c)
+    -- Set the windows at the slave,
+    -- i.e. put it at the end of others instead of setting it master.
+    if not awesome.startup then awful.client.setslave(c) end
+
+    if awesome.startup
+      and not c.size_hints.user_position
+      and not c.size_hints.program_position then
+        -- Prevent clients from being unreachable after screen count changes.
+        awful.placement.no_offscreen(c)
+    end
 end)
 
 -- Rules to apply to new clients.

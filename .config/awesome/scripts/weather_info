@@ -4,6 +4,8 @@
 cache_dir="$HOME/.cache/weather"
 cache_weather_stat=${cache_dir}/weather-stat
 cache_weather_degree=${cache_dir}/weather-degree
+cache_weather_degree_min=${cache_dir}/weather-degree-min
+cache_weather_degree_max=${cache_dir}/weather-degree-max
 cache_weather_quote=${cache_dir}/weather-quote
 cache_weather_hex=${cache_dir}/weather-hex
 cache_weather_icon=${cache_dir}/weather-icon
@@ -25,6 +27,8 @@ get_weather_data() {
 
 	if [ ! -z "$weather" ]; then
 		weather_temp=`echo "$weather" | jq ".main.temp" | cut -d "." -f 1`
+		weather_temp_min=`echo "$weather" | jq ".main.temp_min" | cut -d "." -f 1`
+		weather_temp_max=`echo "$weather" | jq ".main.temp_max" | cut -d "." -f 1`
 		weather_icon_code=`echo "$weather" | jq -r ".weather[].icon" | head -1`
 		weather_description=`echo "$weather" | jq -r ".weather[].description" | head -1 | sed -e "s/\b\(.\)/\u\1/g"`
 
@@ -117,6 +121,8 @@ get_weather_data() {
 		echo "$weather_icon" >  ${cache_weather_icon}
 		echo "$weather_description" > ${cache_weather_stat}
 		echo "$weather_temp""°F" > ${cache_weather_degree}
+		echo "$weather_temp_min""°" > ${cache_weather_degree_min}
+		echo "$weather_temp_max""°" > ${cache_weather_degree_max}
 		echo -e "$weather_quote" > ${cache_weather_quote}
 		echo "$weather_hex" > ${cache_weather_hex}
 	else
@@ -135,6 +141,10 @@ elif [[ "$1" == "--icon" ]]; then
 	cat ${cache_weather_icon}
 elif [[ "$1" == "--temp" ]]; then
 	cat ${cache_weather_degree}
+elif [[ "$1" == "--temp-min" ]]; then
+	cat ${cache_weather_degree_min}
+elif [[ "$1" == "--temp-max" ]]; then
+	cat ${cache_weather_degree_max}
 elif [[ "$1" == "--hex" ]]; then
 	cat ${cache_weather_hex}
 elif [[ "$1" == "--stat" ]]; then

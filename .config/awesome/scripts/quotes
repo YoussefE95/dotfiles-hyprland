@@ -1,7 +1,7 @@
 #!/bin/bash
 
 updatequotes() {
-uri=$(curl -s "https://api.quotable.io/random?maxLength=90")
+uri=$(curl -s "https://api.quotable.io/random?minLength=110")
 
 echo $uri | jq '.content' |  cut -d "\"" -f 2 > "$HOME/.cache/widget.quote"
 echo $uri | jq '.author' |  cut -d "\"" -f 2 > "$HOME/.cache/widget.author"
