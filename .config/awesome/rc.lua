@@ -997,21 +997,23 @@ local sidebar = awful.popup {
             },
             {
                 {
-                    weather_icon,
                     {
-                        weather_stat,
-                        margins = {
-                            left = dpi(12),
+                        weather_icon,
+                        {
+                            weather_stat,
+                            margins = {
+                                left = dpi(12),
+                            },
+                            widget  = wibox.container.margin,
                         },
-                        widget  = wibox.container.margin,
+                        layout = wibox.layout.fixed.horizontal,
                     },
-                    layout = wibox.layout.fixed.horizontal,
+                    margins = {
+                        top = dpi(30),
+                    },
+                    widget  = wibox.container.margin,
                 },
-                margins = {
-                    top = dpi(30),
-                    left = dpi(50),
-                },
-                widget  = wibox.container.margin,
+                widget = wibox.container.place,
             },
             {
                 weather_stat_range,
@@ -1060,7 +1062,7 @@ local sidebar = awful.popup {
                         left = dpi(15),
                         right = dpi(15),
                     },
-                    forced_height = dpi(176),
+                    forced_height = dpi(170),
                     widget  = wibox.container.margin,
                 },
                 author_text,
