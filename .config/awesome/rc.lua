@@ -677,7 +677,7 @@ local mem_icon = wibox.widget {
 -- Weather
 local weather_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "SFMono "..tostring(dpi(28)),
+    font = "Font Awesome 5 Free "..tostring(dpi(20)),
 }
 
 local weather_stat = wibox.widget {
@@ -686,7 +686,7 @@ local weather_stat = wibox.widget {
 
 local weather_stat_range = wibox.widget {
     widget = wibox.widget.textbox,
-    align = "center"
+    align = "center",
 }
 
 timer {
@@ -694,23 +694,21 @@ timer {
     call_now  = true,
     autostart = true,
     callback = function()
-        awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --getdata", function()
-            awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --icon", function(icon)
-                awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --hex", function(hex)
-                    weather_icon:set_markup("<span font-weight='bold' foreground='"..hex:gsub("[\n\r]", "").."'>"..icon:gsub("[\n\r]", "").."</span>")
-                end)
+        awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get icon", function(icon)
+            awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get icon-color", function(hex)
+                weather_icon:set_markup("<span font-weight='bold' foreground='#"..hex:gsub("[\n\r]", "").."'>"..icon:gsub("[\n\r]", "").."</span>")
             end)
+        end)
 
-            awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --stat", function(stat)
-                awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --temp", function(temp)
-                    weather_stat:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stat:gsub("[\n\r]", "")..", "..temp:gsub("[\n\r]", "").."</span>")
-                end)
+        awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get stat", function(stat)
+            awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get temp", function(temp)
+                weather_stat:set_markup("<span font-weight='bold' foreground='"..beautiful.fg_normal.."'>"..stat:gsub("[\n\r]", "")..", "..temp:gsub("[\n\r]", "").."</span>")
             end)
+        end)
 
-            awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --temp-min", function(min)
-                awful.spawn.easy_async("sh /home/younix/.config/awesome/scripts/weather_info --temp-max", function(max)
-                    weather_stat_range:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>"..min:gsub("[\n\r]", "").." "..max:gsub("[\n\r]", "").."</span>")
-                end)
+        awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get min-temp", function(min)
+            awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get max-temp", function(max)
+                weather_stat_range:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>"..min:gsub("[\n\r]", "").." "..max:gsub("[\n\r]", "").."</span>")
             end)
         end)
     end
@@ -1009,7 +1007,7 @@ local sidebar = awful.popup {
                         layout = wibox.layout.fixed.horizontal,
                     },
                     margins = {
-                        top = dpi(30),
+                        top = dpi(45),
                     },
                     widget  = wibox.container.margin,
                 },
@@ -1018,8 +1016,8 @@ local sidebar = awful.popup {
             {
                 weather_stat_range,
                 margins = {
-                    top = dpi(-8),
-                    bottom = dpi(30),
+                    top = dpi(4),
+                    -- bottom = dpi(15),
                 },
                 widget  = wibox.container.margin,
             },
@@ -1050,7 +1048,7 @@ local sidebar = awful.popup {
                 },
                 margins = {
                     left = dpi(30),
-                    top = dpi(30),
+                    top = dpi(45),
                     bottom = dpi(45),
                 },
                 widget  = wibox.container.margin,
@@ -1066,8 +1064,8 @@ local sidebar = awful.popup {
                     widget  = wibox.container.margin,
                 },
                 author_text,
-                spacing = dpi(20),
-                forced_height = dpi(220),
+                -- spacing = dpi(20),
+                forced_height = dpi(240),
                 layout = wibox.layout.fixed.vertical,
             },
             {
