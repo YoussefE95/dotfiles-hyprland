@@ -8,12 +8,12 @@ const getTemp = async () => {
 
 const getMinTemp = async () => {
     const weatherData = await openWeather.getData();
-    console.log(`${Math.round(weatherData.main.temp_min)}°`);
+    console.log(`${Math.round(weatherData.main.temp_min) - 8}°`);
 };
 
 const getMaxTemp = async () => {
     const weatherData = await openWeather.getData();
-    console.log(`${Math.round(weatherData.main.temp_max)}°`);
+    console.log(`${Math.round(weatherData.main.temp_max) - 8}°`);
 };
 
 const getStat = async () => {
