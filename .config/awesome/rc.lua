@@ -689,6 +689,28 @@ local weather_stat_range = wibox.widget {
     align = "center",
 }
 
+local sunrise =  wibox.widget {
+    widget = wibox.widget.textbox,
+    align = "center",
+}
+
+local sunrise_icon =  wibox.widget {
+    widget = wibox.widget.textbox,
+    font = "Font Awesome 5 Free "..tostring(dpi(30)),
+    markup = "<span font-weight='bold' foreground='"..beautiful.orange.."'>瀞</span>",
+}
+
+local sunset =  wibox.widget {
+    widget = wibox.widget.textbox,
+    align = "center",
+}
+
+local sunset_icon =  wibox.widget {
+    widget = wibox.widget.textbox,
+    font = "Font Awesome 5 Free "..tostring(dpi(30)),
+    markup = "<span font-weight='bold' foreground='"..beautiful.magenta.."'>漢</span>",
+}
+
 timer {
     timeout = 300,
     call_now  = true,
@@ -710,6 +732,14 @@ timer {
             awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get max-temp", function(max)
                 weather_stat_range:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>"..min:gsub("[\n\r]", "").." "..max:gsub("[\n\r]", "").."</span>")
             end)
+        end)
+
+        awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get sunrise", function(rise)
+            sunrise:set_markup("<span font-weight='bold'>"..rise:gsub("[\n\r]", "").."</span>")
+        end)
+
+        awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get sunset", function(set)
+            sunset:set_markup("<span font-weight='bold'>"..set:gsub("[\n\r]", "").."</span>")
         end)
     end
 }
@@ -1016,10 +1046,39 @@ local sidebar = awful.popup {
             {
                 weather_stat_range,
                 margins = {
-                    top = dpi(4),
+                    top = dpi(5),
                     -- bottom = dpi(15),
                 },
                 widget  = wibox.container.margin,
+            },
+            {
+                {
+                    {
+                        sunrise_icon,
+                        {
+                            sunrise,
+                            margins = {
+                                left = dpi(5),
+                            },
+                            widget  = wibox.container.margin,
+                        },
+                        layout = wibox.layout.fixed.horizontal,
+                    },
+                    {
+                        sunset_icon,
+                        {
+                            sunset,
+                            margins = {
+                                left = dpi(5),
+                            },
+                            widget  = wibox.container.margin,
+                        },
+                        layout = wibox.layout.fixed.horizontal,
+                    },
+                    spacing = dpi(20),
+                    layout = wibox.layout.fixed.horizontal,
+                },
+                widget = wibox.container.place,
             },
             {
                 {
@@ -1060,12 +1119,11 @@ local sidebar = awful.popup {
                         left = dpi(15),
                         right = dpi(15),
                     },
-                    forced_height = dpi(170),
+                    forced_height = dpi(160),
                     widget  = wibox.container.margin,
                 },
                 author_text,
-                -- spacing = dpi(20),
-                forced_height = dpi(240),
+                forced_height = dpi(180),
                 layout = wibox.layout.fixed.vertical,
             },
             {
@@ -1104,6 +1162,8 @@ local sidebar = awful.popup {
 
 screen.connect_signal("request::desktop_decoration", function(s)
     if s == screen[1] then
+        systray:set_screen(s)
+
         -- Each screen has its own tag table.
         awful.tag({ "one", "two", "three", "four" }, s, awful.layout.layouts[1])
 

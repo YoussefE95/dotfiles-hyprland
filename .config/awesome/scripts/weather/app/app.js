@@ -70,9 +70,9 @@ const getIcon = async () => {
     } else if (weatherIcon === '13n') {
         console.log('');
     } else if (weatherIcon === '50d') {
-        console.log('');
+        console.log('');
     } else if (weatherIcon === '50n') {
-        console.log('');
+        console.log('');
     }
 };
 
