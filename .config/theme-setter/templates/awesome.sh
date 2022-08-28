@@ -32,7 +32,7 @@ theme.fg_urgent        = "#$(jq -r ".colors.\"$1\".foreground" "$2")"
 theme.fg_minimize      = "#$(jq -r ".colors.\"$1\".foreground" "$2")"
 
 theme.useless_gap         = dpi(6)
-theme.border_width        = dpi(0)
+theme.border_width        = dpi(4)
 theme.border_color_normal = "#$(jq -r ".colors.\"$1\".gray" "$2")"
 theme.border_color_active = "#$(jq -r ".colors.\"$1\".green" "$2")"
 theme.border_color_marked = "#$(jq -r ".colors.\"$1\".green" "$2")"
