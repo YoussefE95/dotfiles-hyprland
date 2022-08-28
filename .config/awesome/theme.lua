@@ -28,7 +28,7 @@ theme.fg_urgent        = "#ebdbb2"
 theme.fg_minimize      = "#ebdbb2"
 
 theme.useless_gap         = dpi(6)
-theme.border_width        = dpi(0)
+theme.border_width        = dpi(4)
 theme.border_color_normal = "#665c54"
 theme.border_color_active = "#98971a"
 theme.border_color_marked = "#98971a"
@@ -80,7 +80,7 @@ theme.menu_width  = dpi(100)
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
 
-theme.wallpaper = '/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/normal/forest2.jpg'
+theme.wallpaper = '/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/dark/material.png'
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
