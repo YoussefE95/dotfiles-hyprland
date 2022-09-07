@@ -684,10 +684,10 @@ local weather_stat = wibox.widget {
     widget = wibox.widget.textbox,
 }
 
-local weather_stat_range = wibox.widget {
-    widget = wibox.widget.textbox,
-    align = "center",
-}
+-- local weather_stat_range = wibox.widget {
+--     widget = wibox.widget.textbox,
+--     align = "center",
+-- }
 
 local sunrise =  wibox.widget {
     widget = wibox.widget.textbox,
@@ -728,11 +728,11 @@ timer {
             end)
         end)
 
-        awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get min-temp", function(min)
-            awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get max-temp", function(max)
-                weather_stat_range:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>"..min:gsub("[\n\r]", "").." "..max:gsub("[\n\r]", "").."</span>")
-            end)
-        end)
+        -- awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get min-temp", function(min)
+        --     awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get max-temp", function(max)
+        --         weather_stat_range:set_markup("<span font-weight='bold' foreground='"..beautiful.gray.."'>"..min:gsub("[\n\r]", "").." "..max:gsub("[\n\r]", "").."</span>")
+        --     end)
+        -- end)
 
         awful.spawn.easy_async("node /home/younix/.config/awesome/scripts/weather/app/cli.js get sunrise", function(rise)
             sunrise:set_markup("<span font-weight='bold'>"..rise:gsub("[\n\r]", "").."</span>")
@@ -1043,14 +1043,14 @@ local sidebar = awful.popup {
                 },
                 widget = wibox.container.place,
             },
-            {
-                weather_stat_range,
-                margins = {
-                    top = dpi(5),
-                    -- bottom = dpi(15),
-                },
-                widget  = wibox.container.margin,
-            },
+            -- {
+            --     weather_stat_range,
+            --     margins = {
+            --         top = dpi(5),
+            --         -- bottom = dpi(15),
+            --     },
+            --     widget  = wibox.container.margin,
+            -- },
             {
                 {
                     {

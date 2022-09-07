@@ -1,6 +1,6 @@
 {
     "url": "https://api.openweathermap.org/data/2.5/weather",
-    "auth": "",
+    "auth": "30b1645a1643914f4542d070d5083bcc",
     "city": "5374232",
     "unit": "imperial"
 }
