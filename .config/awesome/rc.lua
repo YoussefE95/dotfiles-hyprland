@@ -130,8 +130,10 @@ local battery_text = wibox.widget {
 
 local battery_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "MesloLGS "..tostring(dpi(34)),
+    font = "MesloLGS "..tostring(dpi(28)),
     markup = "<span foreground='"..beautiful.cyan.."'></span>",
+    align = "center",
+    forced_width  = dpi(28),
 }
 
 timer {
@@ -209,8 +211,10 @@ local brightness_text = wibox.widget {
 
 local brightness_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    font = "MesloLGS "..tostring(dpi(26)),
+    font = "MesloLGS "..tostring(dpi(22)),
     markup = "<span foreground='"..beautiful.yellow.."'></span>",
+    align = "center",
+    forced_width  = dpi(22),
 }
 
 timer {
@@ -469,7 +473,7 @@ timer {
     end
 }
 
-clock:connect_signal('button::press', function() awful.spawn("google-chrome-stable 'https://calendar.google.com/calendar'") end)
+clock:connect_signal('button::press', function() awful.spawn("firefox 'https://calendar.google.com/calendar'") end)
 -- -- End Clock
 
 -- -- Calendar
@@ -562,12 +566,11 @@ local user_image = wibox.widget {
 -- Uptime
 local uptime_text = wibox.widget {
     widget = wibox.widget.textbox,
-    wrap = true,
-    valign = "center",
+    align = "center",
 }
 
 timer {
-    timeout = 30,
+    timeout = 60,
     call_now  = true,
     autostart = true,
     callback = function() 
@@ -579,10 +582,10 @@ timer {
 
 local uptime_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    wrap = true,
     markup = "<span foreground='"..beautiful.magenta.."'>ﲾ</span>",
+    align = "center",
     font = "SFMono "..tostring(dpi(28)),
-    valign = "center",
+    forced_width = dpi(30)
 }
 -- End Uptime
 
@@ -627,6 +630,7 @@ local cpu_icon = wibox.widget {
     widget = wibox.widget.textbox,
     markup = "<span font-weight='bold' foreground='"..beautiful.orange.."'></span>",
     font = "SFMono "..tostring(dpi(26)),
+    forced_width = dpi(26)
 }
 -- End CPU
 
@@ -670,7 +674,9 @@ timer {
 local mem_icon = wibox.widget {
     widget = wibox.widget.textbox,
     markup = "<span font-weight='bold' foreground='"..beautiful.cyan.."'></span>",
+    align = "center",
     font = "SFMono "..tostring(dpi(26)),
+    forced_width = dpi(26)
 }
 -- End RAM
 
@@ -885,19 +891,24 @@ timer {
 local lock_icon = wibox.widget {
     widget = wibox.widget.textbox,
     font = "SFMono "..tostring(dpi(34)),
-    markup = "<span font-weight='bold' foreground='"..beautiful.green.."'></span>"
+    markup = "<span font-weight='bold' foreground='"..beautiful.green.."'></span>",
+    forced_width  = dpi(38),
 }
 
 local reboot_icon = wibox.widget {
     widget = wibox.widget.textbox,
     font = "SFMono "..tostring(dpi(38)),
-    markup = "<span font-weight='bold' foreground='"..beautiful.orange.."'></span>"
+    markup = "<span font-weight='bold' foreground='"..beautiful.orange.."'></span>",
+    forced_width  = dpi(40),
+    align = "center"
 }
 
 local power_icon = wibox.widget {
     widget = wibox.widget.textbox,
     font = "SFMono "..tostring(dpi(42)),
-    markup = "<span font-weight='bold' foreground='"..beautiful.red.."'></span>"
+    markup = "<span font-weight='bold' foreground='"..beautiful.red.."'></span>",
+    forced_width  = dpi(44),
+    align = "center"
 }
 
 lock_icon:connect_signal("button::press", function()
@@ -938,11 +949,16 @@ local sidebar = awful.popup {
             },
             {
                 {
-                    uptime_icon,
+                    {
+                        uptime_icon,
+                        margins = {
+                            right = dpi(10),
+                        },
+                        widget  = wibox.container.margin,
+                    },
                     {
                         uptime_text,
                         margins = {
-                            left = dpi(15),
                             top = dpi(18),
                         },
                         widget  = wibox.container.margin,
@@ -950,7 +966,7 @@ local sidebar = awful.popup {
                     layout = wibox.layout.fixed.horizontal,
                 },
                 margins = {
-                    left = dpi(20),
+                    left = dpi(16),
                     top = dpi(10),
                 },
                 widget  = wibox.container.margin,
@@ -1018,7 +1034,7 @@ local sidebar = awful.popup {
                     layout = wibox.layout.fixed.horizontal,
                 },
                 margins = {
-                    left = dpi(20),
+                    left = dpi(18),
                     top = dpi(-20),
                 },
                 widget  = wibox.container.margin,
@@ -1136,7 +1152,7 @@ local sidebar = awful.popup {
                 },
                 margins = {
                     left = dpi(65),
-                    top = dpi(20),
+                    top = dpi(30),
                     bottom = dpi(20),
                 },
                 widget  = wibox.container.margin,
@@ -1280,12 +1296,12 @@ end)
 -- Screen Shot
 awful.keyboard.append_global_keybindings({
     awful.key({            }, "Print", function() 
-        awful.util.spawn_with_shell("sleep 1 && scrot $(date +'%a:%b:%d-%H:%M:%S').png") 
+        awful.util.spawn_with_shell("sleep 1 && scrot $(date +'%Y-%m-%d--%H:%M:%S').png") 
         end,
         {description = "full screenshot", group = "awesome"}),
 
     awful.key({ "Shift"    }, "Print", function() 
-        awful.util.spawn_with_shell("sleep 1 && scrot -s $(date +'%a:%b:%d-%H:%M:%S').png") 
+        awful.util.spawn_with_shell("sleep 1 && scrot -s $(date +'%Y-%m-%d--%H:%M:%S').png") 
         end,
         {description = "selection screenshot", group = "awesome"}),
 })
@@ -1309,7 +1325,7 @@ awful.keyboard.append_global_keybindings({
 
 -- General Awesome keys
 awful.keyboard.append_global_keybindings({
-    awful.key({ modkey,           }, "w", function () awful.spawn("google-chrome-stable") end,
+    awful.key({ modkey,           }, "w", function () awful.spawn("firefox") end,
               {description = "web browser", group = "awesome"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),

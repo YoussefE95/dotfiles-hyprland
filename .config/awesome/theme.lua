@@ -14,27 +14,27 @@ local theme = {}
 
 theme.font             = "SFMono "..tostring(dpi(12.5))
 
-theme.bg_normal        = "#fbf1c7"
-theme.bg_focus         = "#fbf1c7"
-theme.bg_occupied      = "#fbf1c7"
-theme.bg_urgent        = "#fbf1c7"
-theme.bg_minimize      = "#fbf1c7"
+theme.bg_normal        = "#282828"
+theme.bg_focus         = "#282828"
+theme.bg_occupied      = "#282828"
+theme.bg_urgent        = "#282828"
+theme.bg_minimize      = "#282828"
 theme.bg_systray       = theme.bg_normal
 
-theme.fg_normal        = "#282828"
+theme.fg_normal        = "#ebdbb2"
 theme.fg_focus         = "#d65d0e"
 theme.fg_occupied      = "#83a598"
-theme.fg_urgent        = "#282828"
-theme.fg_minimize      = "#282828"
+theme.fg_urgent        = "#ebdbb2"
+theme.fg_minimize      = "#ebdbb2"
 
 theme.useless_gap         = dpi(6)
 theme.border_width        = dpi(4)
-theme.border_color_normal = "#a89984"
-theme.border_color_active = "#d65d0e"
-theme.border_color_marked = "#d65d0e"
+theme.border_color_normal = "#665c54"
+theme.border_color_active = "#98971a"
+theme.border_color_marked = "#98971a"
 
-theme.black   = "#ebdbb2"
-theme.white   = "#282828"
+theme.black   = "#3c3836"
+theme.white   = "#ebdbb2"
 theme.red     = "#cc241d"
 theme.green   = "#98971a"
 theme.yellow  = "#d79921"
@@ -42,7 +42,7 @@ theme.blue    = "#83a598"
 theme.magenta = "#b16286"
 theme.cyan    = "#689d6a"
 theme.orange  = "#d65d0e"
-theme.gray    = "#a89984"
+theme.gray    = "#665c54"
 
 theme.systray_icon_spacing = 5
 
@@ -80,7 +80,7 @@ theme.menu_width  = dpi(100)
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
 
-theme.wallpaper = '/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/light/2t6fvmgp2ol91.jpg'
+theme.wallpaper = '/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/dark/material.png'
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
