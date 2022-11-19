@@ -80,7 +80,7 @@ theme.menu_width  = dpi(100)
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
 
-theme.wallpaper = '/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/dark/material.png'
+theme.wallpaper = '/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/normal/30.png'
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"

@@ -31,20 +31,8 @@ get_num () {
     fi
 }
 
-get_dec () {
-    if [[ ($BATTERY -le "9" && $BATTERY -ge "0") ]]; then
-        echo ".0${BATTERY}"
-    elif [[ ($BATTERY -eq "100") ]]; then
-        echo ".99"
-    else
-        echo ".${BATTERY}"
-    fi
-}
-
 if [[ $1 == '--num' ]]; then
 	get_num
-elif [[ $1 == '--dec' ]]; then
-	get_dec
 elif [[ $1 == '--icon' ]]; then
 	get_icon
 fi

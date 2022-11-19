@@ -1,5 +1,5 @@
 const openWeather = require('weather-api');
-const themeInfo = require('/home/younix/.config/theme-setter/info.json')
+const themeInfo = require('/home/younix/.config/theme-setter/info.json');
 
 const getTemp = async () => {
     const weatherData = await openWeather.getData();
@@ -8,12 +8,12 @@ const getTemp = async () => {
 
 const getMinTemp = async () => {
     const weatherData = await openWeather.getData();
-    console.log(`${Math.round(weatherData.main.temp_min) - 8}°`);
+    console.log(`${Math.round(weatherData.main.temp_min)}°`);
 };
 
 const getMaxTemp = async () => {
     const weatherData = await openWeather.getData();
-    console.log(`${Math.round(weatherData.main.temp_max) - 8}°`);
+    console.log(`${Math.round(weatherData.main.temp_max)}°`);
 };
 
 const getStat = async () => {
