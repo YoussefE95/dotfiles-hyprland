@@ -33,11 +33,11 @@ def FuzzyTime():
 
     if (min >= 1 and min < 5):
         return f"It's {hour_text[hour]} o'clock"
-    elif rounded_min <= 30:
+    elif rounded_min >= 5 and rounded_min <= 30:
         return f"It's {min_text[rounded_min]} past {hour_text[hour]}"
-    elif rounded_min > 30:
+    elif rounded_min > 30 and rounded_min <= 55:
         return f"It's {min_text[60 - rounded_min]} til {hour_text[hour + 1]}"
-    elif rounded_min == 60:
+    elif min > 55 and min <= 60:
         return f"It's {hour_text[hour + 1]} o'clock"
 
 if __name__ =='__main__':
