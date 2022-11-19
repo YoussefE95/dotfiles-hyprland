@@ -409,7 +409,6 @@ cal:connect_signal('button::press', function() awful.spawn("firefox 'https://cal
 local user_text = wibox.widget {
     widget = wibox.widget.textbox,
     align = "center",
-    font = "SFMono "..tostring(dpi(15)),
 }
 
 awful.spawn.easy_async("whoami", function(username)
