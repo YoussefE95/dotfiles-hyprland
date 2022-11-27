@@ -1,6 +1,53 @@
 yay -Syyu
 
-yay -S awesome-git alacritty zsh starship apple-fonts nerd-fonts-meslo ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git ttf-raleway ranger neofetch cmatrix gotop-bin discord dropbox visual-studio-code-bin expressvpn spotify spicetify-cli libreoffice-fresh cmake extra-cmake-modules jq gnome-keyring libsecret libgnome-keyring python-pip htop playerctl brightnessctl wmctrl xclip scrot cron ueberzug xorg-xinit polkit-gnome acpi ttf-font-awesome-5 lightdm lightdm-mini-greeter i3lock bluez bluez-utils blueman-git xsettingsd thunar tumbler
+yay -S i3-gaps 
+yay -S alacritty 
+yay -S zsh 
+yay -S starship 
+yay -S apple-fonts
+yay -S nerd-fonts-meslo
+yay -S ttf-meslo-nerd-font-powerlevel10k
+yay -S ttf-icomoon-feather
+yay -S ttf-iosevka-nerd
+yay -S ttf-font-awesome-5
+yay -S picom-git
+yay -S ttf-raleway
+yay -S ranger
+yay -S neofetch
+yay -S cmatrix
+yay -S gotop-bin
+yay -S discord
+yay -S dropbox
+yay -S visual-studio-code-bin
+yay -S expressvpn
+yay -S spotify
+yay -S spicetify-cli
+yay -S libreoffice-fresh
+yay -S cmake
+yay -S extra-cmake-modules
+yay -S jq
+yay -S gnome-keyring
+yay -S libsecret
+yay -S libgnome-keyring
+yay -S python-pip
+yay -S htop
+yay -S playerctl
+yay -S brightnessctl
+yay -S scrot
+yay -S cron
+yay -S ueberzug
+yay -S xorg-xinit
+yay -S polkit-gnome
+yay -S acpi
+yay -S lightdm
+yay -S lightdm-mini-greeter
+yay -S i3lock
+yay -S bluez
+yay -S bluez-utils
+yay -S blueman-git
+yay -S xsettingsd
+yay -S thunar
+yay -S tumbler
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
@@ -16,10 +63,6 @@ sudo cp xsettingsd.conf ~/.config/xsettingsd/
 
 sudo rm -rf ~/Documents ~/Music ~/Public ~/Videos ~/Templates ~/Pictures
 
-# set up cache for quote widget
-touch /home/younix/.cache/widget.quote
-touch /home/younix/.cache/widget.author
-
 sudo systemctl enable bluetooth
 sudo systemctl enable expressvpn
 
@@ -28,6 +71,12 @@ sudo cp lightdm.conf lightdm-mini-greeter.conf /etc/lightdm/
 
 # enable gui login screen
 sudo systemctl enable lightdm
+
+# install xborders
+git clone https://github.com/deter0/xborder ~/.config/xborder
+cd ~/.config/xborder
+chmod +x xborders
+pip install -r requirements.txt
 
 # set discord theme
 # python3 -m beautifuldiscord --css ~/.config/beautdisc/global_theme.css

@@ -1,7 +1,8 @@
 {
   "current": {
-    "theme": "catppuccin",
-    "mode": "dark"
+    "theme": "gruvbox",
+    "mode": "dark",
+    "wallpaper": "/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/dark/34.png"
   },
   "vs_themes": {
     "catppuccin": "Catppuccin Macchiato",

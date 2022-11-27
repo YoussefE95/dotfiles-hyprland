@@ -1,9 +1,0 @@
-#!/bin/bash
-
-pid="$(pgrep dropbox)"
-
-if [[ ($pid == "") ]]; then
-    dropbox &
-else
-    echo "dropbox is running"
-fi

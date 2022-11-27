@@ -1,5 +1,0 @@
-#!/bin/bash
-
-rm -f ~/.cache/screenshot.png
-scrot ~/.cache/screenshot.png
-convert ~/.cache/screenshot.png -blur 0x5 ~/.cache/screenshotblur.png

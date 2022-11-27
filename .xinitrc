@@ -49,4 +49,4 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 xsettingsd &
-exec awesome
+exec i3

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-sh ~/.config/awesome/scripts/blur_screenshot
-i3lock -i ~/.cache/screenshotblur.png
