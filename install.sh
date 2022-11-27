@@ -12,6 +12,7 @@ yay -S ttf-iosevka-nerd
 yay -S ttf-font-awesome-5
 yay -S picom-git
 yay -S ttf-raleway
+yay -S papirus-icon-theme-git
 yay -S ranger
 yay -S neofetch
 yay -S cmatrix
