@@ -34,7 +34,7 @@ $templates/polybar.sh "$theme" "$info"
 
 i3 restart
 
-~/.config/xborder/xborders --border-radius 14 --border-rgba $(jq -r ".colors.\"$1\".green" "$info")FF
+~/.config/xborder/xborders --border-radius 14 --border-rgba $(jq -r ".colors.\"$1\".green" "$info")FF &
 
 $templates/vs_code.sh "$theme" "$info" "$vs_settings"
 $templates/alacritty.sh "$theme" "$info"
