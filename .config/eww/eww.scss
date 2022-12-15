@@ -1,0 +1,18 @@
+@import "colors.scss";
+
+* {
+    border-radius: 10px;
+}
+
+button {
+    font-family: "SFMono";
+    font-size: 16px;
+    color:  $foreground;
+    margin: 10px;
+    min-width: 100px;
+    min-height: 50px;
+}
+
+button:hover {
+    background-color: $blue;
+}

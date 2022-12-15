@@ -18,27 +18,22 @@ jq --arg t "$1" '.current.theme = $t' $info > "$tmp" && mv "$tmp" $info
 jq --arg m "$2" '.current.mode = $m' $info > "$tmp" && mv "$tmp" $info
 jq --arg w "$rand_wall" '.current.wallpaper = $w' $info > "$tmp" && mv "$tmp" $info
 
-sed -i /gtk-theme-name.*/c\\"gtk-theme-name=$theme" "$HOME/.config/gtk-3.0/settings.ini"
-sed -i /gtk-cursor-theme-name.*/c\\"gtk-cursor-theme-name=cursors-$theme" "$HOME/.config/gtk-3.0/settings.ini"
+swww img $(get-theme --wallpaper) --transition-type 'wipe' --transition-angle 30 --transition-pos 'top-right'
 
-sed -i /Net/c\\"Net/ThemeName \"$theme\"" "$HOME/.config/xsettingsd/xsettingsd.conf"
-sed -i /CursorThemeName/c\\"Gtk/CursorThemeName \"cursors-$theme\"" "$HOME/.config/xsettingsd/xsettingsd.conf"
-xsettingsd &
-
-sed -i /Xcursor.theme/c\\"Xcursor.theme: cursors-$theme" "$HOME/.Xresources"
-xrdb ~/.Xresources
-
-$templates/i3.sh "$theme" "$info"
-$templates/rofi.sh "$theme" "$info"
-$templates/polybar.sh "$theme" "$info"
-
-i3 restart
-
-~/.config/xborder/xborders --border-radius 14 --border-rgba $(jq -r ".colors.\"$1\".green" "$info")FF &
+$templates/kitty.sh "$theme" "$info"
+kitty @ set-colors --all --configured ~/.config/kitty/kitty-theme.conf
 
 $templates/vs_code.sh "$theme" "$info" "$vs_settings"
-$templates/alacritty.sh "$theme" "$info"
+$templates/waybar.sh "$theme" "$info"
 
+gsettings set org.gnome.desktop.interface gtk-theme "$theme"
+gsettings set org.gnome.desktop.interface icon-theme "cursors-$theme"
+gsettings set org.gnome.desktop.interface cursor-theme "cursors-$theme"
+gsettings set org.gnome.desktop.interface font-name 'SFMono'
+
+$templates/eww.sh "$theme" "$info"
+$templates/rofi.sh "$theme" "$info"
 $templates/discord.sh "$theme" "$info"
 $templates/spotify.sh "$theme" "$info"
-spicetify update -q
+
+clear

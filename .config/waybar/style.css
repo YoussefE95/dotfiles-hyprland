@@ -1,0 +1,136 @@
+@import url("colors.css");
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: SFMono;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: @foreground;
+}
+
+tooltip {
+    background: @background;
+    color: @foreground;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @gray;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @gray;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: @orange;
+}
+
+#workspaces button.focused {
+    color: @blue;
+    border-color: @background;
+    border-radius: 8px;
+}
+
+#workspaces button.urgent {
+    color: @red;
+    border-color: @background;
+    border-radius: 8px;
+}
+
+/* #workspaces button:hover {
+    color: @cyan;
+    background: @background;
+    border-color: @background;
+    border-radius: 8px;
+} */
+
+#cpu,
+#memory,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#backlight {
+    background: @background;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 8px;
+    border: 1px solid @background;
+}
+
+#cpu {
+    color: @green;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#memory {
+    color: @blue;
+    border-left: 0px;
+    border-right: 0px;
+    padding-right: 10px;
+}
+
+#workspaces {
+    background:  @background;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#backlight {
+    color: @yellow;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#battery {
+    color: @green;
+    margin-right: 0px;
+    border-left: 0px;
+}
+
+#clock {
+    color: @foreground;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#network {
+    color: @magenta;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+    border-left: 0px;
+}
+
+#pulseaudio {
+    color: @cyan;
+    border-left: 0px;
+    border-right: 0px;
+}

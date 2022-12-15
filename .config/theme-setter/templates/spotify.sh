@@ -24,3 +24,5 @@ THEME
 )"
 
 printf '%s' "$output" > "${dest_dir}${dest_file}"
+
+spicetify update -q
