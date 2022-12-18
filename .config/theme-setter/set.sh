@@ -23,6 +23,7 @@ swww img $(get-theme --wallpaper) --transition-type 'wipe' --transition-angle 30
 $templates/kitty.sh "$theme" "$info"
 kitty @ set-colors --all --configured ~/.config/kitty/kitty-theme.conf
 
+$templates/hyprland.sh "$theme" "$info"
 $templates/vs_code.sh "$theme" "$info" "$vs_settings"
 $templates/waybar.sh "$theme" "$info"
 

@@ -10,7 +10,7 @@
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
+    background: @background;
     color: @foreground;
 }
 
@@ -23,35 +23,6 @@ tooltip {
     border-color: @gray;
 }
 
-#workspaces button {
-    padding: 5px;
-    color: @gray;
-    margin-right: 5px;
-}
-
-#workspaces button.active {
-    color: @orange;
-}
-
-#workspaces button.focused {
-    color: @blue;
-    border-color: @background;
-    border-radius: 8px;
-}
-
-#workspaces button.urgent {
-    color: @red;
-    border-color: @background;
-    border-radius: 8px;
-}
-
-/* #workspaces button:hover {
-    color: @cyan;
-    background: @background;
-    border-color: @background;
-    border-radius: 8px;
-} */
-
 #cpu,
 #memory,
 #window,
@@ -62,75 +33,63 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-    background: @background;
     padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 8px;
+    margin: 6px 3px;
     border: 1px solid @background;
+    border-radius: 8px;
+    color: @background;
 }
 
-#cpu {
-    color: @green;
-    border-radius: 10px 0px 0px 10px;
-    margin-left: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+#workspaces button {
+    margin: 0px 14px 0px -10px;
+    border-radius: 8px;
+    color: @background;
+    background: @gray;
 }
 
-#memory {
-    color: @blue;
-    border-left: 0px;
-    border-right: 0px;
-    padding-right: 10px;
+#workspaces button.active {
+    background: @foreground;
 }
 
-#workspaces {
-    background:  @background;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
-    padding-left: 0px;
-    padding-right: 5px;
+#workspaces button.focused {
+    background: @blue;
 }
 
-#window {
-    border-radius: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+#workspaces button.urgent {
+    background: @red;
 }
 
 #tray {
-    border-radius: 10px;
-    margin-right: 10px;
+    background: @background;
+    margin-left: -12px
 }
 
-#backlight {
-    color: @yellow;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 10px 0px 0px 10px;
+#cpu {
+    background: @magenta;
+    margin-left: 7px;
 }
 
-#battery {
-    color: @green;
-    margin-right: 0px;
-    border-left: 0px;
+#memory {
+    background: @blue;
 }
 
 #clock {
-    color: @foreground;
-    border-radius: 10px;
-    margin-left: 10px;
+    background: @cyan;
 }
 
-#network {
-    color: @magenta;
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
-    border-left: 0px;
+#backlight {
+    background: @green;
+}
+
+#battery {
+    background: @yellow;
 }
 
 #pulseaudio {
-    color: @cyan;
-    border-left: 0px;
-    border-right: 0px;
+    background: @orange;
+}
+
+#network {
+    background: @red;
+    margin-right: 7px;
 }
