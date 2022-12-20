@@ -3,8 +3,7 @@
     "position": "top",
     "height": 0,
     "modules-left": [
-        "cpu",
-        "memory",
+        "network",
         "wlr/workspaces",
         "tray"
     ],
@@ -12,10 +11,11 @@
         "clock"
     ],
     "modules-right": [
-        "backlight",
+        "cpu",
+        "memory",
         "battery",
-        "pulseaudio",
-        "network"
+        "backlight",
+        "pulseaudio"
     ],
     "cpu": {
         "interval": 10,
@@ -68,13 +68,13 @@
         "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
     },
     "clock": {
-        "format": "{: %I:%M   %d/%m}"
+        "format": "{: %a %d %b  %I:%M}"
     },
     "network": {
-        "format-wifi": "直 {essid}",
-        "format-ethernet": " {essid}",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "睊 Disconnected",
+        "format-wifi": "直",
+        "format-ethernet": "",
+        "format-linked": "",
+        "format-disconnected": "睊",
         "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
     },
     "pulseaudio": {
