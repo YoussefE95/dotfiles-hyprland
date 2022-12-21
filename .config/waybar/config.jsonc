@@ -17,18 +17,12 @@
         "backlight",
         "pulseaudio"
     ],
-    "cpu": {
-        "interval": 10,
-        "format": " {}%",
-        "max-length": 10
-    },
-    "memory": {
-        "interval": 30,
-        "format": " {}%",
-        "max-length": 10
-    },
-    "hyprland/window": {
-        "format": "{}"
+    "network": {
+        "format-wifi": "<span font='18' rise='-1000'>直</span>",
+        "format-ethernet": "<span font='18' rise='-1000'></span>",
+        "format-linked": "<span font='18' rise='-1000'></span>",
+        "format-disconnected": "<span font='18' rise='-1000'>睊</span>",
+        "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
     },
     "wlr/workspaces": {
         "disable-scroll": true,
@@ -48,13 +42,18 @@
         "icon-size": 20,
         "spacing": 10
     },
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon} {percent}%",
-        "format-icons": ["", "", ""],
-        "on-scroll-up": "brightnessctl set 1%+",
-        "on-scroll-down": "brightnessctl set 1%-",
-        "min-length": 6
+    "clock": {
+        "format": "{:<span font='14' rise='-1000'></span> %a %d %b <span font='14' rise='-1000'></span> %I:%M}"
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "<span font='18' rise='-2000'></span> {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": "<span font='16' rise='-1000'></span> {}%",
+        "max-length": 10
     },
     "battery": {
         "states": {
@@ -62,24 +61,22 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
+        "format": "<span font='24' rise='-4600'>{icon}</span> {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""]
     },
-    "clock": {
-        "format": "{: %a %d %b  %I:%M}"
-    },
-    "network": {
-        "format-wifi": "直",
-        "format-ethernet": "",
-        "format-linked": "",
-        "format-disconnected": "睊",
-        "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "<span font='18' rise='-2000'>{icon}</span> {percent}%",
+        "format-icons": ["", "", ""],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-muted": "ﱝ Muted",
+        "format": "<span font='16' rise='-1000'>{icon}</span> {volume}%",
+        "format-muted": "Muted <span font='18' rise='-3000'>ﱝ</span>",
         "on-click": "~/.config/waybar/scripts/volume --toggle",
         "scroll-step": 1,
         "format-icons": {
@@ -89,7 +86,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", "墳", ""]
+            "default": ["", "墳", ""]
         }
     }
 }
