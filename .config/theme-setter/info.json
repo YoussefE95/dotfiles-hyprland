@@ -1,8 +1,8 @@
 {
   "current": {
-    "theme": "gruvbox",
-    "mode": "",
-    "wallpaper": "/home/younix/Dropbox/Pictures/Wallpapers/gruvbox/normal/daniel-sessler-_3DI_vx2ygg-unsplash.jpg"
+    "theme": "catppuccin",
+    "mode": "light",
+    "wallpaper": "/home/younix/Dropbox/Pictures/Wallpapers/catppuccin/light/wavy_lines_v01_5120x2880.png"
   },
   "vs_themes": {
     "catppuccin": "Catppuccin Macchiato",
@@ -36,7 +36,7 @@
       "green": "40a02b",
       "yellow": "e49320",
       "blue": "2a6ef5",
-      "magenta": "7287fd",
+      "magenta": "8839ef",
       "cyan": "209fb5",
       "orange": "fe640b",
       "gray": "bcc0cc"
