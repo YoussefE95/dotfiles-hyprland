@@ -43,7 +43,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:<span font='14' rise='-1000'></span> %a %d %b <span font='14' rise='-1000'></span> %I:%M}"
+        "format": "{:<span font='14' rise='-1000'></span> %a %d %b <span font='14' rise='-2000'></span> %I:%M}"
     },
     "cpu": {
         "interval": 10,
@@ -61,10 +61,10 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "<span font='24' rise='-4600'>{icon}</span> {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": ["", "", "", "", "", "", "", "", "", ""]
     },
     "backlight": {
         "device": "intel_backlight",
