@@ -9,6 +9,7 @@ USE_POWERLINE="true"
 alias rang='source ranger'
 alias vpn='expressvpn'
 alias py='python3'
+alias fetch='neofetch --source ~/.config/neofetch/bender.txt'
 
 bindkey "^[[3~" delete-char
 
