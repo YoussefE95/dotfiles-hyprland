@@ -1,16 +1,66 @@
 {
   "current": {
-    "theme": "catppuccin",
-    "mode": "light",
-    "wallpaper": "/home/younix/Dropbox/Pictures/Wallpapers/catppuccin/light/wavy_lines_v01_5120x2880.png"
+    "theme": "rose-pine",
+    "mode": "dark",
+    "wallpaper": "/home/younix/Dropbox/Pictures/Wallpapers/rose-pine/dark/rose_pine_maze.png"
+  },
+  "gtk": {
+    "catppuccin": {
+      "theme": "Catppuccin-Macchiato",
+      "cursor": "Capitaine-Cursors",
+      "icons": "Catppuccin-Macchiato"
+    },
+    "catppuccin-light": {
+      "theme": "Catppuccin-Latte",
+      "cursor": "Capitaine-Cursors-Light",
+      "icons": "Catppuccin-Latte"
+    },
+    "catppuccin-dark": {
+      "theme": "Catppuccin-Mocha",
+      "cursor": "Capitaine-Cursors",
+      "icons": "Catppuccin-Mocha"
+    },
+    "gruvbox": {
+      "theme": "Gruvbox-Material",
+      "cursor": "Capitaine-Cursors-Gruvbox",
+      "icons": "Gruvbox-Dark"
+    },
+    "gruvbox-light": {
+      "theme": "Gruvbox-Light",
+      "cursor": "Capitaine-Cursors-Gruvbox-Light",
+      "icons": "Gruvbox-Light"
+    },
+    "gruvbox-dark": {
+      "theme": "Gruvbox-Dark",
+      "cursor": "Capitaine-Cursors-Gruvbox",
+      "icons": "Gruvbox-Dark"
+    },
+    "rose-pine": {
+      "theme": "Rose-Pine-Moon",
+      "cursor": "Capitaine-Cursors-Palenight",
+      "icons": "Rose-Pine-Moon"
+    },
+    "rose-pine-light": {
+      "theme": "Rose-Pine-Dawn",
+      "cursor": "Capitaine-Cursors-Palenight-Light",
+      "icons": "Rose-Pine-Moon"
+    },
+    "rose-pine-dark": {
+      "theme": "Rose-Pine",
+      "cursor": "Capitaine-Cursors-Palenight",
+      "icons": "Rose-Pine"
+    }
   },
   "vs_themes": {
     "catppuccin": "Catppuccin Macchiato",
     "catppuccin-light": "Catppuccin Latte",
+    "catppuccin-dark": "Catppuccin Mocha",
     "gruvbox": "Gruvbox Material Dark",
     "gruvbox-light": "Gruvbox Material Light",
-    "nord": "Nord",
-    "nord-light": "Nord Light Brighter"
+    "gruvbox-dark": "Gruvbox Material Dark",
+    "rose-pine": "Rosé Pine Moon",
+    "rose-pine-light": "Rosé Pine Dawn",
+    "rose-pine-dark": "Rosé Pine"
   },
   "colors": {
     "catppuccin": {
@@ -41,6 +91,20 @@
       "orange": "fe640b",
       "gray": "bcc0cc"
     },
+    "catppuccin-dark": {
+      "background": "1e1e2e",
+      "foreground": "cdd6f4",
+      "black": "181825",
+      "white": "cdd6f4",
+      "red": "f38ba8",
+      "green": "a6e3a1",
+      "yellow": "f9e2af",
+      "blue": "89b4fa",
+      "magenta": "cba6f7",
+      "cyan": "94e2d5",
+      "orange": "fab387",
+      "gray": "45475a"
+    },
     "gruvbox": {
       "background": "282828",
       "foreground": "ebdbb2",
@@ -69,33 +133,61 @@
       "orange": "d65d0e",
       "gray": "a89984"
     },
-    "nord": {
-      "background": "2e3440",
-      "foreground": "d8dee9",
-      "black": "3B4252",
-      "white": "d8dee9",
-      "red": "b1616a",
-      "green": "a3be8c",
-      "yellow": "ebcb8b",
-      "blue": "5e81ac",
-      "magenta": "b48ead",
-      "cyan": "8fbcbb",
-      "orange": "d08770",
-      "gray": "4c566a"
+    "gruvbox-dark": {
+      "background": "282828",
+      "foreground": "ebdbb2",
+      "black": "3c3836",
+      "white": "ebdbb2",
+      "red": "cc241d",
+      "green": "98971a",
+      "yellow": "d79921",
+      "blue": "83a598",
+      "magenta": "b16286",
+      "cyan": "689d6a",
+      "orange": "d65d0e",
+      "gray": "665c54"
     },
-    "nord-light": {
-      "background": "ffffff",
-      "foreground": "2E3440",
-      "black": "D8DEE9",
-      "white": "2E3440",
-      "red": "b1616a",
-      "green": "a3be8c",
-      "yellow": "ebcb8b",
-      "blue": "5e81ac",
-      "magenta": "b48ead",
-      "cyan": "8fbcbb",
-      "orange": "d08770",
-      "gray": "4C566A"
+    "rose-pine": {
+      "background": "232136",
+      "foreground": "e0def4",
+      "black": "393552",
+      "white": "6e6a86",
+      "red": "eb6f92",
+      "green": "76a264",
+      "yellow": "f6c177",
+      "blue": "3e8fb0",
+      "magenta": "c4a7e7",
+      "cyan": "9ccfd8",
+      "orange": "ea9a97",
+      "gray": "908caa"
+    },
+    "rose-pine-light": {
+      "background": "faf4ed",
+      "foreground": "575279",
+      "black": "fffaf3",
+      "white": "9893a5",
+      "red": "b4637a",
+      "green": "76a264",
+      "yellow": "ea9d34",
+      "blue": "286983",
+      "magenta": "907aa9",
+      "cyan": "56949f",
+      "orange": "d7827e",
+      "gray": "797593"
+    },
+    "rose-pine-dark": {
+      "background": "191724",
+      "foreground": "e0def4",
+      "black": "26233a",
+      "white": "6e6a86",
+      "red": "eb6f92",
+      "green": "76a264",
+      "yellow": "f6c177",
+      "blue": "31748f",
+      "magenta": "c4a7e7",
+      "cyan": "9ccfd8",
+      "orange": "ebbcba",
+      "gray": "908caa"
     }
   }
 }

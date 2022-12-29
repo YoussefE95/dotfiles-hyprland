@@ -8,7 +8,7 @@ if [[ "$2" == "light" ]]; then
     theme="$1-light"
 elif [[ "$2" == "dark" ]]; then
     rand_wall="$HOME/Dropbox/Pictures/Wallpapers/$1/dark/$(ls ~/Dropbox/Pictures/Wallpapers/$1/dark | sort -R | tail -1)"
-    theme="$1"
+    theme="$1-dark"
 else
     rand_wall="$HOME/Dropbox/Pictures/Wallpapers/$1/normal/$(ls ~/Dropbox/Pictures/Wallpapers/$1/normal | sort -R | tail -1)"
     theme="$1"
@@ -26,13 +26,7 @@ kitty @ set-colors --all --configured ~/.config/kitty/kitty-theme.conf
 $templates/hyprland.sh "$theme" "$info"
 $templates/vs_code.sh "$theme" "$info" "$vs_settings"
 $templates/waybar.sh "$theme" "$info"
-
-gsettings set org.gnome.desktop.interface gtk-theme "$theme"
-gsettings set org.gnome.desktop.interface icon-theme "cursors-$theme"
-gsettings set org.gnome.desktop.interface cursor-theme "cursors-$theme"
-gsettings set org.gnome.desktop.interface font-name 'SFMono'
-
-$templates/eww.sh "$theme" "$info"
+$templates/gtk.sh "$theme" "$info"
 $templates/rofi.sh "$theme" "$info"
 $templates/discord.sh "$theme" "$info"
 $templates/spotify.sh "$theme" "$info"
