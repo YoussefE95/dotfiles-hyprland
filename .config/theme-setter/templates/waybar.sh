@@ -23,4 +23,4 @@ THEME
 printf '%s' "$output" > "${dest_dir}${dest_file}"
 
 killall waybar
-waybar &
+waybar </dev/null &>/dev/null &

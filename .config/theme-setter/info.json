@@ -1,8 +1,8 @@
 {
   "current": {
     "theme": "rose-pine",
-    "mode": "dark",
-    "wallpaper": "/home/younix/Dropbox/Pictures/Wallpapers/rose-pine/dark/rose_pine_maze.png"
+    "mode": "",
+    "wallpaper": "/home/younix/Dropbox/Pictures/Wallpapers/rose-pine/normal/andre-benz-_F3VBwffsOE-unsplash.jpg"
   },
   "gtk": {
     "catppuccin": {
@@ -31,7 +31,7 @@
       "icons": "Gruvbox-Light"
     },
     "gruvbox-dark": {
-      "theme": "Gruvbox-Dark",
+      "theme": "Gruvbox-Material",
       "cursor": "Capitaine-Cursors-Gruvbox",
       "icons": "Gruvbox-Dark"
     },
