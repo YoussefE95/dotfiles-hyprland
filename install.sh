@@ -22,7 +22,7 @@ yay -S cmatrix
 yay -S gotop-bin
 yay -S discord
 yay -S dropbox
-yay -S obsidian
+yay -S notion-app-enhanced
 yay -S visual-studio-code-bin
 yay -S expressvpn
 yay -S spotify
