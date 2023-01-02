@@ -27,9 +27,9 @@ output="$(cat << THEME
     --dynamic_theme--bg0_h: #$(jq -r ".colors.\"$1\".background" "$2");
     --dynamic_theme--bg0: #$(jq -r ".colors.\"$1\".background" "$2");
     --dynamic_theme--bg1: #$(jq -r ".colors.\"$1\".black" "$2");
-    --dynamic_theme--bg2: #$(jq -r ".colors.\"$1\".gray" "$2");
-    --dynamic_theme--bg3: #$(jq -r ".colors.\"$1\".gray" "$2");
-    --dynamic_theme--bg4: #$(jq -r ".colors.\"$1\".gray" "$2");
+    --dynamic_theme--bg2: #$(jq -r ".colors.\"$1\".black" "$2");
+    --dynamic_theme--bg3: #$(jq -r ".colors.\"$1\".black" "$2");
+    --dynamic_theme--bg4: #$(jq -r ".colors.\"$1\".black" "$2");
     --dynamic_theme--bg0_s: #$(jq -r ".colors.\"$1\".background" "$2");
     --dynamic_theme--fg4: #$(jq -r ".colors.\"$1\".foreground" "$2");
     --dynamic_theme--fg3: #$(jq -r ".colors.\"$1\".foreground" "$2");
