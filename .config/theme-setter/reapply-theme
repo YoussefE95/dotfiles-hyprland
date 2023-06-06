@@ -1,0 +1,3 @@
+#!/bin/bash
+
+set-theme $(get-theme) $(get-theme --mode)

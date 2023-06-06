@@ -1,3 +1,5 @@
+palette=("${@}")
+
 dest_dir="$HOME/.config/beautdisc/"
 dest_file="global_theme.css"
 
@@ -21,21 +23,21 @@ pre > code {
 /** End Iosevka */
 
 .theme-dark {
-    --background-primary: #$(jq -r ".colors.\"$1\".background" "$2");
-    --background-secondary: #$(jq -r ".colors.\"$1\".background" "$2");
-    --background-tertiary: #$(jq -r ".colors.\"$1\".background" "$2");
-    --background-accent: #$(jq -r ".colors.\"$1\".background" "$2");
-    --text-normal: #$(jq -r ".colors.\"$1\".foreground" "$2");
-    --text-spotify: #$(jq -r ".colors.\"$1\".green" "$2")
-    --text-muted: #$(jq -r ".colors.\"$1\".foreground" "$2");
-    --text-link: #$(jq -r ".colors.\"$1\".blue" "$2");
-    --background-floating: #$(jq -r ".colors.\"$1\".background" "$2");
-    --header-primary: #$(jq -r ".colors.\"$1\".foreground" "$2");
-    --header-secondary: #$(jq -r ".colors.\"$1\".foreground" "$2");
-    --header-spotify: #$(jq -r ".colors.\"$1\".green" "$2")
-    --interactive-normal: #$(jq -r ".colors.\"$1\".foreground" "$2");
-    --interactive-hover: #$(jq -r ".colors.\"$1\".foreground" "$2");
-    --interactive-active: #$(jq -r ".colors.\"$1\".green" "$2")
+    --background-primary: #${palette[0]};
+    --background-secondary: #${palette[0]};
+    --background-tertiary: #${palette[0]};
+    --background-accent: #${palette[0]};
+    --text-normal: #${palette[1]};
+    --text-spotify: #${palette[5]}
+    --text-muted: #${palette[1]};
+    --text-link: #${palette[7]};
+    --background-floating: #${palette[0]};
+    --header-primary: #${palette[1]};
+    --header-secondary: #${palette[1]};
+    --header-spotify: #${palette[5]}
+    --interactive-normal: #${palette[1]};
+    --interactive-hover: #${palette[1]};
+    --interactive-active: #${palette[5]}
 }
 
 .theme-light {

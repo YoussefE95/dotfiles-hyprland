@@ -1,22 +1,24 @@
+palette=("${@}")
+
 dest_dir="$HOME/.config/waybar/"
 dest_file="colors.css"
 
 [[ -d "$dest_dir" ]] || mkdir -pv "$dest_dir"
 
 output="$(cat << THEME
-@define-color background #$(jq -r ".colors.\"$1\".background" "$2");
-@define-color foreground #$(jq -r ".colors.\"$1\".foreground" "$2");
+@define-color background #${palette[0]};
+@define-color foreground #${palette[1]};
 
-@define-color white #$(jq -r ".colors.\"$1\".white" "$2");
-@define-color black #$(jq -r ".colors.\"$1\".black" "$2");
-@define-color red #$(jq -r ".colors.\"$1\".red" "$2");
-@define-color magenta #$(jq -r ".colors.\"$1\".magenta" "$2");
-@define-color blue #$(jq -r ".colors.\"$1\".blue" "$2");
-@define-color cyan #$(jq -r ".colors.\"$1\".cyan" "$2");
-@define-color green #$(jq -r ".colors.\"$1\".green" "$2");
-@define-color yellow #$(jq -r ".colors.\"$1\".yellow" "$2");
-@define-color orange #$(jq -r ".colors.\"$1\".orange" "$2");
-@define-color gray #$(jq -r ".colors.\"$1\".gray" "$2");
+@define-color white #${palette[3]};
+@define-color black #${palette[2]};
+@define-color red #${palette[4]};
+@define-color magenta #${palette[8]};
+@define-color blue #${palette[7]};
+@define-color cyan #${palette[9]};
+@define-color green #${palette[5]};
+@define-color yellow #${palette[6]};
+@define-color orange #${palette[10]};
+@define-color gray #${palette[11]};
 THEME
 )"
 

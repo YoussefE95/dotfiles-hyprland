@@ -15,21 +15,21 @@ pre > code {
 /** End Iosevka */
 
 .theme-dark {
-    --background-primary: #282828;
-    --background-secondary: #282828;
-    --background-tertiary: #282828;
-    --background-accent: #282828;
-    --text-normal: #ebdbb2;
-    --text-spotify: #98971a
-    --text-muted: #ebdbb2;
-    --text-link: #83a598;
-    --background-floating: #282828;
-    --header-primary: #ebdbb2;
-    --header-secondary: #ebdbb2;
-    --header-spotify: #98971a
-    --interactive-normal: #ebdbb2;
-    --interactive-hover: #ebdbb2;
-    --interactive-active: #98971a
+    --background-primary: #faf4ed;
+    --background-secondary: #faf4ed;
+    --background-tertiary: #faf4ed;
+    --background-accent: #faf4ed;
+    --text-normal: #575279;
+    --text-spotify: #76a264
+    --text-muted: #575279;
+    --text-link: #286983;
+    --background-floating: #faf4ed;
+    --header-primary: #575279;
+    --header-secondary: #575279;
+    --header-spotify: #76a264
+    --interactive-normal: #575279;
+    --interactive-hover: #575279;
+    --interactive-active: #76a264
 }
 
 .theme-light {

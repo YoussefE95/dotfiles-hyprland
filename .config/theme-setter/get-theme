@@ -1,26 +1,11 @@
 #!/bin/bash
 
-info="$HOME/.config/theme-setter/info.json"
-theme=$(jq ".current.theme" "$info")
-mode=$(jq ".current.mode" "$info")
-wallpaper=$(jq ".current.wallpaper" "$info")
-
-get_theme () {
-    echo "$theme" | sed 's/"//' | sed 's/"//'
-}
-
-get_mode () {
-    echo "$mode" | sed 's/"//' | sed 's/"//'
-}
-
-get_wallpaper () {
-    echo "$wallpaper" | sed 's/"//' | sed 's/"//'
-}
+current_info="$HOME/.config/theme-setter/info/current.json"
 
 if [[ $1 == '--mode' ]]; then
-	get_mode
-elif [[ $1 == '--theme' ]]; then
-	get_theme
+    echo $(jq ".mode" "$current_info") | sed 's/\"//g'
 elif [[ $1 == '--wallpaper' ]]; then
-    get_wallpaper
+    echo $(jq ".wallpaper" "$current_info") | sed 's/\"//g'
+else
+    echo $(jq ".theme" "$current_info") | sed 's/\"//g'
 fi

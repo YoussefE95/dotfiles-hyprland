@@ -6,10 +6,11 @@ setopt appendhistory
 # Use powerline
 USE_POWERLINE="true"
 
+alias fetch='sh ~/.config/fetch.sh'
 alias rang='source ranger'
 alias vpn='expressvpn'
 alias py='python3'
-alias fetch='neofetch --source ~/.config/neofetch/bender.txt'
+alias vim='nvim'
 
 bindkey "^[[3~" delete-char
 

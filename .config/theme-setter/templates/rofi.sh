@@ -1,3 +1,5 @@
+palette=("${@}")
+
 dest_dir="$HOME/.config/rofi/"
 dest_file="colors.rasi"
 
@@ -7,12 +9,12 @@ output="$(cat << THEME
 /* colors */
 
 * {
-  al:   #$(jq -r ".colors.\"$1\".foreground" "$2")00;
-  bg:   #$(jq -r ".colors.\"$1\".background" "$2")FF;
-  bga:  #$(jq -r ".colors.\"$1\".background" "$2")FF;
-  fg:   #$(jq -r ".colors.\"$1\".foreground" "$2")FF;
-  ac:   #$(jq -r ".colors.\"$1\".magenta" "$2")FF;
-  se:   #$(jq -r ".colors.\"$1\".blue" "$2")FF;
+  al:   #${palette[1]}00;
+  bg:   #${palette[0]}FF;
+  bga:  #${palette[0]}FF;
+  fg:   #${palette[1]}FF;
+  ac:   #${palette[8]}FF;
+  se:   #${palette[9]}FF;
 }
 THEME
 )"

@@ -1,0 +1,200 @@
+{
+    "catppuccin": {
+        "icons": {
+            "light": "Papirus-Green",
+            "normal": "Papirus-Blue",
+            "dark": "Papirus-Black"
+        },
+        "cursors": {
+            "light": "Capitaine-Cursors",
+            "normal": "Capitaine-Cursors-White",
+            "dark": "Capitaine-Cursors-White"
+        },
+        "gtk": {
+            "light": "Catppuccin-Latte",
+            "normal": "Catppuccin-Macchiato",
+            "dark": "Catppuccin-Mocha"
+        },
+        "vs_code": {
+            "light": "Catppuccin Latte",
+            "normal": "Catppuccin Macchiato",
+            "dark": "Catppuccin Mocha"
+        },
+        "palette": {
+            "light": {
+                "background": "eff1f5",
+                "foreground": "4c4f69",
+                "black": "232634",
+                "white": "dce0e8",
+                "red": "d20f39",
+                "green": "40a02b",
+                "yellow": "e49320",
+                "blue": "2a6ef5",
+                "magenta": "8839ef",
+                "cyan": "209fb5",
+                "orange": "fe640b",
+                "gray": "6c6f85"
+            },
+            "normal": {
+                "background": "24273a",
+                "foreground": "cad3f5",
+                "black": "363a4f",
+                "white": "cad3f5",
+                "red": "ed8796",
+                "green": "a6da95",
+                "yellow": "eed49f",
+                "blue": "8aadf4",
+                "magenta": "c6a0f6",
+                "cyan": "8bd5ca",
+                "orange": "f5a97f",
+                "gray": "5b6078"
+            },
+            "dark": {
+                "background": "1e1e2e",
+                "foreground": "cdd6f4",
+                "black": "181825",
+                "white": "cdd6f4",
+                "red": "f38ba8",
+                "green": "a6e3a1",
+                "yellow": "f9e2af",
+                "blue": "89b4fa",
+                "magenta": "cba6f7",
+                "cyan": "94e2d5",
+                "orange": "fab387",
+                "gray": "5b6078"
+            }
+        }
+    },
+    "gruvbox": {
+        "icons": {
+            "light": "Newaita-Green",
+            "normal": "Newaita",
+            "dark": "Newaita-Black"
+        },
+        "cursors": {
+            "light": "Capitaine-Cursors-Gruvbox",
+            "normal": "Capitaine-Cursors-Gruvbox-White",
+            "dark": "Capitaine-Cursors-Gruvbox-White"
+        },
+        "gtk": {
+            "light": "Gruvbox-Light",
+            "normal": "Gruvbox-Material",
+            "dark": "Gruvbox-Dark"
+        },
+        "vs_code": {
+            "light": "Gruvbox Material Light",
+            "normal": "Gruvbox Material Dark",
+            "dark": "Gruvbox Material Dark"
+        },
+        "palette": {
+            "light": {
+                "background": "f3eac7",
+                "foreground": "4f3829",
+                "black": "252423",
+                "white": "d4be98",
+                "red": "c14a4a",
+                "green": "6c782e",
+                "yellow": "b47109",
+                "blue": "45707a",
+                "magenta": "945e80",
+                "cyan": "4c7a5d",
+                "orange": "c35e0a",
+                "gray": "7c6f64"
+            },
+            "normal": {
+                "background": "282828",
+                "foreground": "ddc7a1",
+                "black": "1b1b1b",
+                "white": "d4be98",
+                "red": "ea6962",
+                "green": "a9b665",
+                "yellow": "d8a657",
+                "blue": "7daea3",
+                "magenta": "d3869b",
+                "cyan": "89b482",
+                "orange": "e78a4e",
+                "gray": "7c6f64"
+            },
+            "dark": {
+                "background": "1d2021",
+                "foreground": "ddc7a1",
+                "black": "141617",
+                "white": "d4be98",
+                "red": "ea6962",
+                "green": "a9b665",
+                "yellow": "d8a657",
+                "blue": "7daea3",
+                "magenta": "d3869b",
+                "cyan": "89b482",
+                "orange": "e78a4e",
+                "gray": "7c6f64"
+            }
+        }
+    },
+    "rose-pine": {
+        "icons": {
+            "light": "Papirus-Green",
+            "normal": "Papirus-Blue",
+            "dark": "Papirus-Black"
+        },
+        "cursors": {
+            "light": "Capitaine-Cursors",
+            "normal": "Capitaine-Cursors-White",
+            "dark": "Capitaine-Cursors-White"
+        },
+        "gtk": {
+            "light": "Rose-Pine-Dawn",
+            "normal": "Rose-Pine-Moon",
+            "dark": "Rose-Pine"
+        },
+        "vs_code": {
+            "light": "Rosé Pine Dawn",
+            "normal": "Rosé Pine Moon",
+            "dark": "Rosé Pine"
+        },
+        "palette": {
+            "light": {
+                "background": "faf4ed",
+                "foreground": "575279",
+                "black": "575279",
+                "white": "bfb9b2",
+                "red": "b4637a",
+                "green": "76a264",
+                "yellow": "ea9d34",
+                "blue": "286983",
+                "magenta": "907aa9",
+                "cyan": "56949f",
+                "orange": "d7827e",
+                "gray": "797593"
+            },
+            "normal": {
+                "background": "232136",
+                "foreground": "e0def4",
+                "black": "393552",
+                "white": "c8c5d9",
+                "red": "eb6f92",
+                "green": "76a264",
+                "yellow": "f6c177",
+                "blue": "3e8fb0",
+                "magenta": "c4a7e7",
+                "cyan": "9ccfd8",
+                "orange": "ea9a97",
+                "gray": "908caa"
+            },
+            "dark": {
+                "background": "191724",
+                "foreground": "e0def4",
+                "black": "26233a",
+                "white": "c8c5d9",
+                "red": "eb6f92",
+                "green": "76a264",
+                "yellow": "f6c177",
+                "blue": "31748f",
+                "magenta": "c4a7e7",
+                "cyan": "9ccfd8",
+                "orange": "ebbcba",
+                "gray": "908caa"
+            }
+        }
+    }
+}
