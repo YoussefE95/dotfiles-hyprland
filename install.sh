@@ -1,6 +1,6 @@
 yay -Syyu
 
-yay -S hyprland-git waybar-hyprland-git swww swaylock polkit libsecret polkit-gnome kitty-git grim slurp rofi zsh starship apple-fonts ttf-iosevka-nerd ranger discord dropbox expressvpn spotify spicetify-cli cmake extra-cmake-modules jq python-pip htop brightnessctl acpi bluez bluez-utils blueman-git pavucontrol nodejs npm
+yay -S hyprland-git waybar-hyprland-git swww swaylock polkit libsecret polkit-gnome kitty-git grim slurp rofi zsh neovim starship apple-fonts ttf-iosevka-nerd ranger discord dropbox expressvpn spotify spicetify-cli cmake extra-cmake-modules jq python-pip htop brightnessctl acpi bluez bluez-utils blueman-git pavucontrol nodejs npm
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
