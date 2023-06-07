@@ -46,12 +46,11 @@ palette=(
 )
 
 {
+    $templates/alacritty.sh "${palette[@]}"
     $templates/discord.sh "${palette[@]}"
+    $templates/dmenu.sh "${palette[@]}"
     $templates/gtk.sh "$icon_theme" "$cursor_theme" "$gtk_theme"
-    $templates/hypr.sh
-    $templates/icons.sh "${palette[@]}"
-    $templates/kitty.sh "${palette[@]}"
-    $templates/rofi.sh "${palette[@]}"
+    $templates/hypr.sh "${palette[@]}" "$random_wallpaper"
     $templates/spotify.sh "${palette[@]}"
     $templates/waybar.sh "${palette[@]}"
 } &> /dev/null

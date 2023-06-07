@@ -15,20 +15,20 @@ pre > code {
 /** End Iosevka */
 
 .theme-dark {
-    --background-primary: #faf4ed;
-    --background-secondary: #faf4ed;
-    --background-tertiary: #faf4ed;
-    --background-accent: #faf4ed;
-    --text-normal: #575279;
+    --background-primary: #232136;
+    --background-secondary: #232136;
+    --background-tertiary: #232136;
+    --background-accent: #232136;
+    --text-normal: #e0def4;
     --text-spotify: #76a264
-    --text-muted: #575279;
-    --text-link: #286983;
-    --background-floating: #faf4ed;
-    --header-primary: #575279;
-    --header-secondary: #575279;
+    --text-muted: #e0def4;
+    --text-link: #3e8fb0;
+    --background-floating: #232136;
+    --header-primary: #e0def4;
+    --header-secondary: #e0def4;
     --header-spotify: #76a264
-    --interactive-normal: #575279;
-    --interactive-hover: #575279;
+    --interactive-normal: #e0def4;
+    --interactive-hover: #e0def4;
     --interactive-active: #76a264
 }
 

@@ -18,10 +18,10 @@
         "pulseaudio"
     ],
     "network": {
-        "format-wifi": "<span font='18' rise='-1000'>直</span>",
-        "format-ethernet": "<span font='18' rise='-1000'></span>",
-        "format-linked": "<span font='18' rise='-1000'></span>",
-        "format-disconnected": "<span font='18' rise='-1000'>睊</span>",
+        "format-wifi": "<span font='18' rise='-1000'> </span>",
+        "format-ethernet": "<span font='18' rise='-1000'> </span>",
+        "format-linked": "<span font='18' rise='-1000'> </span>",
+        "format-disconnected": "<span font='18' rise='-1000'></span>",
         "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
     },
     "wlr/workspaces": {
@@ -43,16 +43,16 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:<span font='14' rise='-1000'></span> %a %d %b <span font='14' rise='-2000'></span> %I:%M}"
+        "format": "{:<span font='14' rise='-1000'> </span> %a %d %b  <span font='14' rise='-1500'> </span> %I:%M}"
     },
     "cpu": {
         "interval": 10,
-        "format": "<span font='18' rise='-2000'></span> {}%",
+        "format": "<span font='18' rise='-2000'> </span> {}%",
         "max-length": 10
     },
     "memory": {
         "interval": 30,
-        "format": "<span font='16' rise='-1000'></span> {}%",
+        "format": "<span font='16' rise='-1000'> </span> {}%",
         "max-length": 10
     },
     "battery": {
@@ -61,22 +61,22 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-icons": ["", "", "", "", "", "", "", "", "", ""]
+        "format": "<span font='17' rise='-1500'>{icon}</span> {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " "]
     },
     "backlight": {
         "device": "intel_backlight",
         "format": "<span font='18' rise='-2000'>{icon}</span> {percent}%",
-        "format-icons": ["", "", ""],
+        "format-icons": [""],
         "on-scroll-up": "brightnessctl set 1%+",
         "on-scroll-down": "brightnessctl set 1%-",
         "min-length": 6
     },
     "pulseaudio": {
         "format": "<span font='16' rise='-1000'>{icon}</span> {volume}%",
-        "format-muted": "Muted <span font='18' rise='-3000'>ﱝ</span>",
+        "format-muted": "Muted<span font='18' rise='-3000'></span>",
         "on-click": "~/.config/waybar/scripts/volume --toggle",
         "scroll-step": 1,
         "format-icons": {
@@ -86,7 +86,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "墳", ""]
+            "default": ["", "", " "]
         }
     }
 }

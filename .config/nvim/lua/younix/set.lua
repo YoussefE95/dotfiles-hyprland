@@ -17,7 +17,7 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
-vim.o.background = "light"
+vim.o.background = "dark"
 
 -- disable netrw
 vim.g.loaded_netrw = 1
