@@ -10,8 +10,8 @@ env:
 ## Terminal window settings
 window:
   dimensions:
-    columns: 58
-    lines: 14
+    columns: 78
+    lines: 29
 
   padding:
     x: 20
@@ -24,7 +24,6 @@ window:
 ## scrolling
   history: 10000
   multiplier: 3
-
 ## Background opacity
   opacity: 1.0
 

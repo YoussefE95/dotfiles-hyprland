@@ -14,12 +14,7 @@
             "light": "Catppuccin-Latte",
             "normal": "Catppuccin-Macchiato",
             "dark": "Catppuccin-Mocha"
-        },
-        "vs_code": {
-            "light": "Catppuccin Latte",
-            "normal": "Catppuccin Macchiato",
-            "dark": "Catppuccin Mocha"
-        },
+        }, 
         "palette": {
             "light": {
                 "background": "eff1f5",
@@ -81,14 +76,9 @@
             "normal": "Gruvbox-Material",
             "dark": "Gruvbox-Dark"
         },
-        "vs_code": {
-            "light": "Gruvbox Material Light",
-            "normal": "Gruvbox Material Dark",
-            "dark": "Gruvbox Material Dark"
-        },
         "palette": {
             "light": {
-                "background": "f3eac7",
+                "background": "f2e5bc",
                 "foreground": "4f3829",
                 "black": "252423",
                 "white": "d4be98",
@@ -146,11 +136,6 @@
             "light": "Rose-Pine-Dawn",
             "normal": "Rose-Pine-Moon",
             "dark": "Rose-Pine"
-        },
-        "vs_code": {
-            "light": "Rosé Pine Dawn",
-            "normal": "Rosé Pine Moon",
-            "dark": "Rosé Pine"
         },
         "palette": {
             "light": {

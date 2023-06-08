@@ -1,6 +1,6 @@
 yay -Syyu
 
-yay -S hyprland-git waybar-hyprland-git swww swaylock polkit libsecret polkit-gnome alacritty grim slurp dmenu zsh neovim starship apple-fonts ttf-iosevka-nerd ranger discord dropbox expressvpn spotify spicetify-cli cmake extra-cmake-modules jq python-pip htop brightnessctl acpi bluez bluez-utils blueman-git pavucontrol nodejs npm
+yay -S hyprland waybar-hyprland-git swww swaylock polkit libsecret polkit-gnome alacritty grim slurp dmenu dunst zsh neovim wl-clipboard starship apple-fonts ttf-iosevka-nerd ranger ueberzugpp discord slack-desktop dropbox expressvpn spotifyd spotify-tui cmake extra-cmake-modules jq python-pip htop brightnessctl acpi alsa bluez bluez-utils blueman-git pavucontrol nodejs npm
 
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -15,16 +15,13 @@ sudo cp .config/theme-setter/set-theme /usr/local/bin/
 sudo cp .config/theme-setter/get-theme /usr/local/bin/
 sudo cp .config/theme-setter/reapply-theme /usr/local/bin/
 
+sudo cp .config/spotifyd/spotifyd.service /etc/systemd/user/
+
 sudo rm -rf ~/Documents ~/Music ~/Public ~/Videos ~/Templates ~/Pictures
 
+systemctl --user enable spotifyd.service --now
 sudo systemctl enable bluetooth
 sudo systemctl enable expressvpn
 
 # set discord theme
 # python3 -m beautifuldiscord --css ~/.config/beautdisc/global_theme.css
-
-# set spotify theme
-# sudo chmod a+wr /opt/spotify
-# sudo chmod a+wr /opt/spotify/Apps -R
-# spicetify config current_theme Default color_scheme Ocean
-# spicetify backup apply

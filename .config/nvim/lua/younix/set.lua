@@ -13,11 +13,9 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.updatetime = 50
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = '80'
 
-vim.g.mapleader = " "
-
-vim.o.background = "dark"
+vim.g.mapleader = ' '
 
 -- disable netrw
 vim.g.loaded_netrw = 1

@@ -29,7 +29,6 @@ jq --arg w "$random_wallpaper" '.wallpaper = $w' $current_info > "$tmp_info" && 
 icon_theme=$(jq ".\"$theme\".icons.\"$mode\"" "$theme_info" | sed 's/\"//g')
 cursor_theme=$(jq ".\"$theme\".cursors.\"$mode\"" "$theme_info" | sed 's/\"//g')
 gtk_theme=$(jq ".\"$theme\".gtk.\"$mode\"" "$theme_info" | sed 's/\"//g')
-vs_theme=$(jq ".\"$theme\".vs_code.\"$mode\"" "$theme_info")
 palette=(
     "$(jq ".\"$theme\".palette.\"$mode\".background" "$theme_info" | sed 's/\"//g')"
     "$(jq ".\"$theme\".palette.\"$mode\".foreground" "$theme_info" | sed 's/\"//g')"
@@ -49,8 +48,9 @@ palette=(
     $templates/alacritty.sh "${palette[@]}"
     $templates/discord.sh "${palette[@]}"
     $templates/dmenu.sh "${palette[@]}"
+    $templates/dunst.sh "${palette[@]}" "$icon_theme"
     $templates/gtk.sh "$icon_theme" "$cursor_theme" "$gtk_theme"
-    $templates/hypr.sh "${palette[@]}" "$random_wallpaper"
-    $templates/spotify.sh "${palette[@]}"
+    $templates/hypr.sh "${palette[@]}" "$cursor_theme" "$random_wallpaper"
+    $templates/nvim.sh "$theme" "$mode"
     $templates/waybar.sh "${palette[@]}"
 } &> /dev/null
