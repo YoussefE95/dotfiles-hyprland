@@ -2,7 +2,7 @@ require('rose-pine').setup({
     dark_variant = 'moon'
 })
 require('catppuccin').setup({
-    flavour = 'mocha'
+    flavour = 'latte'
 })
 vim.g.gruvbox_material_better_performance = 1
 vim.g.gruvbox_material_background = 'medium'
