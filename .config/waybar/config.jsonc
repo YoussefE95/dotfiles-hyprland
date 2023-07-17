@@ -44,7 +44,8 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:<span font='14' rise='-1000'> </span> %a %d %b  <span font='14' rise='-1500'> </span> %I:%M}"
+        "format": "{:<span font='14' rise='-1000'> </span> %a %d %b  <span font='14' rise='-1500'> </span> %I:%M}",
+        "on-click": "firefox --new-tab 'https://calendar.google.com' &",
     },
     "cpu": {
         "interval": 10,
@@ -70,6 +71,7 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "<span font='18' rise='-2000'>{icon}</span> {percent}%",
+        "tooltip-format": "Screen Backlight",
         "format-icons": [""],
         "on-scroll-up": "brightnessctl set 1%+",
         "on-scroll-down": "brightnessctl set 1%-",

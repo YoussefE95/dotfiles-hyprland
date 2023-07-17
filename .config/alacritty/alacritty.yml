@@ -10,8 +10,8 @@ env:
 ## Terminal window settings
 window:
   dimensions:
-    columns: 78
-    lines: 29
+    columns: 70
+    lines: 24
 
   padding:
     x: 20
