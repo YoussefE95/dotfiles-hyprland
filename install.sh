@@ -2,7 +2,7 @@
 yay -Syu
 
 # Install everything
-yay -S hyprland waybar-hyprland-git swww swaylock polkit libsecret polkit-gnome alacritty grim slurp dmenu dunst zsh neovim wl-clipboard starship apple-fonts ttf-iosevka-nerd ranger ueberzugpp discord slack-desktop dropbox expressvpn spotifyd spotify-tui cmake extra-cmake-modules bc jq python-pipx htop brightnessctl acpi alsa bluez bluez-utils blueman-git pavucontrol nodejs npm
+yay -S hyprland waybar-hyprland-git swww swaylock polkit libsecret polkit-gnome alacritty grim slurp dmenu dunst zsh neovim wl-clipboard starship apple-fonts ttf-iosevka-nerd ranger ueberzugpp discord slack-desktop dropbox expressvpn spicetify-cli spotify-launcher cmake extra-cmake-modules bc jq python-pipx htop brightnessctl acpi alsa-utils bluez bluez-utils blueman-git pavucontrol nodejs npm
 
 # Packer for Neovim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
