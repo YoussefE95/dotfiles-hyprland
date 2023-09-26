@@ -21,7 +21,6 @@ alias py='python3'
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
-. /etc/profile.d/vte.sh
 
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
