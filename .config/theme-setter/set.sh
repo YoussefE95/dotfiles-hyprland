@@ -56,7 +56,7 @@ palette=(
     $templates/discord.sh "${palette[@]}"
     $templates/dmenu.sh "${palette[@]}"
     $templates/dunst.sh "${palette[@]}" "$icon"
-    $templates/gtk.sh "$icon" "$cursor" "$gtk"
+    $templates/gtk.sh "${palette[@]}" "$icon" "$cursor" "$gtk"
     $templates/hypr.sh "${palette[@]}" "$cursor" "$random_wallpaper"
     $templates/nvim.sh "$theme" "$mode"
     $templates/obsidian.sh "${palette[@]}"

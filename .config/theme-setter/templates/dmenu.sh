@@ -7,7 +7,7 @@ dest_file="dmenu.sh"
 
 output="$(cat << THEME
 #!/bin/bash
-dmenu_run -b -fn 'SFMono-13' -nb "#${palette[0]}" -nf "#${palette[1]}" -sb "#${palette[5]}" -sf "#${palette[0]}"
+dmenu_run -b -fn 'HackNerdFont-13' -nb "#${palette[0]}" -nf "#${palette[1]}" -sb "#${palette[5]}" -sf "#${palette[0]}"
 THEME
 )"
 
