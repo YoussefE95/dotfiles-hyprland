@@ -33,7 +33,7 @@ output="$(cat << THEME
     #default_icon = /path/to/icon
 
 # Set icon theme (only used for recursive icon lookup)
-icon_theme = "${palette[12]}"
+icon_theme = "${palette[13]}"
 THEME
 )"
 

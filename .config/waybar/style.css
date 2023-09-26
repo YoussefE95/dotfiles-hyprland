@@ -3,7 +3,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: SFMono;
+    font-family: HackNerdFont;
     font-weight: bold;
     font-size: 16px;
     min-height: 0;
@@ -46,8 +46,11 @@ tooltip {
     background: @blue;
 }
 
-#workspaces button {
+#workspaces label {
     color: @background;
+}
+
+#workspaces button {
     background: @gray;
     margin: 7px 2px;
 }

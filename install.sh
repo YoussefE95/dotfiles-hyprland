@@ -2,11 +2,7 @@
 yay -Syu
 
 # Install everything
-yay -S hyprland waybar-hyprland-git swww swaylock polkit libsecret polkit-gnome alacritty grim slurp dmenu dunst zsh neovim wl-clipboard starship apple-fonts ttf-iosevka-nerd ranger ueberzugpp discord slack-desktop dropbox expressvpn spicetify-cli spotify-launcher cmake extra-cmake-modules bc jq python-pipx htop brightnessctl acpi alsa-utils bluez bluez-utils blueman-git pavucontrol nodejs npm
-
-# Packer for Neovim
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+yay -S hyprland waybar-hyprland swww swaylock polkit libsecret polkit-gnome obsidian alacritty code grim slurp dmenu dunst zsh neovim wl-clipboard starship ttf-hack ttf-hack-nerd ttf-iosevka-nerd ranger ueberzugpp discord dropbox expressvpn spicetify-cli spotify-launcher cmake extra-cmake-modules bc jq python-pipx htop brightnessctl acpi alsa-utils bluez bluez-utils blueman pavucontrol nodejs npm
 
 # Syntax highlighting for Zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git\
@@ -30,13 +26,17 @@ sudo cp .config/theme-setter/reapply-theme /usr/local/bin/
 # Delete unused directories
 sudo rm -rf ~/Documents ~/Music ~/Public ~/Videos ~/Templates ~/Pictures
 
-# Copy Spotify Systemd service
-sudo cp .config/spotifyd/spotifyd.service /etc/systemd/user/
-
 # Enable daemons
-systemctl --user enable spotifyd.service --now
 sudo systemctl enable bluetooth
 sudo systemctl enable expressvpn
 
 # set discord theme
-# ~/.local/bin/beautifuldiscord --css ~/.config/beautdisc/global_theme.css
+# ~/.local/bin/beautifuldiscord --css ~/.config/beautifuldiscord.css
+
+# set spotify theme
+# spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
+# spicetify config current_theme Comfy
+# spicetify config color_scheme dynamic
+# spicetify backup apply
+
+# vs code extensions: ESLint, Gruvbox Material, Material Product Icons, Prettier, Python, Rose Pine, Thunder Client, Vue Language Features

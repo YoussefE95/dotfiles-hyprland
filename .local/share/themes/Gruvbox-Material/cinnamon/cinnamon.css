@@ -1,6 +1,6 @@
 .notification-button, .modal-dialog-button {
   color: #d4be98;
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border-color: transparent;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   text-shadow: none;
@@ -14,14 +14,14 @@
 }
 .notification-button:focus, .modal-dialog-button:focus {
   color: #d4be98;
-  background-color: #48433e;
+  background-color: #${palette[12]};
   text-shadow: none;
   icon-shadow: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.44);
 }
 .notification-button:hover, .modal-dialog-button:hover, .notification-button:checked, .modal-dialog-button:checked {
   color: #d4be98;
-  background-color: #48433e;
+  background-color: #${palette[12]};
   border-color: transparent;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.44);
   text-shadow: none;
@@ -29,7 +29,7 @@
 }
 .notification-button:active, .modal-dialog-button:active {
   color: #d4be98;
-  background-color: #4e4842;
+  background-color: #${palette[12]};
   border-color: transparent;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.5);
   text-shadow: none;
@@ -47,7 +47,7 @@
 
 .notification-icon-button, .keyboard-key, .sound-player StButton {
   color: #d4be98;
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border-color: transparent;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   text-shadow: none;
@@ -60,14 +60,14 @@
 }
 .notification-icon-button:focus, .keyboard-key:focus, .sound-player StButton:focus {
   color: #d4be98;
-  background-color: #48433e;
+  background-color: #${palette[12]};
   text-shadow: none;
   icon-shadow: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.44);
 }
 .notification-icon-button:hover, .keyboard-key:hover, .sound-player StButton:hover, .notification-icon-button:checked, .keyboard-key:checked, .sound-player StButton:checked {
   color: #d4be98;
-  background-color: #48433e;
+  background-color: #${palette[12]};
   border-color: transparent;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.44);
   text-shadow: none;
@@ -75,7 +75,7 @@
 }
 .notification-icon-button:active, .keyboard-key:active, .sound-player StButton:active {
   color: #d4be98;
-  background-color: #4e4842;
+  background-color: #${palette[12]};
   border-color: transparent;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.5);
   text-shadow: none;
@@ -151,7 +151,7 @@
 }
 
 .menu, .popup-combo-menu {
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border-radius: 6px;
   color: #d4be98;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.44);
@@ -211,7 +211,7 @@
 
 #LookingGlassDialog, .switcher-list, .modal-dialog, .osd-window, .overview-empty-placeholder, .info-osd, .workspace-osd {
   color: #d4be98;
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border: none;
   border-radius: 6px;
   padding: 12px;
@@ -855,7 +855,7 @@ StScrollView StScrollBar {
 }
 
 #notification {
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border-radius: 6px;
   border: 1px solid rgba(212, 190, 152, 0.2);
   padding: 8px;
@@ -1102,7 +1102,7 @@ StScrollView StScrollBar {
   -arrow-base: 0;
   -arrow-rise: 0;
   -boxpointer-gap: 5px;
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.44);
 }
@@ -1246,7 +1246,7 @@ StScrollView StScrollBar {
 }
 
 .window-list-preview {
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border-radius: 6px;
   padding: 10px 15px;
   spacing: 1em;
@@ -1372,7 +1372,7 @@ StScrollView StScrollBar {
 }
 
 .sound-player-overlay {
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   min-width: 300px;
   padding: 12px 16px;
   spacing: 0.5em;
@@ -1492,7 +1492,7 @@ StScrollView StScrollBar {
 .desklet-with-borders {
   font-size: 9pt;
   font-weight: 400;
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border-radius: 6px;
 }
 .desklet-with-borders:highlight {
@@ -1502,7 +1502,7 @@ StScrollView StScrollBar {
 .desklet-with-borders-and-header {
   font-size: 9pt;
   font-weight: 400;
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border-radius-bottomleft: 2px;
   border-radius-bottomright: 2px;
 }
@@ -1513,7 +1513,7 @@ StScrollView StScrollBar {
 .desklet-header {
   font-size: 15pt;
   font-weight: 500;
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border-radius-topleft: 2px;
   border-radius-topright: 2px;
 }
@@ -1522,7 +1522,7 @@ StScrollView StScrollBar {
 }
 
 .photoframe-box {
-  background-color: #3C3836;
+  background-color: #${palette[12]};
   border-radius: 6px;
 }
 .photoframe-box:highlight {

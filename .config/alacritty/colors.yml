@@ -1,9 +1,9 @@
 colors:
   primary:
-    background: '#282828'
+    background: '#202020'
     foreground: '#ddc7a1'
   normal:
-    black: '#1b1b1b'
+    black: '#141617'
     red: '#ea6962'
     green: '#a9b665'
     yellow: '#d8a657'

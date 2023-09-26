@@ -6,7 +6,7 @@ theme_info="$base_dir/info/themes.json"
 current_info="$base_dir/info/current.json"
 tmp_info="$base_dir/info/tmp.json"
 
-if [[ "$1" == "catppuccin" || "$1" == "gruvbox" || "$1" == "rose-pine" ]]; then
+if [[ "$1" == "gruvbox" || "$1" == "rose-pine" ]]; then
     theme="$1"
 else
     echo "$1 is not a supported theme"
@@ -14,7 +14,7 @@ else
 fi
 
 if [[ "$2" != "light" && "$2" != "dark" ]]; then
-    mode="normal"
+    mode="medium"
 else
     mode="$2"
 fi
@@ -26,9 +26,10 @@ jq --arg t "$theme" '.theme = $t' $current_info > "$tmp_info" && mv "$tmp_info" 
 jq --arg m "$mode" '.mode = $m' $current_info > "$tmp_info" && mv "$tmp_info" $current_info
 jq --arg w "$random_wallpaper" '.wallpaper = $w' $current_info > "$tmp_info" && mv "$tmp_info" $current_info
 
-icon_theme=$(jq ".\"$theme\".icons.\"$mode\"" "$theme_info" | sed 's/\"//g')
-cursor_theme=$(jq ".\"$theme\".cursors.\"$mode\"" "$theme_info" | sed 's/\"//g')
-gtk_theme=$(jq ".\"$theme\".gtk.\"$mode\"" "$theme_info" | sed 's/\"//g')
+icon=$(jq ".\"$theme\".icons.\"$mode\"" "$theme_info" | sed 's/\"//g')
+cursor=$(jq ".\"$theme\".cursors.\"$mode\"" "$theme_info" | sed 's/\"//g')
+gtk=$(jq ".\"$theme\".gtk.\"$mode\"" "$theme_info" | sed 's/\"//g')
+code=$(jq ".\"$theme\".code.\"$mode\"" "$theme_info" | sed 's/\"//g')
 palette=(
     "$(jq ".\"$theme\".palette.\"$mode\".background" "$theme_info" | sed 's/\"//g')"
     "$(jq ".\"$theme\".palette.\"$mode\".foreground" "$theme_info" | sed 's/\"//g')"
@@ -42,15 +43,23 @@ palette=(
     "$(jq ".\"$theme\".palette.\"$mode\".cyan" "$theme_info" | sed 's/\"//g')"
     "$(jq ".\"$theme\".palette.\"$mode\".orange" "$theme_info" | sed 's/\"//g')"
     "$(jq ".\"$theme\".palette.\"$mode\".gray" "$theme_info" | sed 's/\"//g')"
+    "$(jq ".\"$theme\".palette.\"$mode\".backgroundAlt" "$theme_info" | sed 's/\"//g')"
 )
 
 {
+    # $templates/gnome-shell.sh "${palette[@]}" "$gtk"
+    # $templates/gtk-2.sh "${palette[@]}" "$gtk"
+    # $templates/gtk-3.sh "${palette[@]}" "$gtk"
+
     $templates/alacritty.sh "${palette[@]}"
+    $templates/code.sh "$code" "$theme" "$mode"
     $templates/discord.sh "${palette[@]}"
     $templates/dmenu.sh "${palette[@]}"
-    $templates/dunst.sh "${palette[@]}" "$icon_theme"
-    $templates/gtk.sh "$icon_theme" "$cursor_theme" "$gtk_theme"
-    $templates/hypr.sh "${palette[@]}" "$cursor_theme" "$random_wallpaper"
+    $templates/dunst.sh "${palette[@]}" "$icon"
+    $templates/gtk.sh "$icon" "$cursor" "$gtk"
+    $templates/hypr.sh "${palette[@]}" "$cursor" "$random_wallpaper"
     $templates/nvim.sh "$theme" "$mode"
+    $templates/obsidian.sh "${palette[@]}"
+    $templates/spicetify.sh "${palette[@]}"
     $templates/waybar.sh "${palette[@]}"
 } &> /dev/null

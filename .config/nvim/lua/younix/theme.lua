@@ -5,7 +5,7 @@ require('catppuccin').setup({
     flavour = 'macchiato'
 })
 vim.g.gruvbox_material_better_performance = 1
-vim.g.gruvbox_material_background = 'medium'
+vim.g.gruvbox_material_background = 'hard'
 
 vim.o.background = 'dark'
 

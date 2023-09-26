@@ -4,7 +4,7 @@
     "height": 0,
     "modules-left": [
         "network",
-        "wlr/workspaces",
+        "hyprland/workspaces",
         "tray"
     ],
     "modules-center": [
@@ -25,7 +25,7 @@
         "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
         "on-click": "alacritty --title alacritty_float --command nmtui &",
     },
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "format": "{name}",

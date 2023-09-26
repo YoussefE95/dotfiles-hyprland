@@ -32,18 +32,20 @@ get_volume_icon() {
 
 # Increase Volume
 inc_volume() {
-	amixer -Mq set Master,0 5%+ unmute
+	if [[ "$status" == "on" ]]; then
+		amixer -Mq set Master,0 5%+ unmute
+	fi
 }
 
 # Decrease Volume
 dec_volume() {
-	amixer -Mq set Master,0 5%- unmute
+	if [[ "$status" == "on" ]]; then
+		amixer -Mq set Master,0 5%- unmute
+	fi
 }
 
 # Toggle Mute
 toggle_mute() {
-	status=`amixer get Master | tail -n1 | grep -wo 'on'`
-
 	if [[ "$status" == "on" ]]; then
 		amixer set Master toggle
 	else
