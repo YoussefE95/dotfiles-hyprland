@@ -35,13 +35,26 @@ output="$(cat << THEME
 @define-color headerbar_backdrop_color @window_bg_color;
 @define-color headerbar_shade_color #${palette[0]};
 
-
 @define-color card_bg_color #${palette[12]};
 @define-color card_fg_color #${palette[1]};
 @define-color card_shade_color #${palette[12]};
 
 @define-color popover_bg_color #${palette[12]};
 @define-color popover_fg_color #${palette[1]};
+
+.top-bar {
+    color: #${palette[1]};
+    background-color: #${palette[0]};
+} 
+
+placessidebar {
+    color: #${palette[1]};
+    background-color: #${palette[0]};
+}
+.navigation-sidebar {
+    color: #${palette[1]};
+    background-color: #${palette[0]};
+}
 THEME
 )"
 
