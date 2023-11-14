@@ -1,6 +1,6 @@
 yay -Syu
 
-yay -S hyprland xwaylandvideobridge-bin xdg-desktop-portal-hyprland waybar-hyprland swww swaylock polkit libsecret polkit-gnome nautilus gnome-calculator obsidian alacritty code grim slurp dmenu dunst zsh starship ttf-hack ttf-hack-nerd ttf-iosevka-nerd ranger ueberzugpp discord dropbox expressvpn spicetify-cli spotify-launcher cmake extra-cmake-modules bc jq python-pipx htop brightnessctl acpi alsa-utils bluez bluez-utils blueman pavucontrol nodejs npm
+yay -S hyprland xwaylandvideobridge-bin xdg-desktop-portal-hyprland waybar-hyprland swww swaylock polkit libsecret polkit-kde-agent nautilus gnome-calculator obsidian alacritty code grim slurp dmenu dunst zsh starship ttf-hack ttf-hack-nerd ttf-iosevka-nerd ranger ueberzugpp discord dropbox expressvpn spicetify-cli spotify-launcher cmake extra-cmake-modules bc jq python-pipx htop brightnessctl acpi alsa-utils bluez bluez-utils blueman pavucontrol nodejs npm
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
