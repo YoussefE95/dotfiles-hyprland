@@ -16,7 +16,7 @@ font = hack
 prompt-text = "Run: "
 text-color = #${palette[1]}
 selection-color = #${palette[10]}
-background-color = #${palette[0]}98
+background-color = #${palette[0]}E0
 THEME
 )"
 

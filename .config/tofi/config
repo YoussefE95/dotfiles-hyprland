@@ -10,4 +10,4 @@ font = hack
 prompt-text = "Run: "
 text-color = #ddc7a1
 selection-color = #e78a4e
-background-color = #20202098
+background-color = #202020E0
