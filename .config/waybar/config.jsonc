@@ -3,19 +3,20 @@
     "position": "top",
     "height": 0,
     "modules-left": [
-        "network",
-        "hyprland/workspaces",
-        "tray"
+        "cpu",
+        "memory",
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
-        // "cpu",
-        // "memory",
+
+        "tray",
         "battery",
         "backlight",
-        "pulseaudio"
+        "pulseaudio",
+        "network"
     ],
     "network": {
         "format-wifi": "<span font='18' rise='-1000'> </span>",
@@ -25,15 +26,15 @@
         "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
         "on-click": "alacritty --title alacritty_float --command nmtui &"
     },
-    "hyprland/workspaces": {
+    "wlr/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "format": "{name}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
+            "1": "{name}",
+            "2": "{name}",
+            "3": "{name}",
+            "4": "{name}",
             "urgent": "{name}",
             "focused": "{name}",
             "default": "{name}"

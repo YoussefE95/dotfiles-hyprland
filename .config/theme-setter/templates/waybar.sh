@@ -7,6 +7,7 @@ dest_file="colors.css"
 
 output="$(cat << THEME
 @define-color background #${palette[0]};
+@define-color backgroundAlt #${palette[12]};
 @define-color foreground #${palette[1]};
 
 @define-color white #${palette[3]};

@@ -1,28 +1,25 @@
 @import url("colors.css");
 
 * {
-    border: none;
-    border-radius: 0;
     font-family: HackNerdFont;
     font-weight: bold;
     font-size: 16px;
-    min-height: 0;
 }
 
-window#waybar {
+window#waybar,
+tooltip {
     background: @background;
     color: @foreground;
 }
 
 tooltip {
-    background: @background;
-    color: @foreground;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
     border-color: @gray;
 }
 
+#workspaces button,
 #cpu,
 #memory,
 #window,
@@ -30,69 +27,49 @@ tooltip {
 #battery,
 #pulseaudio,
 #network,
-#workspaces button,
 #tray,
 #backlight {
     padding: 6px 14px;
     margin: 7px 3px;
     border-radius: 7px;
-    color: @background;
-}
-
-#network {
-    padding: 2px 10px;
-    margin-left: 10px;
-    margin-right: 8px;
-    background: @orange;
-}
-
-#workspaces label {
-    color: @background;
-}
-
-#workspaces button {
-    background: @gray;
-    /* margin: 7px 2px; */
+    background: @backgroundAlt;
 }
 
 #workspaces button.active {
-    background: @cyan;
+    border: .2rem solid @yellow;
 }
 
 #workspaces button.focused {
-    background: @blue;
+    border: .2rem solid @blue;
 }
 
 #workspaces button.urgent {
-    background: @red;
-}
-
-#tray {
-    background: @background;
-    margin-left: 0px;
-}
-
-#clock {
-    background: @blue;
+    border: .2rem solid @red;
 }
 
 #cpu {
-    background: @green;
+    color: @green;
+    margin-left: 10px;
 }
 
 #memory {
-    background: @yellow;
+    color: @cyan;
 }
 
 #battery {
-    background: @green;
+    color: @green;
 }
 
 #backlight {
-    background: @yellow;
+    color: @yellow;
 }
 
 #pulseaudio {
-    background: @magenta;
+    color: @magenta;
+}
+
+#network {
+    color: @blue;
+    padding: 2px 10px;
     margin-right: 10px;
 }
