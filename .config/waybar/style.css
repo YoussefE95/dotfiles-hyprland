@@ -32,44 +32,57 @@ tooltip {
     padding: 6px 14px;
     margin: 7px 3px;
     border-radius: 7px;
-    background: @backgroundAlt;
+    color: @backgroundAlt;
+    opacity: .65;
+}
+
+#workspaces label {
+    color: @backgroundAlt;
+}
+
+#workspaces button {
+    background: @gray;
 }
 
 #workspaces button.active {
-    border: .2rem solid @yellow;
+    background: @orange;
 }
 
 #workspaces button.focused {
-    border: .2rem solid @blue;
+    background: @blue;
 }
 
 #workspaces button.urgent {
-    border: .2rem solid @red;
+    background: @red;
 }
 
 #cpu {
-    color: @green;
+    background: @green;
     margin-left: 10px;
 }
 
 #memory {
-    color: @cyan;
+    background: @cyan;
+}
+
+#clock {
+    background: @foreground;
 }
 
 #battery {
-    color: @green;
+    background: @green;
 }
 
 #backlight {
-    color: @yellow;
+    background: @yellow;
 }
 
 #pulseaudio {
-    color: @magenta;
+    background: @magenta;
 }
 
 #network {
-    color: @blue;
+    background: @blue;
     padding: 2px 10px;
     margin-right: 10px;
 }
