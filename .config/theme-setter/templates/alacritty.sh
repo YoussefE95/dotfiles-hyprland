@@ -3,8 +3,6 @@ palette=("${@}")
 dest_dir="$HOME/.config/alacritty/"
 dest_file="colors.yml"
 
-[[ -d "$dest_dir" ]] || mkdir -pv "$dest_dir"
-
 output="$(cat << THEME
 colors:
   primary:

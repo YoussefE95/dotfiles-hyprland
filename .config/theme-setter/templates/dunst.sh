@@ -3,8 +3,6 @@ palette=("${@}")
 dest_dir="$HOME/.config/dunst/"
 dest_file="dunstTheme"
 
-[[ -d "$dest_dir" ]] || mkdir -pv "$dest_dir"
-
 output="$(cat << THEME
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.

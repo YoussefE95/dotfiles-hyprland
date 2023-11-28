@@ -1,0 +1,59 @@
+.session {
+    background: $backgroundAlt;
+    border-radius: 1rem;
+    margin: 10px 10px 5px 10px;
+}
+
+.session-box,
+.session-title,
+.session-label {
+    background: $backgroundAlt;
+    padding-left: 15px;
+}
+
+.session-box {
+    border-radius: 1rem;
+}
+
+.session-title {
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.session-label {
+    font-size: 1.2rem;
+}
+
+.user-info,
+.os,
+.hypr-version,
+.zsh-version,
+.packages,
+.uptime {
+    background: $backgroundAlt;
+    font-size: 2.75rem;
+}
+
+.user-info {
+    color: rgba($blue, 0.8);
+}
+
+.os {
+    color: rgba($magenta, 0.8);
+}
+
+.hypr-version {
+    color: rgba($cyan, 0.8);
+}
+
+.zsh-version {
+    color: rgba($green, 0.8);
+}
+
+.packages {
+    color: rgba($yellow, 0.8);
+}
+
+.uptime {
+    color: rgba($orange, 0.8);
+}

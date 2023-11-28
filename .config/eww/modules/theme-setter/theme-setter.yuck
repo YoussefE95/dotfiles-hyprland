@@ -1,0 +1,66 @@
+(defwidget theme-setter []
+    (box
+        :class "theme-setter"
+        :orientation "horizontal"
+        :halign "center"
+        :valign "center"
+        :width 350
+        :height 150
+        (box
+            :class "palette"
+            :orientation "vertical"
+            :halign "center"
+            :valign "center"
+            :width 180
+            (eventbox
+                :onclick `set-theme everforest ${MODE}`
+                (label
+                    :class "theme-label ${THEME == 'everforest' ? 'selected-theme' : ''}"
+                    :text "Everforest"
+                )
+            )
+            (eventbox
+                :onclick `set-theme gruvbox ${MODE}`
+                (label
+                    :class "theme-label ${THEME == 'gruvbox' ? 'selected-theme' : ''}"
+                    :text "Gruvbox"
+                )
+            )
+            (eventbox
+                :onclick `set-theme rose-pine ${MODE}`
+                (label
+                    :class "theme-label ${THEME == 'rose-pine' ? 'selected-theme' : ''}"
+                    :text "Rose Pine"
+                )
+            )
+        )
+        (box
+            :class "mode"
+            :orientation "vertical"
+            :halign "center"
+            :valign "center"
+            :width 180
+            (eventbox
+                :onclick `set-theme ${THEME} light`
+                (label
+                    :class "theme-label ${MODE == 'light' ? 'selected-mode' : ''}"
+                    :text "Light"
+                )
+            )
+            (eventbox
+                :onclick `set-theme ${THEME}`
+                (label
+                    :class "theme-label ${MODE == 'medium' ? 'selected-mode' : ''}"
+                    :text "Medium"
+                )
+            )
+            (eventbox
+                :onclick `set-theme ${THEME} dark`
+                (label
+                    :class "theme-label ${MODE == 'dark' ? 'selected-mode' : ''}"
+                    :text "Dark"
+                )
+            )
+        )
+    )
+)

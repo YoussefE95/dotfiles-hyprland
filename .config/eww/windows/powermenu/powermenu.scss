@@ -1,0 +1,24 @@
+.powermenu {
+    border-radius: 1rem;
+    padding: 4px;
+}
+
+.powermenu-icon {
+    background: $backgroundAlt;
+    border-radius: 1rem;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.logout-icon {
+    color: rgba($blue, 0.65);
+}
+
+.reboot-icon {
+    color: rgba($magenta, 0.65);
+}
+
+.poweroff-icon {
+    color: rgba($red, 0.65);
+}

@@ -1,14 +1,14 @@
-@define-color background #202020;
-@define-color backgroundAlt #141617;
-@define-color foreground #ddc7a1;
+@define-color background #272E33;
+@define-color backgroundAlt #1E2326;
+@define-color foreground #D3C6AA;
 
-@define-color white #d4be98;
-@define-color black #141617;
-@define-color red #ea6962;
-@define-color magenta #d3869b;
-@define-color blue #7daea3;
-@define-color cyan #89b482;
-@define-color green #a9b665;
-@define-color yellow #d8a657;
-@define-color orange #e78a4e;
-@define-color gray #7c6f64;
+@define-color white #F1E4C5;
+@define-color black #2E383C;
+@define-color red #E67E80;
+@define-color magenta #D699B6;
+@define-color blue #7FBBB3;
+@define-color cyan #83C092;
+@define-color green #A7C080;
+@define-color yellow #DBBC7F;
+@define-color orange #E69875;
+@define-color gray #9DA9A0;

@@ -1,0 +1,24 @@
+(defwindow dashboard
+    :monitor 0
+    :geometry (geometry 
+        :x "30" :y "0"
+        :anchor "left center"
+    )
+    :stacking "fg"
+    :reserve (struts 
+        :distance "40px"
+        :side "top"
+    )
+    :windowtype "dock"
+    :wm-ignore false
+    (box
+        :class "dashboard"
+        :orientation "vertical"
+        :space-evenly false
+        :width 380
+        :height 610
+        (session)
+        (system)
+        (theme-setter)
+    )
+)

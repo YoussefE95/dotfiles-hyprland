@@ -1,0 +1,38 @@
+.notifications {
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.notifications-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.notifications-clear-icon {
+    color: $gray;
+    border-radius: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.notification {
+    background: $backgroundAlt;
+    border-radius: 1rem;
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.notifications-title,
+.notification-title,
+.notification-body {
+    background: inherit;
+    border-radius: inherit;
+    padding-left: 10px;
+}
+
+.notification-title {
+    font-weight: bold;
+    color: rgba($magenta, 0.85);
+}

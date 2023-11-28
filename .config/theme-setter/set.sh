@@ -6,7 +6,7 @@ theme_info="$base_dir/info/themes.json"
 current_info="$base_dir/info/current.json"
 tmp_info="$base_dir/info/tmp.json"
 
-if [[ "$1" == "gruvbox" || "$1" == "rose-pine" ]]; then
+if [[ "$1" == "everforest" || "$1" == "gruvbox" || "$1" == "rose-pine" ]]; then
     theme="$1"
 else
     echo "$1 is not a supported theme"
@@ -51,15 +51,15 @@ palette=(
     # $templates/gtk-2.sh "${palette[@]}" "$gtk"
     # $templates/gtk-3.sh "${palette[@]}" "$gtk"
 
-    $templates/waybar.sh "${palette[@]}"
     $templates/alacritty.sh "${palette[@]}"
     $templates/code.sh "$code" "$theme" "$mode"
     $templates/discord.sh "${palette[@]}"
     $templates/dunst.sh "${palette[@]}" "$icon"
+    $templates/eww.sh "${palette[@]}"
     $templates/gtk.sh "${palette[@]}" "$icon" "$cursor" "$gtk"
     $templates/hypr.sh "${palette[@]}" "$cursor" "$random_wallpaper"
-    $templates/nvim.sh "$theme" "$mode"
     $templates/obsidian.sh "${palette[@]}"
     $templates/spicetify.sh "${palette[@]}"
     $templates/tofi.sh "${palette[@]}"
+    $templates/waybar.sh "${palette[@]}"
 } &> /dev/null

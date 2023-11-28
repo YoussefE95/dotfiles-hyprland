@@ -1,4 +1,73 @@
 {
+    "everforest": {
+        "icons": {
+            "light": "Papirus-Green",
+            "medium": "Papirus-Green",
+            "dark": "Papirus-Blue"
+        },
+        "cursors": {
+            "light": "Capitaine-Cursors",
+            "medium": "Capitaine-Cursors-White",
+            "dark": "Capitaine-Cursors-White"
+        },
+        "gtk": {
+            "light": "EverForest-Light",
+            "medium": "EverForest-Medium",
+            "dark": "EverForest-Dark"
+        },
+        "code": {
+            "light": "Everforest Light",
+            "medium": "Everforest Dark",
+            "dark": "Everforest Dark"
+        },
+        "palette": {
+            "light": {
+                "background": "F3EAD3",
+                "backgroundAlt": "E5DFC5",
+                "foreground": "5C6A72",
+                "black": "708089",
+                "white": "F1E4C5",
+                "red": "F85552",
+                "green": "8DA101",
+                "yellow": "DFA000",
+                "blue": "3A94C5",
+                "magenta": "DF69BA",
+                "cyan": "35A77C",
+                "orange": "F57D26",
+                "gray": "829181"
+            },
+            "medium": {
+                "background": "2D353B",
+                "backgroundAlt": "232A2E",
+                "foreground": "D3C6AA",
+                "black": "343F44",
+                "white": "F1E4C5",
+                "red": "E67E80",
+                "green": "A7C080",
+                "yellow": "DBBC7F",
+                "blue": "7FBBB3",
+                "magenta": "D699B6",
+                "cyan": "83C092",
+                "orange": "E69875",
+                "gray": "9DA9A0"
+            },
+            "dark": {
+                "background": "272E33",
+                "backgroundAlt": "1E2326",
+                "foreground": "D3C6AA",
+                "black": "2E383C",
+                "white": "F1E4C5",
+                "red": "E67E80",
+                "green": "A7C080",
+                "yellow": "DBBC7F",
+                "blue": "7FBBB3",
+                "magenta": "D699B6",
+                "cyan": "83C092",
+                "orange": "E69875",
+                "gray": "9DA9A0"
+            }
+        }
+    },
     "gruvbox": {
         "icons": {
             "light": "Newaita-Green",
@@ -92,7 +161,7 @@
         "palette": {
             "light": {
                 "background": "faf4ed",
-                "backgroundAlt": "e8ddd1",
+                "backgroundAlt": "f2e9e1",
                 "foreground": "575279",
                 "black": "575279",
                 "white": "bfb9b2",

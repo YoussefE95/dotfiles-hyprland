@@ -1,5 +1,5 @@
 {
-	"workbench.colorTheme": "Gruvbox Material Dark",
+	"workbench.colorTheme": "Everforest Dark",
     "editor.fontFamily": "'Hack Nerd Font Mono', monospace",
     "window.titleBarStyle": "custom",
     "editor.codeLensFontFamily": "'Hack Nerd Font Mono', monospace",
@@ -20,10 +20,15 @@
     "window.menuBarVisibility": "compact",
     "telemetry.telemetryLevel": "off",
     "editor.detectIndentation": false,
+    "everforest.lightContrast": "soft",
+	"everforest.darkContrast": "hard",
     "gruvboxMaterial.lightContrast": "soft",
 	"gruvboxMaterial.darkContrast": "hard",
     "workbench.layoutControl.enabled": false,
     "editor.scrollbar.vertical": "hidden",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.productIconTheme": "material-product-icons"
+    "workbench.productIconTheme": "material-product-icons",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

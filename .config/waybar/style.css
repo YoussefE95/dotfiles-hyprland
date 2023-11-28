@@ -19,70 +19,60 @@ tooltip {
     border-color: @gray;
 }
 
-#workspaces button,
-#cpu,
-#memory,
 #window,
-#clock,
-#battery,
-#pulseaudio,
 #network,
+#workspaces button,
+#clock,
 #tray,
-#backlight {
+#battery,
+#backlight,
+#pulseaudio {
     padding: 6px 14px;
     margin: 7px 3px;
     border-radius: 7px;
-    color: @backgroundAlt;
-    opacity: .65;
-}
-
-#workspaces label {
-    color: @backgroundAlt;
-}
-
-#workspaces button {
-    background: @gray;
-}
-
-#workspaces button.active {
-    background: @orange;
-}
-
-#workspaces button.focused {
-    background: @blue;
-}
-
-#workspaces button.urgent {
-    background: @red;
-}
-
-#cpu {
-    background: @green;
-    margin-left: 10px;
-}
-
-#memory {
-    background: @cyan;
-}
-
-#clock {
-    background: @foreground;
-}
-
-#battery {
-    background: @green;
-}
-
-#backlight {
-    background: @yellow;
-}
-
-#pulseaudio {
-    background: @magenta;
+    background: @backgroundAlt;
+    opacity: .85;
 }
 
 #network {
-    background: @blue;
+    color: @blue;
     padding: 2px 10px;
+    margin-left: 10px;
+}
+
+#workspaces label {
+    color: @foreground;
+}
+
+/* #workspaces button {
+    border: .25rem solid @gray;
+} */
+
+#workspaces button.active {
+    border: .25rem solid @orange;
+}
+
+#workspaces button.focused {
+    border: .25rem solid @blue;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#clock {
+    color: @foreground;
+}
+
+#battery {
+    color: @green;
+}
+
+#backlight {
+    color: @yellow;
+}
+
+#pulseaudio {
+    color: @magenta;
     margin-right: 10px;
 }
