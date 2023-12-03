@@ -1,7 +1,6 @@
 {
-	"workbench.colorTheme": "Everforest Dark",
+    "workbench.colorTheme": "Everforest Light",
     "editor.fontFamily": "'Hack Nerd Font Mono', monospace",
-    "window.titleBarStyle": "custom",
     "editor.codeLensFontFamily": "'Hack Nerd Font Mono', monospace",
     "debug.console.fontFamily": "'Hack Nerd Font Mono', monospace",
     "terminal.integrated.fontFamily": "'Hack Nerd Font Mono', monospace",
@@ -16,19 +15,19 @@
     "typescript.preferences.quoteStyle": "single",
     "prettier.jsxSingleQuote": true,
     "html.completion.attributeDefaultValue": "singlequotes",
-    "window.commandCenter": false,
-    "window.menuBarVisibility": "compact",
     "telemetry.telemetryLevel": "off",
     "editor.detectIndentation": false,
     "everforest.lightContrast": "soft",
-	"everforest.darkContrast": "hard",
+    "everforest.darkContrast": "medium",
     "gruvboxMaterial.lightContrast": "soft",
-	"gruvboxMaterial.darkContrast": "hard",
-    "workbench.layoutControl.enabled": false,
+    "gruvboxMaterial.darkContrast": "medium",
     "editor.scrollbar.vertical": "hidden",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "material-product-icons",
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "window.menuBarVisibility": "toggle",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false
 }

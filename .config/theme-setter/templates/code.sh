@@ -1,4 +1,4 @@
-code_settings=$HOME/.config/'Code - OSS'/User/settings.json
+code_settings=$HOME/.config/Code/User/settings.json
 sed -i /.*workbench.colorTheme.*/c\\"\t\"workbench.colorTheme\": \"$1\"," "$code_settings"
 
 if [[ "$3" == "dark" ]]; then

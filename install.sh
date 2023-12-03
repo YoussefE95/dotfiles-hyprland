@@ -1,6 +1,6 @@
 yay -Syu
 
-yay -S hyprland xwaylandvideobridge-bin xdg-desktop-portal-hyprland eww-wayland waybar swww swaylock polkit libsecret polkit-kde-agent nautilus gnome-calculator obsidian alacritty code grim slurp tofi dunst zsh starship ttf-hack ttf-hack-nerd ttf-iosevka-nerd ranger ueberzugpp discord dropbox expressvpn spicetify-cli spotify-launcher cmake extra-cmake-modules bc jq python-pipx htop brightnessctl acpi alsa-utils bluez bluez-utils blueman pavucontrol nodejs npm
+yay -S hyprland xwaylandvideobridge-bin xdg-desktop-portal-hyprland eww-wayland waybar swww swaylock polkit libsecret polkit-kde-agent nautilus gnome-calculator obsidian alacritty visual-studio-code-bin grim slurp tofi dunst zsh starship ttf-hack ttf-hack-nerd ttf-iosevka-nerd ranger ueberzugpp discord dropbox expressvpn spicetify-cli spotify cmake extra-cmake-modules bc jq python-pipx htop brightnessctl acpi alsa-utils bluez bluez-utils blueman pavucontrol nodejs npm
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
@@ -20,17 +20,9 @@ sudo systemctl enable expressvpn
 
 # ~/.local/bin/beautifuldiscord --css ~/.config/beautifuldiscord.css
 
+# sudo chmod a+wr /opt/spotify
+# sudo chmod a+wr /opt/spotify/Apps -R
 # spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
 # spicetify config current_theme Comfy
 # spicetify config color_scheme dynamic
 # spicetify backup apply
-
-# vs code:
-#   ESLint
-#   Gruvbox Material
-#   Material Product Icons
-#   Prettier
-#   Python
-#   Rose Pine
-#   Thunder Client
-#   Vue Language Features
