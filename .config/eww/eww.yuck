@@ -1,6 +1,5 @@
 (include "./variables.yuck")
 (include "./modules/session/session.yuck")
-(include "./modules/system/system.yuck")
 (include "./modules/theme-setter/theme-setter.yuck")
 (include "./windows/dashboard/dashboard.yuck")
 (include "./windows/notifications/notifications.yuck")

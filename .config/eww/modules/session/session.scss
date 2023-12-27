@@ -29,7 +29,9 @@
 .hypr-version,
 .zsh-version,
 .packages,
-.uptime {
+.uptime,
+.mem,
+.cpu {
     background: $backgroundAlt;
     font-size: 2.75rem;
 }
@@ -56,4 +58,12 @@
 
 .uptime {
     color: rgba($orange, 0.8);
+}
+
+.mem {
+    color: rgba($cyan, 0.8);
+}
+
+.cpu {
+    color: rgba($green, 0.8);
 }

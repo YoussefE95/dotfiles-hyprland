@@ -1,8 +1,8 @@
 (defwindow powermenu
     :monitor 0
     :geometry (geometry 
-        :x "30" :y "30"
-        :anchor "right bottom"
+        :x "0" :y "0"
+        :anchor "center"
     )
     :stacking "fg"
     :reserve (struts 
@@ -19,10 +19,10 @@
         (eventbox
             :width 100
             :height 100
-            :onclick "hyprctl dispatch exit"
+            :onclick "poweroff"
             (label
-                :class "logout-icon powermenu-icon"
-                :text ""
+                :class "poweroff-icon powermenu-icon"
+                :text "󰐥"
             )
         )
         (eventbox
@@ -31,16 +31,16 @@
             :onclick "reboot"
             (label
                 :class "reboot-icon powermenu-icon"
-                :text ""
+                :text ""
             )
         )
         (eventbox
             :width 100
             :height 100
-            :onclick "poweroff"
+            :onclick "hyprctl dispatch exit"
             (label
-                :class "poweroff-icon powermenu-icon"
-                :text "󰐥"
+                :class "logout-icon powermenu-icon"
+                :text ""
             )
         )
     )

@@ -31,7 +31,7 @@
                 :class "notifications-clear"
                 :halign "end"
                 :valign "center"
-                :onclick "dunstctl history-clear"
+                :onclick "dunstctl history-clear && eww open --toggle notifications"
                 :width 25
                 :height 25
                 (label

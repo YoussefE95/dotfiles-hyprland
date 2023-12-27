@@ -16,9 +16,8 @@
         :orientation "vertical"
         :space-evenly false
         :width 380
-        :height 610
+        :height 425
         (session)
-        (system)
         (theme-setter)
     )
 )
