@@ -20,13 +20,15 @@ tooltip {
 }
 
 #window,
+#custom-dashboard,
 #network,
 #workspaces button,
 #clock,
 #tray,
 #battery,
 #backlight,
-#pulseaudio {
+#pulseaudio,
+#custom-powermenu {
     padding: 6px 14px;
     margin: 7px 3px;
     border-radius: 7px;
@@ -34,10 +36,16 @@ tooltip {
     opacity: .85;
 }
 
+#custom-dashboard {
+    color: @magenta;
+    padding: 2px 10px;
+    margin-left: 10px;
+}
+
+
 #network {
     color: @blue;
     padding: 2px 10px;
-    margin-left: 10px;
 }
 
 #workspaces label {
@@ -74,5 +82,10 @@ tooltip {
 
 #pulseaudio {
     color: @magenta;
+}
+
+#custom-powermenu {
+    color: @red;
+    padding: 2px 16px;
     margin-right: 10px;
 }

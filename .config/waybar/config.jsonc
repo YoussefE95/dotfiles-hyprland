@@ -2,18 +2,14 @@
     "layer": "top",
     "position": "top",
     "height": 0,
-    "modules-left": [
-        "network",
-        "hyprland/workspaces"
-    ],
-    "modules-center": [
-        "clock"
-    ],
+    "modules-left": ["custom/dashboard", "network", "hyprland/workspaces"],
+    "modules-center": ["clock"],
     "modules-right": [
         "tray",
         "battery",
         "backlight",
-        "pulseaudio"
+        "pulseaudio",
+        "custom/powermenu"
     ],
     "network": {
         "format-wifi": "<span font='18' rise='-1000'> </span>",
@@ -79,5 +75,15 @@
             "car": "",
             "default": ["", "", " "]
         }
+    },
+    "custom/dashboard": {
+        "format": "<span font='18' rise='-1000'> </span>",
+        "tooltip-format": "Dashboard",
+        "on-click": "eww open --toggle dashboard"
+    },
+    "custom/powermenu": {
+        "format": "<span font='18' rise='-1000'>󰐥</span>",
+        "tooltip-format": "Power Menu",
+        "on-click": "eww open --toggle powermenu"
     }
 }
