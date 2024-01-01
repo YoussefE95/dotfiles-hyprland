@@ -2,13 +2,14 @@
     "layer": "top",
     "position": "top",
     "height": 0,
-    "modules-left": ["custom/dashboard", "network", "hyprland/workspaces"],
+    "modules-left": ["custom/dashboard", "hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": [
         "tray",
         "battery",
         "backlight",
         "pulseaudio",
+        "network",
         "custom/powermenu"
     ],
     "network": {
