@@ -1,15 +1,18 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 0,
+    "margin-top": 16,
+    "margin-bottom": -8,
+    "height": 50,
+    "width": 1890,
     "modules-left": ["custom/dashboard", "hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": [
-        "tray",
         "battery",
         "backlight",
         "pulseaudio",
         "network",
+        "tray",
         "custom/powermenu"
     ],
     "network": {
@@ -80,11 +83,11 @@
     "custom/dashboard": {
         "format": "<span font='18' rise='-1000'> </span>",
         "tooltip-format": "Dashboard",
-        "on-click": "eww open --toggle dashboard"
+        "on-click": "eww open --toggle dashboard &"
     },
     "custom/powermenu": {
         "format": "<span font='18' rise='-1000'>󰐥</span>",
         "tooltip-format": "Power Menu",
-        "on-click": "eww open --toggle powermenu"
+        "on-click": "eww open --toggle powermenu &"
     }
 }

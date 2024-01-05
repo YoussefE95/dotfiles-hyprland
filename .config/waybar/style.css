@@ -10,10 +10,10 @@ window#waybar,
 tooltip {
     background: @background;
     color: @foreground;
+    border-radius: 10px;
 }
 
-tooltip {
-    border-radius: 10px;
+tooltip { 
     border-width: 2px;
     border-style: solid;
     border-color: @gray;
