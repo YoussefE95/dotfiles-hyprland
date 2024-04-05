@@ -1,12 +1,12 @@
 {
     "layer": "top",
     "position": "top",
-    "margin-top": 16,
-    "margin-bottom": -8,
-    "height": 50,
+    "margin-top": 10,
+    "margin-bottom": -6,
+    "height": 30,
     "width": 1890,
     "modules-left": ["custom/dashboard", "hyprland/workspaces"],
-    "modules-center": ["clock"],
+    "modules-center": ["custom/fuzzy"],
     "modules-right": [
         "battery",
         "backlight",
@@ -36,10 +36,6 @@
             "focused": "{name}",
             "default": "{name}"
         }
-    },
-    "clock": {
-        "format": "{:<span font='18' rise='-2000'></span>  %a %d %b  <span font='18' rise='-2000'></span>  %I:%M}",
-        "on-click": "firefox --new-tab 'https://calendar.google.com' &"
     },
     "tray": {
         "icon-size": 20,
@@ -80,14 +76,18 @@
             "default": ["", "", " "]
         }
     },
+    "custom/fuzzy": {
+        "exec": "$HOME/.config/waybar/scripts/fuzzy-clock",
+        "interval": 60,
+        "format": "{}",
+        "on-click": "firefox --new-tab 'https://calendar.google.com' &"
+    },
     "custom/dashboard": {
         "format": "<span font='18' rise='-1000'> </span>",
-        "tooltip-format": "Dashboard",
         "on-click": "eww open --toggle dashboard &"
     },
     "custom/powermenu": {
         "format": "<span font='18' rise='-1000'>󰐥</span>",
-        "tooltip-format": "Power Menu",
         "on-click": "eww open --toggle powermenu &"
     }
 }

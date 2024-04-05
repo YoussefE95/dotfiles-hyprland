@@ -17,6 +17,7 @@ bindkey '^[[B' history-substring-search-down
 alias rang='source ranger'
 alias vpn='expressvpn'
 alias py='python3'
+alias clear='printf "\033[2J\033[3J\033[1;1H"'
 
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

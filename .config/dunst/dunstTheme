@@ -1,7 +1,7 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#202020"
+    background = "#292828"
     foreground = "#ddc7a1"
     frame_color = "#7c6f64"
     timeout = 10
@@ -9,7 +9,7 @@
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#202020"
+    background = "#292828"
     foreground = "#ddc7a1"
     frame_color = "#7c6f64"
     timeout = 10
@@ -17,7 +17,7 @@
     #default_icon = /path/to/icon
 
 [urgency_critical]
-    background = "#202020"
+    background = "#292828"
     foreground = "#ddc7a1"
     frame_color = "#ea6962"
     timeout = 0
@@ -25,4 +25,4 @@
     #default_icon = /path/to/icon
 
 # Set icon theme (only used for recursive icon lookup)
-icon_theme = "Newaita-Black"
+icon_theme = "Newaita"

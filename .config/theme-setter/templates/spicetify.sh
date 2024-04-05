@@ -37,4 +37,4 @@ THEME
 
 printf '%s' "$output" > "${dest_dir}/${dest_file}"
 
-spicetify apply
+spicetify -n apply

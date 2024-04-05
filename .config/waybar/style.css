@@ -3,7 +3,7 @@
 * {
     font-family: HackNerdFont;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 window#waybar,
@@ -23,13 +23,13 @@ tooltip {
 #custom-dashboard,
 #network,
 #workspaces button,
-#clock,
+#custom-fuzzy,
 #tray,
 #battery,
 #backlight,
 #pulseaudio,
 #custom-powermenu {
-    padding: 6px 14px;
+    padding: 3px 10px;
     margin: 7px 3px;
     border-radius: 7px;
     background: @backgroundAlt;
@@ -68,7 +68,7 @@ tooltip {
     color: @red;
 }
 
-#clock {
+#custom-fuzzy {
     color: @foreground;
 }
 

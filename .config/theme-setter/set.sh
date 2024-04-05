@@ -51,15 +51,15 @@ palette=(
     # $templates/gtk-2.sh "${palette[@]}" "$gtk"
     # $templates/gtk-3.sh "${palette[@]}" "$gtk"
 
-    $templates/alacritty.sh "${palette[@]}"
-    $templates/code.sh "$code" "$theme" "$mode"
-    $templates/discord.sh "${palette[@]}"
-    $templates/dunst.sh "${palette[@]}" "$icon"
-    $templates/eww.sh "${palette[@]}"
-    $templates/gtk.sh "${palette[@]}" "$icon" "$cursor" "$gtk"
-    $templates/hypr.sh "${palette[@]}" "$cursor" "$random_wallpaper"
-    $templates/obsidian.sh "${palette[@]}"
-    $templates/spicetify.sh "${palette[@]}"
-    $templates/tofi.sh "${palette[@]}"
-    $templates/waybar.sh "${palette[@]}"
+    $templates/discord.sh "${palette[@]}" &
+    $templates/dunst.sh "${palette[@]}" "$icon" &
+    $templates/eww.sh "${palette[@]}" &
+    $templates/gtk.sh "${palette[@]}" "$icon" "$cursor" "$gtk" &
+    $templates/hypr.sh "${palette[@]}" "$mode" "$random_wallpaper" &
+    $templates/kitty.sh "${palette[@]}" &
+    $templates/nvim.sh "$theme" "$mode" &
+    $templates/obsidian.sh "${palette[@]}" &
+    $templates/spicetify.sh "${palette[@]}" &
+    $templates/tofi.sh "${palette[@]}" &
+    $templates/waybar.sh "${palette[@]}" &
 } &> /dev/null

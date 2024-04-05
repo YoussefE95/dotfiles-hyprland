@@ -29,10 +29,24 @@
 @define-color headerbar_backdrop_color @window_bg_color;
 @define-color headerbar_shade_color #292828;
 
-
 @define-color card_bg_color #1b1b1b;
 @define-color card_fg_color #ddc7a1;
 @define-color card_shade_color #1b1b1b;
 
 @define-color popover_bg_color #1b1b1b;
 @define-color popover_fg_color #ddc7a1;
+
+.top-bar {
+    color: #ddc7a1;
+    background-color: #292828;
+} 
+
+placessidebar {
+    color: #ddc7a1;
+    background-color: #292828;
+}
+
+.navigation-sidebar {
+    color: #ddc7a1;
+    background-color: #292828;
+}
