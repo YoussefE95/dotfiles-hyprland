@@ -1,6 +1,6 @@
 yay -Syu
 
-yay -S hyprland hyprpaper hyprlock eww waybar tofi dunst zsh starship ttf-hack ttf-hack-nerd kitty neovim ranger htop nvtop expressvpn obsidian nautilus gnome-calculator discord dropbox spicetify-cli spotify xwaylandvideobridge xdg-desktop-portal-hyprland polkit libsecret polkit-kde-agent grim slurp cmake extra-cmake-modules bc jq python-pipx python-pillow brightnessctl acpi alsa-utils bluez bluez-utils blueman pavucontrol nodejs npm
+yay -S hyprland hyprpaper hyprlock eww waybar tofi dunst zsh starship ttf-hack ttf-hack-nerd kitty neovim ranger htop nvtop expressvpn obsidian nautilus gnome-calculator discord dropbox spicetify-cli spotify xwaylandvideobridge xdg-desktop-portal-hyprland polkit libsecret polkit-kde-agent wl-clipboard grim slurp cmake extra-cmake-modules bc jq python-pipx python-pillow brightnessctl acpi alsa-utils bluez bluez-utils blueman pavucontrol nodejs npm
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
@@ -19,6 +19,8 @@ sudo systemctl enable bluetooth
 sudo systemctl enable expressvpn
 
 chsh -s $(which zsh)
+
+gsettings set org.gnome.desktop.interface cursor-theme "Capitaine-Cursors"
 
 # ~/.local/bin/beautifuldiscord --css ~/.config/beautifuldiscord.css
 
