@@ -1,6 +1,7 @@
 palette=("${@}")
 lock="$HOME/.config/hypr/hyprlock.conf"
 paper="$HOME/.config/hypr/hyprpaper.conf"
+land="$HOME/.config/hypr/general.conf"
 
 sed -i "s#.*outer_color.*#    outer_color = rgb(${palette[0]})#" "$lock"
 sed -i "s#.*inner_color.*#    inner_color = rgb(${palette[12]})#" "$lock"
@@ -15,13 +16,13 @@ sed -i "s#.*preload.*#preload = ${palette[14]}#" "$paper"
 sed -i "s#.*wallpaper.*#wallpaper = eDP-1,${palette[14]}#" "$paper"
 hyprpaper &
 
-hyprctl keyword general:col.active_border "0xff${palette[6]}"
-hyprctl keyword general:col.inactive_border "0xff${palette[11]}"
+sed -i "s#.*col.active_border.*#    col.active_border=0xff${palette[6]}#" "$land"
+sed -i "s#.*col.inactive_border.*#    col.inactive_border=0xff${palette[11]}#" "$land"
 
 if [[ "${palette[13]}" == "light" ]]; then
-    hyprctl keyword decoration:active_opacity .88
-    hyprctl keyword decoration:inactive_opacity .88
+    sed -i "s#    active_opacity.*#    active_opacity=.88#" "$land"
+    sed -i "s#    inactive_opacity.*#    inactive_opacity=.88#" "$land"
 else
-    hyprctl keyword decoration:active_opacity .94
-    hyprctl keyword decoration:inactive_opacity .94
+    sed -i "s#    active_opacity.*#    active_opacity=.94#" "$land"
+    sed -i "s#    inactive_opacity.*#    inactive_opacity=.94#" "$land"
 fi
