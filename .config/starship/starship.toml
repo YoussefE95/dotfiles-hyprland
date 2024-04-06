@@ -1,6 +1,8 @@
 # Don't print a new line at the start of the prompt
 add_newline = true
 
+command_timeout=750
+
 # Prompt
 format = """
 $directory$git_branch$git_status

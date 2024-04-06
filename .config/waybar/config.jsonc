@@ -21,7 +21,7 @@
         "format-linked": "<span font='18' rise='-1000'> </span>",
         "format-disconnected": "<span font='18' rise='-1000'></span>",
         "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
-        "on-click": "alacritty --title alacritty_float --command nmtui &"
+        "on-click": "kitty --title kitty_float nmtui &"
     },
     "hyprland/workspaces": {
         "disable-scroll": true,

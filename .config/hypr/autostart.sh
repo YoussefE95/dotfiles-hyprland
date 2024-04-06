@@ -3,4 +3,5 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 xwaylandvideobridge &
 dunst &
 hyprpaper &
-set-theme $(get-theme) $(get-theme --mode) &
+waybar &
+dropbox &
