@@ -1,3 +1,4 @@
+#!/bin/bash
 palette=("${@}")
 
 dest_dir="$HOME/Dropbox/Documents/Obsidian Vault/.obsidian/themes/Dynamic"

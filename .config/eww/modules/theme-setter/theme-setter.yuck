@@ -27,9 +27,9 @@
                 )
             )
             (eventbox
-                :onclick `set-theme rose-pine ${MODE}`
+                :onclick `set-theme rosepine ${MODE}`
                 (label
-                    :class "theme-label ${THEME == 'rose-pine' ? 'selected-theme' : ''}"
+                    :class "theme-label ${THEME == 'rosepine' ? 'selected-theme' : ''}"
                     :text "Rose Pine"
                 )
             )

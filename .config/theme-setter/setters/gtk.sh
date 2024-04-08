@@ -1,3 +1,4 @@
+#!/bin/bash
 palette=("${@}")
 
 dest_dir="$HOME/.config/gtk-4.0"
@@ -62,6 +63,5 @@ THEME
 printf '%s' "$output" > "${dest_dir}/${dest_file}"
 
 gsettings set org.gnome.desktop.interface icon-theme "${palette[13]}"
-# gsettings set org.gnome.desktop.interface cursor-theme "${palette[14]}"
-gsettings set org.gnome.desktop.interface gtk-theme "${palette[15]}"
+gsettings set org.gnome.desktop.interface gtk-theme "${palette[14]}-${palette[15]}"
 gsettings set org.gnome.desktop.interface font-name 'Hack Nerd Font'

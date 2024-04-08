@@ -1,11 +1,8 @@
 #!/bin/bash
+parser="$HOME/.config/theme-setter/scripts/parser.sh"
 
-current_info="$HOME/.config/theme-setter/info/current.json"
-
-if [[ $1 == '--mode' ]]; then
-    echo $(jq ".mode" "$current_info") | sed 's/\"//g'
-elif [[ $1 == '--wallpaper' ]]; then
-    echo $(jq ".wallpaper" "$current_info") | sed 's/\"//g'
+if [ $1 == "--mode" ]; then
+    $parser --mode
 else
-    echo $(jq ".theme" "$current_info") | sed 's/\"//g'
+    $parser --theme
 fi

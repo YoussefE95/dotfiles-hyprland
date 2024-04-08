@@ -1,3 +1,4 @@
+#!/bin/bash
 palette=("${@}")
 
 dest_dir="$HOME/.local/share/themes/${palette[13]}/gnome-shell"

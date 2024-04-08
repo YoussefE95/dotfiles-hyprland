@@ -1,3 +1,4 @@
+#!/bin/bash
 palette=("${@}")
 
 dest_dir="$HOME/.config"

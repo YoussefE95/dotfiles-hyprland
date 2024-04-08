@@ -1,24 +1,10 @@
 {
     "everforest": {
+        "nvim": "everforest",
         "icons": {
             "light": "Papirus-Green",
             "medium": "Papirus-Green",
             "dark": "Papirus-Blue"
-        },
-        "cursors": {
-            "light": "Capitaine-Cursors",
-            "medium": "Capitaine-Cursors-White",
-            "dark": "Capitaine-Cursors-White"
-        },
-        "gtk": {
-            "light": "EverForest-Light",
-            "medium": "EverForest-Medium",
-            "dark": "EverForest-Dark"
-        },
-        "code": {
-            "light": "Everforest Light",
-            "medium": "Everforest Dark",
-            "dark": "Everforest Dark"
         },
         "palette": {
             "light": {
@@ -69,25 +55,11 @@
         }
     },
     "gruvbox": {
+        "nvim": "gruvbox-material",
         "icons": {
             "light": "Newaita-Green",
             "medium": "Newaita",
-            "dark": "Newaita-Black"
-        },
-        "cursors": {
-            "light": "Capitaine-Cursors-Gruvbox",
-            "medium": "Capitaine-Cursors-Gruvbox-White",
-            "dark": "Capitaine-Cursors-Gruvbox-White"
-        },
-        "gtk": {
-            "light": "Gruvbox-Light",
-            "medium": "Gruvbox-Material",
-            "dark": "Gruvbox-Dark"
-        },
-        "code": {
-            "light": "Gruvbox Material Light",
-            "medium": "Gruvbox Material Dark",
-            "dark": "Gruvbox Material Dark"
+            "dark": "Newaita"
         },
         "palette": {
             "light": {
@@ -137,26 +109,12 @@
             }
         }
     },
-    "rose-pine": {
+    "rosepine": {
+        "nvim": "rose-pine",
         "icons": {
             "light": "Papirus-Green",
             "medium": "Papirus-Blue",
             "dark": "Papirus-Black"
-        },
-        "cursors": {
-            "light": "Capitaine-Cursors",
-            "medium": "Capitaine-Cursors-White",
-            "dark": "Capitaine-Cursors-White"
-        },
-        "gtk": {
-            "light": "Rose-Pine-Dawn",
-            "medium": "Rose-Pine-Moon",
-            "dark": "Rose-Pine"
-        },
-        "code": {
-            "light": "Rosé Pine Dawn",
-            "medium": "Rosé Pine Moon",
-            "dark": "Rosé Pine"
         },
         "palette": {
             "light": {
