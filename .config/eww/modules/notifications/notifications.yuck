@@ -1,5 +1,5 @@
 (defwindow notifications
-    :monitor 1
+    :monitor 0
     :geometry (geometry 
         :x "30"
         :y "30"

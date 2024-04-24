@@ -13,7 +13,6 @@ else
 fi
 
 sed -i "s#.*preload.*#preload = $bg#" "$paper"
-sed -i "s#.*DP-2.*#wallpaper = DP-2,$bg#" "$paper"
-sed -i "s#.*DP-3.*#wallpaper = DP-3,$bg#" "$paper"
+sed -i "s#.*eDP-1.*#wallpaper = eDP-1,$bg#" "$paper"
 
 hyprpaper &

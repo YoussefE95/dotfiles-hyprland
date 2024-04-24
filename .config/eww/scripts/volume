@@ -1,10 +1,24 @@
 #!/bin/bash
 
-volume=$(wpctl get-volume 49 | cut -d ' ' -f 2)
+vol_dec=$(wpctl get-volume 49 | cut -d ' ' -f 2)
+vol=${vol_dec//.}
 
+if [[ ${vol:0:1} == 1 ]]; then
+    icon=''
+    text=$vol
+elif [[ ${vol:1:1} != 0 ]]; then
+    icon=''
+    text=${vol:1}
+elif [[ ${vol:2:1} != 0 ]]; then
+    icon=''
+    text=${vol:1}
+elif [[ ${vol:0:1} == 0 && ${vol:1:1} == 0 && ${vol:2:1} == 0 ]]; then
+    icon=''
+    text=${vol:1}
+fi
 
-if [ $1 == '--icon' ]; then
-    echo '󰕾'
-elif [ $1 == '--text' ]; then
-    echo ${volume//.}
+if [[ $1 == '--icon' ]]; then
+    echo $icon
+elif [[ $1 == '--text' ]]; then
+    echo $text
 fi

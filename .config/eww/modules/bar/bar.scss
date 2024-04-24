@@ -11,6 +11,8 @@
 .workspaces,
 .workspace,
 .clock,
+.brightness,
+.battery,
 .volume,
 .network,
 .power-toggle {
@@ -26,7 +28,7 @@
 }
 
 .search-toggle {
-    color: rgba($blue, 0.8);
+    color: rgba($cyan, 0.8);
 }
 
 .workspace {
@@ -47,22 +49,36 @@
     font-weight: bold;
 }
 
+.brightness-icon {
+    font-size:1.75rem;
+    color: rgba($yellow, 0.8);
+    padding: 0rem .5rem;
+}
+
+.battery-icon {
+    font-size:1.75rem;
+    color: rgba($green, 0.8);
+    padding: 0rem .5rem;
+}
+
 .volume-icon {
-    color: rgba($cyan, 0.8);
+    color: rgba($blue, 0.8);
     padding: 0rem .5rem;
 }
 
 
 .network-icon {
     color: rgba($magenta, 0.8);
-    padding: 0rem .75rem;
+    padding: 0rem .5rem;
 }
 
+.brightness-text,
+.battery-text,
 .volume-text,
 .network-text {
     font-size: 1.3rem;
     color: $foreground;
-    padding: 0rem .25rem;
+    padding: 0rem .5rem 0rem .25rem;
 }
 
 .power-toggle {

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+icon=''
+text=$(brightnessctl | grep 'Current brightness:' | cut -d ' ' -f 4 | tr -d '()%')
+
+if [[ $1 == '--icon' ]]; then
+    echo $icon
+elif [[ $1 == '--text' ]]; then
+    echo $text
+fi
