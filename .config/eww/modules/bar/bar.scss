@@ -1,0 +1,77 @@
+.left-box {
+    margin-left: .25rem;
+}
+
+.right-box {
+    margin-right: .25rem;
+}
+
+.dash-toggle,
+.search-toggle,
+.workspaces,
+.workspace,
+.clock,
+.volume,
+.network,
+.power-toggle {
+    font-size: 2.5rem;
+    background: $backgroundAlt;
+    border-radius: .75rem;
+    padding: 0rem .75rem;
+    margin: .5rem .25rem;
+}
+
+.dash-toggle {
+    color: rgba($magenta, 0.8);
+}
+
+.search-toggle {
+    color: rgba($blue, 0.8);
+}
+
+.workspace {
+    font-size: 1.35rem;
+    color: $background;
+    background: rgba($gray, 0.5);
+    border-radius: .5rem;
+    margin: .5rem .25rem;
+}
+
+.focused-ws {
+    background: rgba($orange, 0.8);
+}
+
+.clock-text {
+    font-size: 1.25rem;
+    color: $foreground;
+    font-weight: bold;
+}
+
+.volume-icon {
+    color: rgba($cyan, 0.8);
+    padding: 0rem .5rem;
+}
+
+
+.network-icon {
+    color: rgba($magenta, 0.8);
+    padding: 0rem .75rem;
+}
+
+.volume-text,
+.network-text {
+    font-size: 1.3rem;
+    color: $foreground;
+    padding: 0rem .25rem;
+}
+
+.power-toggle {
+    color: rgba($red, 0.8);
+}
+
+.tray {
+    background: $backgroundAlt;
+    border-radius: .75rem;
+    padding: 0rem .75rem;
+    margin: .5rem;
+}

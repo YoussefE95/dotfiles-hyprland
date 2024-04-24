@@ -5,6 +5,13 @@
 (defpoll PACKAGES :interval "1h" :initial "" `echo "$(pacman -Qm | wc -l) + $(pacman -Q | wc -l)" | bc`)
 (defpoll UPTIME :interval "1m" :initial "" `uptime -p`)
 
+(defpoll FUZZY_TIME :interval "30s" `~/.config/eww/scripts/fuzzy-clock`)
+(defpoll ACTIVE_WS :interval "0.4s" `hyprctl activeworkspace | grep 'workspace ID' | cut -d ' ' -f 3`)
+(defpoll VOL_ICON :interval "1s" `~/.config/eww/scripts/volume --icon`)
+(defpoll VOL_TEXT :interval "1s" `~/.config/eww/scripts/volume --text`)
+(defpoll NET_ICON :interval "4s" `~/.config/eww/scripts/wifi --icon`)
+(defpoll NET_TEXT :interval "4s" `~/.config/eww/scripts/wifi --text`)
+
 (deflisten DUNST_HIST :initial "{}" `echo "\"$(dunstctl history | jq ".data[0]")\""`)
 (deflisten THEME :initial "" `get-theme`)
 (deflisten MODE :initial "" `get-theme --mode`)

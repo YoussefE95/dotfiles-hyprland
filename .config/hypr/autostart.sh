@@ -3,5 +3,5 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 xwaylandvideobridge &
 dunst &
 hyprpaper &
-waybar &
+eww open bar &
 dropbox &

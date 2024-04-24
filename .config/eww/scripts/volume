@@ -1,0 +1,10 @@
+#!/bin/bash
+
+volume=$(wpctl get-volume 49 | cut -d ' ' -f 2)
+
+
+if [ $1 == '--icon' ]; then
+    echo '󰕾'
+elif [ $1 == '--text' ]; then
+    echo ${volume//.}
+fi

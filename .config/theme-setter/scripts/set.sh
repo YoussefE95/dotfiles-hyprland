@@ -47,6 +47,5 @@ palette=(
     $setters/obsidian.sh "${palette[@]}" &
     $setters/spicetify.sh "${palette[@]}" &
     $setters/tofi.sh "${palette[@]}" &
-    $setters/waybar.sh "${palette[@]}" &
     $setters/zathura.sh "${palette[@]}" &
 } &> /dev/null

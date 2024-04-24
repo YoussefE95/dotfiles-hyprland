@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ $(nmcli g | grep -oE "disconnected") ]; then
+    icon='󰈂'
+    text='Disconnected'
+else
+    if [ $(nmcli c | grep enp5s0 | awk '{print ($1)}') == "Wired" ]; then
+        icon=''
+        text='Ethernet'
+    else
+        icon='󰖩'
+        text='Wifi'
+    fi
+
+fi
+
+
+if [ $1 == '--icon' ]; then
+    echo $icon
+elif [ $1 == '--text' ]; then
+    echo $text
+fi

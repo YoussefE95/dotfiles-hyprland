@@ -1,7 +1,8 @@
 (defwindow powermenu
-    :monitor 0
+    :monitor 1
     :geometry (geometry 
-        :x "0" :y "0"
+        :x "0"
+        :y "0"
         :anchor "center"
     )
     :stacking "fg"

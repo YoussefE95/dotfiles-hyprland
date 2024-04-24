@@ -1,14 +1,10 @@
-@import 'colors.scss';
-@import './modules/session/session.scss';
-@import './modules/theme-setter/theme-setter.scss';
-@import './windows/bar/bar.scss';
-@import './windows/dashboard/dashboard.scss';
-@import './windows/notifications/notifications.scss';
-@import './windows/powermenu/powermenu.scss';
+@import './colors.scss';
+@import './modules/bar/bar.scss';
+@import './modules/dashboard/dashboard.scss';
+@import './modules/notifications/notifications.scss';
+@import './modules/powermenu/powermenu.scss';
 
 * {
-    all: unset;
-    background: $background;
     color: $foreground;
     font-family: 'Hack Nerd Font Mono';
 }

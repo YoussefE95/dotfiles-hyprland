@@ -1,0 +1,168 @@
+(defwidget dashboard-toggle []
+    (eventbox
+        :onclick "eww open --toggle dashboard"
+        (label
+            :class "dash-toggle"
+            :text "󰍜"
+        )
+    )
+)
+
+(defwidget search-toggle []
+    (eventbox
+        :onclick "tofi-drun | xargs hyprctl dispatch exec --"
+        (label
+            :class "search-toggle"
+            :text "󰍉"
+        )
+    )
+)
+
+(defwidget workspaces []
+    (box
+        :class "workspaces"
+        :orientation "horizontal"
+        (eventbox
+            :onclick "hyprctl dispatch workspace 1"
+            (label
+                :class "workspace ${ACTIVE_WS == '1' ? 'focused-ws' : ''}"
+                :text "1"
+            )
+        )
+        (eventbox
+            :onclick "hyprctl dispatch workspace 2"
+            (label
+                :class "workspace ${ACTIVE_WS == '2' ? 'focused-ws' : ''}"
+                :text "2"
+            )
+        )
+        (eventbox
+            :onclick "hyprctl dispatch workspace 3"
+            (label
+                :class "workspace ${ACTIVE_WS == '3' ? 'focused-ws' : ''}"
+                :text "3"
+            )
+        )
+        (eventbox
+            :onclick "hyprctl dispatch workspace 4"
+            (label
+                :class "workspace ${ACTIVE_WS == '4' ? 'focused-ws' : ''}"
+                :text "4"
+            )
+        )
+    )
+)
+
+(defwidget clock []
+    (box
+        :class "clock"
+        :orientation "horizontal"
+        (eventbox
+            :onclick "firefox --new-tab 'https://calendar.google.com' &"
+            (label
+                :class "clock-text"
+                :text "${FUZZY_TIME}"
+            )
+        )
+    )
+)
+
+(defwidget tray []
+    (box
+        :class "tray"
+        (systray
+            :spacing 6
+            :space-evenly true
+            :icon-size 24
+            :prepend-new true
+        )
+    )
+)
+
+(defwidget volume []
+    (eventbox
+        :onclick "pavucontrol &"
+        :space-evenly false
+        (box
+            :class "volume"
+            (label
+                :class "volume-icon"
+                :text "${VOL_ICON}"
+            )
+            (label
+                :class "volume-text"
+                :text "${VOL_TEXT}"
+            )
+        )
+    )
+)
+
+(defwidget network []
+    (eventbox
+        :onclick "kitty --title kitty_float nmtui &"
+        (box
+            :class "network"
+            :space-evenly false
+            (label
+                :class "network-icon"
+                :text "${NET_ICON}"
+            )
+            (label
+                :class "network-text"
+                :text "${NET_TEXT}"
+            )
+        )
+    )
+)
+
+(defwidget powermenu-toggle []
+    (eventbox
+        :onclick "eww open --toggle powermenu"
+        (label
+            :class "power-toggle"
+            :text "󰐥"
+        )
+    )
+)
+
+(defwindow bar
+    :monitor 1
+    :exclusive true
+    :geometry (geometry
+        :x "0"
+        :y "0"
+        :width "100%"
+        :height "38px"
+        :anchor "top center"
+    )
+    (box
+        :class "bar"
+        :orientation "horizontal"
+        :space-evenly true
+        (box
+            :class "left-box"
+            :halign "start"
+            :space-evenly false
+            :orientation "horizontal"
+            (dashboard-toggle)
+            (search-toggle)
+            (workspaces)
+        )
+        (box
+            :halign "center"
+            :space-evenly false
+            :orientation "horizontal"
+            (clock)
+        )
+        (box
+            :class "right-box"
+            :halign "end"
+            :space-evenly false
+            :orientation "horizontal"
+            (tray)
+            (volume)
+            (network)
+            (powermenu-toggle)
+        )
+    )
+)

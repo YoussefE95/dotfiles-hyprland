@@ -1,3 +1,7 @@
+.dashboard {
+    border-radius: 1rem;
+}
+
 .session {
     background: $backgroundAlt;
     border-radius: 1rem;
@@ -66,4 +70,23 @@
 
 .cpu {
     color: rgba($green, 0.8);
+}
+
+.theme-setter {
+    background: $backgroundAlt;
+    border-radius: 1rem;
+    margin: 5px 10px 10px 10px;
+}
+
+.theme-label {
+    background: $backgroundAlt;
+    color: $gray;
+    font-size: 1.3rem;
+    padding: 0.4rem 0rem;
+}
+
+.selected-theme,
+.selected-mode {
+    color: rgba($orange, 0.8);
+    font-weight: bold;
 }
