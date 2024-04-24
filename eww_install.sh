@@ -5,4 +5,4 @@ cargo build --release --no-default-features --features=wayland
 cd target/release
 chmod +x ./eww
 ./eww daemon
-cp ./eww /usr/local/bin/
+sudo cp ./eww /usr/local/bin/
