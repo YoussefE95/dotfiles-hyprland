@@ -1,6 +1,6 @@
 #!/bin/bash
 
-vol_dec=$(wpctl get-volume 49 | cut -d ' ' -f 2)
+vol_dec=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | cut -d ' ' -f 2)
 vol=${vol_dec//.}
 
 if [[ ${vol:0:1} == 1 ]]; then
