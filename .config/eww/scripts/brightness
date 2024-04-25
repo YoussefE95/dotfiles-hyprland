@@ -7,4 +7,9 @@ if [[ $1 == '--icon' ]]; then
     echo $icon
 elif [[ $1 == '--text' ]]; then
     echo $text
+elif [[ $1 == '--up' ]]; then
+    brightnessctl -q set 5%+
+elif [[ $1 == '--down' ]]; then
+    brightnessctl -q set 5%-
+
 fi

@@ -1,6 +1,6 @@
 (defwidget dashboard-toggle []
     (eventbox
-        :onclick "eww open --toggle dashboard"
+        :onclick "~/.config/eww/scripts/toggle --dash"
         (label
             :class "dash-toggle"
             :text "󰍜"
@@ -95,24 +95,28 @@
 )
 
 (defwidget brightness []
-    (box
-        :class "brightness"
+   (eventbox
+        :onscroll `~/.config/eww/scripts/brightness --{}`
         :space-evenly false
-        (label
-            :class "brightness-icon"
-            :text "${BRI_ICON}"
-        )
-        (label
-            :class "brightness-text"
-            :text "${BRI_TEXT}"
-        )
-    ) 
+        (box
+            :class "brightness"
+            :space-evenly false
+            (label
+                :class "brightness-icon"
+                :text "${BRI_ICON}"
+            )
+            (label
+                :class "brightness-text"
+                :text "${BRI_TEXT}"
+            )
+        ) 
+    )
 )
 
 (defwidget volume []
     (eventbox
         :onclick "pavucontrol &"
-        :onscroll ``
+        :onscroll `~/.config/eww/scripts/volume --{}`
         :space-evenly false
         (box
             :class "volume"
@@ -148,7 +152,7 @@
 
 (defwidget powermenu-toggle []
     (eventbox
-        :onclick "eww open --toggle powermenu"
+        :onclick "~/.config/eww/scripts/toggle --power"
         (label
             :class "power-toggle"
             :text "󰐥"

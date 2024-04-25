@@ -1,5 +1,3 @@
-yay -Syu
-
 yay -S hyprland hyprpaper hyprlock tofi dunst zsh starship ttf-hack ttf-hack-nerd kitty neovim zathura zathura-pdf-poppler ranger htop nvtop expressvpn obsidian nautilus discord dropbox spicetify-cli spotify xwaylandvideobridge xdg-desktop-portal-hyprland polkit libsecret polkit-kde-agent wl-clipboard grim slurp cmake extra-cmake-modules bc jq python-pipx python-pillow brightnessctl acpi alsa-utils bluez bluez-utils blueman pavucontrol nodejs npm
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting

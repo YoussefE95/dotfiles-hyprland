@@ -1,3 +1,5 @@
+yay -S rust gtk-layer-shell
+
 cd ~/Downloads
 git clone https://github.com/elkowar/eww
 cd eww

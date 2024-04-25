@@ -1,9 +1,9 @@
 #!/bin/bash
 
-is_connected=$(nmcli g | grep 'connected')
+is_connected=$(nmcli g | grep 'connected' | cut -d ' ' -f 1)
 wifi_name=$(nmcli c | grep wlan0 | cut -d ' ' -f 1)
 
-if [[ $is_connected == '' ]]; then
+if [[ $is_connected != 'connected' ]]; then
     icon='󰈂'
     text='Disconnected'
 else
@@ -14,7 +14,6 @@ else
         icon='󰖩'
         text=$wifi_name
     fi
-
 fi
 
 if [[ $1 == '--icon' ]]; then

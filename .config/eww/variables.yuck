@@ -1,6 +1,6 @@
 (defpoll USER_INFO :interval "1h" :initial "" `echo $USER @ $(hostname)`)
 (defpoll OS :interval "1h" :initial "" `echo "$(lsb_release -si) $(uname -r)"`)
-(defpoll HYPR_VERSION :interval "1h" :initial "" `hyprctl version | grep 'Tag' | cut -d ' ' -f 2 | cut -d 'v' -f 2`)
+(defpoll HYPR_VERSION :interval "1h" :initial "" `hyprctl version | grep Tag | cut -d ' ' -f 2 | tr -d 'v,'`)
 (defpoll ZSH_VERSION :interval "1h" :initial "" `zsh --version | cut -d ' ' -f 1,2`)
 (defpoll PACKAGES :interval "1h" :initial "" `echo "$(pacman -Qm | wc -l) + $(pacman -Q | wc -l)" | bc`)
 (defpoll UPTIME :interval "1m" :initial "" `uptime -p`)

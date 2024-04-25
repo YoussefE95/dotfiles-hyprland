@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ $1 == '--dash' ]]; then
+    module='dashboard'
+elif [[ $1 == '--power' ]]; then
+    module='powermenu'
+elif [[ $1 == '--notifications' ]]; then
+    module='notifications'
+fi
+
+eww open --toggle $module
