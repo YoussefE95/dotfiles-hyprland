@@ -91,14 +91,20 @@
         :orientation "horizontal"
         :halign "center"
         :valign "center"
-        :width 350
-        :height 150
+        :width 300
+        :height 210
         (box
             :class "palette"
             :orientation "vertical"
             :halign "center"
             :valign "center"
-            :width 180
+            (eventbox
+                :onclick `set-theme catppuccin ${MODE}`
+                (label
+                    :class "theme-label ${THEME == 'catppuccin' ? 'selected-theme' : ''}"
+                    :text "Catppuccin"
+                )
+            )
             (eventbox
                 :onclick `set-theme everforest ${MODE}`
                 (label
@@ -126,7 +132,6 @@
             :orientation "vertical"
             :halign "center"
             :valign "center"
-            :width 180
             (eventbox
                 :onclick `set-theme ${THEME} light`
                 (label
@@ -152,27 +157,65 @@
     )
 )
 
+(defwidget powermenu []
+    (box
+        :class "powermenu"
+        :orientation "horizontal"
+        (box
+            :class "powermenu-box"
+            (eventbox
+                :class "powermenu-event"
+                :onclick "poweroff"
+                (label
+                    :class "poweroff-icon"
+                    :text "󰐥"
+                )
+            )
+        )
+        (box
+            :class "powermenu-box"
+            (eventbox
+                :class "powermenu-event"
+                :onclick "reboot"
+                (label
+                    :class "reboot-icon"
+                    :text ""
+                )
+            )
+        )
+        (box
+            :class "powermenu-box"
+            (eventbox
+                :class "powermenu-event"
+                :onclick "hyprctl dispatch exit"
+                (label
+                    :class "logout-icon"
+                    :text ""
+                )
+            )
+        )
+    )
+)
+
 (defwindow dashboard
     :monitor 0
+    :exclusive false
+    :namespace "gtk-layer-shell"
     :geometry (geometry 
-        :x "30"
+        :x "0"
         :y "0"
-        :anchor "left center"
+        :anchor "center"
     )
-    :stacking "fg"
-    :reserve (struts 
-        :distance "40px"
-        :side "top"
-    )
-    :windowtype "dock"
-    :wm-ignore false
     (box
         :class "dashboard"
-        :orientation "vertical"
+        :orientation "horizontal"
         :space-evenly false
-        :width 380
-        :height 425
         (session)
-        (theme-setter)
+        (box
+            :orientation "vertical"
+            :space-evenly false
+            (theme-setter)
+            (powermenu)
+        )
     )
 )

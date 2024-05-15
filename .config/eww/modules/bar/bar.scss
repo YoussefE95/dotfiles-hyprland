@@ -1,3 +1,7 @@
+.bar {
+    background: transparent;
+}
+
 .left-box {
     margin-left: .25rem;
 }
@@ -6,58 +10,87 @@
     margin-right: .25rem;
 }
 
-.dash-toggle,
-.search-toggle,
-.workspaces,
-.workspace,
+.notif-toggle,
+.date,
 .clock,
-.brightness,
+.weather,
+.workspaces,
+.tray,
 .battery,
+.brightness,
 .volume,
-.network,
-.power-toggle {
+.network {
     font-size: 2.5rem;
     background: $backgroundAlt;
-    border-radius: .75rem;
+    border-radius: 1rem;
     padding: 0rem .75rem;
     margin: .5rem .25rem;
+    box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
 }
 
-.dash-toggle {
-    color: rgba($magenta, 0.8);
+.notif-toggle-icon {
+    color: rgba($blue, 0.8);
+    padding: 0rem .5rem;
 }
 
-.search-toggle {
-    color: rgba($cyan, 0.8);
+.date-icon {
+    color: rgba($yellow, 0.8);
+    padding: 0rem .5rem;
+}
+
+.clock-icon {
+    color: rgba($green, 0.8);
+    padding: 0rem .5rem;
+}
+
+.sun-icon {
+    font-size: 2.75rem;
+    color: rgba($orange, 0.8);
+    padding: 0rem .5rem;
+}
+
+.moon-icon {
+    color: rgba($blue, 0.8);
+    padding: 0rem .5rem;
+}
+
+.weather-text {
+    font-size: 1.3rem;
+    color: $foreground;
+    padding: 0rem 0rem 0rem .75rem;
+}
+
+.degree-icon {
+    font-size: 2.75rem;
+    color: rgba($foreground, 0.8);
+}
+
+.workspace-text {
+    font-size: 2rem;
+    color: rgba($gray, 0.5);
 }
 
 .workspace {
-    font-size: 1.35rem;
-    color: $background;
-    background: rgba($gray, 0.5);
-    border-radius: .5rem;
-    margin: .5rem .25rem;
+    margin: .5rem;
 }
 
-.focused-ws {
-    background: rgba($orange, 0.8);
+.ws-active {
+    color: rgba($blue, 0.8);
 }
 
-.clock-text {
-    font-size: 1.25rem;
-    color: $foreground;
-    font-weight: bold;
-}
-
-.brightness-icon {
-    font-size:1.75rem;
-    color: rgba($yellow, 0.8);
-    padding: 0rem .5rem;
+.ws-focus {
+    color: rgba($orange, 0.8);
 }
 
 .battery-icon {
     font-size:1.75rem;
     color: rgba($green, 0.8);
+    padding: 0rem .5rem;
+}
+
+.brightness-icon {
+    font-size:1.75rem;
+    color: rgba($yellow, 0.8);
     padding: 0rem .5rem;
 }
 
@@ -72,8 +105,11 @@
     padding: 0rem .5rem;
 }
 
-.brightness-text,
+.notif-toggle-text,
+.date-text,
+.clock-text,
 .battery-text,
+.brightness-text,
 .volume-text,
 .network-text {
     font-size: 1.3rem;
@@ -81,13 +117,6 @@
     padding: 0rem .5rem 0rem .25rem;
 }
 
-.power-toggle {
-    color: rgba($red, 0.8);
-}
-
 .tray {
     background: $backgroundAlt;
-    border-radius: .75rem;
-    padding: 0rem .75rem;
-    margin: .5rem;
 }

@@ -1,19 +1,80 @@
-(defwidget dashboard-toggle []
+(defwidget notif-toggle []
     (eventbox
-        :onclick "~/.config/eww/scripts/toggle --dash"
-        (label
-            :class "dash-toggle"
-            :text "󰍜"
+        :onclick "~/.config/eww/scripts/toggle --notifications"
+        (box
+            :class "notif-toggle"
+            :orientation "horizontal"
+            :space-evenly false
+            (label
+                :class "notif-toggle-icon"
+                :text "󰍨"
+            )
+            (label
+                :class "notif-toggle-text"
+                :text "${HIST_LEN}"
+            )
         )
     )
 )
 
-(defwidget search-toggle []
+(defwidget date []
+    (box
+        :class "date"
+        :orientation "horizontal"
+        (eventbox
+            :onclick "firefox --new-tab 'https://calendar.google.com' &"
+            (box
+                    :space-evenly false
+                (label
+                    :class "date-icon"
+                    :text "󰸗"
+                )
+                (label
+                    :class "date-text"
+                    :text "${DATE}"
+                )
+            )
+        )
+    )
+)
+
+(defwidget time []
+    (box
+        :class "clock"
+        :orientation "horizontal"
+        (eventbox
+            ;:onclick "eww update TIME_TOG=${TIME_TOG ? false : true}"
+            (box
+                    :space-evenly false
+                (label
+                    :class "clock-icon"
+                    :text "󰥔"
+                )
+                (label
+                    :class "clock-text"
+                    :text "${TIME_NORM}"
+                    ;:text "${TIME_TOG ? TIME_NORM : TIME_FUZZ}"
+                )
+            )
+        )
+    )
+)
+
+(defwidget weather []
     (eventbox
-        :onclick "tofi-drun | xargs hyprctl dispatch exec --"
-        (label
-            :class "search-toggle"
-            :text "󰍉"
+        :onclick `eww open --toggle astro`
+        (box
+            :class "weather"
+            :orientation "horizontal"
+            :space-evenly false
+            (label
+                :class "weather-text"
+                :text "${WEATHER.feelslike_f}"
+            )
+            (label
+                :class "degree-icon"
+                :text ""
+            )
         )
     )
 )
@@ -22,46 +83,12 @@
     (box
         :class "workspaces"
         :orientation "horizontal"
-        (eventbox
-            :onclick "hyprctl dispatch workspace 1"
-            (label
-                :class "workspace ${ACTIVE_WS == '1' ? 'focused-ws' : ''}"
-                :text "1"
-            )
-        )
-        (eventbox
-            :onclick "hyprctl dispatch workspace 2"
-            (label
-                :class "workspace ${ACTIVE_WS == '2' ? 'focused-ws' : ''}"
-                :text "2"
-            )
-        )
-        (eventbox
-            :onclick "hyprctl dispatch workspace 3"
-            (label
-                :class "workspace ${ACTIVE_WS == '3' ? 'focused-ws' : ''}"
-                :text "3"
-            )
-        )
-        (eventbox
-            :onclick "hyprctl dispatch workspace 4"
-            (label
-                :class "workspace ${ACTIVE_WS == '4' ? 'focused-ws' : ''}"
-                :text "4"
-            )
-        )
-    )
-)
-
-(defwidget clock []
-    (box
-        :class "clock"
-        :orientation "horizontal"
-        (eventbox
-            :onclick "firefox --new-tab 'https://calendar.google.com' &"
-            (label
-                :class "clock-text"
-                :text "${FUZZY_TIME}"
+        :space-evenly "false"
+        (for workspace in WORKSPACES
+            (eventbox :onclick "hyprctl dispatch workspace ${workspace.id} && eww update WS_FOCUS=${workspace.id}"
+                (box :class "workspace"
+                    (label :class "workspace-text ${workspace.id == WS_FOCUS ? "ws-focus" : ""} ${ workspace.id != WS_FOCUS && workspace.windows > 0 ? "ws-active" : ""}" :text "${workspace.id == WS_FOCUS || workspace.windows > 0 ? "" : ""}")
+                )
             )
         )
     )
@@ -91,7 +118,7 @@
             :class "battery-text"
             :text "${BAT_TEXT}"
         )
-    ) 
+    )
 )
 
 (defwidget brightness []
@@ -115,8 +142,8 @@
 
 (defwidget volume []
     (eventbox
-        :onclick "pavucontrol &"
         :onscroll `~/.config/eww/scripts/volume --{}`
+        :onclick "pavucontrol &"
         :space-evenly false
         (box
             :class "volume"
@@ -150,19 +177,10 @@
     )
 )
 
-(defwidget powermenu-toggle []
-    (eventbox
-        :onclick "~/.config/eww/scripts/toggle --power"
-        (label
-            :class "power-toggle"
-            :text "󰐥"
-        )
-    )
-)
-
 (defwindow bar
     :monitor 0
     :exclusive true
+    :namespace "gtk-layer-shell"
     :geometry (geometry
         :x "0"
         :y "0"
@@ -179,15 +197,16 @@
             :halign "start"
             :space-evenly false
             :orientation "horizontal"
-            (dashboard-toggle)
-            (search-toggle)
-            (workspaces)
+            (notif-toggle)
+            (date)
+            (time)
+            (weather)
         )
         (box
             :halign "center"
             :space-evenly false
             :orientation "horizontal"
-            (clock)
+            (workspaces)
         )
         (box
             :class "right-box"
@@ -199,7 +218,6 @@
             (brightness)
             (volume)
             (network)
-            (powermenu-toggle)
         )
     )
 )

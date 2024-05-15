@@ -7,8 +7,8 @@ cursor_shape block
 scrollback_lines 2000
 
 remember_window_size  no
-initial_window_width  800
-initial_window_height 500
+initial_window_width  900
+initial_window_height 700
 
 window_padding_width 10
 

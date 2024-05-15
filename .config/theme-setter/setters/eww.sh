@@ -23,3 +23,6 @@ THEME
 )"
 
 printf '%s' "$output" > "${dest_dir}${dest_file}"
+
+eww update THEME="$(get-theme)"
+eww update MODE="$(get-theme --mode)"

@@ -1,8 +1,8 @@
 @import './colors.scss';
+@import './modules/astro/astro.scss';
 @import './modules/bar/bar.scss';
 @import './modules/dashboard/dashboard.scss';
 @import './modules/notifications/notifications.scss';
-@import './modules/powermenu/powermenu.scss';
 
 * {
     color: $foreground;

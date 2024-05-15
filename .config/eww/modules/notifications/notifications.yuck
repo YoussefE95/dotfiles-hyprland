@@ -3,7 +3,7 @@
     :geometry (geometry 
         :x "30"
         :y "30"
-        :anchor "top right"
+        :anchor "top left"
     )
     :stacking "fg"
     :reserve (struts 
@@ -16,50 +16,62 @@
         :class "notifications"
         :orientation "vertical"
         :space-evenly false
-        :width 500
-        :height 300
+        :width 420
+        :height 260
         (box
+            :class "notifications-header"
             :orientation "horizontal"
-            (label
-                :class "notifications-title"
-                :halign "start"
-                :valign "center"
-                :width 100
-                :height 25
-                :text "Notifications"
+            :space-evenly true
+            (eventbox
+                :onclick `eww close notifications`
+                (box
+                    :class "notifications-text-box"
+                    :halign "start"
+                    (label
+                        :class "notifications-text"
+                        :text "Notifications"
+                    )
+                )
             )
-            (button
+            (eventbox
                 :class "notifications-clear"
+                :onclick "dunstctl history-clear && eww close notifications"
                 :halign "end"
-                :valign "center"
-                :onclick "dunstctl history-clear && eww open --toggle notifications"
-                :width 25
-                :height 25
                 (label
-                    :class "notifications-clear-icon"
+                    :class "trash-icon"
                     :text ""
                 )
             )
         )
-        (for notification in DUNST_HIST
+        (scroll
+            :hscroll false
+            :vscroll true
+            :width 125
+            :height 200
             (box
-                :class "notification"
                 :orientation "vertical"
-                :valign "start"
                 :space-evenly false
-                (label
-                    :class "notification-title"
-                    :halign "start"
-                    :wrap true
-                    :limit-width 48
-                    :text "${notification.summary.data}"
-                )
-                (label
-                    :class "notification-body"
-                    :halign "start"
-                    :wrap true
-                    :limit-width 94
-                    :text "${notification.body.data}"
+                (for notification in DUNST_HIST
+                    (box
+                        :class "notification"
+                        :orientation "vertical"
+                        :valign "start"
+                        :space-evenly false
+                        (label
+                            :class "notification-title"
+                            :halign "start"
+                            :wrap true
+                            :limit-width 48
+                            :text "${notification.summary.data}"
+                        )
+                        (label
+                            :class "notification-body"
+                            :halign "start"
+                            :wrap true
+                            :limit-width 94
+                            :text "${notification.body.data}"
+                        )
+                    )
                 )
             )
         )

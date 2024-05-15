@@ -1,28 +1,33 @@
 #!/bin/bash
 
-vol_dec=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | cut -d ' ' -f 2)
-vol=${vol_dec//.}
+set_vals() {
+    vol_dec=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | cut -d ' ' -f 2)
+    vol=${vol_dec//.}
 
-if [[ ${vol:0:1} == 1 ]]; then
-    icon=''
-    text=$vol
-elif [[ ${vol:1:1} != 0 ]]; then
-    icon=''
-    text=${vol:1}
-elif [[ ${vol:2:1} != 0 ]]; then
-    icon=''
-    text=${vol:1}
-elif [[ ${vol:0:1} == 0 && ${vol:1:1} == 0 && ${vol:2:1} == 0 ]]; then
-    icon=''
-    text=${vol:1}
-fi
+    if [[ ${vol:0:1} == 1 ]]; then
+        text=$vol
+    elif [[ ${vol:1:1} != 0 ]]; then
+        text=${vol:1}
+    elif [[ ${vol:2:1} != 0 ]]; then
+        text=${vol:1}
+    elif [[ ${vol:0:1} == 0 && ${vol:1:1} == 0 && ${vol:2:1} == 0 ]]; then
+        text=${vol:1}
+    fi
 
-if [[ $1 == '--icon' ]]; then
-    echo $icon
-elif [[ $1 == '--text' ]]; then
-    echo $text
-elif [[ $1 == '--up' ]]; then
+    if [[ $text -le 50 ]]; then
+        icon=''
+    else
+        icon=''
+    fi
+
+    eww update VOL_ICON="$icon"
+    eww update VOL_TEXT="$text"
+}
+
+if [[ $1 == '--up' ]]; then
     wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+
 elif [[ $1 == '--down' ]]; then
     wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 fi
+
+set_vals

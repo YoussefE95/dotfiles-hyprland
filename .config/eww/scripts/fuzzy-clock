@@ -48,4 +48,4 @@ elif [ $mn -eq 60 ]; then
     fi
 fi
 
-echo ${bgn} ${mid} ${end} 
+echo ${bgn} ${mid} ${end}

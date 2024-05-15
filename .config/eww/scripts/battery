@@ -1,17 +1,13 @@
 #!/bin/bash
 
 bat=$(ls /sys/class/power_supply | grep BAT | head -n 1)
-status=$(cat /sys/class/power_supply/BAT0/status)
-capacity=$(cat /sys/class/power_supply/BAT0/capacity)
-
-if [[ $status == 'Discharging' ]]; then
-    icon='󰁹'
-else
-    icon='󰂄'
-fi
 
 if [[ $1 == '--icon' ]]; then
-    echo $icon
+    if [[ $(cat /sys/class/power_supply/BAT0/status) == 'Discharging' ]]; then
+        echo '󰁹'
+    else
+        echo '󰂄'
+    fi
 elif [[ $1 == '--text' ]]; then
-    echo $capacity
+    cat /sys/class/power_supply/BAT0/capacity
 fi

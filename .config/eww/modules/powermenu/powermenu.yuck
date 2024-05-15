@@ -1,9 +1,9 @@
 (defwindow powermenu
     :monitor 0
     :geometry (geometry 
-        :x "0"
+        :x "30"
         :y "0"
-        :anchor "center"
+        :anchor "right center"
     )
     :stacking "fg"
     :reserve (struts 
@@ -14,34 +14,39 @@
     :wm-ignore false
     (box
         :class "powermenu"
-        :orientation "horizontal"
-        :width 300
-        :height 100
-        (eventbox
-            :width 100
-            :height 100
-            :onclick "poweroff"
-            (label
-                :class "poweroff-icon powermenu-icon"
-                :text "󰐥"
+        :orientation "vertical"
+        :space-evenly false
+        (box
+            :class "powermenu-box"
+            (eventbox
+                :class "powermenu-event"
+                :onclick "hyprctl dispatch exit"
+                (label
+                    :class "logout-icon"
+                    :text ""
+                )
             )
         )
-        (eventbox
-            :width 100
-            :height 100
-            :onclick "reboot"
-            (label
-                :class "reboot-icon powermenu-icon"
-                :text ""
+        (box
+            :class "powermenu-box"
+            (eventbox
+                :class "powermenu-event"
+                :onclick "reboot"
+                (label
+                    :class "reboot-icon"
+                    :text ""
+                )
             )
         )
-        (eventbox
-            :width 100
-            :height 100
-            :onclick "hyprctl dispatch exit"
-            (label
-                :class "logout-icon powermenu-icon"
-                :text ""
+        (box
+            :class "powermenu-box"
+            (eventbox
+                :class "powermenu-event"
+                :onclick "poweroff"
+                (label
+                    :class "poweroff-icon"
+                    :text "󰐥"
+                )
             )
         )
     )

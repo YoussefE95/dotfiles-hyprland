@@ -1,0 +1,42 @@
+#!/bin/bash
+api='http://api.weatherapi.com/v1'
+lat=34.0775
+lon=-117.6898
+
+astro() {
+    curl -s "$api/astronomy.json?key=$WEATHER_API&q=$lat,$lon" | jq ".astronomy.astro"
+}
+
+weather() {
+    curl -s "$api/current.json?key=$WEATHER_API&q=$lat,$lon" | jq ".current"
+}
+
+moon_icon() {
+    moon_phase=$(astro | jq ".moon_phase" | tr -d '"')
+
+    if [[ $moon_phase == "New Moon" ]]; then
+        echo ""
+    elif [[ $moon_phase == "Waxing Crescent" ]]; then
+        echo ""
+    elif [[ $moon_phase == "First Quarter" ]]; then
+        echo ""
+    elif [[ $moon_phase == "Waxing Gibbous" ]]; then
+        echo ""
+    elif [[ $moon_phase == "Full Moon" ]]; then
+        echo ""
+    elif [[ $moon_phase == "Waning Gibbous" ]]; then
+        echo ""
+    elif [[ $moon_phase == "Third Quarter" ]]; then
+        echo ""
+    elif [[ $moon_phase == "Waning Crescent" ]]; then
+        echo ""
+    fi
+}
+
+if [[ $1 == '--astro' ]]; then
+    astro
+elif [[ $1 == '--weather' ]]; then
+    weather
+elif [[ $1 == '--moon-icon' ]]; then
+    moon_icon
+fi

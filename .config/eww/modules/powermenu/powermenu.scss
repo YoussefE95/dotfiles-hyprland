@@ -1,14 +1,26 @@
 .powermenu {
     border-radius: 1rem;
-    padding: 4px;
+    padding: .25rem;
 }
 
-.powermenu-icon {
-    background: $backgroundAlt;
-    border-radius: 1rem;
+.powermenu-box {
     font-size: 5rem;
-    font-weight: bold;
-    margin: 4px;
+    margin: .25rem;
+}
+
+.powermenu-event {
+    background: rgba($backgroundAlt, 0.8);
+    border-radius: 1rem;
+}
+
+.powermenu-event:hover {
+    background: rgba($magenta, 0.4);
+}
+
+.logout-icon,
+.reboot-icon,
+.poweroff-icon {
+    padding: .25rem 1.5rem;
 }
 
 .logout-icon {
