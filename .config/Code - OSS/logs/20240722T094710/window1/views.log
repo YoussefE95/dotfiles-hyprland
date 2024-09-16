@@ -1,0 +1,17 @@
+2024-07-22 09:47:11.598 [info] Added views:workbench.panel.markers.view in workbench.panel.markers
+2024-07-22 09:47:11.598 [info] Added views:workbench.panel.output in workbench.panel.output
+2024-07-22 09:47:11.598 [info] Added views:terminal in terminal
+2024-07-22 09:47:11.598 [info] Added views:outline in workbench.view.explorer
+2024-07-22 09:47:11.598 [info] Added views:workbench.scm in workbench.view.scm
+2024-07-22 09:47:11.598 [info] Added views:workbench.view.search in workbench.view.search
+2024-07-22 09:47:11.598 [info] Added views:timeline in workbench.view.explorer
+2024-07-22 09:47:11.598 [info] Added views:workbench.explorer.fileView in workbench.view.explorer
+2024-07-22 09:47:12.212 [info] Added views:thunder-client-sidebar in workbench.view.extension.thunder-client
+2024-07-22 09:47:12.260 [info] Added views:workbench.debug.variablesView,workbench.debug.watchExpressionsView,workbench.debug.callStackView,workbench.debug.breakPointsView in workbench.view.debug
+2024-07-22 09:47:12.307 [info] Added views:workbench.panel.repl.view in workbench.panel.repl
+2024-07-22 09:47:12.308 [info] Removed views:workbench.debug.breakPointsView,workbench.debug.callStackView,workbench.debug.watchExpressionsView,workbench.debug.variablesView from workbench.view.debug
+2024-07-22 09:47:12.309 [info] Added views:workbench.debug.welcome in workbench.view.debug
+2024-07-22 09:47:12.339 [info] Added views:vscode-pets.petsView in workbench.view.explorer
+2024-07-22 09:47:12.535 [info] Added views:~remote.forwardedPorts in ~remote.forwardedPortsContainer
+2024-07-22 09:59:41.069 [info] Added views:workbench.views.extensions.installed,workbench.views.extensions.popular,extensions.recommendedList in workbench.view.extensions
+2024-07-22 09:59:41.075 [info] Removed views:workbench.views.extensions.popular from workbench.view.extensions

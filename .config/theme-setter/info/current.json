@@ -1,4 +1,5 @@
 {
-  "theme": "gruvbox",
-  "mode": "medium"
+  "mode": "light",
+  "tone": "hard",
+  "bg": ""
 }

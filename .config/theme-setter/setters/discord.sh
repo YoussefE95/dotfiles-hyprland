@@ -23,20 +23,20 @@ pre > code {
 
 .theme-dark {
     --background-primary: #${palette[0]};
-    --background-secondary: #${palette[12]};
-    --background-tertiary: #${palette[12]};
-    --background-accent: #${palette[11]};
-    --text-normal: #${palette[1]};
+    --background-secondary: #${palette[1]};
+    --background-tertiary: #${palette[1]};
+    --background-accent: #${palette[1]};
+    --text-normal: #${palette[2]};
     --text-spotify: #${palette[5]}
-    --text-muted: #${palette[1]};
+    --text-muted: #${palette[2]};
     --text-link: #${palette[7]};
-    --background-floating: #${palette[0]};
-    --header-primary: #${palette[1]};
-    --header-secondary: #${palette[1]};
+    --background-floating: #${palette[1]};
+    --header-primary: #${palette[2]};
+    --header-secondary: #${palette[2]};
     --header-spotify: #${palette[5]}
-    --interactive-normal: #${palette[1]};
-    --interactive-hover: #${palette[1]};
-    --interactive-active: #${palette[5]}
+    --interactive-normal: #${palette[2]};
+    --interactive-hover: #${palette[2]};
+    --interactive-active: #${palette[5]};
 }
 
 .theme-light {
@@ -435,7 +435,7 @@ div[class*="roleName"] {
 
 /** and the pill beside it */
 div[class*="pill"] > span[class*="item"] {
-    background-color: var(--background-primary)
+    background-color: var(--interactive-active)
 }
 
 /** Deleted Messages */
@@ -793,7 +793,7 @@ div[class*="contentContainer"] > div[class*="scroller"] > div[class*="contentWid
 /* Gruvbox Gray */
 .theme-dark,
 .hljs-comment {
-    color: #${palette[11]};
+    color: #${palette[3]};
 }
   
 /* Gruvbox Purple */

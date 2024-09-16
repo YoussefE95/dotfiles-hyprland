@@ -15,7 +15,7 @@ result-spacing = 25
 num-results = 5
 font = hack
 prompt-text = "Run: "
-text-color = #${palette[1]}
+text-color = #${palette[2]}
 selection-color = #${palette[10]}
 background-color = #${palette[0]}E0
 THEME

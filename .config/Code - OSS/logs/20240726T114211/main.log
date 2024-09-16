@@ -1,0 +1,18 @@
+2024-07-26 11:42:11.730 [info] update#setState disabled
+2024-07-26 11:42:11.733 [info] update#ctor - updates are disabled as there is no update URL
+2024-07-26 11:51:46.994 [info] Extension host with pid 2579 exited with code: 0, signal: unknown.
+2024-07-26 11:52:22.376 [info] Extension host with pid 5802 exited with code: 0, signal: unknown.
+2024-07-26 11:52:22.395 [error] [UtilityProcessWorker]: terminated unexpectedly with code 470829232, signal: unknown
+2024-07-26 11:52:30.307 [info] Extension host with pid 5884 exited with code: 0, signal: unknown.
+2024-07-26 11:52:30.328 [error] [UtilityProcessWorker]: terminated unexpectedly with code 470829696, signal: unknown
+2024-07-26 11:52:42.357 [info] Extension host with pid 6311 exited with code: 0, signal: unknown.
+2024-07-26 11:52:42.374 [error] [UtilityProcessWorker]: terminated unexpectedly with code 470829696, signal: unknown
+2024-07-26 11:52:55.442 [info] Extension host with pid 6738 exited with code: 0, signal: unknown.
+2024-07-26 11:52:55.457 [error] [UtilityProcessWorker]: terminated unexpectedly with code 470829232, signal: unknown
+2024-07-26 11:53:12.909 [info] Extension host with pid 7170 exited with code: 0, signal: unknown.
+2024-07-26 11:53:20.869 [info] Extension host with pid 7597 exited with code: 0, signal: unknown.
+2024-07-26 11:53:28.739 [info] Extension host with pid 8003 exited with code: 0, signal: unknown.
+2024-07-26 11:53:28.755 [error] [UtilityProcessWorker]: terminated unexpectedly with code 470829696, signal: unknown
+2024-07-26 11:53:49.923 [info] Extension host with pid 8407 exited with code: 0, signal: unknown.
+2024-07-26 11:53:49.944 [error] [UtilityProcessWorker]: terminated unexpectedly with code 470829232, signal: unknown
+2024-07-26 11:55:03.177 [info] Extension host with pid 8796 exited with code: 0, signal: unknown.

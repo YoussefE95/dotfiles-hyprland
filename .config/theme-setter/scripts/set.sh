@@ -2,28 +2,27 @@
 parser="$HOME/.config/theme-setter/scripts/parser.sh"
 setters="$HOME/.config/theme-setter/setters"
 
-if [ $($parser --is-valid $1) -eq 1 ]; then
-    theme="$1"
+if [ "$1" == "dark" ] || [ "$1" == "light" ]; then
+    mode="$1"
 else
-    echo "$1 is not a supported theme"
     exit 1
 fi
 
-if [ "$2" != "light" -a "$2" != "dark" ]; then
-    mode="medium"
+if [ "$2" == "soft" ] || [ "$2" == "hard" ]; then
+    tone="$2"
 else
-    mode="$2"
+    tone="medium"
 fi
 
-$parser --set $theme $mode
+$parser --set $mode $tone
 
-nvim=$($parser --nvim)
 icons=$($parser --icons)
+cursors=$($parser --cursors)
 palette=(
     "$($parser --palette background)"
+    "$($parser --palette backgroundAlt)"
     "$($parser --palette foreground)"
-    "$($parser --palette black)"
-    "$($parser --palette white)"
+    "$($parser --palette gray)"
     "$($parser --palette red)"
     "$($parser --palette green)"
     "$($parser --palette yellow)"
@@ -31,21 +30,20 @@ palette=(
     "$($parser --palette magenta)"
     "$($parser --palette cyan)"
     "$($parser --palette orange)"
-    "$($parser --palette gray)"
-    "$($parser --palette backgroundAlt)"
 )
 
 {
-    $setters/discord.sh "${palette[@]}" &
+    $setters/code.sh $mode $tone &
+    $setters/discord.sh ${palette[@]} &
     $setters/dunst.sh "${palette[@]}" "$icons" &
     $setters/eww.sh "${palette[@]}" &
-    $setters/gtk.sh "${palette[@]}" "$icons" "$theme" "$mode" &
+    $setters/gtk.sh "${palette[@]}" "$mode" "$tone" &
     $setters/hypr.sh "${palette[@]}" "$mode" &
-    $setters/hyprpaper.sh "$theme" "$mode" &
-    $setters/kitty.sh "${palette[@]}" &
-    $setters/nvim.sh "$nvim" "$mode" &
-    $setters/obsidian.sh "${palette[@]}" &
-    $setters/spicetify.sh "${palette[@]}" &
+    $setters/hyprpaper.sh &
+    $setters/kitty.sh ${palette[@]} &
+    $setters/nvim.sh $mode $tone &
+    $setters/obsidian.sh ${palette[@]} &
+    $setters/spicetify.sh ${palette[@]} &
     $setters/tofi.sh "${palette[@]}" &
-    $setters/zathura.sh "${palette[@]}" &
+    $setters/zathura.sh ${palette[@]} &
 } &> /dev/null

@@ -1,166 +1,90 @@
 {
-    "everforest": {
-        "nvim": "everforest",
-        "icons": {
-            "light": "Papirus-Green",
-            "medium": "Papirus-Green",
-            "dark": "Papirus-Blue"
-        },
-        "palette": {
-            "light": {
-                "background": "F3EAD3",
-                "backgroundAlt": "E5DFC5",
-                "foreground": "5C6A72",
-                "black": "708089",
-                "white": "F1E4C5",
-                "red": "F85552",
-                "green": "8DA101",
-                "yellow": "DFA000",
-                "blue": "3A94C5",
-                "magenta": "DF69BA",
-                "cyan": "35A77C",
-                "orange": "F57D26",
-                "gray": "829181"
-            },
-            "medium": {
-                "background": "2D353B",
-                "backgroundAlt": "232A2E",
-                "foreground": "D3C6AA",
-                "black": "343F44",
-                "white": "F1E4C5",
-                "red": "E67E80",
-                "green": "A7C080",
-                "yellow": "DBBC7F",
-                "blue": "7FBBB3",
-                "magenta": "D699B6",
-                "cyan": "83C092",
-                "orange": "E69875",
-                "gray": "9DA9A0"
-            },
-            "dark": {
-                "background": "272E33",
-                "backgroundAlt": "1E2326",
-                "foreground": "D3C6AA",
-                "black": "2E383C",
-                "white": "F1E4C5",
-                "red": "E67E80",
-                "green": "A7C080",
-                "yellow": "DBBC7F",
-                "blue": "7FBBB3",
-                "magenta": "D699B6",
-                "cyan": "83C092",
-                "orange": "E69875",
-                "gray": "9DA9A0"
-            }
-        }
+    "icons": "Papirus-Brown",
+    "cursors": {
+        "light": "Capitaine-Cursors-Gruvbox",
+        "dark": "Capitaine-Cursors-Gruvbox-White"
     },
-    "gruvbox": {
-        "nvim": "gruvbox-material",
-        "icons": {
-            "light": "Newaita-Green",
-            "medium": "Newaita",
-            "dark": "Newaita"
-        },
-        "palette": {
-            "light": {
-                "background": "f2e5bc",
-                "backgroundAlt": "e6d5ae",
+    "palette": {
+        "light": {
+            "hard": {
+                "background": "f9f5d7",
+                "backgroundAlt": "f3eac7",
                 "foreground": "4f3829",
-                "black": "252423",
-                "white": "d4be98",
+                "gray": "7c6f64",
                 "red": "c14a4a",
                 "green": "6c782e",
                 "yellow": "b47109",
                 "blue": "45707a",
                 "magenta": "945e80",
                 "cyan": "4c7a5d",
-                "orange": "c35e0a",
-                "gray": "7c6f64"
+                "orange": "c35e0a"
+            },
+            "medium": {
+                "background": "fbf1c7",
+                "backgroundAlt": "f2e5bc",
+                "foreground": "4f3829",
+                "gray": "7c6f64",
+                "red": "c14a4a",
+                "green": "6c782e",
+                "yellow": "b47109",
+                "blue": "45707a",
+                "magenta": "945e80",
+                "cyan": "4c7a5d",
+                "orange": "c35e0a"
+            },
+            "soft": {
+                "background": "f2e5bc",
+                "backgroundAlt": "ebdbb2",
+                "foreground": "4f3829",
+                "gray": "7c6f64",
+                "red": "c14a4a",
+                "green": "6c782e",
+                "yellow": "b47109",
+                "blue": "45707a",
+                "magenta": "945e80",
+                "cyan": "4c7a5d",
+                "orange": "c35e0a"
+            }
+        },
+        "dark": {
+            "hard": {
+                "background": "1d2021",
+                "backgroundAlt": "141617",
+                "foreground": "ddc7a1",
+                "gray": "7c6f64",
+                "red": "ea6962",
+                "green": "a9b665",
+                "yellow": "d8a657",
+                "blue": "7daea3",
+                "magenta": "d3869b",
+                "cyan": "89b482",
+                "orange": "e78a4e"
             },
             "medium": {
                 "background": "292828",
                 "backgroundAlt": "1b1b1b",
                 "foreground": "ddc7a1",
-                "black": "1b1b1b",
-                "white": "d4be98",
+                "gray": "7c6f64",
                 "red": "ea6962",
                 "green": "a9b665",
                 "yellow": "d8a657",
                 "blue": "7daea3",
                 "magenta": "d3869b",
                 "cyan": "89b482",
-                "orange": "e78a4e",
-                "gray": "7c6f64"
+                "orange": "e78a4e"
             },
-            "dark": {
-                "background": "1d2021",
-                "backgroundAlt": "141617",
+            "soft": {
+                "background": "32302f",
+                "backgroundAlt": "252423",
                 "foreground": "ddc7a1",
-                "black": "141617",
-                "white": "d4be98",
+                "gray": "7c6f64",
                 "red": "ea6962",
                 "green": "a9b665",
                 "yellow": "d8a657",
                 "blue": "7daea3",
                 "magenta": "d3869b",
                 "cyan": "89b482",
-                "orange": "e78a4e",
-                "gray": "7c6f64"
-            }
-        }
-    },
-    "rosepine": {
-        "nvim": "rose-pine",
-        "icons": {
-            "light": "Papirus-Green",
-            "medium": "Papirus-Blue",
-            "dark": "Papirus-Black"
-        },
-        "palette": {
-            "light": {
-                "background": "faf4ed",
-                "backgroundAlt": "f2e9e1",
-                "foreground": "575279",
-                "black": "575279",
-                "white": "bfb9b2",
-                "red": "b4637a",
-                "green": "76a264",
-                "yellow": "ea9d34",
-                "blue": "286983",
-                "magenta": "907aa9",
-                "cyan": "56949f",
-                "orange": "d7827e",
-                "gray": "797593"
-            },
-            "medium": {
-                "background": "232136",
-                "backgroundAlt": "191724",
-                "foreground": "e0def4",
-                "black": "393552",
-                "white": "c8c5d9",
-                "red": "eb6f92",
-                "green": "76a264",
-                "yellow": "f6c177",
-                "blue": "3e8fb0",
-                "magenta": "c4a7e7",
-                "cyan": "9ccfd8",
-                "orange": "ea9a97",
-                "gray": "908caa"
-            },
-            "dark": {
-                "background": "191724",
-                "backgroundAlt": "0f0e17",
-                "foreground": "e0def4",
-                "black": "26233a",
-                "white": "c8c5d9",
-                "red": "eb6f92",
-                "green": "76a264",
-                "yellow": "f6c177",
-                "blue": "31748f",
-                "magenta": "c4a7e7",
-                "cyan": "9ccfd8",
-                "orange": "ebbcba",
-                "gray": "908caa"
+                "orange": "e78a4e"
             }
         }
     }

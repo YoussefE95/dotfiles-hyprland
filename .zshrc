@@ -14,14 +14,18 @@ bindkey '^[[3~' delete-char
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+alias vim='nvim'
 alias rang='source ranger'
 alias vpn='expressvpn'
 alias py='python3'
 alias clear='printf "\033[2J\033[3J\033[1;1H"'
 
-source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+export ARDUINO_DIRECTORIES_USER=$HOME/Dropbox/Work/Arduino/
+
+export PATH=$PATH:/home/younix/.spicetify

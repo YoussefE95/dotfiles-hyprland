@@ -1,0 +1,48 @@
+2024-07-26 11:42:12.886 [info] Started local extension host with pid 2579.
+2024-07-26 11:42:15.877 [info] [perf] Render performance baseline is 191ms
+2024-07-26 11:46:09.981 [error] [ExtensionListenerError] Extension 'tonybaloney.vscode-pets' FAILED to handle event: TypeError: Cannot read properties of undefined (reading 'webview'): Error: [ExtensionListenerError] Extension 'tonybaloney.vscode-pets' FAILED to handle event: TypeError: Cannot read properties of undefined (reading 'webview')
+	at n.value (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:164:21021)
+	at r.B (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:737)
+	at r.C (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:807)
+	at r.fire (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:1023)
+	at r.$acceptConfigurationChanged (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:157:48022)
+	at /usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:157:47566
+2024-07-26 11:47:31.335 [error] [ExtensionListenerError] Extension 'tonybaloney.vscode-pets' FAILED to handle event: TypeError: Cannot read properties of undefined (reading 'webview'): Error: [ExtensionListenerError] Extension 'tonybaloney.vscode-pets' FAILED to handle event: TypeError: Cannot read properties of undefined (reading 'webview')
+	at n.value (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:164:21021)
+	at r.B (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:737)
+	at r.C (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:807)
+	at r.fire (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:1023)
+	at r.$acceptConfigurationChanged (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:157:48022)
+	at /usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:157:47566
+2024-07-26 11:51:16.949 [error] [ExtensionListenerError] Extension 'tonybaloney.vscode-pets' FAILED to handle event: TypeError: Cannot read properties of undefined (reading 'webview'): Error: [ExtensionListenerError] Extension 'tonybaloney.vscode-pets' FAILED to handle event: TypeError: Cannot read properties of undefined (reading 'webview')
+	at n.value (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:164:21021)
+	at r.B (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:737)
+	at r.C (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:807)
+	at r.fire (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:1023)
+	at r.$acceptConfigurationChanged (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:157:48022)
+	at /usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:157:47566
+2024-07-26 11:51:48.551 [info] Started local extension host with pid 5802.
+2024-07-26 11:51:54.184 [info] [perf] Render performance baseline is 193ms
+2024-07-26 11:52:23.916 [info] Started local extension host with pid 5884.
+2024-07-26 11:52:29.417 [info] [perf] Render performance baseline is 181ms
+2024-07-26 11:52:31.693 [info] Started local extension host with pid 6311.
+2024-07-26 11:52:37.060 [info] [perf] Render performance baseline is 193ms
+2024-07-26 11:52:43.136 [info] Started local extension host with pid 6738.
+2024-07-26 11:52:46.173 [info] [perf] Render performance baseline is 192ms
+2024-07-26 11:52:56.287 [info] Started local extension host with pid 7170.
+2024-07-26 11:52:59.360 [info] [perf] Render performance baseline is 202ms
+2024-07-26 11:53:10.721 [error] [ExtensionListenerError] Extension 'tonybaloney.vscode-pets' FAILED to handle event: TypeError: Cannot read properties of undefined (reading 'webview'): Error: [ExtensionListenerError] Extension 'tonybaloney.vscode-pets' FAILED to handle event: TypeError: Cannot read properties of undefined (reading 'webview')
+	at n.value (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:164:21021)
+	at r.B (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:737)
+	at r.C (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:807)
+	at r.fire (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:1023)
+	at r.$acceptConfigurationChanged (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:157:48022)
+	at /usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:157:47566
+2024-07-26 11:53:13.812 [info] Started local extension host with pid 7597.
+2024-07-26 11:53:16.744 [info] [perf] Render performance baseline is 192ms
+2024-07-26 11:53:22.147 [info] Started local extension host with pid 8003.
+2024-07-26 11:53:25.698 [info] [perf] Render performance baseline is 194ms
+2024-07-26 11:53:29.570 [info] Started local extension host with pid 8407.
+2024-07-26 11:53:32.620 [info] [perf] Render performance baseline is 195ms
+2024-07-26 11:53:50.728 [info] Started local extension host with pid 8796.
+2024-07-26 11:53:53.764 [info] [perf] Render performance baseline is 190ms

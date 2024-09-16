@@ -1,0 +1,19 @@
+2024-07-22 10:18:45.101 [info] Extension host with pid 6957 started
+2024-07-22 10:18:45.101 [info] Skipping acquiring lock for /home/younix/.config/Code - OSS/User/workspaceStorage/58c5878a759a193029d0b730ec21e059.
+2024-07-22 10:18:45.183 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-22 10:18:45.187 [info] ExtensionService#_doActivateExtension tonybaloney.vscode-pets, startup: true, activationEvent: '*'
+2024-07-22 10:18:45.213 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-22 10:18:45.238 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-22 10:18:45.280 [info] Eager extensions activated
+2024-07-22 10:18:45.303 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 10:18:45.304 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 10:18:45.310 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 10:18:45.325 [info] ExtensionService#_doActivateExtension sainnhe.gruvbox-material, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 10:18:50.603 [info] ExtensionService#_doActivateExtension Vue.volar, startup: false, activationEvent: 'onLanguage:plaintext'
+2024-07-22 10:18:50.645 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-22 10:18:50.669 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'api', root cause: Vue.volar
+2024-07-22 10:19:08.374 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2024-07-22 10:19:08.400 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2024-07-22 10:19:09.084 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2024-07-22 10:21:31.736 [info] Extension host terminating: renderer closed the MessagePort
+2024-07-22 10:21:31.753 [info] Extension host with pid 6957 exiting with code 0

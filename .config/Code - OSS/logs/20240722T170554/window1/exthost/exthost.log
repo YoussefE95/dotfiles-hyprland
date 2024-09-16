@@ -1,0 +1,52 @@
+2024-07-22 17:05:57.041 [info] Extension host with pid 28924 started
+2024-07-22 17:05:57.041 [info] Skipping acquiring lock for /home/younix/.config/Code - OSS/User/workspaceStorage/195bce6c5051cf1af4503a784963423e.
+2024-07-22 17:05:57.311 [info] ExtensionService#_doActivateExtension Vue.volar, startup: false, activationEvent: 'onLanguage:plaintext'
+2024-07-22 17:05:57.353 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-22 17:05:57.430 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'api', root cause: Vue.volar
+2024-07-22 17:05:57.645 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-22 17:05:57.648 [info] ExtensionService#_doActivateExtension tonybaloney.vscode-pets, startup: true, activationEvent: '*'
+2024-07-22 17:05:57.851 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-22 17:05:57.887 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-22 17:05:58.009 [info] Eager extensions activated
+2024-07-22 17:05:58.056 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 17:05:58.058 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 17:05:58.066 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 17:05:58.088 [info] ExtensionService#_doActivateExtension sainnhe.gruvbox-material, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 18:51:45.336 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-07-22 18:51:45.347 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-07-22 18:51:47.243 [info] Extension host terminating: renderer closed the MessagePort
+2024-07-22 18:51:47.271 [info] Extension host with pid 28924 exiting with code 0
+2024-07-22 18:51:49.196 [info] Extension host with pid 34567 started
+2024-07-22 18:51:49.197 [info] Skipping acquiring lock for /home/younix/.config/Code - OSS/User/workspaceStorage/195bce6c5051cf1af4503a784963423e.
+2024-07-22 18:51:49.606 [info] ExtensionService#_doActivateExtension Vue.volar, startup: false, activationEvent: 'onLanguage:plaintext'
+2024-07-22 18:51:49.636 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-22 18:51:49.648 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'api', root cause: Vue.volar
+2024-07-22 18:51:49.690 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-22 18:51:49.692 [info] ExtensionService#_doActivateExtension tonybaloney.vscode-pets, startup: true, activationEvent: '*'
+2024-07-22 18:51:49.696 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-22 18:51:49.720 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-22 18:51:49.904 [info] Eager extensions activated
+2024-07-22 18:51:49.961 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 18:51:49.963 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 18:51:49.969 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 18:51:49.983 [info] ExtensionService#_doActivateExtension sainnhe.gruvbox-material, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 18:59:56.342 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-07-22 18:59:56.347 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-07-22 18:59:57.647 [info] Extension host terminating: renderer closed the MessagePort
+2024-07-22 18:59:57.676 [info] Extension host with pid 34567 exiting with code 0
+2024-07-22 18:59:59.846 [info] Extension host with pid 35029 started
+2024-07-22 18:59:59.846 [info] Skipping acquiring lock for /home/younix/.config/Code - OSS/User/workspaceStorage/195bce6c5051cf1af4503a784963423e.
+2024-07-22 19:00:00.063 [info] ExtensionService#_doActivateExtension Vue.volar, startup: false, activationEvent: 'onLanguage:plaintext'
+2024-07-22 19:00:00.097 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-22 19:00:00.114 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'api', root cause: Vue.volar
+2024-07-22 19:00:00.329 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-22 19:00:00.330 [info] ExtensionService#_doActivateExtension tonybaloney.vscode-pets, startup: true, activationEvent: '*'
+2024-07-22 19:00:00.337 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-22 19:00:00.364 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-22 19:00:00.411 [info] Eager extensions activated
+2024-07-22 19:00:00.430 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 19:00:00.432 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 19:00:00.438 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 19:00:00.451 [info] ExtensionService#_doActivateExtension sainnhe.gruvbox-material, startup: false, activationEvent: 'onStartupFinished'
+2024-07-22 20:23:12.741 [info] Extension host terminating: renderer closed the MessagePort
+2024-07-22 20:23:12.765 [info] Extension host with pid 35029 exiting with code 0

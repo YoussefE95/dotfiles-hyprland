@@ -1,18 +1,38 @@
 #!/bin/bash
-paper="$HOME/.config/hypr/hyprpaper.conf"
+parser="$HOME/.config/theme-setter/scripts/parser.sh"
+wallpapers="$HOME/Dropbox/Pictures/Wallpapers"
 
-hyprctl hyprpaper unload all
-killall hyprpaper
+mode=$($parser --mode)
+tone=$($parser --tone)
 
-if [ $# -eq 2 ]; then
-    wallpapers="$HOME/Dropbox/Pictures/Wallpapers/$1/$2"
-    random=$(ls $wallpapers | sort -R | tail -1)
-    bg="$wallpapers/$random"
+current_wallpaper=$($parser --bg)
+
+if [ "$current_wallpaper" != "" ]; then
+    available="ls $wallpapers -I $current_wallpaper -I '$wallpapers/current'"
+    rm "$wallpapers/current/$current_wallpaper"
 else
-    bg="$1"
+    available="ls $wallpapers -I '$wallpapers/current'"
 fi
 
-sed -i "s#.*preload.*#preload = $bg#" "$paper"
-sed -i "s#.*eDP-1.*#wallpaper = eDP-1,$bg#" "$paper"
+new_wallpaper=$($available | sort -R | tail -1)
+$parser --set-bg $new_wallpaper
 
-hyprpaper &
+if [ $mode == "dark" ]; then
+    if [ $tone == "hard" ]; then
+        fill="45%"
+    else
+        fill="25%"
+    fi
+else
+    fill="10%"
+fi
+
+magick "$wallpapers/$new_wallpaper" \
+    -fill "#$($parser --palette backgroundAlt)" \
+    -colorize $fill \
+    -fill "#$($parser --palette orange)" \
+    -colorize 10% \
+    "$wallpapers/current/$new_wallpaper"
+
+swww img --transition-type wipe --transition-angle 30 --transition-step 60 \
+   "$wallpapers/current/$new_wallpaper" 

@@ -20,21 +20,21 @@ output="$(cat << THEME
 
 # Text/base
 gtk-color-scheme = "base_color:#${palette[0]}"
-gtk-color-scheme = "text_color:#${palette[1]}"
+gtk-color-scheme = "text_color:#${palette[2]}"
 # Foreground/background
 gtk-color-scheme = "bg_color:#${palette[0]}"
-gtk-color-scheme = "fg_color:#${palette[1]}"
+gtk-color-scheme = "fg_color:#${palette[2]}"
 # Selected foreground/background
 gtk-color-scheme = "selected_bg_color:#${palette[7]}"
 gtk-color-scheme = "selected_fg_color:#${palette[2]}"
 # Titlebar foreground/background
 gtk-color-scheme = "titlebar_bg_color:#${palette[0]}"
-gtk-color-scheme = "titlebar_fg_color:#${palette[1]}"
+gtk-color-scheme = "titlebar_fg_color:#${palette[2]}"
 # Menus
 gtk-color-scheme = "menu_color:#${palette[0]}"
 # Tooltips foreground/background
 gtk-color-scheme = "tooltip_bg_color:#${palette[0]}"
-gtk-color-scheme = "tooltip_fg_color:#${palette[1]}"
+gtk-color-scheme = "tooltip_fg_color:#${palette[2]}"
 # Links
 gtk-color-scheme = "link_color:#${palette[7]}"
 gtk-color-scheme = "visited_link_color:#${palette[8]}"

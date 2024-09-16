@@ -1,0 +1,54 @@
+2024-07-29 13:05:51.724 [info] Getting Manifest... ritwickdey.liveserver
+2024-07-29 13:05:52.337 [info] Installing extension: ritwickdey.liveserver {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/younix/.vscode-oss/extensions/extensions.json","path":"/home/younix/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.91.1","date":"2024-07-12T15:10:53.972Z"}}
+2024-07-29 13:05:55.892 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-07-29 13:05:55.892 [info] Extension signature verification is not done: ritwickdey.liveserver
+2024-07-29 13:05:58.233 [info] Extracted extension to file:///home/younix/.vscode-oss/extensions/ritwickdey.liveserver-5.7.9-universal: ritwickdey.liveserver
+2024-07-29 13:05:58.256 [info] Renamed to /home/younix/.vscode-oss/extensions/ritwickdey.liveserver-5.7.9-universal
+2024-07-29 13:05:58.273 [info] Extension installed successfully: ritwickdey.liveserver vscode-userdata:/home/younix/.vscode-oss/extensions/extensions.json
+2024-07-29 13:05:58.354 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/younix/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/younix/.vscode-oss/extensions/extensions.json.vsctmp'
+    at h.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19262)
+    at f (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19372)
+    at P.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36571)
+    at P.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:28919)
+    at async s.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14907)
+    at async V.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:119283)
+2024-07-29 13:07:48.468 [info] Uninstalling extension from the profile: ritwickdey.liveserver@5.7.9 vscode-userdata:/home/younix/.vscode-oss/extensions/extensions.json
+2024-07-29 13:07:48.507 [info] Marked extension as uninstalled ritwickdey.liveserver-5.7.9-universal
+2024-07-29 13:07:48.557 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/younix/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/younix/.vscode-oss/extensions/extensions.json.vsctmp'
+    at h.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19262)
+    at f (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19372)
+    at P.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36571)
+    at P.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:28919)
+    at async s.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14907)
+    at async V.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:119283)
+2024-07-29 13:07:49.071 [info] Successfully uninstalled extension from the profile ritwickdey.liveserver@5.7.9 vscode-userdata:/home/younix/.vscode-oss/extensions/extensions.json
+2024-07-29 13:07:56.650 [info] Getting Manifest... yandeu.five-server
+2024-07-29 13:07:56.753 [info] Installing extension: yandeu.five-server {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/younix/.vscode-oss/extensions/extensions.json","path":"/home/younix/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.91.1","date":"2024-07-12T15:10:53.972Z"}}
+2024-07-29 13:07:57.819 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-07-29 13:07:57.820 [info] Extension signature verification is not done: yandeu.five-server
+2024-07-29 13:07:57.945 [info] Extracted extension to file:///home/younix/.vscode-oss/extensions/yandeu.five-server-0.3.1-universal: yandeu.five-server
+2024-07-29 13:07:57.950 [info] Renamed to /home/younix/.vscode-oss/extensions/yandeu.five-server-0.3.1-universal
+2024-07-29 13:07:57.966 [info] Extension installed successfully: yandeu.five-server vscode-userdata:/home/younix/.vscode-oss/extensions/extensions.json
+2024-07-29 13:07:58.009 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/younix/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/younix/.vscode-oss/extensions/extensions.json.vsctmp'
+    at h.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19262)
+    at f (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19372)
+    at P.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36571)
+    at P.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:28919)
+    at async s.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14907)
+    at async V.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:119283)
+2024-07-29 13:08:42.848 [info] Uninstalling extension from the profile: yandeu.five-server@0.3.1 vscode-userdata:/home/younix/.vscode-oss/extensions/extensions.json
+2024-07-29 13:08:42.871 [info] Marked extension as uninstalled yandeu.five-server-0.3.1-universal
+2024-07-29 13:08:42.939 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/younix/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/younix/.vscode-oss/extensions/extensions.json.vsctmp'
+    at h.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19262)
+    at f (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19372)
+    at P.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36571)
+    at P.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:28919)
+    at async s.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14907)
+    at async V.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:119283)
+2024-07-29 13:08:43.142 [info] Successfully uninstalled extension from the profile yandeu.five-server@0.3.1 vscode-userdata:/home/younix/.vscode-oss/extensions/extensions.json

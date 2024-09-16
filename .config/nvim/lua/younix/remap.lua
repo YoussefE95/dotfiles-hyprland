@@ -1,11 +1,19 @@
 local treeApi = require 'nvim-tree.api'
 vim.keymap.set('n', '<C-b>', treeApi.tree.toggle)
 
-vim.keymap.set('n', '<leader>st', ':so ~/.config/nvim/lua/younix/theme.lua<CR>')
-vim.keymap.set('n', '<leader>rain', ':CellularAutomaton make_it_rain<CR>')
-vim.keymap.set('n', '<leader>game', ':CellularAutomaton game_of_life<CR>')
-vim.keymap.set('n', '<leader>sp', ':PetsNewCustom dog brown Peanut<CR>')
-vim.keymap.set('n', '<leader>kp', ':PetsKillAll<CR>')
+local telescopeApi = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', telescopeApi.find_files)
+vim.keymap.set('n', '<leader>ffg', telescopeApi.git_files)
+vim.keymap.set('n', '<leader>fs', function()
+	telescopeApi.grep_string({ search = vim.fn.input('Grep > ')});
+end)
+
+vim.keymap.set('n', '<leader>rain', ':CellularAutomaton make_it_rain<CR>', { silent = true })
+vim.keymap.set('n', '<leader>game', ':CellularAutomaton game_of_life<CR>', { silent = true })
+vim.keymap.set('n', '<leader>sp', ':PetsNewCustom dog brown Peanut<CR>:PetsNewCustom slime blue Blu<CR>', { silent = true })
+vim.keymap.set('n', '<leader>kp', ':PetsKillAll<CR>', { silent = true })
+
+vim.keymap.set('n', '<leader>st', ':so ~/.config/nvim/lua/younix/theme.lua<CR>', { silent = true })
 
 vim.keymap.set('v', 'J', ':m \'>+1<CR>gv=gv')
 vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv')
@@ -20,10 +28,10 @@ vim.keymap.set('n', '<S-Tab>', ':tabprev<CR>')
 vim.keymap.set('v', '<Tab>', '>gv')
 vim.keymap.set('v', '<S-Tab>', '<gv')
 
-vim.keymap.set('n', '<A-u>', '-8')
-vim.keymap.set('n', '<A-d>', '+8')
-vim.keymap.set('v', '<A-u>', '-8')
-vim.keymap.set('v', '<A-d>', '+8')
+vim.keymap.set('n', '<A-u>', '<C-u>')
+vim.keymap.set('n', '<A-d>', '<C-d>')
+vim.keymap.set('v', '<A-u>', '<C-u>')
+vim.keymap.set('v', '<A-d>', '<C-d>')
 
 vim.keymap.set('n', '<A-h>', '<C-w>h')
 vim.keymap.set('n', '<A-j>', '<C-w>j')

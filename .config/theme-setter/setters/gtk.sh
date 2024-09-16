@@ -14,47 +14,47 @@ output="$(cat << THEME
 @define-color destructive_color #${palette[4]};
 
 @define-color success_bg_color #${palette[5]};
-@define-color success_fg_color #${palette[1]};
+@define-color success_fg_color #${palette[2]};
 @define-color success_color #${palette[5]};
 
 @define-color warning_bg_color #${palette[6]};
-@define-color warning_fg_color #${palette[1]};
+@define-color warning_fg_color #${palette[2]};
 @define-color warning_color #${palette[6]};
 
 @define-color error_bg_color #${palette[4]};
-@define-color error_fg_color #${palette[1]};
+@define-color error_fg_color #${palette[2]};
 @define-color error_color #${palette[4]};
 
 @define-color window_bg_color #${palette[0]};
-@define-color window_fg_color #${palette[1]};
+@define-color window_fg_color #${palette[2]};
 
-@define-color view_bg_color #${palette[12]};
-@define-color view_fg_color #${palette[1]};
+@define-color view_bg_color #${palette[1]};
+@define-color view_fg_color #${palette[2]};
 
 @define-color headerbar_bg_color #${palette[0]};
-@define-color headerbar_fg_color #${palette[1]};
+@define-color headerbar_fg_color #${palette[2]};
 @define-color headerbar_backdrop_color @window_bg_color;
 @define-color headerbar_shade_color #${palette[0]};
 
-@define-color card_bg_color #${palette[12]};
-@define-color card_fg_color #${palette[1]};
-@define-color card_shade_color #${palette[12]};
+@define-color card_bg_color #${palette[1]};
+@define-color card_fg_color #${palette[2]};
+@define-color card_shade_color #${palette[1]};
 
-@define-color popover_bg_color #${palette[12]};
-@define-color popover_fg_color #${palette[1]};
+@define-color popover_bg_color #${palette[1]};
+@define-color popover_fg_color #${palette[2]};
 
 .top-bar {
-    color: #${palette[1]};
+    color: #${palette[2]};
     background-color: #${palette[0]};
 } 
 
 placessidebar {
-    color: #${palette[1]};
+    color: #${palette[2]};
     background-color: #${palette[0]};
 }
 
 .navigation-sidebar {
-    color: #${palette[1]};
+    color: #${palette[2]};
     background-color: #${palette[0]};
 }
 THEME
@@ -62,6 +62,4 @@ THEME
 
 printf '%s' "$output" > "${dest_dir}/${dest_file}"
 
-gsettings set org.gnome.desktop.interface icon-theme "${palette[13]}"
-gsettings set org.gnome.desktop.interface gtk-theme "${palette[14]}-${palette[15]}"
-gsettings set org.gnome.desktop.interface font-name 'Hack Nerd Font'
+gsettings set org.gnome.desktop.interface gtk-theme "${palette[11]}-${palette[12]}"

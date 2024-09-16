@@ -1,0 +1,7 @@
+2024-07-29 12:09:43.956 [info] update#setState disabled
+2024-07-29 12:09:43.957 [info] update#ctor - updates are disabled as there is no update URL
+2024-07-29 13:07:50.715 [info] Extension host with pid 4364 exited with code: 0, signal: unknown.
+2024-07-29 13:08:45.112 [info] Extension host with pid 7891 exited with code: 0, signal: unknown.
+2024-07-29 15:49:23.288 [warning] No ptyHost heartbeat after 6 seconds
+2024-07-29 19:40:32.777 [info] Extension host with pid 8235 exited with code: 0, signal: unknown.
+2024-07-29 19:40:32.841 [error] [UtilityProcessWorker]: terminated unexpectedly with code 18446744072425775000, signal: unknown

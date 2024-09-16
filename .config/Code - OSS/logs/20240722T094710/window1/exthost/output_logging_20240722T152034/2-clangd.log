@@ -1,0 +1,80 @@
+I[15:20:34.654] clangd version 18.1.3 (https://github.com/llvm/llvm-project c13b7485b87909fcf739f62cfa382b55407433c0)
+I[15:20:34.654] Features: linux+grpc
+I[15:20:34.654] PID: 12119
+I[15:20:34.654] Working directory: /home/younix/Dropbox/Work/DroneSwarm
+I[15:20:34.654] argv[0]: /home/younix/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/18.1.3/clangd_18.1.3/bin/clangd
+I[15:20:34.654] Starting LSP over stdin/stdout
+I[15:20:34.658] <-- initialize(0)
+I[15:20:34.659] --> reply:initialize(0) 1 ms
+I[15:20:34.705] <-- initialized
+I[15:20:34.731] <-- textDocument/didOpen
+I[15:20:34.732] Failed to find compilation database for /home/younix/Dropbox/Work/DroneSwarm/src/main.cpp
+I[15:20:34.732] ASTWorker building file /home/younix/Dropbox/Work/DroneSwarm/src/main.cpp version 1 with command clangd fallback
+[/home/younix/Dropbox/Work/DroneSwarm/src]
+/usr/bin/clang "-resource-dir=/home/younix/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/18.1.3/clangd_18.1.3/lib/clang/18" -- /home/younix/Dropbox/Work/DroneSwarm/src/main.cpp
+I[15:20:34.734] --> textDocument/clangd.fileStatus
+I[15:20:34.810] <-- textDocument/documentSymbol(1)
+I[15:20:34.810] <-- textDocument/codeAction(2)
+I[15:20:34.846] <-- textDocument/documentLink(3)
+I[15:20:34.847] <-- textDocument/inlayHint(4)
+I[15:20:34.932] <-- textDocument/foldingRange(5)
+I[15:20:34.932] --> reply:textDocument/foldingRange(5) 0 ms
+I[15:20:35.030] <-- $/cancelRequest
+I[15:20:35.030] <-- textDocument/documentSymbol(6)
+I[15:20:35.030] <-- $/cancelRequest
+I[15:20:35.030] <-- textDocument/codeAction(7)
+I[15:20:35.030] <-- $/cancelRequest
+I[15:20:35.032] <-- textDocument/documentLink(8)
+I[15:20:35.034] <-- textDocument/semanticTokens/full(9)
+I[15:20:35.148] Built preamble of size 3467520 for file /home/younix/Dropbox/Work/DroneSwarm/src/main.cpp version 1 in 0.41 seconds
+I[15:20:35.148] --> workspace/semanticTokens/refresh(0)
+I[15:20:35.149] Indexing c++17 standard library in the context of /home/younix/Dropbox/Work/DroneSwarm/src/main.cpp
+I[15:20:35.150] <-- reply(0)
+E[15:20:35.181] IncludeCleaner: Failed to get an entry for resolved path : No such file or directory
+E[15:20:35.181] IncludeCleaner: Failed to get an entry for resolved path : No such file or directory
+I[15:20:35.182] --> textDocument/publishDiagnostics
+I[15:20:35.183] --> textDocument/inactiveRegions
+I[15:20:35.183] --> reply:textDocument/documentSymbol(1) 372 ms, error: Task was cancelled.
+I[15:20:35.183] --> reply:textDocument/codeAction(2) 372 ms, error: Task was cancelled.
+I[15:20:35.183] --> reply:textDocument/documentLink(3) 336 ms, error: Task was cancelled.
+I[15:20:35.183] --> reply:textDocument/inlayHint(4) 336 ms
+I[15:20:35.183] --> reply:textDocument/documentSymbol(6) 152 ms
+I[15:20:35.183] --> reply:textDocument/codeAction(7) 152 ms
+I[15:20:35.183] --> reply:textDocument/documentLink(8) 150 ms
+I[15:20:35.183] --> reply:textDocument/semanticTokens/full(9) 149 ms
+I[15:20:35.183] --> textDocument/clangd.fileStatus
+[Error - 3:20:35 PM] Request textDocument/documentSymbol failed.
+[object Object]
+[Error - 3:20:35 PM] Request textDocument/codeAction failed.
+[object Object]
+I[15:20:35.225] <-- textDocument/foldingRange(10)
+[Error - 3:20:35 PM] Request textDocument/documentLink failed.
+[object Object]
+I[15:20:35.225] --> reply:textDocument/foldingRange(10) 0 ms
+I[15:20:35.318] <-- textDocument/documentSymbol(11)
+I[15:20:35.319] --> reply:textDocument/documentSymbol(11) 0 ms
+I[15:20:35.319] --> textDocument/clangd.fileStatus
+I[15:20:35.443] <-- textDocument/codeAction(12)
+I[15:20:35.444] --> reply:textDocument/codeAction(12) 0 ms
+I[15:20:35.444] --> textDocument/clangd.fileStatus
+I[15:20:35.538] <-- textDocument/semanticTokens/full/delta(13)
+I[15:20:35.539] --> reply:textDocument/semanticTokens/full/delta(13) 0 ms
+I[15:20:35.539] --> textDocument/clangd.fileStatus
+I[15:20:37.897] Indexed c++17 standard library (incomplete due to errors): 14130 symbols, 9980 filtered
+I[15:21:07.245] <-- textDocument/semanticTokens/full(14)
+I[15:21:07.245] --> reply:textDocument/semanticTokens/full(14) 0 ms
+I[15:21:07.245] --> textDocument/clangd.fileStatus
+I[15:21:08.742] <-- $/setTrace
+I[15:21:08.742] unhandled notification $/setTrace
+I[15:21:08.914] <-- textDocument/codeAction(15)
+I[15:21:08.914] --> reply:textDocument/codeAction(15) 0 ms
+I[15:21:08.914] --> textDocument/clangd.fileStatus
+I[15:22:04.291] <-- textDocument/hover(16)
+I[15:22:04.291] --> reply:textDocument/hover(16) 0 ms
+I[15:22:04.291] --> textDocument/clangd.fileStatus
+I[15:22:04.445] <-- textDocument/codeAction(17)
+I[15:22:04.445] --> reply:textDocument/codeAction(17) 0 ms
+I[15:22:04.445] --> textDocument/clangd.fileStatus
+I[15:28:15.246] <-- textDocument/hover(18)
+I[15:28:15.247] --> reply:textDocument/hover(18) 0 ms
+I[15:28:15.247] --> textDocument/clangd.fileStatus

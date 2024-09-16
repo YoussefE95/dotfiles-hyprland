@@ -1,2 +1,2 @@
 #!/bin/bash
-$HOME/.config/theme-setter/scripts/set.sh $1 $2
+$HOME/.config/theme-setter/scripts/set.sh $1 $2 $3

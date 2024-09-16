@@ -17,13 +17,13 @@ set zoom-min 10
 set guioptions ""
 
 set font "Hack Nerd Font Mono 12"
-set default-bg "#292828"
+set default-bg "#32302f"
 set default-fg "#ddc7a1"
 
 set statusbar-fg "#ddc7a1"
-set statusbar-bg "#1b1b1b"
+set statusbar-bg "#252423"
 
-set inputbar-bg "#1b1b1b"
+set inputbar-bg "#252423"
 set inputbar-fg "#ddc7a1"
 
 set notification-error-bg "#a9b665"
@@ -33,19 +33,19 @@ set notification-warning-bg "#7daea3"
 set notification-warning-fg "#ddc7a1"
 
 set highlight-color "#d3869b"
-set highlight-active-color "#292828"
+set highlight-active-color "#ddc7a1"
 
 set completion-highlight-fg "#ddc7a1"
-set completion-highlight-bg "#1b1b1b"
+set completion-highlight-bg "#252423"
 
-set completion-bg "#1b1b1b"
+set completion-bg "#252423"
 set completion-fg "#ddc7a1"
 
-set notification-bg "#1b1b1b"
+set notification-bg "#252423"
 set notification-fg "#ddc7a1"
 
 set recolor "true"
-set recolor-lightcolor "#292828"
+set recolor-lightcolor "#32302f"
 set recolor-darkcolor "#ddc7a1"
 set recolor-reverse-video "true"
 set recolor-keephue "true"

@@ -1,0 +1,7 @@
+2024-07-23 12:36:36.356 [info] Extension host with pid 7454 started
+2024-07-23 12:36:36.356 [info] Skipping acquiring lock for /home/younix/.config/Code - OSS/User/workspaceStorage/195bce6c5051cf1af4503a784963423e.
+2024-07-23 12:36:36.612 [info] ExtensionService#_doActivateExtension Vue.volar, startup: false, activationEvent: 'onLanguage:plaintext'
+2024-07-23 12:36:36.681 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-23 12:36:36.933 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'api', root cause: Vue.volar
+2024-07-23 12:36:36.999 [info] Extension host terminating: renderer closed the MessagePort
+2024-07-23 12:36:37.000 [info] Extension host with pid 7454 exiting with code 0
