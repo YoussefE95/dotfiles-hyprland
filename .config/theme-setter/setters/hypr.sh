@@ -13,9 +13,9 @@ sed -i "s#.*col.active_border.*#    col.active_border=0xff${palette[10]}#" "$lan
 sed -i "s#.*col.inactive_border.*#    col.inactive_border=0xff${palette[3]}#" "$land"
 
 if [ "${palette[11]}" == "light" ]; then
-    sed -i "s#    active_opacity.*#    active_opacity=.92#" "$land"
-    sed -i "s#    inactive_opacity.*#    inactive_opacity=.92#" "$land"
+    sed -i "s#    active_opacity.*#    active_opacity=.90#" "$land"
+    sed -i "s#    inactive_opacity.*#    inactive_opacity=.90#" "$land"
 else
-    sed -i "s#    active_opacity.*#    active_opacity=.96#" "$land"
-    sed -i "s#    inactive_opacity.*#    inactive_opacity=.96#" "$land"
+    sed -i "s#    active_opacity.*#    active_opacity=.94#" "$land"
+    sed -i "s#    inactive_opacity.*#    inactive_opacity=.94#" "$land"
 fi

@@ -87,7 +87,7 @@
         (for workspace in WORKSPACES
             (eventbox :onclick "hyprctl dispatch workspace ${workspace.id} && eww update WS_FOCUS=${workspace.id}"
                 (box :class "workspace"
-                    (label :class "workspace-text ${workspace.id == WS_FOCUS ? "ws-focus" : ""} ${ workspace.id != WS_FOCUS && workspace.windows > 0 ? "ws-active" : ""}" :text "${workspace.id == WS_FOCUS || workspace.windows > 0 ? "" : ""}")
+                    (label :class "workspace-text ${workspace.id == WS_FOCUS ? "ws-focus" : ""}" :text "")
                 )
             )
         )

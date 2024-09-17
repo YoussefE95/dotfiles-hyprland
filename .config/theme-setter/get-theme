@@ -3,8 +3,6 @@ parser="$HOME/.config/theme-setter/scripts/parser.sh"
 
 if [ "$1" == "--mode" ]; then
     $parser --mode
-elif [ "$1" == "--bg_opt" ]; then
-    $parser --bg_opt
-else
-    $parser --theme
+elif [ "$1" == "--tone" ]; then
+    $parser --tone
 fi

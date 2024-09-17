@@ -3,5 +3,6 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 xwaylandvideobridge &
 dunst &
 swww init &
+~/.config/theme-setter/setters/hyprpaper.sh &
 eww open bar &
 dropbox &
