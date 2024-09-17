@@ -37,7 +37,7 @@ palette=(
     $setters/discord.sh ${palette[@]} &
     $setters/dunst.sh "${palette[@]}" "$icons" &
     $setters/eww.sh "${palette[@]}" &
-    $setters/gtk.sh "${palette[@]}" "$mode" "$tone" &
+    $setters/gtk.sh "${palette[@]}" "$mode" "$tone" $cursors &
     $setters/hypr.sh "${palette[@]}" "$mode" &
     $setters/hyprpaper.sh &
     $setters/kitty.sh ${palette[@]} &

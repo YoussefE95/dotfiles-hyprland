@@ -2,14 +2,14 @@
     (box
         :class "session"
         :orientation "vertical"
-        :width 350
+        :width 375
         :height 275
         (box
             :class "session-box"
             :orientation "horizontal"
             :space-evenly false
             (label
-                :class "user-info"
+                :class "user-info session-icon"
                 :text ""
             )
             (label
@@ -22,7 +22,7 @@
             :orientation "horizontal"
             :space-evenly false
             (label
-                :class "os"
+                :class "os session-icon"
                 :text ""
             )
             (label
@@ -35,7 +35,7 @@
             :orientation "horizontal"
             :space-evenly false
             (label
-                :class "hypr-version"
+                :class "hypr-version session-icon"
                 :text ""
             )
             (label
@@ -48,7 +48,7 @@
             :orientation "horizontal"
             :space-evenly false
             (label
-                :class "zsh-version"
+                :class "zsh-version session-icon"
                 :text ""
             )
             (label
@@ -61,7 +61,7 @@
             :orientation "horizontal"
             :space-evenly false
             (label
-                :class "packages"
+                :class "packages session-icon"
                 :text ""
             )
             (label
@@ -74,7 +74,7 @@
             :orientation "horizontal"
             :space-evenly false
             (label
-                :class "uptime"
+                :class "uptime session-icon"
                 :text "󰥔"
             )
             (label
@@ -94,63 +94,49 @@
         :width 300
         :height 210
         (box
-            :class "palette"
-            :orientation "vertical"
-            :halign "center"
-            :valign "center"
-            (eventbox
-                :onclick `set-theme catppuccin ${MODE}`
-                (label
-                    :class "theme-label ${THEME == 'catppuccin' ? 'selected-theme' : ''}"
-                    :text "Catppuccin"
-                )
-            )
-            (eventbox
-                :onclick `set-theme everforest ${MODE}`
-                (label
-                    :class "theme-label ${THEME == 'everforest' ? 'selected-theme' : ''}"
-                    :text "Everforest"
-                )
-            )
-            (eventbox
-                :onclick `set-theme gruvbox ${MODE}`
-                (label
-                    :class "theme-label ${THEME == 'gruvbox' ? 'selected-theme' : ''}"
-                    :text "Gruvbox"
-                )
-            )
-            (eventbox
-                :onclick `set-theme rosepine ${MODE}`
-                (label
-                    :class "theme-label ${THEME == 'rosepine' ? 'selected-theme' : ''}"
-                    :text "Rose Pine"
-                )
-            )
-        )
-        (box
             :class "mode"
             :orientation "vertical"
             :halign "center"
             :valign "center"
             (eventbox
-                :onclick `set-theme ${THEME} light`
+                :onclick `set-theme light ${TONE}`
                 (label
                     :class "theme-label ${MODE == 'light' ? 'selected-mode' : ''}"
                     :text "Light"
                 )
             )
             (eventbox
-                :onclick `set-theme ${THEME}`
+                :onclick `set-theme dark ${TONE}`
                 (label
-                    :class "theme-label ${MODE == 'medium' ? 'selected-mode' : ''}"
+                    :class "theme-label ${MODE == 'dark' ? 'selected-mode' : ''}"
+                    :text "Dark"
+                )
+            )
+        )
+        (box
+            :class "tone"
+            :orientation "vertical"
+            :halign "center"
+            :valign "center"
+            (eventbox
+                :onclick `set-theme ${MODE} soft`
+                (label
+                    :class "theme-label ${TONE == 'soft' ? 'selected-tone' : ''}"
+                    :text "Soft"
+                )
+            )
+            (eventbox
+                :onclick `set-theme ${MODE} medium`
+                (label
+                    :class "theme-label ${TONE == 'medium' ? 'selected-tone' : ''}"
                     :text "Medium"
                 )
             )
             (eventbox
-                :onclick `set-theme ${THEME} dark`
+                :onclick `set-theme ${MODE} hard`
                 (label
-                    :class "theme-label ${MODE == 'dark' ? 'selected-mode' : ''}"
-                    :text "Dark"
+                    :class "theme-label ${TONE == 'hard' ? 'selected-tone' : ''}"
+                    :text "Hard"
                 )
             )
         )
@@ -179,7 +165,7 @@
                 :onclick "reboot"
                 (label
                     :class "reboot-icon"
-                    :text ""
+                    :text "󰜉"
                 )
             )
         )
@@ -190,7 +176,7 @@
                 :onclick "hyprctl dispatch exit"
                 (label
                     :class "logout-icon"
-                    :text ""
+                    :text "󰍃"
                 )
             )
         )

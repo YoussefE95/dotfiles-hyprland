@@ -63,3 +63,4 @@ THEME
 printf '%s' "$output" > "${dest_dir}/${dest_file}"
 
 gsettings set org.gnome.desktop.interface gtk-theme "${palette[11]}-${palette[12]}"
+gsettings set org.gnome.desktop.interface cursor-theme "${palette[13]}"

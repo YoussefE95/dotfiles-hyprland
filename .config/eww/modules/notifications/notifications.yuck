@@ -3,7 +3,7 @@
     :geometry (geometry 
         :x "30"
         :y "30"
-        :anchor "top left"
+        :anchor "top center"
     )
     :stacking "fg"
     :reserve (struts 
@@ -16,7 +16,7 @@
         :class "notifications"
         :orientation "vertical"
         :space-evenly false
-        :width 420
+        :width 660
         :height 260
         (box
             :class "notifications-header"
@@ -39,7 +39,7 @@
                 :halign "end"
                 (label
                     :class "trash-icon"
-                    :text ""
+                    :text ""
                 )
             )
         )

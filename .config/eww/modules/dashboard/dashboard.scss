@@ -4,16 +4,16 @@
 }
 
 .session {
-    background: $backgroundAlt;
+    background: $background;
     border-radius: 1rem;
     margin: .5rem;
-    box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
+    //box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
 }
 
 .session-box,
 .session-title,
 .session-label {
-    background: $backgroundAlt;
+    background: $background;
     padding-left: 15px;
 }
 
@@ -21,11 +21,12 @@
     border-radius: 1rem;
 }
 
-.session-title {
-    font-size: 1.25rem;
-    font-weight: bold;
+.session-icon {
+    font-size: .75rem;
+    padding: 0rem .75rem 0rem 0rem;
 }
 
+.session-title,
 .session-label {
     font-size: 1.15rem;
 }
@@ -38,8 +39,8 @@
 .uptime,
 .mem,
 .cpu {
-    background: $backgroundAlt;
-    font-size: 2.5rem;
+    background: $background;
+    font-size: 2rem;
 }
 
 .user-info {
@@ -76,36 +77,36 @@
 
 // THEME SETTER
 .theme-setter {
-    background: $backgroundAlt;
+    background: $background;
     border-radius: 1rem;
     padding: 0rem .3rem;
     margin: .5rem;
-    box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
+    // box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
 }
 
 .theme-label {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     color: $gray;
-    background: $backgroundAlt;
+    background: $background;
     padding: .4rem;
 }
 
-.selected-theme,
-.selected-mode {
+.selected-mode,
+.selected-tone {
     font-weight: bold;
     color: rgba($orange, 0.8);
 }
 
 // POWERMENU
 .powermenu-box {
-    font-size: 3rem;
+    font-size: 2.5rem;
     border-radius: 1rem;
     margin: .5rem;
-    box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
+    // box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
 }
 
 .powermenu-event {
-    background: $backgroundAlt;
+    background: $background;
     border-radius: 1rem;
 }
 

@@ -2,10 +2,10 @@
 (defpoll OS :interval "60s" "echo \"$(lsb_release -si) $(uname -r)\"")
 (defpoll HYPR_VERSION :interval "60s" "hyprctl version | grep Tag | cut -d ' ' -f 2 | tr -d 'v,'")
 (defpoll ZSH_VERSION :interval "60s" "zsh --version | cut -d ' ' -f 1,2")
-(defpoll PACKAGES :interval "60s" "echo \"$(pacman -Qm | wc -l) + $(pacman -Q | wc -l)\" | bc")
+(defpoll PACKAGES :interval "60s" "echo \"$(pacman -Q | wc -l), $(pacman -Qm | wc -l) (aur)\"")
 (defpoll UPTIME :interval "60s" "uptime -p")
-(defpoll THEME :interval "60s" "get-theme")
 (defpoll MODE :interval "60s" "get-theme --mode")
+(defpoll TONE :interval "60s" "get-theme --tone")
 
 (defpoll HIST_LEN :interval "2s" `echo "\"$(dunstctl history | jq ".data[0]" | jq length)\""`)
 (deflisten DUNST_HIST :initial "{}" `echo "\"$(dunstctl history | jq ".data[0]")\""`)

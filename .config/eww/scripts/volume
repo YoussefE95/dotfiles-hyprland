@@ -14,11 +14,7 @@ set_vals() {
         text=${vol:1}
     fi
 
-    if [[ $text -le 50 ]]; then
-        icon=''
-    else
-        icon=''
-    fi
+    icon=""
 
     eww update VOL_ICON="$icon"
     eww update VOL_TEXT="$text"

@@ -20,38 +20,38 @@
 .brightness,
 .volume,
 .network {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     background: $backgroundAlt;
     border-radius: 1rem;
     padding: 0rem .75rem;
-    margin: .5rem .25rem;
-    box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
+    margin: 0rem .25rem 1rem .25rem;
+    //box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
 }
 
 .notif-toggle-icon {
     color: rgba($blue, 0.8);
-    padding: 0rem .5rem;
+    padding: 0rem .75rem 0rem .5rem;
 }
 
 .date-icon {
     color: rgba($yellow, 0.8);
-    padding: 0rem .5rem;
+    padding: 0rem .75rem 0rem .5rem;
 }
 
 .clock-icon {
     color: rgba($green, 0.8);
-    padding: 0rem .5rem;
+    padding: 0rem .75rem 0rem .5rem;
 }
 
 .sun-icon {
     font-size: 2.75rem;
     color: rgba($orange, 0.8);
-    padding: 0rem .5rem;
+    padding: 0rem .75rem 0rem .5rem;
 }
 
 .moon-icon {
     color: rgba($blue, 0.8);
-    padding: 0rem .5rem;
+    padding: 0rem .75rem 0rem .5rem;
 }
 
 .weather-text {
@@ -61,17 +61,17 @@
 }
 
 .degree-icon {
-    font-size: 2.75rem;
     color: rgba($foreground, 0.8);
 }
 
-.workspace-text {
+.workspace-text,
+.ws-active,
+.ws-focus {
     font-size: 2rem;
-    color: rgba($gray, 0.5);
 }
 
-.workspace {
-    margin: .5rem;
+.workspace-text {
+    color: rgba($gray, 0.5);
 }
 
 .ws-active {
@@ -83,26 +83,24 @@
 }
 
 .battery-icon {
-    font-size:1.75rem;
     color: rgba($green, 0.8);
     padding: 0rem .5rem;
 }
 
 .brightness-icon {
-    font-size:1.75rem;
     color: rgba($yellow, 0.8);
-    padding: 0rem .5rem;
+    padding: 0rem .75rem 0rem .5rem;
 }
 
 .volume-icon {
     color: rgba($blue, 0.8);
-    padding: 0rem .5rem;
+    padding: 0rem 1.15rem 0rem .5rem;
 }
 
 
 .network-icon {
     color: rgba($magenta, 0.8);
-    padding: 0rem .5rem;
+    padding: 0rem .75rem 0rem .5rem;
 }
 
 .notif-toggle-text,
@@ -112,7 +110,7 @@
 .brightness-text,
 .volume-text,
 .network-text {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     color: $foreground;
     padding: 0rem .5rem 0rem .25rem;
 }
