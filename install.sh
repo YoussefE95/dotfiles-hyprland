@@ -30,5 +30,8 @@ sudo systemctl enable bluetooth
 sudo systemctl enable docker
 sudo systemctl enable expressvpn
 
+# Add user to Docker group
+sudo gpasswd -a $USER docker
+
 # Make zsh default shell
 chsh -s $(which zsh)
