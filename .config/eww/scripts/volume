@@ -16,7 +16,7 @@ set_vals() {
 
     icon=""
 
-    eww update VOL_ICON="$icon"
+    #eww update VOL_ICON="$icon"
     eww update VOL_TEXT="$text"
 }
 

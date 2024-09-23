@@ -194,13 +194,12 @@
     )
     (box
         :class "dashboard"
-        :orientation "horizontal"
+        :orientation "vertical"
         :space-evenly false
         (session)
         (box
             :orientation "vertical"
             :space-evenly false
-            (theme-setter)
             (powermenu)
         )
     )

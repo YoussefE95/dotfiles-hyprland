@@ -7,6 +7,7 @@
     background: $background;
     border-radius: 1rem;
     margin: .5rem;
+    padding: 1rem;
     //box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
 }
 
@@ -14,7 +15,6 @@
 .session-title,
 .session-label {
     background: $background;
-    padding-left: 15px;
 }
 
 .session-box {
@@ -23,12 +23,13 @@
 
 .session-icon {
     font-size: .75rem;
-    padding: 0rem .75rem 0rem 0rem;
+    margin-right: .85rem;
 }
 
 .session-title,
 .session-label {
     font-size: 1.15rem;
+    margin-left: .85rem;
 }
 
 .user-info,
@@ -99,7 +100,7 @@
 
 // POWERMENU
 .powermenu-box {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     border-radius: 1rem;
     margin: .5rem;
     // box-shadow: 0 0 .2rem .2rem rgba($black, 0.75);
@@ -121,6 +122,7 @@
 }
 
 .logout-icon {
+    font-size: 2.5rem;
     color: rgba($blue, 0.65);
 }
 
