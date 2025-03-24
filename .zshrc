@@ -18,7 +18,7 @@ alias vim='nvim'
 alias rang='source ranger'
 alias vpn='expressvpn'
 alias py='python3'
-alias clear='printf "\033[2J\033[3J\033[1;1H"'
+alias ls='ls --color=auto'
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -29,3 +29,7 @@ export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export ARDUINO_DIRECTORIES_USER=$HOME/Dropbox/Work/Arduino/
 
 export PATH=$PATH:/home/younix/.spicetify
+
+if uwsm check may-start && uwsm select; then
+	exec uwsm start default
+fi

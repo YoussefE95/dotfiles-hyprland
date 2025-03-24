@@ -1,17 +1,8 @@
 local treeApi = require 'nvim-tree.api'
 vim.keymap.set('n', '<C-b>', treeApi.tree.toggle)
 
-local telescopeApi = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', telescopeApi.find_files)
-vim.keymap.set('n', '<leader>ffg', telescopeApi.git_files)
-vim.keymap.set('n', '<leader>fs', function()
-	telescopeApi.grep_string({ search = vim.fn.input('Grep > ')});
-end)
-
 vim.keymap.set('n', '<leader>rain', ':CellularAutomaton make_it_rain<CR>', { silent = true })
 vim.keymap.set('n', '<leader>game', ':CellularAutomaton game_of_life<CR>', { silent = true })
-vim.keymap.set('n', '<leader>sp', ':PetsNewCustom dog brown Peanut<CR>:PetsNewCustom slime blue Blu<CR>', { silent = true })
-vim.keymap.set('n', '<leader>kp', ':PetsKillAll<CR>', { silent = true })
 
 vim.keymap.set('n', '<leader>st', ':so ~/.config/nvim/lua/younix/theme.lua<CR>', { silent = true })
 

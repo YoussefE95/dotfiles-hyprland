@@ -62,5 +62,12 @@ THEME
 
 printf '%s' "$output" > "${dest_dir}/${dest_file}"
 
-gsettings set org.gnome.desktop.interface gtk-theme "${palette[11]}-${palette[12]}"
-gsettings set org.gnome.desktop.interface cursor-theme "${palette[13]}"
+theme="${palette[11]}-${palette[12]}"
+
+if [ "${palette[12]}" != "light" ]; then
+    theme="$theme-${palette[13]}"
+fi
+
+gsettings set org.gnome.desktop.interface gtk-theme "$theme" 
+gsettings set org.gnome.desktop.interface icon-theme "${palette[14]}"
+gsettings set org.gnome.desktop.interface font-name 'JetBrains Mono SemiBold'

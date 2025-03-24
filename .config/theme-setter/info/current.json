@@ -1,5 +1,7 @@
 {
-  "mode": "light",
-  "tone": "hard",
-  "bg": "christopher-ott-_BW-l29lkd4-unsplash.jpg"
+  "theme": "gruvbox",
+  "mode": "dark",
+  "tone": "medium",
+  "bg": "2024-07-21T10.19.20.jpg",
+  "epoch": "1742806253"
 }
