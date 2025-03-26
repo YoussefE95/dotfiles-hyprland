@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Obsidian
+StartupWMClass=obsidian
+Comment=Live markdown note taking.
+GenericName=Note Taker
+Exec=/usr/bin/obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland
+Icon=obsidian
+Type=Application
+Categories=Network;InstantMessaging;
+Path=/usr/bin
