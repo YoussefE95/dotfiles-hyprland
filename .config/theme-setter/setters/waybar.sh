@@ -24,5 +24,5 @@ printf '%s' "$output" > "${dest_dir}${dest_file}"
 killall waybar
 waybar &
 
-# killall dropbox
-# dropbox &
+killall dropbox
+dropbox &
