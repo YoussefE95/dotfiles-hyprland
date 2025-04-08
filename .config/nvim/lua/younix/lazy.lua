@@ -19,5 +19,25 @@ require('lazy').setup({
     'numToStr/Comment.nvim',
     'sainnhe/gruvbox-material',
     { 'catppuccin/nvim', name = 'catppuccin' },
-    'eandrju/cellular-automaton.nvim'
+    'eandrju/cellular-automaton.nvim',
+    {
+        "vimwiki/vimwiki",
+        event = "BufEnter *.md",
+        keys = { "<leader>ww", "<leader>wt" },
+        init = function()
+            vim.g.vimwiki_folding = ""
+            vim.g.vimwiki_list = {
+                {
+                    path = "~/Dropbox/Notes/",
+                    syntax = "markdown",
+                    ext = ".md",
+                },
+            }
+            vim.g.vimwiki_ext2syntax = {
+                [".md"] = "markdown",
+                [".markdown"] = "markdown",
+                [".mdown"] = "markdown",
+            }
+        end,
+    }
 })
