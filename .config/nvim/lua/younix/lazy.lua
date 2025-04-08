@@ -13,31 +13,35 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
     { 'nvim-telescope/telescope.nvim', name = 'telescope' },
-    'nvim-treesitter/nvim-treesitter',
-    'nvim-tree/nvim-tree.lua',
-    'nvim-tree/nvim-web-devicons',
-    'numToStr/Comment.nvim',
-    'sainnhe/gruvbox-material',
+    { 'nvim-treesitter/nvim-treesitter' },
+    { 'nvim-tree/nvim-tree.lua' },
+    { 'nvim-tree/nvim-web-devicons' },
+    { 'numToStr/Comment.nvim' },
+    { 'sainnhe/gruvbox-material' },
     { 'catppuccin/nvim', name = 'catppuccin' },
-    'eandrju/cellular-automaton.nvim',
     {
-        "vimwiki/vimwiki",
-        event = "BufEnter *.md",
-        keys = { "<leader>ww", "<leader>wt" },
+        'vimwiki/vimwiki',
+        event = 'BufEnter *.md',
+        keys = { '<leader>ww', '<leader>wt' },
         init = function()
-            vim.g.vimwiki_folding = ""
+            vim.g.vimwiki_folding = ''
             vim.g.vimwiki_list = {
                 {
-                    path = "~/Dropbox/Notes/",
-                    syntax = "markdown",
-                    ext = ".md",
+                    path = '~/Dropbox/Notes/',
+                    syntax = 'markdown',
+                    ext = '.md',
                 },
             }
             vim.g.vimwiki_ext2syntax = {
-                [".md"] = "markdown",
-                [".markdown"] = "markdown",
-                [".mdown"] = "markdown",
+                ['.md'] = 'markdown',
+                ['.markdown'] = 'markdown',
+                ['.mdown'] = 'markdown',
             }
         end,
+    },
+    { 'eandrju/cellular-automaton.nvim' },
+    {
+        'giusgad/pets.nvim',
+        dependencies = { 'MunifTanjim/nui.nvim', 'giusgad/hologram.nvim' },
     }
 })

@@ -3,7 +3,8 @@ vim.keymap.set('n', '<C-b>', treeApi.tree.toggle)
 
 vim.keymap.set('n', '<leader>rain', ':CellularAutomaton make_it_rain<CR>', { silent = true })
 vim.keymap.set('n', '<leader>game', ':CellularAutomaton game_of_life<CR>', { silent = true })
-
+vim.keymap.set('n', '<leader>sp', ':PetsNewCustom dog brown Peanut<CR>', { silent = true })
+vim.keymap.set('n', '<leader>kp', ':PetsKillAll<CR>', { silent = true })
 vim.keymap.set('n', '<leader>st', ':so ~/.config/nvim/lua/younix/theme.lua<CR>', { silent = true })
 
 vim.keymap.set('v', 'J', ':m \'>+1<CR>gv=gv')
