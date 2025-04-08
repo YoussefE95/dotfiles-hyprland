@@ -25,7 +25,7 @@ vim.api.nvim_create_autocmd('VimEnter', {
     command = ':PetsNewCustom dog brown Peanut'
 })
 
-vim.api.nvim_create_autocmd("BufWinEnter", {
+vim.api.nvim_create_autocmd("BufNew", {
     pattern = vim.fn.expand("~/Dropbox/Notes/*.md"),
     callback = function()
         vim.cmd("NvimTreeClose")
