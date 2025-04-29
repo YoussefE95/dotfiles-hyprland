@@ -1,0 +1,53 @@
+(defwindow powermenu
+    :monitor 0
+    :geometry (geometry 
+        :x "30"
+        :y "0"
+        :anchor "right center"
+    )
+    :stacking "fg"
+    :reserve (struts 
+        :distance "40px"
+        :side "top"
+    )
+    :windowtype "dock"
+    :wm-ignore false
+    (box
+        :class "powermenu"
+        :orientation "vertical"
+        :space-evenly false
+        (box
+            :class "powermenu-box"
+            (eventbox
+                :class "powermenu-event"
+                :onclick "hyprctl dispatch exit"
+                (label
+                    :class "logout-icon"
+                    :text ""
+                )
+            )
+        )
+        (box
+            :class "powermenu-box"
+            (eventbox
+                :class "powermenu-event"
+                :onclick "reboot"
+                (label
+                    :class "reboot-icon"
+                    :text ""
+                )
+            )
+        )
+        (box
+            :class "powermenu-box"
+            (eventbox
+                :class "powermenu-event"
+                :onclick "poweroff"
+                (label
+                    :class "poweroff-icon"
+                    :text "󰐥"
+                )
+            )
+        )
+    )
+)

@@ -1,0 +1,200 @@
+;; (defwidget notif-toggle []
+;;     (eventbox
+;;         :onclick "~/.config/eww/scripts/toggle --notifications"
+;;         (box
+;;             :class "notif-toggle"
+;;             :orientation "horizontal"
+;;             :space-evenly "false"
+;;             (label
+;;                 :class "notif-toggle-icon"
+;;                 :text "󰍨"
+;;             )
+;;             (label
+;;                 :class "notif-toggle-text"
+;;                 :text "${arraylength(DUNST_HIST)}"
+;;             )
+;;         )
+;;     )
+;; )
+
+(defwidget date []
+    (box
+        :class "date"
+        :orientation "horizontal"
+        (eventbox
+            :onclick "firefox --new-tab 'https://calendar.google.com' &"
+            (box
+                    :space-evenly "false"
+                (label
+                    :class "date-icon"
+                    :text "󰸗"
+                )
+                (label
+                    :class "date-text"
+                    :text "${clock.date}"
+                )
+            )
+        )
+    )
+)
+
+(defwidget time []
+    (box
+        :class "clock"
+        :orientation "horizontal"
+        (eventbox
+            :onclick "eww update fuzzy_time=${fuzzy_time ? false : true}"
+            (box
+                    :space-evenly "false"
+                (label
+                    :class "clock-icon"
+                    :text "󰥔"
+                )
+                (label
+                    :class "clock-text"
+                    :text "${fuzzy_time ? clock.fuzzy : clock.time}"
+                )
+            )
+        )
+    )
+)
+
+(defwidget workspaces []
+    (box
+        :class "workspaces"
+        :orientation "horizontal"
+        :space-evenly "true"
+        (for w in ws_all
+            (eventbox :onclick "~/.config/hypr/scripts/workspace.sh ${w.id}"
+                (box :class "workspace"
+                    (label :class "workspace-text ${w.id == ws_focus ? "ws-focus" : ""} ${w.id != ws_focus && w.windows > 0 ? "ws-active" : "" }" :text "")
+                )
+            )
+        )
+    )
+)
+
+(defwidget tray []
+    (box
+        :class "tray"
+        (systray
+            :spacing 6
+            :space-evenly "true"
+            :icon-size 24
+            :prepend-new true
+        )
+    )
+)
+
+(defwidget battery []
+    (box
+        :class "battery"
+        :space-evenly "false"
+        (label
+            :class "battery-icon"
+            :text "${bat.icn}"
+        )
+        (label
+            :class "battery-text"
+            :text "${bat.txt}"
+        )
+    )
+)
+
+(defwidget brightness []
+   (eventbox
+        :onscroll `~/.config/hypr/scripts/brightness.sh --{}`
+        (box
+            :class "brightness"
+            :space-evenly false
+            (label
+                :class "brightness-icon"
+                :text "${bri.icn}"
+            )
+            (label
+                :class "brightness-text"
+                :text "${bri.txt}"
+            )
+        ) 
+    )
+)
+
+(defwidget volume []
+    (eventbox
+        :onscroll `~/.config/hypr/scripts/volume.sh --{}`
+        :onclick "pavucontrol &"
+        (box
+            :class "volume"
+            (label
+                :class "volume-icon"
+                :text "${vol.icn}"
+            )
+            (label
+                :class "volume-text"
+                :text "${vol.txt}"
+            )
+        )
+    )
+)
+
+(defwidget network []
+    (eventbox
+        :onclick "kitty --title kitty_float nmtui &"
+        (box
+            :class "network"
+            :space-evenly false
+            (label
+                :class "network-icon"
+                :text "${net.icn}"
+            )
+            (label
+                :class "network-text"
+                :text "${net.txt}"
+            )
+        )
+    )
+)
+
+(defwindow bar
+    :monitor 0
+    :exclusive true
+    :namespace "gtk-layer-shell"
+    :geometry (geometry
+        :x "0"
+        :y "0"
+        :width "100%"
+        :height "38px"
+        :anchor "top center"
+    )
+    (box
+        :class "bar"
+        :orientation "horizontal"
+        :space-evenly true
+        (box
+            :class "left-box"
+            :halign "start"
+            :space-evenly false
+            :orientation "horizontal"
+            ;;(notif-toggle)
+            (date)
+            (time)
+        )
+        (box
+            :halign "center"
+            :space-evenly false
+            :orientation "horizontal"
+            (workspaces)
+        )
+        (box
+            :class "right-box"
+            :halign "end"
+            :space-evenly false
+            :orientation "horizontal"
+            (tray)
+            (battery)
+            (brightness)
+            (volume)
+            (network)
+        )
+    )
+)

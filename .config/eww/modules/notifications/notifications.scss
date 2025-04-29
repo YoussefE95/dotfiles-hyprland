@@ -1,0 +1,51 @@
+.notifications {
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.notifications-header {
+    margin-bottom: .75rem;
+}
+
+.notifications-text-box,
+.notifications-clear {
+    background: rgba($backgroundAlt, 0.8); 
+    border-radius: 1rem;
+}
+
+.notifications-clear:hover {
+    background: rgba($magenta, 0.4);
+}
+
+.notifications-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0rem .75rem;
+}
+
+.trash-icon {
+    font-size: 2rem;
+    color: rgba($gray, 0.95);
+    margin: 0rem .5rem;
+    padding: 0rem .5rem;
+}
+
+.notification {
+    background: $backgroundAlt;
+    border-radius: 1rem;
+    font-size: 1.15rem;
+    margin-bottom: .25rem;
+    padding: 1rem;
+}
+
+.notification-title,
+.notification-body {
+    background: inherit;
+    border-radius: inherit;
+    padding-left: .25rem;
+}
+
+.notification-title {
+    font-weight: bold;
+    color: rgba($magenta, 0.85);
+}

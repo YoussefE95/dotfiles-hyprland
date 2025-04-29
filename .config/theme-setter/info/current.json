@@ -1,7 +1,7 @@
 {
-  "theme": "gruvbox",
-  "mode": "dark",
+  "theme": "catppuccin",
+  "mode": "light",
   "tone": "medium",
-  "bg": "2024-07-21T10.19.20.jpg",
-  "epoch": "1742806253"
+  "bg": "jason-leung-M_jV_BwMgLE-unsplash.jpg",
+  "epoch": "1745953397"
 }

@@ -41,6 +41,7 @@ palette=(
 {
     $setters/discord.sh ${palette[@]} &
     $setters/dunst.sh ${palette[@]} $icons &
+    $setters/eww.sh ${palette[@]} &
     $setters/fuzzel.sh ${palette[@]} &
     $setters/gtk.sh ${palette[@]} $theme $mode $tone $icons &
     $setters/hypr.sh ${palette[@]} $cursors &
@@ -50,6 +51,6 @@ palette=(
     # $setters/okular.sh ${palette[@]} &
     $setters/spicetify.sh ${palette[@]} &
     $setters/wallpaper.sh &
-    $setters/waybar.sh ${palette[@]} &
+    # $setters/waybar.sh ${palette[@]} &
     $setters/zathura.sh ${palette[@]} &
 } &> /dev/null
