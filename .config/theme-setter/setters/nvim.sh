@@ -5,7 +5,9 @@ if [ "$1" == "gruvbox" ]; then
     nvim_theme="$1-material"
 
     sed -i "s/vim.o.background.*/vim.o.background = '$2'/" "$themes"
-    sed -i "s/.*material_background.*/vim.g.gruvbox_material_background = '$3'/" "$themes"
+    sed -i \
+        "s/.*material_background.*/vim.g.gruvbox_material_background = '$3'/" \
+        "$themes"
 else
     nvim_theme="$1"
 
