@@ -20,12 +20,11 @@ yay -Syu && yay -S \
     zsh zsh-autosuggestions zsh-history-substring-search \
     zsh-syntax-highlighting libappindicator-gtk3 archlinux-xdg-menu
 
-# Install Spicetify
-# spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 \
-#   inject_theme_js 1
-# spicetify config current_theme Comfy
-# spicetify config color_scheme dynamic
-# spicetify backup apply
+# Set wallpaper
+swww img "$HOME/.local/share/wallpaper.jpg" \
+    --transition-type wipe \
+    --transition-angle 30 \
+    --transition-step 90
 
 # Enable Bluetooth, Docker, and ExpressVPN
 sudo systemctl enable bluetooth
@@ -37,3 +36,10 @@ sudo gpasswd -a $USER docker
 
 # Make zsh default shell
 chsh -s $(which zsh)
+
+# Install Spicetify
+# spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 \
+#   inject_theme_js 1
+# spicetify config current_theme Comfy
+# spicetify config color_scheme dynamic
+# spicetify backup apply
