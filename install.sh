@@ -11,7 +11,7 @@ sudo cp .config/theme-setter/set-theme .config/theme-setter/get-theme \
 
 # Update and install packages
 yay -Syu && yay -S \
-    uwsm hyprland hyprlock waybar swww fuzzel dunst kitty starship \
+    uwsm hyprland hyprlock hyprshot waybar swww fuzzel dunst kitty starship \
     neovim ranger nvtop htop expressvpn obsidian dropbox discord \
     spotify-launcher spicetify-cli kvantum dolphin dolphin-plugins okular \
     ttf-jetbrains-mono ttf-jetbrains-mono-nerd brightnessctl \
