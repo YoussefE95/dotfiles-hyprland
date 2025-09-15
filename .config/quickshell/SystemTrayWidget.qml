@@ -16,7 +16,7 @@ Rectangle {
         }
     }
     color: Colors.backgroundAlt
-    width: SystemTray.items.values.length * 32
+    width: SystemTray.items.values.length * 34
     height: 32
     radius: 4
     Row {
@@ -24,7 +24,6 @@ Rectangle {
             centerIn: parent
         }
         spacing: 8
-
         Repeater {
             model: SystemTray.items
 

@@ -3,29 +3,17 @@ import Quickshell.Io
 import QtQuick
 
 Rectangle {
-    function splitNetwork(pref) {
-        const split = Network.connection.split(" ")
+    function splitBattery(pref) {
+        const split = Battery.remaining.split(" ")
 
         if (pref === "icon") {
             return split[0]
-        } else if (pref === "name") {
+        } else if (pref === "value") {
             return split[1]
         }
     }
-    MouseArea {
-        Process {
-            id: networkManagerProc
-        }
-        anchors.fill: parent
-        onClicked: (mouse) => {
-            networkManagerProc.command = [
-                "kitty", "--title", "kitty_float", "nmtui"
-            ]
-            networkManagerProc.running = true
-        }
-    }
     color: Colors.backgroundAlt
-    width: Network.connection.length * 11
+    width: 70
     height: 32
     radius: 4
     Row {
@@ -41,8 +29,8 @@ Rectangle {
                 family: "JetBrains Mono SemiBold"
                 pointSize: 16
             }
-            color: Colors.cyan
-            text: splitNetwork("icon")
+            color: Colors.green
+            text: splitBattery("icon")
         }
         Text {
             anchors {
@@ -53,7 +41,7 @@ Rectangle {
                 pointSize: 13
             }
             color: Colors.foreground
-            text: splitNetwork("name")
+            text: splitBattery("value")
         }
     }
 }

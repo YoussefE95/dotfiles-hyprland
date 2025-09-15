@@ -21,14 +21,14 @@ Scope {
             implicitHeight: 42
             color: Colors.background
 
-            WorkspacesWidget {
+            DateTimeWidget {
                 anchors {
                     verticalCenter: parent.verticalCenter
                     left: parent.left
                 }
-                leftPadding: 8
+                leftPadding: 6
             }
-            DateTimeWidget {
+            WorkspacesWidget {
                 anchors {
                     verticalCenter: parent.verticalCenter
                     centerIn: parent
@@ -39,8 +39,10 @@ Scope {
                     verticalCenter: parent.verticalCenter
                     right: parent.right
                 }
-                rightPadding: 8
-                spacing: 8
+                rightPadding: 6
+                spacing: 6
+                BatteryWidget {}
+                BrightnessWidget {}
                 VolumeWidget {}
                 NetworkWidget {}
                 SystemTrayWidget {}

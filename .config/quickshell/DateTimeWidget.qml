@@ -10,7 +10,7 @@ Row {
             return `${split[2]}`
         }
     }
-    spacing: 8
+    spacing: 6
 
     Rectangle {
         color: Colors.backgroundAlt
@@ -21,6 +21,7 @@ Row {
             anchors {
                 centerIn: parent
             }
+            spacing: 8
             Text {
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -29,8 +30,8 @@ Row {
                     family: "JetBrains Mono SemiBold"
                     pointSize: 16
                 }
-                color: Colors.yellow
-                text: " "
+                color: Colors.orange
+                text: ""
             }
             Text {
                 anchors {
@@ -54,6 +55,7 @@ Row {
             anchors {
                 centerIn: parent
             }
+            spacing: 8
             Text {
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -62,8 +64,8 @@ Row {
                     family: "JetBrains Mono SemiBold"
                     pointSize: 16
                 }
-                color: Colors.yellow
-                text: "󰥔 "
+                color: Colors.orange
+                text: "󰥔"
             }
             Text {
                 anchors {
@@ -77,5 +79,5 @@ Row {
                 text: splitDateTime("time")
             }
         }
-    }   
+    }
 }
