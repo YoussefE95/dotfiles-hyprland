@@ -50,7 +50,8 @@ palette=(
     $setters/nvim.sh $theme $mode $tone &
     $setters/obsidian.sh ${palette[@]} &
     $setters/okular.sh ${palette[@]} &
+    $setters/quickshell.sh ${palette[@]} &
     $setters/spicetify.sh ${palette[@]} &
     $setters/wallpaper.sh &
-    $setters/waybar.sh ${palette[@]} &
+    #$setters/waybar.sh ${palette[@]} &
 } &> /dev/null
