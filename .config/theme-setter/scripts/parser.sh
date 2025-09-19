@@ -33,6 +33,8 @@ if [ "$1" == "--set" ]; then
     set "tone" $4
 elif [ "$1" == "--set-wallpaper" ]; then
     set "wallpaper" $2
+elif [ "$1" == "--full" ]; then
+    echo "$(get "theme") $(get "mode") $(get "tone")"
 elif [ "$1" == "--theme" ]; then
     get "theme"
 elif [ "$1" == "--mode" ]; then
