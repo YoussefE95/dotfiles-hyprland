@@ -6,7 +6,8 @@ import QtQuick
 
 Singleton {
     id: root
-    property string current
+    property string date
+    property string time
 
     Process {
         id: dateProc
@@ -14,7 +15,11 @@ Singleton {
         running: true
 
         stdout: StdioCollector {
-            onStreamFinished: root.current = this.text
+            onStreamFinished: () => {
+                const split = this.text.replace("\n", "").split(" ")
+                root.date = `${split[0]} ${split[1]}`
+                root.time = split[2]
+            }
         }
     }
 

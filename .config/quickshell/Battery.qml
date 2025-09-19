@@ -6,7 +6,8 @@ import QtQuick
 
 Singleton {
     id: root
-    property string remaining
+    property string icon
+    property string text
 
     Process {
         id: batteryProc
@@ -14,7 +15,11 @@ Singleton {
         running: true
 
         stdout: StdioCollector {
-            onStreamFinished: root.remaining = this.text
+            onStreamFinished: () => {
+                const split = this.text.replace("\n", "").split(" ")
+                root.icon = split[0]
+                root.text = split[1]
+            }
         }
     }
 

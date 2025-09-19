@@ -6,7 +6,7 @@ import QtQuick
 
 Singleton {
     id: root
-    property string backlight
+    property string text
 
     Process {
         id: brightnessProc
@@ -16,11 +16,19 @@ Singleton {
         running: true
 
         stdout: StdioCollector {
-            onStreamFinished: root.backlight = this.text
+            onStreamFinished: root.text = this.text.replace("\n", "")
         }
     }
 
-    function setBacklight(direction) {
+    function set(delta) {
+        let direction = "--down"
+
+        if (delta === 0) {
+            return
+        } else if (delta > 0) {
+            direction = "--up"
+        }
+
         brightnessProc.command = [
             "sh", "-c",
             `~/.config/quickshell/scripts/brightness.sh ${direction}`

@@ -15,14 +15,9 @@ Row {
             height: 32
             radius: 4
 
-            Text {
-                anchors {
-                    centerIn: parent
-                }
-                font {
-                    family: "JetBrains Mono SemiBold"
-                    pointSize: 13
-                }
+            ShellText {
+                anchors.centerIn: parent
+                size: 13
                 color: modelData.focused ? Colors.background : Colors.foreground
                 text: modelData.name
             }

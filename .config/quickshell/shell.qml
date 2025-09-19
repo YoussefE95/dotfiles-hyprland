@@ -3,4 +3,6 @@ import Quickshell
 
 Scope {
     Bar {}
+    NotificationPopup {}
+    ReloadPopup {}
 }

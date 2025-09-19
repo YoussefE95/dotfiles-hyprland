@@ -1,24 +1,27 @@
 import Quickshell
-import Quickshell.Services.SystemTray
 import Quickshell.Io
+import Quickshell.Services.SystemTray
 import QtQuick
 
 Rectangle {
     function systemTrayIcon(modelData) {
+        const split = modelData.icon.split("?path=")
+        const icon = split[0].replace("image://icon/", "")
+
         if (modelData.title === "dropbox") {
-            return "/home/younix/.dropbox-dist/dropbox-lnx.x86_64-232.4.5926" +
-            "/images/hicolor/16x16/status/dropboxstatus-logo.png"
+            return `${split[1]}/hicolor/16x16/status/${icon}`
         } else if (modelData.title === "spotify") {
-            return "/home/younix/.local/share/spotify-launcher/install/usr/" +
-            "share/spotify/icons/spotify-linux-22.png"
+            return `${split[1]}/${icon}`
         } else {
-            return modelData.icon
+            return split[0]
         }
     }
+
     color: Colors.backgroundAlt
     width: SystemTray.items.values.length * 34
     height: 32
     radius: 4
+
     Row {
         anchors {
             centerIn: parent

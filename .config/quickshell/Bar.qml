@@ -21,12 +21,15 @@ Scope {
             implicitHeight: 42
             color: Colors.background
 
-            DateTimeWidget {
+            Row {
                 anchors {
                     verticalCenter: parent.verticalCenter
                     left: parent.left
                 }
                 leftPadding: 6
+                spacing: 6
+                ThemeSetterWidget {}
+                DateTimeWidget {}
             }
             WorkspacesWidget {
                 anchors {
