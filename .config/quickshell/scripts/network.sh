@@ -1,8 +1,8 @@
 #!/bin/bash
-is_connected=$(nmcli g | grep 'connected' | cut -d ' ' -f 1)
+is_connected=$(nmcli g | grep 'connected' | cut -d ' ' -f 3)
 wifi_name=$(nmcli c | grep wlan0 | cut -d ' ' -f 1)
 
-if [ "$is_connected" != "connected" ]; then
+if [ "$is_connected" != "full" ]; then
     icn="󰈂"
     txt="Disconnected"
 else
