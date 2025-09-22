@@ -22,7 +22,7 @@ LazyLoader {
             id: info
             infoWidth: 210
             infoHeight: 166
-            borderColor: Colors.backgroundAlt
+            borderColor: Theme.backgroundAlt
 
             Column {
                 topPadding: 8
@@ -58,15 +58,19 @@ LazyLoader {
                         width: 60
                         height: 32
                         radius: 4
-                        color: Colors.backgroundAlt
+                        color: Theme.backgroundAlt
                         MouseArea {
                             anchors.fill: parent
                             onClicked: (mouse) => { ThemeSetter.setTheme() }
                         }
-                        ShellText {
+                        Text {
                             anchors.centerIn: parent
-                            size: 13
-                            color: Colors.foreground
+                            font {
+                                family: Theme.fontFamily
+                                weight: Theme.fontWeight
+                                pointSize: Theme.fontSize
+                            }
+                            color: Theme.foreground
                             text: "Apply"
 
                         }

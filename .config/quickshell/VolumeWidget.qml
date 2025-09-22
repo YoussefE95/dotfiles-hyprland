@@ -1,7 +1,7 @@
 import QtQuick
 
 BarWidget {
-    iconColor: Colors.magenta
+    iconColor: Theme.magenta
     icon: "󰕾"
     text: Volume.text
     WheelHandler {

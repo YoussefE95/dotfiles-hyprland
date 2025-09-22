@@ -6,7 +6,7 @@ Rectangle {
     property string icon
     property string text
 
-    color: Colors.backgroundAlt
+    color: Theme.backgroundAlt
     width: 72
     height: 32
     radius: 4
@@ -14,16 +14,24 @@ Rectangle {
     Row {
         anchors.centerIn: parent
         spacing: 8
-        ShellText {
+        Text {
             anchors.verticalCenter: parent.verticalCenter
-            size: 16
+            font {
+                family: Theme.fontFamily
+                weight: Theme.fontWeight
+                pointSize: Theme.iconSize
+            }
             color: widget.iconColor
             text: widget.icon
         }
-        ShellText {
+        Text {
             anchors.verticalCenter: parent.verticalCenter
-            size: 13
-            color: Colors.foreground
+            font {
+                family: Theme.fontFamily
+                weight: Theme.fontWeight
+                pointSize: Theme.fontSize
+            }
+            color: Theme.foreground
             text: widget.text
         }
     }

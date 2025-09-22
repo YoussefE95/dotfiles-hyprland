@@ -40,7 +40,7 @@ Scope {
 				id: info
                 infoWidth: 400
 				infoHeight: 150
-                borderColor: root.urgent ? Colors.red : Colors.gray 
+                borderColor: root.urgent ? Theme.red : Theme.gray 
 
     			MouseArea {
 					id: mouseArea
@@ -57,14 +57,17 @@ Scope {
                         implicitWidth: 380
                         implicitHeight: 30
                         color: "transparent"
-                        ShellText {
+                        Text {
                             anchors {
                                 fill: parent
                                 verticalCenter: parent.verticalCenter
                             }
-                            size: 13
-                            weight: 800
-                            color: Colors.foreground
+                            font {
+                                family: Theme.fontFamily
+                                weight: 800
+                                pointSize: Theme.fontSize
+                            }
+                            color: Theme.foreground
                             text: `${root.appName} | ${root.summary}`
                             elide: Text.ElideRight
                         }
@@ -73,13 +76,17 @@ Scope {
                         implicitWidth: 380
                         implicitHeight: 108
                         color: "transparent"
-                        ShellText {
+                        Text {
                             anchors {
                                 fill: parent
                                 verticalCenter: parent.verticalCenter
                             }
-                            size: 13
-                            color: Colors.foreground
+                            font {
+                                family: Theme.fontFamily
+                                weight: Theme.fontWeight
+                                pointSize: Theme.fontSize
+                            }
+                            color: Theme.foreground
                             text: root.body
                             elide: Text.ElideRight
                             wrapMode: Text.WordWrap

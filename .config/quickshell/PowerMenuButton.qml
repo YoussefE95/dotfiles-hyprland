@@ -10,7 +10,7 @@ Rectangle {
     width: 84
     height: 84
     radius: 10
-    color: Colors.backgroundAlt
+    color: Theme.backgroundAlt
 
     Process {
         id: buttonProc
@@ -24,20 +24,24 @@ Rectangle {
             buttonProc.running = true
         }
         onEntered: (mouse) => {
-            button.color = Colors.magenta
-            buttonIcon.color = Colors.background
+            button.color = Theme.magenta
+            buttonIcon.color = Theme.background
         }
         onExited: (mouse) => {
-            button.color = Colors.backgroundAlt
-            buttonIcon.color = Colors.foreground
+            button.color = Theme.backgroundAlt
+            buttonIcon.color = Theme.foreground
         }
     }
 
-    ShellText {
+    Text {
         id: buttonIcon
         anchors.centerIn: parent
-        size: 28
-        color: Colors.foreground
+        font {
+            family: Theme.fontFamily
+            weight: Theme.fontWeight
+            pointSize: 28
+        }
+        color: Theme.foreground
         text: button.icon
     }
 }

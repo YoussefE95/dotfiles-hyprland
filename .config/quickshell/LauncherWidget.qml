@@ -4,7 +4,7 @@ import QtQuick
 
 BarWidget {
     width: 32
-    iconColor: Colors.magenta
+    iconColor: Theme.magenta
     icon:""
     text: ""
 

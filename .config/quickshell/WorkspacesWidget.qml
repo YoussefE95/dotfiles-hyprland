@@ -10,15 +10,19 @@ Row {
         model: Hyprland.workspaces
 
         Rectangle {
-            color: modelData.focused ? Colors.orange : Colors.backgroundAlt
+            color: modelData.focused ? Theme.orange : Theme.backgroundAlt
             width: 32
             height: 32
             radius: 4
 
-            ShellText {
+            Text {
                 anchors.centerIn: parent
-                size: 13
-                color: modelData.focused ? Colors.background : Colors.foreground
+                font {
+                    family: Theme.fontFamily
+                    weight: Theme.fontWeight
+                    pointSize: Theme.fontSize
+                }
+                color: modelData.focused ? Theme.background : Theme.foreground
                 text: modelData.name
             }
         }

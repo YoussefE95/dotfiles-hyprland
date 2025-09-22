@@ -9,17 +9,21 @@ Rectangle {
     width: button.text.length * 11
     height: 32
     radius: 4
-    color: ThemeSetter[button.value] === button.text.toLowerCase() ? Colors.magenta : Colors.backgroundAlt
+    color: ThemeSetter[button.value] === button.text.toLowerCase() ? Theme.magenta : Theme.backgroundAlt
 
     MouseArea {
         anchors.fill: parent
         onClicked: { ThemeSetter.set(button.value, button.text.toLowerCase()) }
     }
 
-    ShellText {
+    Text {
         anchors.centerIn: parent
-        size: 13
-        color: ThemeSetter[button.value] === button.text.toLowerCase() ? Colors.background : Colors.foreground
+        font {
+            family: Theme.fontFamily
+            weight: Theme.fontWeight
+            pointSize: Theme.fontSize
+        }
+        color: ThemeSetter[button.value] === button.text.toLowerCase() ? Theme.background : Theme.foreground
         text: button.text
     }
 }

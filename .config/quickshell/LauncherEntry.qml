@@ -6,9 +6,9 @@ Rectangle {
     id: root
     property QtObject entry
 
-    width: info.implicitWidth
+    width: info.implicitWidth - 20
     height: 28
-    color: Colors.backgroundAlt
+    color: Theme.backgroundAlt
     radius: 4
 
     MouseArea {
@@ -19,12 +19,12 @@ Rectangle {
             popupLoader.load()
         }
         onEntered: (mouse) => {
-            root.color = Colors.magenta
-            entryName.color = Colors.background
+            root.color = Theme.magenta
+            entryName.color = Theme.background
         }
         onExited: (mouse) => {
-            root.color = Colors.backgroundAlt
-            entryName.color = Colors.foreground
+            root.color = Theme.backgroundAlt
+            entryName.color = Theme.foreground
         }
     }
 
@@ -43,14 +43,18 @@ Rectangle {
         }
 
         Rectangle {
-            width: info.implicitWidth - 28
+            width: info.implicitWidth - 48
             height: 28
             color: "transparent"
-            ShellText {
+            Text {
                 id: entryName
                 anchors.verticalCenter: parent.verticalCenter
-                size: 13
-                color: Colors.foreground
+                font {
+                    family: Theme.fontFamily
+                    weight: Theme.fontWeight
+                    pointSize: Theme.fontSize
+                }
+                color: Theme.foreground
                 text: root.entry.name
                 elide: Text.ElideRight
             }

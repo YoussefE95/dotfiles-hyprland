@@ -19,7 +19,7 @@ Scope {
             }
 
             implicitHeight: 42
-            color: Colors.background
+            color: Theme.background
 
             Row {
                 anchors {
@@ -45,8 +45,8 @@ Scope {
                 }
                 rightPadding: 6
                 spacing: 6
-                // BatteryWidget {}
-                // BrightnessWidget {}
+                BatteryWidget {}
+                BrightnessWidget {}
                 VolumeWidget {}
                 NetworkWidget {}
                 SystemTrayWidget {}

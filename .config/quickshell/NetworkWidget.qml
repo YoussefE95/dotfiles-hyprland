@@ -3,7 +3,7 @@ import Quickshell.Io
 import QtQuick
 
 BarWidget {
-    iconColor: Colors.cyan
+    iconColor: Theme.cyan
     icon: Network.icon
     text: Network.text
     width: (Network.text.length + 3) * 12

@@ -5,8 +5,12 @@ import Quickshell.Io
 import QtQuick
 
 Singleton {
-    property color background: "#32302f"
-    property color backgroundAlt: "#252423"
+    property string fontFamily: "JetBrains Mono"
+    property int fontWeight: 500
+    property int fontSize: 13
+    property int iconSize: 16
+    property color background: "#292828"
+    property color backgroundAlt: "#1b1b1b"
     property color foreground: "#ddc7a1"
     property color gray: "#7c6f64"
     property color red: "#ea6962"

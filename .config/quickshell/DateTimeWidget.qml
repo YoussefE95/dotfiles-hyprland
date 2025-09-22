@@ -5,7 +5,7 @@ Row {
     spacing: 6
 
     BarWidget {
-        iconColor: Colors.orange
+        iconColor: Theme.orange
         icon: ""
         text: DateTime.date
         width: 100
@@ -22,8 +22,9 @@ Row {
             }
         }
     }
+
     BarWidget {
-        iconColor: Colors.orange
+        iconColor: Theme.orange
         icon: "󰥔"
         text: DateTime.time
         width: 90

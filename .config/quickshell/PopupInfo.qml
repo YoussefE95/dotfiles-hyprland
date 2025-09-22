@@ -6,7 +6,7 @@ Rectangle {
     property int infoHeight
     property color borderColor
 
-    color: Colors.background
+    color: Theme.background
     radius: 10
     border {
         color: info.borderColor

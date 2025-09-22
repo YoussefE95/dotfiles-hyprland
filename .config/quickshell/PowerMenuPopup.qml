@@ -8,7 +8,6 @@ LazyLoader {
         if (popupLoader.active) {
             popupLoader.active = false
         } else {
-            ThemeSetter.run()
             popupLoader.loading = true
         }
     }
@@ -22,7 +21,7 @@ LazyLoader {
             id: info
             infoWidth: 300
             infoHeight: 110
-            borderColor: Colors.backgroundAlt
+            borderColor: Theme.backgroundAlt
             Row {
                 anchors.centerIn: parent
                 spacing: 10

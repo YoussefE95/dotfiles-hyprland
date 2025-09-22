@@ -38,7 +38,7 @@ Scope {
                 id: info
                 infoWidth: layout.implicitWidth + 30
 				infoHeight: layout.implicitHeight + 50
-                borderColor: failed ?  Colors.red : Colors.green 
+                borderColor: failed ?  Theme.red : Theme.green 
 
 				MouseArea {
 					id: mouseArea
@@ -56,15 +56,23 @@ Scope {
 						horizontalCenter: parent.horizontalCenter
 					}
 
-					ShellText {
-                        size: 13
-                        color: Colors.foreground
+					Text {
+                        font {
+                            family: Theme.fontFamily
+                            weight: Theme.fontWeight
+                            pointSize: Theme.fontSize
+                        }
+                        color: Theme.foreground
 						text: root.failed ? "Reload failed." : "Reloaded completed!"
 					}
 
-					ShellText {
-                        size: 13
-                        color: Colors.foreground
+					Text {
+                        font {
+                            family: Theme.fontFamily
+                            weight: Theme.fontWeight
+                            pointSize: Theme.fontSize
+                        }
+                        color: Theme.foreground
 						text: root.errorString
 						visible: root.errorString != ""
 					}

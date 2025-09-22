@@ -17,7 +17,7 @@ Rectangle {
         }
     }
 
-    color: Colors.backgroundAlt
+    color: Theme.backgroundAlt
     width: SystemTray.items.values.length * 34
     height: 32
     radius: 4
@@ -31,7 +31,7 @@ Rectangle {
             model: SystemTray.items
 
             Rectangle {
-                color: Colors.backgroundAlt
+                color: Theme.backgroundAlt
                 width: 22
                 height: 22
                 MouseArea {
