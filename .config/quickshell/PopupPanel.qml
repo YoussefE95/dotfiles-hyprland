@@ -9,12 +9,12 @@ PanelWindow {
 
     anchors {
         top: true
-        left: true
     }
 
     margins {
         top: 5
-        left: 5
+        left: anchors.left ? 5 : 0
+        right: anchors.right ? 5 : 0
     }
 
     implicitWidth: popup.width

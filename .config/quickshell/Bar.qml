@@ -28,6 +28,7 @@ Scope {
                 }
                 leftPadding: 6
                 spacing: 6
+                LauncherWidget {}
                 ThemeSetterWidget {}
                 DateTimeWidget {}
             }
@@ -44,11 +45,12 @@ Scope {
                 }
                 rightPadding: 6
                 spacing: 6
-                BatteryWidget {}
-                BrightnessWidget {}
+                // BatteryWidget {}
+                // BrightnessWidget {}
                 VolumeWidget {}
                 NetworkWidget {}
                 SystemTrayWidget {}
+                PowerMenuWidget {}
             }
         }
     }

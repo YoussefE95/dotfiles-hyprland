@@ -31,7 +31,8 @@ Scope {
 	LazyLoader {
 		id: popupLoader
 
-        Popup {
+        PopupPanel {
+            anchors.left: true
             width: info.width
             height: info.height
 
@@ -39,8 +40,7 @@ Scope {
 				id: info
                 infoWidth: 400
 				infoHeight: 150
-                borderColor: root.urgent ? Colors.red : Colors.gray
-                borderWidth: 4 
+                borderColor: root.urgent ? Colors.red : Colors.gray 
 
     			MouseArea {
 					id: mouseArea

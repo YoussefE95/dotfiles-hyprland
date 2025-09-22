@@ -13,7 +13,8 @@ LazyLoader {
         }
     }
 
-    Popup {
+    PopupPanel {
+        anchors.left: true
         width: info.width
         height: info.height
 
@@ -21,8 +22,7 @@ LazyLoader {
             id: info
             infoWidth: 210
             infoHeight: 166
-            borderColor: "transparent"
-            borderWidth: 0
+            borderColor: Colors.backgroundAlt
 
             Column {
                 topPadding: 8
