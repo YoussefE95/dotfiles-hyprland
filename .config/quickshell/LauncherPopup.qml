@@ -4,21 +4,34 @@ import QtQuick.Controls
 
 LazyLoader {
     id: popupLoader
+    property int selectedEntry
+
+    function onLoad() {
+        popupLoader.highlight(
+            repeater.itemAt(
+                popupLoader.selectedEntry
+            )
+        )
+    }
 
     function load() {
         if (popupLoader.active) {
             popupLoader.active = false
         } else {
+            popupLoader.selectedEntry = 0
             popupLoader.loading = true
         }
     }
 
-    // Keys.onPressed: (event) => {
-    //     if ((event.key == Qt.Key_Space) && (event.modifiers & Qt.MetaModifier)) {
-    //         load()
-    //         event.accepted = true
-    //     }
-    // }
+    function unHighlight(entry) {
+        entry.rectColor = Theme.backgroundAlt
+        entry.textColor = Theme.foreground
+    }
+
+    function highlight(entry) {
+        entry.rectColor = Theme.magenta
+        entry.textColor = Theme.background
+    }
 
     PopupPanel {
         id: popupPanel
@@ -60,7 +73,63 @@ LazyLoader {
 
                     Column {
                         spacing: 8
+
+                        Item {
+                            Shortcut {
+                                sequence: "Down"
+                                onActivated: {
+                                    if (popupLoader.selectedEntry < repeater.count - 1) {
+                                        popupLoader.unHighlight(
+                                            repeater.itemAt(
+                                                popupLoader.selectedEntry
+                                            )
+                                        )
+
+                                        popupLoader.selectedEntry++
+
+                                        popupLoader.highlight(
+                                            repeater.itemAt(
+                                                popupLoader.selectedEntry
+                                            )
+                                        )
+                                        console.log(popupLoader.selectedEntry)
+                                    }
+                                }
+                            }
+                            Shortcut {
+                                sequence: "Up"
+                                onActivated: {
+                                    if (popupLoader.selectedEntry > 0) {
+                                        popupLoader.unHighlight(
+                                            repeater.itemAt(
+                                                popupLoader.selectedEntry
+                                            )
+                                        )
+
+                                        popupLoader.selectedEntry--
+
+                                        popupLoader.highlight(
+                                            repeater.itemAt(
+                                                popupLoader.selectedEntry
+                                            )
+                                        )
+                                        console.log(popupLoader.selectedEntry)
+                                    }
+                                }
+                            }
+                            Shortcut {
+                                sequence: "Return"
+                                onActivated: {
+                                    repeater.itemAt(
+                                        popupLoader.selectedEntry
+                                    ).entry.execute()
+                                    popupLoader.load()
+                                }
+                            }
+                        }
+
                         Repeater {
+                            id: repeater
                             model: DesktopEntries.applications.values.filter(
                                 (app) => {
                                     return !app.runInTerminal &&
@@ -69,7 +138,11 @@ LazyLoader {
                                     )
                                 }
                             ).sort(
-                                (a,b) => a.name.toLowerCase().localeCompare(b.name)
+                                (a,b) => {
+                                    return a.name.toLowerCase().localeCompare(
+                                        b.name
+                                    )
+                                }
                             )
 
                             LauncherEntry {

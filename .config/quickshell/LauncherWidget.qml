@@ -16,4 +16,12 @@ BarWidget {
         anchors.fill: parent
         onClicked: (mouse) => { popupLoader.load() }
     }
+
+    IpcHandler {
+        target: "popupLoader"
+
+        function loadLauncher() {
+            popupLoader.load()
+        }
+    }
 }

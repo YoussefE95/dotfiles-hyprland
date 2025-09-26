@@ -5,10 +5,12 @@ import QtQuick
 Rectangle {
     id: root
     property QtObject entry
+    property color rectColor: Theme.backgroundAlt
+    property color textColor: Theme.foreground
 
     width: info.implicitWidth - 20
     height: 28
-    color: Theme.backgroundAlt
+    color: root.rectColor
     radius: 4
 
     MouseArea {
@@ -19,12 +21,12 @@ Rectangle {
             popupLoader.load()
         }
         onEntered: (mouse) => {
-            root.color = Theme.magenta
-            entryName.color = Theme.background
+            root.rectColor = Theme.magenta
+            root.textColor = Theme.background
         }
         onExited: (mouse) => {
-            root.color = Theme.backgroundAlt
-            entryName.color = Theme.foreground
+            root.rectColor = Theme.backgroundAlt
+            root.textColor = Theme.foreground
         }
     }
 
@@ -32,15 +34,15 @@ Rectangle {
         id: entryRow
         spacing: 10
 
-        Rectangle {
-            width: 28
-            height: 28
-            color: "transparent"
-            Image {
-                anchors.fill: parent
-                source: root.entry.icon
-            }
-        }
+        // Rectangle {
+        //     width: 28
+        //     height: 28
+        //     color: "transparent"
+        //     Image {
+        //         anchors.fill: parent
+        //         source: root.entry.icon
+        //     }
+        // }
 
         Rectangle {
             width: info.implicitWidth - 48
@@ -54,7 +56,7 @@ Rectangle {
                     weight: Theme.fontWeight
                     pointSize: Theme.fontSize
                 }
-                color: Theme.foreground
+                color: root.textColor
                 text: root.entry.name
                 elide: Text.ElideRight
             }
