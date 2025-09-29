@@ -34,15 +34,15 @@ Rectangle {
         id: entryRow
         spacing: 10
 
-        // Rectangle {
-        //     width: 28
-        //     height: 28
-        //     color: "transparent"
-        //     Image {
-        //         anchors.fill: parent
-        //         source: root.entry.icon
-        //     }
-        // }
+        Rectangle {
+            width: 28
+            height: 28
+            color: "transparent"
+            Image {
+                anchors.fill: parent
+                source: root.entry.icon
+            }
+        }
 
         Rectangle {
             width: info.implicitWidth - 48

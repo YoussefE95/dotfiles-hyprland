@@ -6,14 +6,6 @@ LazyLoader {
     id: popupLoader
     property int selectedEntry
 
-    function onLoad() {
-        popupLoader.highlight(
-            repeater.itemAt(
-                popupLoader.selectedEntry
-            )
-        )
-    }
-
     function load() {
         if (popupLoader.active) {
             popupLoader.active = false
@@ -74,6 +66,40 @@ LazyLoader {
                     Column {
                         spacing: 8
 
+                        Repeater {
+                            id: repeater
+                            model: DesktopEntries.applications.values.filter(
+                                (app) => {
+                                    return !app.runInTerminal &&
+                                    app.name.toLowerCase().includes(
+                                        appFilter.text.toLowerCase()
+                                    )
+                                }
+                            ).sort(
+                                (a,b) => {
+                                    return a.name.toLowerCase().localeCompare(
+                                        b.name
+                                    )
+                                }
+                            )
+
+                            onCountChanged: {
+                                popupLoader.selectedEntry = 0
+                            }
+
+                            onItemAdded: {
+                                popupLoader.highlight(
+                                    repeater.itemAt(
+                                        popupLoader.selectedEntry
+                                    )
+                                )
+                            }
+
+                            LauncherEntry {
+                                entry: modelData
+                            }
+                        }
+
                         Item {
                             Shortcut {
                                 sequence: "Down"
@@ -92,7 +118,6 @@ LazyLoader {
                                                 popupLoader.selectedEntry
                                             )
                                         )
-                                        console.log(popupLoader.selectedEntry)
                                     }
                                 }
                             }
@@ -113,7 +138,6 @@ LazyLoader {
                                                 popupLoader.selectedEntry
                                             )
                                         )
-                                        console.log(popupLoader.selectedEntry)
                                     }
                                 }
                             }
@@ -126,27 +150,11 @@ LazyLoader {
                                     popupLoader.load()
                                 }
                             }
-                        }
-
-                        Repeater {
-                            id: repeater
-                            model: DesktopEntries.applications.values.filter(
-                                (app) => {
-                                    return !app.runInTerminal &&
-                                    app.name.toLowerCase().includes(
-                                        appFilter.text.toLowerCase()
-                                    )
+                            Shortcut {
+                                sequence: "Escape"
+                                onActivated: {
+                                    popupLoader.active = false
                                 }
-                            ).sort(
-                                (a,b) => {
-                                    return a.name.toLowerCase().localeCompare(
-                                        b.name
-                                    )
-                                }
-                            )
-
-                            LauncherEntry {
-                                entry: modelData
                             }
                         }
                     }
