@@ -39,14 +39,15 @@ palette=(
 )
 
 {
-    $setters/dunst.sh ${palette[@]} $icons &
+    # $setters/dunst.sh ${palette[@]} $icons &
     # $setters/eww.sh ${palette[@]} &
-    $setters/fuzzel.sh ${palette[@]} &
+    # $setters/fuzzel.sh ${palette[@]} &
     $setters/gtk.sh ${palette[@]} $theme $mode $tone $icons &
     $setters/hypr.sh ${palette[@]} $cursors &
     $setters/kitty.sh ${palette[@]} &
     $setters/kvantum-svg.sh ${palette[@]} &
     $setters/kvantum-theme.sh ${palette[@]} &
+    $setters/niri.sh ${palette[@]} &
     $setters/nvim.sh $theme $mode $tone &
     $setters/obsidian.sh ${palette[@]} &
     $setters/okular.sh ${palette[@]} &
