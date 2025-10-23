@@ -49,6 +49,15 @@ layout {
 spawn-at-startup "qs"
 spawn-at-startup "swww-daemon"
 
+environment {
+    QT_QPA_PLATFORM "wayland"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_AUTO_SCREEN_SCALE_FACTOR "1"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+    QT_STYLE_OVERRIDE "kvantum"
+    XDG_MENU_PREFIX "arch-"
+}
+
 prefer-no-csd
 
 screenshot-path "~/Screenshots/%Y-%m-%d %H-%M-%S.png"
@@ -56,6 +65,35 @@ screenshot-path "~/Screenshots/%Y-%m-%d %H-%M-%S.png"
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+}
+
+window-rule {
+    match app-id=".*pulseaudio.*"
+    match title=".*olphin.*"
+    match title=".*kitty_float.*"
+    open-floating true
+    open-focused true
+}
+
+window-rule {
+    match app-id=".*pulseaudio.*"
+    match title=".*olphin.*"
+    default-column-width {
+        fixed 860;
+    }
+    default-window-height {
+        fixed 540;
+    }
+}
+
+window-rule {
+    match title=".*kitty_float.*"
+    default-column-width {
+        fixed 860;
+    }
+    default-window-height {
+        fixed 600;
+    }
 }
 
 gestures {
