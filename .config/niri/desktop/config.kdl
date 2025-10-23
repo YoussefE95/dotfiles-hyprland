@@ -24,13 +24,13 @@ layout {
     default-column-width { proportion 0.5; }
 
     focus-ring {
+        off
         width 5
         inactive-color "#7c6f64"
         active-gradient from="#e78a4e" to="#d8a657" angle=45
     }
 
     border {
-        off
         width 4
         active-color "#ffc87f"
         inactive-color "#7c6f64"
@@ -106,6 +106,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+T { spawn "kitty"; }
+    Mod+Shift+T { spawn "kitty" "--title" "kitty_float"; }
     Mod+W { spawn "firefox"; }
     Mod+E { spawn "dolphin"; }
     Mod+Space { spawn "qs" "ipc" "call" "popupLoader" "loadLauncher"; }
