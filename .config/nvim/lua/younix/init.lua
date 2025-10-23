@@ -5,7 +5,7 @@ require('younix.theme')
 require('Comment').setup()
 require('nvim-tree').setup({
 	view = {
-		width = 35,
+		width = 31,
 	},
 })
 require("pets").setup({

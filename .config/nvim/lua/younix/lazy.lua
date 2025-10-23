@@ -20,6 +20,12 @@ require('lazy').setup({
     { 'sainnhe/gruvbox-material' },
     { 'catppuccin/nvim', name = 'catppuccin' },
     {
+        "jpwol/thorn.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {}
+    },
+    {
         'vimwiki/vimwiki',
         event = 'BufEnter *.md',
         keys = { '<leader>ww', '<leader>wt' },
