@@ -1759,7 +1759,7 @@ StEntry StLabel.hint-text,
 
 .popup-menu .popup-menu-content {
   padding: 6px;
-  /* background-color: $popover; */
+  /* background-color: ; */
   background-color: #1e1e2e;
   border-radius: 18px;
   margin: 0;
