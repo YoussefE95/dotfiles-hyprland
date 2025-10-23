@@ -154,5 +154,70 @@
                 } 
             }
         }
+    },
+    "thorn": {
+        "icons": "Papirus-Indigo",
+        "cursors": {
+            "light": "Capitaine-Cursors",
+            "dark": "Capitaine-Cursors-White"
+        },
+        "palette": {
+            "light": {
+                "hard": {
+                    "background": "C9E4D4",
+                    "backgroundAlt": "bfd6c8",
+                    "foreground": "3C6746",
+                    "gray": "444E52",
+                    "red": "FA5056",
+                    "green": "5E800E",
+                    "yellow": "BF7021",
+                    "blue": "4F8FA1",
+                    "magenta": "913069",
+                    "cyan": "00996D",
+                    "orange": "BF442B"
+                },
+                "medium": {
+                    "background": "CDE3C8",
+                    "backgroundAlt": "C9E4D4",
+                    "foreground": "3C6746",
+                    "gray": "444E52",
+                    "red": "FA5056",
+                    "green": "5E800E",
+                    "yellow": "BF7021",
+                    "blue": "4F8FA1",
+                    "magenta": "913069",
+                    "cyan": "00996D",
+                    "orange": "BF442B"
+                }
+            },
+            "dark": {
+                "hard": {
+                    "background": "152326",
+                    "backgroundAlt": "101a1c",
+                    "foreground": "DBD0C6",
+                    "gray": "91A4AD",
+                    "red": "D2696C",
+                    "green": "9EBB9C",
+                    "yellow": "FFD7AA",
+                    "blue": "86BFD0",
+                    "magenta": "D9ADD4",
+                    "cyan": "79C2B6",
+                    "orange": "F9ADA0"
+                },
+                "medium": {
+                    "background": "1D282F",
+                    "backgroundAlt": "152326",
+                    "foreground": "DBD0C6",
+                    "gray": "91A4AD",
+                    "red": "D2696C",
+                    "green": "9EBB9C",
+                    "yellow": "FFD7AA",
+                    "blue": "86BFD0",
+                    "magenta": "D9ADD4",
+                    "cyan": "79C2B6",
+                    "orange": "F9ADA0"
+                }
+            }
+        }
     }
 }

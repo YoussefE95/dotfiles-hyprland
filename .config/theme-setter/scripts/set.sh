@@ -2,7 +2,8 @@
 parser="$HOME/.config/theme-setter/scripts/parser.sh"
 setters="$HOME/.config/theme-setter/setters"
 
-if [ "$1" == "gruvbox" ] || [ "$1" == "catppuccin" ]; then
+if [ "$1" == "gruvbox" ] || [ "$1" == "catppuccin" ] || [ "$1" == "thorn" ];
+then
     theme="$1"
 else
     exit 1
@@ -39,9 +40,7 @@ palette=(
 )
 
 {
-    # $setters/dunst.sh ${palette[@]} $icons &
-    # $setters/eww.sh ${palette[@]} &
-    # $setters/fuzzel.sh ${palette[@]} &
+    $setters/wallpaper.sh &
     $setters/gtk.sh ${palette[@]} $theme $mode $tone $icons &
     $setters/hypr.sh ${palette[@]} $cursors &
     $setters/kitty.sh ${palette[@]} &
@@ -53,6 +52,8 @@ palette=(
     $setters/okular.sh ${palette[@]} &
     $setters/quickshell.sh ${palette[@]} &
     $setters/spicetify.sh ${palette[@]} &
-    $setters/wallpaper.sh &
-    #$setters/waybar.sh ${palette[@]} &
+    # $setters/dunst.sh ${palette[@]} $icons &
+    # $setters/eww.sh ${palette[@]} &
+    # $setters/fuzzel.sh ${palette[@]} &
+    # $setters/waybar.sh ${palette[@]} &
 } &> /dev/null

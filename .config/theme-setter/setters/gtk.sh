@@ -62,11 +62,7 @@ THEME
 
 printf '%s' "$output" > "${dest_dir}/${dest_file}"
 
-theme="${palette[11]}-${palette[12]}"
-
-if [ "${palette[12]}" != "light" ]; then
-    theme="$theme-${palette[13]}"
-fi
+theme="${palette[11]}-${palette[12]}-${palette[13]}"
 
 gsettings set org.gnome.desktop.interface gtk-theme "$theme" 
 gsettings set org.gnome.desktop.interface icon-theme "${palette[14]}"
