@@ -1276,7 +1276,7 @@ output="$(cat << THEME
   <path
      id="menuitem-normal"
      d="m 252.5,535 0,-32.5 32.5,0 0,32.5 -32.5,0 z"
-     style="fill:#${palette[0]};fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#${palette[8]};fill-rule:evenodd;stroke:none;fill-opacity:0.5" />
   <path
      id="menuitem-normal-right"
      d="m 285,502.5001 0,32.4998 7.5,0 0,-32.5 z"
@@ -1566,7 +1566,7 @@ output="$(cat << THEME
        height="48"
        x="112.5"
        y="802"
-       style="fill:#${palette[0]};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1" />
+       style="fill:#${palette[1]};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1" />
   </g>
   <g
      id="splitter-grip-focused"
