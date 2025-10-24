@@ -88,7 +88,7 @@ window-rule {
 window-rule {
     match title=".*olphin.*"
     default-column-width {
-        fixed 905;
+        fixed 918;
     }
     default-window-height {
         fixed 580;
@@ -98,10 +98,10 @@ window-rule {
 window-rule {
     match title=".*kitty_float.*"
     default-column-width {
-        fixed 860;
+        fixed 900;
     }
     default-window-height {
-        fixed 600;
+        fixed 650;
     }
 }
 
