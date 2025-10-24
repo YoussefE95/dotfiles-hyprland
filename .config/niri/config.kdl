@@ -26,9 +26,9 @@ layout {
     center-focused-column "never"
 
     preset-column-widths {
-        proportion 0.3925
+        proportion 0.39
         proportion 0.5
-        proportion 0.6075
+        proportion 0.61
     }
 
     default-column-width {
@@ -38,15 +38,15 @@ layout {
     focus-ring {
         off
         width 4
-        inactive-color "#152326"
-        active-gradient from="#F9ADA0" to="#FFD7AA" angle=45
+        inactive-color "#252423"
+        active-gradient from="#e78a4e" to="#d8a657" angle=45
     }
 
     border {
         width 4
-        active-gradient from="#F9ADA0" to="#FFD7AA" angle=45
-        inactive-color "#152326"
-        urgent-color "#D2696C"
+        active-gradient from="#e78a4e" to="#d8a657" angle=45
+        inactive-color "#252423"
+        urgent-color "#ea6962"
     }
 
     shadow {
@@ -91,12 +91,21 @@ window-rule {
 
 window-rule {
     match app-id=".*pulseaudio.*"
-    match title=".*olphin.*"
     default-column-width {
-        fixed 860;
+        fixed 740;
     }
     default-window-height {
-        fixed 540;
+        fixed 500;
+    }
+}
+
+window-rule {
+    match title=".*olphin.*"
+    default-column-width {
+        fixed 905;
+    }
+    default-window-height {
+        fixed 580;
     }
 }
 
