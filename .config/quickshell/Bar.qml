@@ -19,7 +19,7 @@ Scope {
             }
 
             implicitHeight: 42
-            color: Theme.background
+            color: "transparent"//Theme.background
 
             Row {
                 anchors {
