@@ -1,11 +1,8 @@
 require('catppuccin').setup({
-    flavour = 'frappe'
-})
-require('thorn').setup({
-    background = 'cold'
+    flavour = 'macchiato'
 })
 
-vim.o.background = 'dark'
-vim.g.gruvbox_material_background = 'hard'
+vim.o.background = 'light'
+vim.g.gruvbox_material_background = 'soft'
 
-vim.cmd('colorscheme thorn')
+vim.cmd('colorscheme catppuccin')
