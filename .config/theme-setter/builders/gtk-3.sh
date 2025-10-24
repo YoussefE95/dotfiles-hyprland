@@ -4,6 +4,16 @@ palette=("${@}")
 dest_dir="$HOME/.local/share/themes/${palette[11]}/gtk-3.0"
 dest_file="gtk.css"
 
+print_rgb() {
+    hex="$1"
+
+    r_hex=${hex:0:2}
+    g_hex=${hex:2:2}
+    b_hex=${hex:4:2}
+
+    echo "$(printf "%d" "0x$r_hex"), $(printf "%d" "0x$g_hex"), $(printf "%d" "0x$b_hex")"
+}
+
 output="$(cat << THEME
 @keyframes ripple {
   to {
@@ -29,7 +39,7 @@ output="$(cat << THEME
 * {
   background-clip: padding-box;
   -gtktoolbutton-icon-spacing: 0;
-  -gtktextview-error-underline-color: #d20f39;
+  -gtktextview-error-underline-color: #${palette[4]};
   -gtkscrolledwindow-scrollbar-spacing: 0;
   -gtktoolitemgroup-expander-size: 11;
   -gtkwidget-text-handle-width: 24;
@@ -437,7 +447,7 @@ entry.error {
 spinbutton.error.vertical:focus, spinbutton.error:focus:not(.vertical),
 entry.error:focus {
   background-color: rgba(239, 241, 245, 0.08);
-  box-shadow: inset 0 0 0 2px #d20f39;
+  box-shadow: inset 0 0 0 2px #${palette[4]};
 }
 
 spinbutton.error.vertical:disabled, spinbutton.error:disabled:not(.vertical),
@@ -816,7 +826,7 @@ button.osd.image-button > image, button.osd.circular > image {
 }
 
 button.suggested-action {
-  background-color: #1e66f5;
+  background-color: #${palette[7]};
   color: #${palette[2]};
   box-shadow: none;
 }
@@ -845,7 +855,7 @@ button.suggested-action:focus {
 
 button.suggested-action.flat {
   background-color: transparent;
-  color: #1e66f5;
+  color: #${palette[7]};
 }
 
 button.suggested-action.flat:disabled {
@@ -859,7 +869,7 @@ button.suggested-action.flat:checked {
 }
 
 button.destructive-action {
-  background-color: #d20f39;
+  background-color: #${palette[4]};
   color: #${palette[2]};
   box-shadow: none;
 }
@@ -888,7 +898,7 @@ button.destructive-action:focus {
 
 button.destructive-action.flat {
   background-color: transparent;
-  color: #d20f39;
+  color: #${palette[4]};
 }
 
 button.destructive-action.flat:disabled {
@@ -950,19 +960,19 @@ button.color {
  * Links *
  *********/
 *:link {
-  color: #8fcbe8;
+  color: #${palette[7]};
 }
 
 *:visited {
-  color: #8839ef;
+  color: #${palette[8]};
 }
 
 button.link:link, button.link:link:focus, button.link:link:hover, button.link:link:active {
-  color: #8fcbe8;
+  color: #${palette[7]};
 }
 
 button.link:visited, button.link:visited:focus, button.link:visited:hover, button.link:visited:active {
-  color: #8839ef;
+  color: #${palette[8]};
 }
 
 button.link > label {
@@ -1974,7 +1984,7 @@ menubar > menuitem > window.popup.background > menu menuitem,
 menu {
   margin: 6px;
   padding: 6px;
-  background-color: #232634;
+  background-color: #${palette[1]};
   background-clip: border-box;
   border-radius: 12px;
   border: 1px solid #${palette[7]};
@@ -1998,12 +2008,12 @@ menu menuitem {
 
 menu menuitem:hover {
   transition: none;
-  background-color: rgba(239, 241, 245, 0.04);
-  color: #${palette[7]};
+  background-color: rgba($(print_rgb ${palette[8]}), 0.5);
+  color: #${palette[2]};
 }
 
 menu menuitem:hover accelerator {
-  color: #${palette[7]};
+  color: #${palette[2]};
 }
 
 menu menuitem:hover:disabled accelerator {
@@ -2053,7 +2063,7 @@ menu > arrow {
   min-height: 16px;
   min-width: 16px;
   padding: 4px;
-  background-color: #232634;
+  background-color: #${palette[1]};
   color: ${palette[1]};
 }
 
@@ -2092,7 +2102,7 @@ menu separator {
 popover.background {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   padding: 0;
-  background-color: #232634;
+  background-color: #${palette[1]};
   border-radius: 12px;
 }
 
@@ -2133,7 +2143,7 @@ popover.background > scrolledwindow > viewport.frame > list > row {
 
 popover.background .view:not(:selected),
 popover.background toolbar {
-  background-color: #232634;
+  background-color: #${palette[1]};
 }
 
 popover.background button,
@@ -3629,12 +3639,12 @@ messagedialog .dialog-action-box .linked:not(.vertical) > button:not(:last-child
 
 messagedialog .dialog-action-box button.suggested-action:not(:disabled),
 messagedialog .dialog-action-box .linked:not(.vertical) > button.suggested-action:not(:disabled) {
-  color: #1e66f5;
+  tolor: #${palette[7]};
 }
 
 messagedialog .dialog-action-box button.destructive-action:not(:disabled),
 messagedialog .dialog-action-box .linked:not(.vertical) > button.destructive-action:not(:disabled) {
-  color: #d20f39;
+  color: #${palette[4]};
 }
 
 .csd filechooser {
@@ -3973,7 +3983,7 @@ infobar.warning:hover > revealer > box {
 }
 
 infobar.error > revealer > box, infobar.error:backdrop > revealer > box {
-  background-color: #d20f39;
+  background-color: #${palette[4]};
   color: #${palette[2]};
 }
 
@@ -4001,7 +4011,7 @@ tooltip {
 }
 
 tooltip.background {
-  background-color: rgba(24, 24, 37, 0.9);
+  background-color: #${palette[1]};
   color: #${palette[2]};
   border-radius: 12px;
 }
@@ -4248,7 +4258,7 @@ button.minimize.titlebutton:backdrop:not(.suggested-action):not(.destructive-act
 }
 
 .monospace {
-  font-family: monospace;
+  font-family: "JetBrains Mono";
 }
 
 /**********************
@@ -5410,7 +5420,7 @@ layout {
 }
 
 entry.search-missing {
-  background-color: #d20f39;
+  background-color: #${palette[4]};
   color: #${palette[2]};
 }
 
@@ -7562,7 +7572,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-panel .alert {
-  color: #d20f39;
+  color: #${palette[4]};
 }
 
 .budgie-panel > box > widget > widget > image,
@@ -7990,7 +8000,7 @@ image.raven-mpris {
 }
 
 .budgie-polkit-dialog .failure {
-  color: #d20f39;
+  color: #${palette[4]};
 }
 
 .budgie-polkit-dialog > box > grid {
@@ -8428,7 +8438,7 @@ menubar.-vala-panel-background > menuitem:disabled {
 @define-color unfocused_borders ${palette[1]};
 /* these are pretty self explicative */
 @define-color warning_color #df8e1d;
-@define-color error_color #d20f39;
+@define-color error_color #${palette[4]};
 @define-color success_color #40a02b;
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
