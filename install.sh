@@ -14,7 +14,7 @@ yay -Syu && yay -S \
     uwsm hyprland hyprlock hyprshot niri swww quickshell kitty starship \
     neovim ranger nvtop htop obsidian dropbox discord obs-studio \
     spotify-launcher spicetify-cli kvantum dolphin dolphin-plugins okular \
-    ttf-jetbrains-mono ttf-jetbrains-mono-nerd brightnessctl \
+    gwenview ttf-jetbrains-mono ttf-jetbrains-mono-nerd brightnessctl \
     jq python-pipx python-pillow docker docker-buildx ripgrep wl-clipboard \
     hyprpolkitagent xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
     qt6ct-kde zsh zsh-autosuggestions zsh-history-substring-search \
@@ -30,7 +30,6 @@ swww img "$HOME/.local/share/wallpaper.jpg" \
 # Enable Bluetooth, Docker, and ExpressVPN
 sudo systemctl enable bluetooth
 sudo systemctl enable docker
-sudo systemctl enable expressvpn
 
 # Add user to Docker group
 sudo gpasswd -a $USER docker

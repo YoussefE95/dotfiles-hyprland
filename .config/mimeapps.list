@@ -1,0 +1,5 @@
+[Added Associations]
+image/png=org.kde.gwenview.desktop;org.kde.okular.desktop;
+
+[Default Applications]
+image/png=org.kde.gwenview.desktop;

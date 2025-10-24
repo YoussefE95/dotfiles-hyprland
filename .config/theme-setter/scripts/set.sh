@@ -42,6 +42,7 @@ palette=(
 {
     $setters/wallpaper.sh &
     $setters/gtk.sh ${palette[@]} $theme $mode $tone $icons &
+    $setters/gwenview.sh ${palette[@]} &
     $setters/hypr.sh ${palette[@]} $cursors &
     $setters/kitty.sh ${palette[@]} &
     $setters/kvantum-svg.sh ${palette[@]} &

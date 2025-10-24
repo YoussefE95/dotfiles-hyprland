@@ -1,0 +1,27 @@
+[Colors:View]
+BackgroundAlternate=#24273a
+BackgroundNormal=#24273a
+DecorationFocus=#1e2030
+ForegroundActive=#cad3f5
+ForegroundInactive=#cad3f5
+ForegroundLink=#cad3f5
+ForegroundNegative=#cad3f5
+ForegroundNeutral=#cad3f5
+ForegroundNormal=#cad3f5
+ForegroundPositive=#cad3f5
+ForegroundVisited=#cad3f5
+
+[General]
+LastUsedVersion=210800
+SideBarPage=operations
+
+[Recent Files]
+File1[]=/home/younix/Screenshots/2025-10-23 22-09-58.png
+Name1[]=2025-10-23 22-09-58.png
+
+[SideBar]
+InformationSplitterSizes=229,246
+SideBarSplitterSizes=248,676
+
+[UiSettings]
+ColorScheme=Dynamic-Theme
