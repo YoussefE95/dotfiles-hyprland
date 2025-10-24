@@ -11,14 +11,15 @@ sudo cp .config/theme-setter/set-theme .config/theme-setter/get-theme \
 
 # Update and install packages
 yay -Syu && yay -S \
-    uwsm hyprland hyprlock hyprshot waybar swww fuzzel dunst kitty starship \
-    neovim ranger nvtop htop expressvpn obsidian dropbox discord \
+    uwsm hyprland hyprlock hyprshot niri swww quickshell kitty starship \
+    neovim ranger nvtop htop obsidian dropbox discord obs-studio \
     spotify-launcher spicetify-cli kvantum dolphin dolphin-plugins okular \
     ttf-jetbrains-mono ttf-jetbrains-mono-nerd brightnessctl \
     jq python-pipx python-pillow docker docker-buildx ripgrep wl-clipboard \
     hyprpolkitagent xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
-    zsh zsh-autosuggestions zsh-history-substring-search \
-    zsh-syntax-highlighting libappindicator-gtk3 archlinux-xdg-menu
+    qt6ct-kde zsh zsh-autosuggestions zsh-history-substring-search \
+    zsh-syntax-highlighting libappindicator-gtk3 archlinux-xdg-menu \
+    xwayland-satellite
 
 # Set wallpaper
 swww img "$HOME/.local/share/wallpaper.jpg" \

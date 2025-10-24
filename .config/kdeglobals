@@ -1,0 +1,9 @@
+[Icons]
+Theme=Papirus-Brown
+
+[KDE]
+widgetStyle=qt6ct-style
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0

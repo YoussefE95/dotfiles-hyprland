@@ -53,8 +53,4 @@ palette=(
     $setters/qt.sh $icons &
     $setters/quickshell.sh ${palette[@]} &
     $setters/spicetify.sh ${palette[@]} &
-    # $setters/dunst.sh ${palette[@]} $icons &
-    # $setters/eww.sh ${palette[@]} &
-    # $setters/fuzzel.sh ${palette[@]} &
-    # $setters/waybar.sh ${palette[@]} &
 } &> /dev/null
