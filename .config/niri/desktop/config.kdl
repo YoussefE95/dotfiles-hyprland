@@ -78,10 +78,10 @@ window-rule {
 window-rule {
     match app-id=".*pulseaudio.*"
     default-column-width {
-        fixed 740;
+        fixed 840;
     }
     default-window-height {
-        fixed 500;
+        fixed 540;
     }
 }
 
