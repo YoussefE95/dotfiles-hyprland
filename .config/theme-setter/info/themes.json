@@ -154,5 +154,57 @@
                 } 
             }
         }
+    },
+    "rosepine": {
+        "icons": "Papirus-Indigo",
+        "cursors": {
+            "light": "Capitaine-Cursors",
+            "dark": "Capitaine-Cursors-White"
+        },
+        "palette": {
+            "light": {
+                "medium": {
+                    "background": "faf4ed",
+                    "backgroundAlt": "fffaf3",
+                    "foreground": "575279",
+                    "gray": "9893a5",
+                    "red": "b4637a",
+                    "green": "6d8f89",
+                    "yellow": "ea9d34",
+                    "blue": "286983",
+                    "magenta": "907aa9",
+                    "cyan": "56949f",
+                    "orange": "d7827e"
+                }
+            },
+            "dark": {
+                "hard": {
+                    "background": "191724",
+                    "backgroundAlt": "1f1d2e",
+                    "foreground": "e0def4",
+                    "gray": "6e6a86",
+                    "red": "eb6f92",
+                    "green": "95b1ac",
+                    "yellow": "f6c177",
+                    "blue": "31748f",
+                    "magenta": "c4a7e7",
+                    "cyan": "9ccfd8",
+                    "orange": "ebbcba"
+                },
+                "medium": {
+                    "background": "232136",
+                    "backgroundAlt": "2a273f",
+                    "foreground": "e0def4",
+                    "gray": "6e6a86",
+                    "red": "eb6f92",
+                    "green": "95b1ac",
+                    "yellow": "f6c177",
+                    "blue": "3e8fb0",
+                    "magenta": "c4a7e7",
+                    "cyan": "9ccfd8",
+                    "orange": "ea9a97"
+                }
+            }
+        }
     }
 }

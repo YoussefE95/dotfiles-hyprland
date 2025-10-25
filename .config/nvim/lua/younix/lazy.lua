@@ -19,6 +19,7 @@ require('lazy').setup({
     { 'numToStr/Comment.nvim' },
     { 'sainnhe/gruvbox-material' },
     { 'catppuccin/nvim', name = 'catppuccin' },
+    { 'rose-pine/neovim' },
     {
         'vimwiki/vimwiki',
         event = 'BufEnter *.md',

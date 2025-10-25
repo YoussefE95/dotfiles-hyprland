@@ -2,7 +2,7 @@
 parser="$HOME/.config/theme-setter/scripts/parser.sh"
 setters="$HOME/.config/theme-setter/setters"
 
-if [ "$1" == "gruvbox" ] || [ "$1" == "catppuccin" ] || [ "$1" == "thorn" ];
+if [ "$1" == "gruvbox" ] || [ "$1" == "catppuccin" ] || [ "$1" == "rosepine" ];
 then
     theme="$1"
 else
