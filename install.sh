@@ -12,6 +12,12 @@ sudo cp .config/theme-setter/set-theme .config/theme-setter/get-theme \
 # Create sym links for local icons
 sudo ln -s ~/.local/share/icons/* /usr/share/icons
 
+# Setup Hyprland's xdg-desktop-portal for Niri
+sudo cp /usr/share/xdg-desktop-portal/hyprland-portals.conf \
+    /usr/share/xdg-desktop-portal/niri-portals.conf
+sudo cp /usr/share/xdg-desktop-portal/portals/hyprland.portal \
+    /usr/share/xdg-desktop-portal/portals/niri.portal
+
 # Update and install packages
 yay -Syu && yay -S \
     uwsm hyprland hyprlock hyprshot niri swww quickshell kitty starship \
@@ -30,7 +36,7 @@ swww img ~/.local/share/wallpaper.jpg \
     --transition-angle 30 \
     --transition-step 90
 
-# Enable Bluetooth, Docker, and ExpressVPN
+# Enable Bluetooth and Docker
 sudo systemctl enable bluetooth
 sudo systemctl enable docker
 

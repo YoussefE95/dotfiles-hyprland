@@ -84,6 +84,7 @@ window-rule {
 }
 
 window-rule {
+    match app-id="hyprland-share-picker"
     match app-id=".*pulseaudio.*"
     match title=".*olphin.*"
     match title=".*kitty_float.*"
