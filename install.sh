@@ -10,7 +10,7 @@ sudo cp .config/theme-setter/set-theme .config/theme-setter/get-theme \
     /usr/local/bin/
 
 # Create sym links for local icons
-sudo ln -s .local/share/icons/* /usr/share/icons
+sudo ln -s ~/.local/share/icons/* /usr/share/icons
 
 # Update and install packages
 yay -Syu && yay -S \
@@ -25,7 +25,7 @@ yay -Syu && yay -S \
     xwayland-satellite
 
 # Set wallpaper
-swww img "$HOME/.local/share/wallpaper.jpg" \
+swww img "~/.local/share/wallpaper.jpg" \
     --transition-type wipe \
     --transition-angle 30 \
     --transition-step 90
