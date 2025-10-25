@@ -47,7 +47,7 @@ palette=(
     $setters/kitty.sh ${palette[@]} &
     $setters/kvantum-svg.sh ${palette[@]} &
     $setters/kvantum-theme.sh ${palette[@]} &
-    $setters/niri.sh ${palette[@]} &
+    $setters/niri.sh ${palette[@]} $cursors &
     $setters/nvim.sh $theme $mode $tone &
     $setters/obsidian.sh ${palette[@]} &
     $setters/okular.sh ${palette[@]} &

@@ -9,6 +9,9 @@ sudo rsync -a .config .local .zshrc ~/
 sudo cp .config/theme-setter/set-theme .config/theme-setter/get-theme \
     /usr/local/bin/
 
+# Create sym links for local icons
+sudo ln -s .local/share/icons/* /usr/share/icons
+
 # Update and install packages
 yay -Syu && yay -S \
     uwsm hyprland hyprlock hyprshot niri swww quickshell kitty starship \

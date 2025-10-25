@@ -1,28 +1,18 @@
-input {
-    keyboard {
-        xkb {
-        }
-        numlock
-    }
-
-    touchpad {
-        tap
-    }
-
-    mouse {
-    }
-
-    trackpoint {
-    }
+output "DP-3" {
+    mode "2560x1440@144.000"
+    scale 1
+    position x=0 y=0
 }
 
-output "eDP-1" {
-    mode "1920x1080@60.049"
+output "DP-2" {
+    mode "2560x1440@144.000"
     scale 1
+    position x=-2560 y=0
 }
 
 layout {
     gaps 16
+
     center-focused-column "never"
 
     preset-column-widths {
@@ -31,33 +21,34 @@ layout {
         proportion 0.61
     }
 
-    default-column-width {
-        proportion 0.5;
-    }
+    default-column-width { proportion 0.5; }
 
     focus-ring {
         off
-        width 4
+        width 5
         inactive-color "#252423"
         active-gradient from="#e78a4e" to="#d8a657" angle=45
     }
 
     border {
         width 4
-        active-gradient from="#e78a4e" to="#d8a657" angle=45
+        active-color "#ffc87f"
         inactive-color "#252423"
         urgent-color "#ea6962"
     }
 
     shadow {
+        on
         softness 30
         spread 5
         offset x=0 y=5
         color "#0007"
     }
+}
 
-    struts {
-    }
+cursor {
+    xcursor-theme "Capitaine-Cursors-Gruvbox-White"
+    xcursor-size 24
 }
 
 spawn-at-startup "qs"
@@ -102,7 +93,7 @@ window-rule {
 window-rule {
     match title=".*olphin.*"
     default-column-width {
-        fixed 905;
+        fixed 918;
     }
     default-window-height {
         fixed 580;
@@ -129,16 +120,17 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+T { spawn "kitty"; }
-    Mod+Shift+T { spawn "kitty" "--title" "kitty_float"; } 
+    Mod+Shift+T { spawn "kitty" "--title" "kitty_float"; }
     Mod+W { spawn "firefox"; }
     Mod+E { spawn "dolphin"; }
     Mod+Space { spawn "qs" "ipc" "call" "popupLoader" "loadLauncher"; }
     Mod+Escape { spawn "hyprlock"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
-    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "amixer -Mq set Master,0 5%+ unmute"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "amixer -Mq set Master,0 5%- unmute"; }
+    XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioNext allow-when-locked=true { spawn-sh "playerctl next"; }
+    XF86AudioPrev allow-when-locked=true { spawn-sh "playerctl previous"; }
 
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
@@ -164,7 +156,6 @@ binds {
     Mod+Shift+J     { move-window-down; }
     Mod+Shift+K     { move-window-up; }
     Mod+Shift+L     { move-column-right; }
-
 
     Mod+Home { focus-column-first; }
     Mod+End  { focus-column-last; }
