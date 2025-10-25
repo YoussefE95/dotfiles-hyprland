@@ -156,7 +156,7 @@
         }
     },
     "rosepine": {
-        "icons": "Papirus-Indigo",
+        "icons": "Papirus-Violet",
         "cursors": {
             "light": "Capitaine-Cursors",
             "dark": "Capitaine-Cursors-White"
