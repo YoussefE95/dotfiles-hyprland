@@ -25,7 +25,7 @@ yay -Syu && yay -S \
     xwayland-satellite
 
 # Set wallpaper
-swww img "~/.local/share/wallpaper.jpg" \
+swww img ~/.local/share/wallpaper.jpg \
     --transition-type wipe \
     --transition-angle 30 \
     --transition-step 90
