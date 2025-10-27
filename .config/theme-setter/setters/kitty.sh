@@ -13,7 +13,7 @@ selection_background    #${palette[8]}
 background              #${palette[0]}
 foreground              #${palette[2]}
 
-color0                  #${palette[3]}
+color0                  #${palette[0]}
 color1                  #${palette[4]}
 color2                  #${palette[5]}
 color3                  #${palette[6]}
