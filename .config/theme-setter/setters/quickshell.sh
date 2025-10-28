@@ -1,37 +1,20 @@
 #!/bin/bash
 palette=("${@}")
 
-dest_dir="$HOME/.config/quickshell/"
-dest_file="Theme.qml"
+qs_theme="$HOME/.config/quickshell/Theme.qml"
+prefix="    property color"
 
-output="$(cat << THEME
-pragma Singleton
-
-import Quickshell
-import Quickshell.Io
-import QtQuick
-
-Singleton {
-    property string fontFamily: "JetBrains Mono"
-    property int fontWeight: 500
-    property int fontSize: 13
-    property int iconSize: 16
-    property color background: "#${palette[0]}"
-    property color backgroundAlt: "#${palette[1]}"
-    property color foreground: "#${palette[2]}"
-    property color gray: "#${palette[3]}"
-    property color red: "#${palette[4]}"
-    property color green: "#${palette[5]}"
-    property color yellow: "#${palette[6]}"
-    property color blue: "#${palette[7]}"
-    property color magenta: "#${palette[8]}"
-    property color cyan: "#${palette[9]}"
-    property color orange: "#${palette[10]}"
-}
-THEME
-)"
-
-printf '%s' "$output" > "${dest_dir}${dest_file}"
+sed -i "s/.*background:.*/$prefix background: \"#${palette[0]}\"/" $qs_theme
+sed -i "s/.*backgroundAlt:.*/$prefix backgroundAlt: \"#${palette[1]}\"/" $qs_theme
+sed -i "s/.*foreground:.*/$prefix foreground: \"#${palette[2]}\"/" $qs_theme
+sed -i "s/.*gray:.*/$prefix gray: \"#${palette[3]}\"/" $qs_theme
+sed -i "s/.*red:.*/$prefix red: \"#${palette[4]}\"/" $qs_theme
+sed -i "s/.*green:.*/$prefix green: \"#${palette[5]}\"/" $qs_theme
+sed -i "s/.*yellow:.*/$prefix yellow: \"#${palette[6]}\"/" $qs_theme
+sed -i "s/.*blue:.*/$prefix blue: \"#${palette[7]}\"/" $qs_theme
+sed -i "s/.*magenta:.*/$prefix magenta: \"#${palette[8]}\"/" $qs_theme
+sed -i "s/.*cyan:.*/$prefix cyan: \"#${palette[9]}\"/" $qs_theme
+sed -i "s/.*orange:.*/$prefix orange: \"#${palette[10]}\"/" $qs_theme
 
 killall qs
 qs -d

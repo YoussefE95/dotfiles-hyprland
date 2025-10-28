@@ -1,0 +1,2 @@
+#!/bin/bash
+$HOME/.config/theme-setter/scripts/parser.sh $@
