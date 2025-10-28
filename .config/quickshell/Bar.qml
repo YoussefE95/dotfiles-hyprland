@@ -29,7 +29,7 @@ Scope {
                 leftPadding: 6
                 spacing: 6
                 LauncherWidget {}
-                ThemeSetterWidget {}
+                //ThemeSetterWidget {}
                 DateTimeWidget {}
             }
             WorkspacesWidget {
