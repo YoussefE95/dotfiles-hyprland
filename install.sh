@@ -6,8 +6,7 @@ sudo rm -rf ~/Documents ~/Music ~/Public ~/Videos ~/Templates ~/Pictures
 sudo rsync -a .config .local .zshrc ~/
 
 # Copy theming scripts
-sudo cp .config/theme-setter/set-theme .config/theme-setter/get-theme \
-    /usr/local/bin/
+sudo cp .config/theme-setter/bin/* /usr/local/bin/
 
 # Create sym links for local icons
 sudo ln -s ~/.local/share/icons/* /usr/share/icons
@@ -28,7 +27,7 @@ yay -Syu && yay -S \
     hyprpolkitagent xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
     qt6ct-kde zsh zsh-autosuggestions zsh-history-substring-search \
     zsh-syntax-highlighting libappindicator-gtk3 archlinux-xdg-menu \
-    xwayland-satellite
+    xwayland-satellite playerctl
 
 # Set wallpaper
 swww img ~/.local/share/wallpaper.jpg \

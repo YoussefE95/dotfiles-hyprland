@@ -122,6 +122,7 @@ binds {
 
     Mod+T { spawn "kitty"; }
     Mod+Shift+T { spawn "kitty" "--title" "kitty_float"; }
+    Mod+P { spawn "kitty" "--title" "kitty_float" "-o" "font_size=20" "theme-setter"; }
     Mod+W { spawn "firefox"; }
     Mod+E { spawn "dolphin"; }
     Mod+Space { spawn "qs" "ipc" "call" "popupLoader" "loadLauncher"; }
