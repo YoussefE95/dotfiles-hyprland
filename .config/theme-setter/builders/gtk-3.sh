@@ -189,7 +189,7 @@ textview text {
 
 textview border {
   background-color: #313244;
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 iconview:hover, iconview:selected {
@@ -229,7 +229,7 @@ label {
 }
 
 label.separator {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 label:disabled {
@@ -247,7 +247,7 @@ label.osd {
 }
 
 .dim-label {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 assistant .sidebar {
@@ -384,7 +384,7 @@ entry.flat {
 
 spinbutton.vertical image, spinbutton:not(.vertical) image,
 entry image {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 spinbutton.vertical image:hover, spinbutton:not(.vertical) image:hover, spinbutton.vertical image:active, spinbutton:not(.vertical) image:active,
@@ -498,7 +498,7 @@ treeview entry.flat, treeview entry.flat:focus, treeview entry, treeview entry:f
   margin: 2px;
   border-radius: 9999px;
   box-shadow: none;
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
   color: #${palette[2]};
 }
 
@@ -526,7 +526,7 @@ treeview entry.flat, treeview entry.flat:focus, treeview entry, treeview entry:f
 }
 
 .entry-tag.button:not(:hover):not(:active), .button.photos-entry-tag:not(:hover):not(:active), .button.documents-entry-tag:not(:hover):not(:active) {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 /***********
@@ -542,7 +542,7 @@ treeview entry.flat, treeview entry.flat:focus, treeview entry, treeview entry:f
 }
 
 .xfce4-panel.background button, .raven-mpris button.image-button, .mate-panel-menu-bar button, infobar.warning > revealer > box button, infobar.warning:backdrop > revealer > box button, .app-notification button:not(.suggested-action):not(.destructive-action), frame.documents-dropdown .linked > button, .app-notification .linked > button, toolbar.osd .linked > button, frame.documents-dropdown button, .osd .scale-popup.background button, .app-notification button, toolbar.osd button {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .xfce4-panel.background button:focus, .raven-mpris button.image-button:focus, .mate-panel-menu-bar button:focus, infobar.warning > revealer > box button:focus, .app-notification button:focus:not(.suggested-action):not(.destructive-action), frame.documents-dropdown button:focus, .osd .scale-popup.background button:focus, .app-notification button:focus, toolbar.osd button:focus, .xfce4-panel.background button:hover, .raven-mpris button.image-button:hover, .mate-panel-menu-bar button:hover, infobar.warning > revealer > box button:hover, .app-notification button:hover:not(.suggested-action):not(.destructive-action), frame.documents-dropdown button:hover, .osd .scale-popup.background button:hover, .app-notification button:hover, toolbar.osd button:hover, .xfce4-panel.background button:active, .raven-mpris button.image-button:active, .mate-panel-menu-bar button:active, infobar.warning > revealer > box button:active, .app-notification button:active:not(.suggested-action):not(.destructive-action), frame.documents-dropdown button:active, .osd .scale-popup.background button:active, .app-notification button:active, toolbar.osd button:active, .xfce4-panel.background button:checked, .raven-mpris button.image-button:checked, .mate-panel-menu-bar button:checked, infobar.warning > revealer > box button:checked, .app-notification button:checked:not(.suggested-action):not(.destructive-action), frame.documents-dropdown button:checked, .osd .scale-popup.background button:checked, .app-notification button:checked, toolbar.osd button:checked {
@@ -683,7 +683,7 @@ popover.background button.model, toolbar button, combobox > .linked:not(.vertica
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1000% 1000%;
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .budgie-session-dialog .linked.horizontal > button:focus,
@@ -1001,7 +1001,7 @@ spinbutton:not(.vertical) button {
 
 spinbutton:not(.vertical) button:focus:not(:hover):not(:active):not(:disabled) {
   box-shadow: inset 0 0 0 9999px transparent;
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 spinbutton:not(.vertical) button.up:dir(ltr), spinbutton:not(.vertical) button.down:dir(rtl) {
@@ -1038,7 +1038,7 @@ spinbutton.vertical button {
 
 spinbutton.vertical button:focus:not(:hover):not(:active) {
   box-shadow: inset 0 0 0 9999px transparent;
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 spinbutton.vertical button.up {
@@ -1271,14 +1271,14 @@ toolbar:not(.inline-toolbar):not(.osd) switch {
 }
 
 frame .toolbar {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 .inline-toolbar {
   padding: 6px;
   border-style: solid;
   border-width: 0 1px 1px;
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
   background-color: #313244;
   border-radius: 0 0 9px 9px;
 }
@@ -1303,7 +1303,7 @@ searchbar > revealer > box {
  * Header bars *
  ***************/
 .nemo-window .primary-toolbar button:not(.text-button), .titlebar button:not(.suggested-action):not(.destructive-action) {
-  color: ${palette[1]};
+  color: #${palette[1]};
   background-color: rgba(239, 241, 245, 0.04);
   border-radius: 12px;
 }
@@ -1327,7 +1327,7 @@ searchbar > revealer > box {
 }
 
 .nemo-window .primary-toolbar button:hover:not(.text-button), .titlebar button:hover:not(.suggested-action):not(.destructive-action) {
-  box-shadow: inset 0 0 0 9999px ${palette[1]};
+  box-shadow: inset 0 0 0 9999px #${palette[1]};
 }
 
 .nemo-window .primary-toolbar button:checked:not(.text-button), .titlebar button:checked:not(.suggested-action):not(.destructive-action) {
@@ -1363,7 +1363,7 @@ searchbar > revealer > box {
 }
 
 .nemo-window .primary-toolbar button:backdrop:focus:not(.text-button), .titlebar button:backdrop:focus:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:backdrop:hover:not(.text-button), .titlebar button:backdrop:hover:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:backdrop:active:not(.text-button), .titlebar button:backdrop:active:not(.suggested-action):not(.destructive-action) {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .nemo-window .primary-toolbar button:backdrop:disabled:not(.text-button), .titlebar button:backdrop:disabled:not(.suggested-action):not(.destructive-action) {
@@ -1390,7 +1390,7 @@ searchbar > revealer > box {
 }
 
 .nemo-window .primary-toolbar entry image, .titlebar entry image {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .nemo-window .primary-toolbar entry image:hover, .titlebar entry image:hover, .nemo-window .primary-toolbar entry image:active, .titlebar entry image:active {
@@ -1415,7 +1415,7 @@ searchbar > revealer > box {
 }
 
 .titlebar:backdrop {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .titlebar:backdrop:disabled {
@@ -1439,7 +1439,7 @@ searchbar > revealer > box {
 .titlebar .subtitle,
 .titlebar .dim-label {
   transition: color 75ms cubic-bezier(0, 0, 0.2, 1);
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .titlebar .subtitle:backdrop,
@@ -1765,8 +1765,8 @@ headerbar.windowhandle viewswitchertitle > squeezer > viewswitcher > box.horizon
  * Tree Views *
  **************/
 treeview.view {
-  border-left-color: ${palette[1]};
-  border-top-color: ${palette[1]};
+  border-left-color: #${palette[1]};
+  border-top-color: #${palette[1]};
 }
 
 * {
@@ -1787,7 +1787,7 @@ treeview.view:not(:selected):not(:hover):not(.progressbar):not(.expander):not(
 
 treeview.view.separator {
   min-height: 6px;
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 treeview.view:drop(active) {
@@ -1805,7 +1805,7 @@ treeview.view:drop(active).before {
 }
 
 treeview.view.expander {
-  color: ${palette[1]};
+  color: #${palette[1]};
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   -gtk-icon-transform: rotate(-90deg);
 }
@@ -1864,7 +1864,7 @@ treeview.view.progressbar:backdrop, treeview.view.progressbar:selected:backdrop 
 treeview.view.trough {
   border: none;
   box-shadow: none;
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
   background-image: none;
   border-radius: 9999px;
   padding: 0;
@@ -1873,25 +1873,25 @@ treeview.view.trough {
 
 treeview.view.trough:selected, treeview.view.trough:selected:hover, treeview.view.trough:selected:focus {
   box-shadow: none;
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 treeview.view.trough:backdrop, treeview.view.trough:selected:backdrop {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 treeview.view header button {
   padding: 2px 6px;
   border: none;
   border-right: 1px solid transparent;
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
   border-radius: 0;
   background-clip: border-box;
-  border-image: linear-gradient(to bottom, transparent 20%, ${palette[1]} 20%, rgba(239, 241, 245, 0.12) 80%, transparent 80%) 0 1 0 0/0 1px 0 0 stretch;
+  border-image: linear-gradient(to bottom, transparent 20%, #${palette[1]} 20%, rgba(239, 241, 245, 0.12) 80%, transparent 80%) 0 1 0 0/0 1px 0 0 stretch;
 }
 
 treeview.view header button:not(:focus):not(:hover):not(:active) {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 treeview.view header button, treeview.view header button:disabled {
@@ -1908,7 +1908,7 @@ treeview.view header.button.dnd {
   padding: 2px 6px;
   border-style: none solid solid;
   border-width: 1px;
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
   border-radius: 0;
   box-shadow: none;
   background-color: #313244;
@@ -1933,7 +1933,7 @@ menubar,
 
 menubar:backdrop,
 .menubar:backdrop {
-  color: ${palette[1]};
+  color: #${palette[1]};
   background-color: #${palette[0]};
 }
 
@@ -1946,7 +1946,7 @@ menubar > menuitem,
   transition: none;
   min-height: 20px;
   padding: 4px 8px;
-  color: ${palette[1]};
+  color: #${palette[1]};
   border-radius: 12px;
 }
 
@@ -2029,7 +2029,7 @@ menu menuitem:disabled {
 }
 
 menu menuitem accelerator {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 menu menuitem:disabled accelerator {
@@ -2064,7 +2064,7 @@ menu > arrow {
   min-width: 16px;
   padding: 4px;
   background-color: #${palette[1]};
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 menu > arrow.top {
@@ -2337,7 +2337,7 @@ notebook > header tab > box {
 }
 
 notebook > header tab > box:drop(active) {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
   color: #${palette[2]};
 }
 
@@ -2436,7 +2436,7 @@ scrollbar slider {
 }
 
 scrollbar slider:hover {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 scrollbar slider:active {
@@ -2578,7 +2578,7 @@ switch slider {
 }
 
 switch:focus slider, switch:hover slider, switch:focus:hover slider {
-  box-shadow: 0 0 0 6px ${palette[1]};
+  box-shadow: 0 0 0 6px #${palette[1]};
 }
 
 /*************************
@@ -2629,7 +2629,7 @@ radio {
   padding: 0;
   border-radius: 9999px;
   color: transparent;
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), box-shadow 150ms cubic-bezier(0, 0, 0.2, 1);
 }
 
@@ -2641,7 +2641,7 @@ radio:hover {
 
 check:active,
 radio:active {
-  box-shadow: 0 0 0 6px ${palette[1]};
+  box-shadow: 0 0 0 6px #${palette[1]};
   background-color: rgba(239, 241, 245, 0.2);
 }
 
@@ -2779,7 +2779,7 @@ treeview.view radio,
 treeview.view check {
   padding: 0;
   margin: 0;
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 treeview.view radio, treeview.view radio:hover, treeview.view radio:disabled, treeview.view radio:checked:hover, treeview.view radio:indeterminate:hover,
@@ -2870,7 +2870,7 @@ scale trough {
 }
 
 scale trough:disabled {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 scale highlight {
@@ -2904,11 +2904,11 @@ scale slider {
 }
 
 scale slider:hover {
-  box-shadow: inset 0 0 0 2px #${palette[7]}, 0 0 0 8px ${palette[1]};
+  box-shadow: inset 0 0 0 2px #${palette[7]}, 0 0 0 8px #${palette[1]};
 }
 
 scale slider:active {
-  box-shadow: inset 0 0 0 4px #${palette[7]}, 0 0 0 8px ${palette[1]};
+  box-shadow: inset 0 0 0 4px #${palette[7]}, 0 0 0 8px #${palette[1]};
 }
 
 scale slider:disabled {
@@ -2917,7 +2917,7 @@ scale slider:disabled {
 
 scale marks,
 scale value {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 scale.marks-before:not(.marks-after) slider, scale.marks-after:not(.marks-before) slider {
@@ -2930,13 +2930,13 @@ scale.marks-before:not(.marks-after) slider, scale.marks-after:not(.marks-before
 }
 
 scale.marks-before:not(.marks-after) slider:hover, scale.marks-after:not(.marks-before) slider:hover {
-  box-shadow: 0 0 0 4px ${palette[1]};
-  background-color: ${palette[1]};
+  box-shadow: 0 0 0 4px #${palette[1]};
+  background-color: #${palette[1]};
 }
 
 scale.marks-before:not(.marks-after) slider:active, scale.marks-after:not(.marks-before) slider:active {
-  box-shadow: 0 0 0 6px ${palette[1]};
-  background-color: ${palette[1]};
+  box-shadow: 0 0 0 6px #${palette[1]};
+  background-color: #${palette[1]};
 }
 
 scale.marks-before:not(.marks-after) slider:disabled, scale.marks-after:not(.marks-before) slider:disabled {
@@ -3010,7 +3010,7 @@ scale.color.vertical:dir(rtl) slider {
  * Progress bars *
  *****************/
 progressbar {
-  color: ${palette[1]};
+  color: #${palette[1]};
   font-size: smaller;
 }
 
@@ -3026,7 +3026,7 @@ progressbar.vertical progress {
 
 progressbar trough {
   border-radius: 12px;
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 progressbar progress {
@@ -3096,7 +3096,7 @@ levelbar block.full {
 }
 
 levelbar block.empty {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 /****************
@@ -3104,7 +3104,7 @@ levelbar block.empty {
 *****************/
 printdialog paper {
   padding: 0;
-  border: 1px solid ${palette[1]};
+  border: 1px solid #${palette[1]};
   background-color: #313244;
   color: #${palette[2]};
 }
@@ -3119,7 +3119,7 @@ printdialog .dialog-action-box {
 frame > border, .frame {
   margin: 0;
   padding: 0;
-  border: 1px solid ${palette[1]};
+  border: 1px solid #${palette[1]};
   border-radius: 0;
   box-shadow: none;
 }
@@ -3193,7 +3193,7 @@ stack scrolledwindow.frame viewport.frame list {
 }
 
 overshoot.top {
-  background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(${palette[1]}), to(rgba(239, 241, 245, 0))), -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(239, 241, 245, 0.07)), to(rgba(239, 241, 245, 0)));
+  background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(#${palette[1]}), to(rgba(239, 241, 245, 0))), -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(239, 241, 245, 0.07)), to(rgba(239, 241, 245, 0)));
   background-size: 100% 5%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -3203,7 +3203,7 @@ overshoot.top {
 }
 
 overshoot.bottom {
-  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(${palette[1]}), to(rgba(239, 241, 245, 0))), -gtk-gradient(radial, center bottom, 0, center bottom, 0.6, from(rgba(239, 241, 245, 0.07)), to(rgba(239, 241, 245, 0)));
+  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(#${palette[1]}), to(rgba(239, 241, 245, 0))), -gtk-gradient(radial, center bottom, 0, center bottom, 0.6, from(rgba(239, 241, 245, 0.07)), to(rgba(239, 241, 245, 0)));
   background-size: 100% 5%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -3213,7 +3213,7 @@ overshoot.bottom {
 }
 
 overshoot.left {
-  background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(${palette[1]}), to(rgba(239, 241, 245, 0))), -gtk-gradient(radial, left center, 0, left center, 0.6, from(rgba(239, 241, 245, 0.07)), to(rgba(239, 241, 245, 0)));
+  background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(#${palette[1]}), to(rgba(239, 241, 245, 0))), -gtk-gradient(radial, left center, 0, left center, 0.6, from(rgba(239, 241, 245, 0.07)), to(rgba(239, 241, 245, 0)));
   background-size: 5% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: left center;
@@ -3223,7 +3223,7 @@ overshoot.left {
 }
 
 overshoot.right {
-  background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(${palette[1]}), to(rgba(239, 241, 245, 0))), -gtk-gradient(radial, right center, 0, right center, 0.6, from(rgba(239, 241, 245, 0.07)), to(rgba(239, 241, 245, 0)));
+  background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(#${palette[1]}), to(rgba(239, 241, 245, 0))), -gtk-gradient(radial, right center, 0, right center, 0.6, from(rgba(239, 241, 245, 0.07)), to(rgba(239, 241, 245, 0)));
   background-size: 5% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: right center;
@@ -3235,7 +3235,7 @@ overshoot.right {
 junction {
   border-style: solid none none solid;
   border-width: 1px;
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
   background-color: #313244;
 }
 
@@ -3413,7 +3413,7 @@ box.horizontal > stack.background stack.background scrolledwindow > viewport lis
 box.horizontal > stack.background overlay scrolledwindow > viewport list row:hover, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row:hover,
 leaflet frame:not(.view) list:not(.contacts-contact-list) row:hover,
 box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-list) row:hover, list.tweak-group list > row:hover, list.content:not(.conversation-listbox) > row:hover {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
   box-shadow: none;
 }
 
@@ -3453,7 +3453,7 @@ box.horizontal > stack.background frame:not(.view) list:not(.contacts-contact-li
 }
 
 list {
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
   background-color: rgba(239, 241, 245, 0.04);
 }
 
@@ -3545,7 +3545,7 @@ expander title > arrow {
   min-height: 16px;
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   -gtk-icon-transform: rotate(-90deg);
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 expander title > arrow:dir(rtl) {
@@ -3569,7 +3569,7 @@ expander title > arrow:disabled {
  ************/
 calendar {
   padding: 1px;
-  border: 1px solid ${palette[1]};
+  border: 1px solid #${palette[1]};
   color: #${palette[2]};
 }
 
@@ -3583,12 +3583,12 @@ calendar:selected {
 
 calendar.header {
   border-style: none none solid;
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
   border-radius: 0;
 }
 
 calendar.highlight {
-  color: ${palette[1]};
+  color: #${palette[1]};
   font-weight: 500;
 }
 
@@ -3639,7 +3639,7 @@ messagedialog .dialog-action-box .linked:not(.vertical) > button:not(:last-child
 
 messagedialog .dialog-action-box button.suggested-action:not(:disabled),
 messagedialog .dialog-action-box .linked:not(.vertical) > button.suggested-action:not(:disabled) {
-  tolor: #${palette[7]};
+  color: #${palette[7]};
 }
 
 messagedialog .dialog-action-box button.destructive-action:not(:disabled),
@@ -3653,11 +3653,11 @@ messagedialog .dialog-action-box .linked:not(.vertical) > button.destructive-act
 }
 
 filechooser .dialog-action-box {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 filechooser #pathbarbox {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   background-color: #313244;
 }
 
@@ -3701,12 +3701,12 @@ filechooser paned > separator {
 }
 
 stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:not(separator):dir(ltr), .sidebar:not(separator).left {
-  border-right: 1px solid ${palette[1]};
+  border-right: 1px solid #${palette[1]};
   border-left-style: none;
 }
 
 stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:not(separator):dir(rtl), .sidebar:not(separator).right {
-  border-left: 1px solid ${palette[1]};
+  border-left: 1px solid #${palette[1]};
   border-right-style: none;
 }
 
@@ -3859,7 +3859,7 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: #313244;
-  background-image: image(${palette[1]});
+  background-image: image(#${palette[1]});
   background-size: 1px 1px;
   background-clip: content-box;
 }
@@ -3868,7 +3868,7 @@ paned > separator.wide {
   min-width: 6px;
   min-height: 6px;
   background-color: #${palette[0]};
-  background-image: image(${palette[1]}), image(rgba(239, 241, 245, 0.12));
+  background-image: image(#${palette[1]}), image(rgba(239, 241, 245, 0.12));
   background-size: 1px 1px, 1px 1px;
 }
 
@@ -4103,7 +4103,7 @@ colorswatch#add-color-button overlay {
 }
 
 colorswatch#add-color-button overlay:hover {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
   box-shadow: none;
 }
 
@@ -4238,7 +4238,7 @@ button.titlebutton:not(.suggested-action):not(.destructive-action) {
 }
 
 button.minimize.titlebutton:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:not(.suggested-action):not(.destructive-action), button.close.titlebutton:not(.suggested-action):not(.destructive-action) {
-  color: ${palette[1]};
+  color: #${palette[1]};
   background-color: alpha(currentColor, 0.1);
 }
 
@@ -4293,9 +4293,9 @@ cursor-handle.insertion-cursor:dir(ltr), cursor-handle.insertion-cursor:dir(rtl)
   padding-bottom: 2px;
   padding-left: 8px;
   padding-right: 8px;
-  border: solid 1px ${palette[1]};
+  border: solid 1px #${palette[1]};
   border-radius: 13px;
-  box-shadow: inset 0 -2px ${palette[1]};
+  box-shadow: inset 0 -2px #${palette[1]};
   background-color: #292c3c;
   color: #${palette[2]};
   font-size: smaller;
@@ -4356,7 +4356,7 @@ popover.emoji-picker {
 }
 
 popover.emoji-picker entry {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   border-image: none;
   border-radius: 0;
   box-shadow: none;
@@ -4364,7 +4364,7 @@ popover.emoji-picker entry {
 }
 
 popover.emoji-picker scrolledwindow {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
 }
 
 button.emoji-section {
@@ -4499,7 +4499,7 @@ popover.emoji-completion .emoji:hover {
 
 .nautilus-canvas-item.dim-label,
 .nautilus-list-dim-label {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .nemo-desktop.nemo-canvas-item, .caja-desktop.caja-canvas-item,
@@ -4620,13 +4620,13 @@ button:not(.suggested-action):not(.destructive-action):first-child:dir(rtl):disa
 }
 
 .disk-space-display.free {
-  background-color: ${palette[1]};
-  color: ${palette[1]};
+  background-color: #${palette[1]};
+  color: #${palette[1]};
 }
 
 .search-information {
   padding: 2px;
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   background-color: #313244;
   color: #${palette[2]};
 }
@@ -4654,7 +4654,7 @@ dialog.background > box.dialog-vbox.vertical > grid.horizontal > scrolledwindow.
 
 dialog.background > box.dialog-vbox.vertical > grid.horizontal > box.horizontal:last-child {
   margin: -6px 0 0 -6px;
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 dialog.background > box.dialog-vbox.vertical > grid.horizontal > box.horizontal:last-child > label {
@@ -4691,7 +4691,7 @@ dialog.background > box.dialog-vbox.vertical > grid.horizontal > box.horizontal:
 }
 
 .nautilus-menu-sort-heading:disabled {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .nautilus-window paned > separator {
@@ -4718,7 +4718,7 @@ window.org-gnome-gedit > overlay > box.vertical > paned.gedit-side-panel-paned s
 }
 
 .open-document-selector-path-label {
-  color: ${palette[1]};
+  color: #${palette[1]};
   font-size: smaller;
 }
 
@@ -4737,11 +4737,11 @@ window.org-gnome-gedit > overlay > box.vertical > paned.gedit-side-panel-paned s
 }
 
 .gedit-document-panel-group-row:not(:first-child) {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 .gedit-side-panel-paned statusbar {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
   border-radius: 0 0 12px 12px;
 }
 
@@ -4755,7 +4755,7 @@ window.org-gnome-gedit > overlay > box.vertical > paned.gedit-side-panel-paned s
 
 .gedit-search-slider .linked:not(.vertical) > entry .gedit-search-entry-occurrences-tag {
   all: unset;
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .gedit-search-slider .linked:not(.vertical) > entry:dir(ltr) .gedit-search-entry-occurrences-tag {
@@ -4779,7 +4779,7 @@ window.org-gnome-gedit > overlay > box.vertical > paned.gedit-side-panel-paned s
 }
 
 .gedit-search-slider .linked:not(.vertical) > entry.error ~ button {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .gedit-search-slider .linked:not(.vertical) > entry.error ~ button:hover, .gedit-search-slider .linked:not(.vertical) > entry.error ~ button:active {
@@ -4974,11 +4974,11 @@ window.background.csd > box.horizontal > box.vertical > scrolledwindow.view scro
 }
 
 .tweak-group-startup {
-  border: 1px solid ${palette[1]};
+  border: 1px solid #${palette[1]};
 }
 
 .tweak-group-startup > row:not(:first-child) {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 row#Focus,
@@ -5108,7 +5108,7 @@ window.background.csd stack.background clamp.medium frame > box.vertical > box.v
 }
 
 window.background.csd hdycolumn stack frame.view > stack > stack list > separator {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 dialog.background.csd > box.vertical.dialog-vbox > notebook > stack > box.horizontal > notebook > stack {
@@ -5220,7 +5220,7 @@ window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem >
 }
 
 .sidebar-paned .inline-toolbar.horizontal.sidebar-toolbar {
-  box-shadow: inset 0 1px ${palette[1]};
+  box-shadow: inset 0 1px #${palette[1]};
 }
 
 .sidebar-paned .inline-toolbar.horizontal.sidebar-toolbar button.image-button {
@@ -5253,7 +5253,7 @@ window.solid-csd > box.vertical > box.vertical > toolbar.horizontal {
   padding: 6px;
   margin: -1px 0;
   border-bottom: none;
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
   box-shadow: none;
   background-color: transparent;
 }
@@ -5322,7 +5322,7 @@ window.background > box.vertical > toolbar.primary-toolbar > toolitem > .linked 
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > grid > grid > grid,
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > box > grid > grid > grid,
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > notebook > stack > grid > grid > grid {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   padding: 6px;
   margin: -6px;
 }
@@ -5330,21 +5330,21 @@ window.background > box > .sidebar-paned > paned > box > notebook > stack > box 
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > grid > grid > box,
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > box > grid > grid > box,
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > notebook > stack > grid > grid > box {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   padding: 0 6px 6px;
   margin: 0 -6px -6px 0;
 }
 
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > grid > paned > box > scrolledwindow:not(:last-child),
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > notebook > stack > grid > paned > box > scrolledwindow:not(:last-child) {
-  border-right: 1px solid ${palette[1]};
+  border-right: 1px solid #${palette[1]};
   margin-right: -1px;
 }
 
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > box > grid > grid > grid,
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > box > box > grid > grid > grid,
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > box > notebook > stack > grid > grid > grid {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   padding: 3px;
   margin: -1px -6px -6px;
 }
@@ -5352,13 +5352,13 @@ window.background > box > .sidebar-paned > paned > box > notebook > stack > box 
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > box > grid > paned > box > scrolledwindow:not(:last-child),
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > box > box > grid > paned > box > scrolledwindow:not(:last-child),
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > box > notebook > stack > grid > paned > box > scrolledwindow:not(:last-child) {
-  border-right: 1px solid ${palette[1]};
+  border-right: 1px solid #${palette[1]};
   margin-right: -1px;
 }
 
 window.background > box > .sidebar-paned > paned > box > notebook > stack > box > box > paned > box:first-child > box {
   padding: 0 6px 6px;
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
 }
 
 /**********
@@ -5375,7 +5375,7 @@ window.background > box > .sidebar-paned > paned > box > notebook > stack > box 
 
 stack.view.polari-entry-area {
   background-color: #${palette[0]};
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
   border-bottom-right-radius: 12px;
 }
 
@@ -5387,7 +5387,7 @@ stack:disabled.view.polari-entry-area {
  * Builder *
  ***********/
 layouttabbar {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   background-color: #${palette[0]};
 }
 
@@ -5425,7 +5425,7 @@ entry.search-missing {
 }
 
 window.workbench treeview.image {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 popover.popover-selector list {
@@ -5457,15 +5457,15 @@ omnibar.linked:not(.vertical) entry {
 }
 
 omnibar:not(:hover):not(:active) entry {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 popover.omnibar list row:not(:last-child) {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
 }
 
 entry.preferences-search {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   box-shadow: none;
   background-color: #313244;
 }
@@ -5479,11 +5479,11 @@ preferences stacksidebar.sidebar:dir(ltr) list, preferences stacksidebar.sidebar
 }
 
 preferences > box > box:dir(ltr) {
-  border-right: 1px solid ${palette[1]};
+  border-right: 1px solid #${palette[1]};
 }
 
 preferences > box > box:dir(rtl) {
-  border-left: 1px solid ${palette[1]};
+  border-left: 1px solid #${palette[1]};
 }
 
 popover.messagepopover.background {
@@ -5492,7 +5492,7 @@ popover.messagepopover.background {
 
 popover.messagepopover .popover-action-area button {
   padding: 8px 16px;
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
   border-radius: 0;
 }
 
@@ -5513,7 +5513,7 @@ popover.transfers list {
 }
 
 popover.transfers list row:not(:first-child) {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 popover.transfers list row > box {
@@ -5531,13 +5531,13 @@ dockpaned {
 
 eggsearchbar box.search-bar {
   padding: 0 8px;
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   background-color: #${palette[0]};
 }
 
 docktabstrip {
   padding: 0 8px;
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   background-color: #${palette[0]};
 }
 
@@ -5554,7 +5554,7 @@ docktab {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 0% 0%;
-  color: ${palette[1]};
+  color: #${palette[1]};
   font-weight: 500;
 }
 
@@ -5595,7 +5595,7 @@ pillbox {
 }
 
 layoutpane entry.search {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   box-shadow: none;
   background-color: #313244;
 }
@@ -5643,7 +5643,7 @@ button.dzlmenubuttonitem:disabled {
 }
 
 idelayoutstackheader {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
 }
 
 idelayoutstackheader button:checked {
@@ -5656,11 +5656,11 @@ ideeditorutilities > dzldockpaned > box > stackswitcher {
 }
 
 ideeditorutilities > dzldockpaned > box > stackswitcher:dir(ltr) {
-  border-right: 1px solid ${palette[1]};
+  border-right: 1px solid #${palette[1]};
 }
 
 ideeditorutilities > dzldockpaned > box > stackswitcher:dir(rtl) {
-  border-left: 1px solid ${palette[1]};
+  border-left: 1px solid #${palette[1]};
 }
 
 ideeditorutilities > dzldockpaned > box > stackswitcher button {
@@ -5699,11 +5699,11 @@ ideeditorsidebar notebook header {
 }
 
 popover.messagepopover list {
-  border: 1px solid ${palette[1]};
+  border: 1px solid #${palette[1]};
 }
 
 popover.messagepopover list row:not(:last-child) {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
 }
 
 /**********
@@ -5767,12 +5767,12 @@ overlay grid.horizontal > revealer > scrolledwindow.frame:dir(rtl) {
  *********/
 .side-panel:dir(ltr) {
   border-style: solid;
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
 }
 
 .side-panel:dir(rtl) {
   border-style: solid;
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
 }
 
 .side-panel .view {
@@ -5804,7 +5804,7 @@ frame.documents-dropdown > border {
 }
 
 box.vertical > revealer > toolbar.search-bar {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   background-clip: border-box;
 }
 
@@ -5917,7 +5917,7 @@ window.background > box.vertical > box.horizontal > stack > widget > notebook.fr
   background-color: #313244;
   margin: 0;
   border-radius: 0;
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   background-clip: border-box;
 }
 
@@ -6100,7 +6100,7 @@ window#GearyMainWindow.background.csd stack#conversation_viewer .geary-composer-
 
 .geary-main-window.unified > deck > overlay > .geary-main-layout > leaflet > leaflet > box.vertical + separator.sidebar {
   min-width: 1px;
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 .geary-main-window.unified frame.geary-conversation-frame scrolledwindow {
@@ -6121,11 +6121,11 @@ window#GearyMainWindow.background.csd stack#conversation_viewer .geary-composer-
 
 .geary-main-window.unified separator.geary-sidebar-pane-separator {
   min-width: 1px;
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 .geary-main-window.unified geary-conversation-viewer#conversation_viewer list.background.conversation-listbox.content > row.activatable {
-  border: 1px solid ${palette[1]};
+  border: 1px solid #${palette[1]};
   border-bottom-width: 0;
   background-color: #313244;
 }
@@ -6317,7 +6317,7 @@ button.flat.tilix-small-button {
  *************/
 #live_installer .menubar progressbar trough {
   border-radius: 4px;
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 /*********
@@ -6376,7 +6376,7 @@ window.background.chromium > button:disabled {
 
 window.background.chromium menubar,
 window.background.chromium headerbar {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 window.background.chromium headerbar.titlebar {
@@ -6454,7 +6454,7 @@ tooltip.background.chromium {
 
 #MozillaGtkWidget > widget > entry:disabled,
 #MozillaGtkWidget > widget > button > button:disabled {
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
 }
 
 #MozillaGtkWidget > widget > entry {
@@ -6511,7 +6511,7 @@ tooltip.background.chromium {
 }
 
 #MozillaGtkWidget > widget > menubar {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 #MozillaGtkWidget > widget > menubar:hover {
@@ -6519,7 +6519,7 @@ tooltip.background.chromium {
 }
 
 #MozillaGtkWidget > widget > menubar:disabled {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 #MozillaGtkWidget > widget > frame {
@@ -6577,15 +6577,15 @@ window.background:not(.csd) > window > menu menuitem {
 }
 
 #CanvasTable #HorizontalScrollbar {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 #CanvasTable #VerticalScrollbar:dir(ltr) {
-  border-left: 1px solid ${palette[1]};
+  border-left: 1px solid #${palette[1]};
 }
 
 #CanvasTable #VerticalScrollbar:dir(rtl) {
-  border-right: 1px solid ${palette[1]};
+  border-right: 1px solid #${palette[1]};
 }
 
 #Canvas_and_Dock frame > border {
@@ -6682,11 +6682,11 @@ UnityDecoration .top {
 
 UnityDecoration .top:backdrop {
   background-color: #${palette[0]};
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 UnityDecoration .menuitem {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 UnityDecoration .menuitem:hover {
@@ -6712,12 +6712,12 @@ UnityPanelWidget,
 
 UnityPanelWidget:backdrop,
 .unity-panel:backdrop {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .unity-panel.menuitem,
 .unity-panel .menuitem {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .unity-panel.menubar.menuitem:hover,
@@ -6743,7 +6743,7 @@ UnityPanelWidget:backdrop,
 
 .mate-panel-menu-bar {
   background-color: rgba(30, 30, 46, 0.6);
-  color: ${palette[1]};
+  color: #${palette[1]};
   font-weight: 500;
 }
 
@@ -6763,12 +6763,12 @@ PanelToplevel.vertical > grid > button {
 }
 
 PanelSeparator {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 MatePanelAppletFrameDBus {
   border-style: solid;
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
 }
 
 .mate-panel-menu-bar.horizontal MatePanelAppletFrameDBus {
@@ -6780,7 +6780,7 @@ MatePanelAppletFrameDBus {
 }
 
 .mate-panel-menu-bar menubar > menuitem {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .mate-panel-menu-bar menubar > menuitem:hover {
@@ -6887,7 +6887,7 @@ PanelApplet.wnck-applet .wnck-pager:selected {
 #MatePanelPopupWindow calendar + box {
   margin-top: -5px;
   padding-top: 5px;
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 #MatePanelPopupWindow expander > title {
@@ -6899,7 +6899,7 @@ PanelApplet.wnck-applet .wnck-pager:selected {
 }
 
 #MatePanelPopupWindow > frame > box > box > box > widget {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 na-tray-applet {
@@ -6950,7 +6950,7 @@ na-tray-applet {
 
 #mate-menu button image,
 #mate-menu button label + label {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 #mate-menu entry {
@@ -6973,7 +6973,7 @@ na-tray-applet {
 
 .brisk-menu entry {
   margin-bottom: -2px;
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   border-image: none;
   box-shadow: none;
   background-color: transparent;
@@ -6981,12 +6981,12 @@ na-tray-applet {
 
 .brisk-menu entry + box > box:dir(ltr) {
   margin-right: -2px;
-  border-right: 1px solid ${palette[1]};
+  border-right: 1px solid #${palette[1]};
 }
 
 .brisk-menu entry + box > box:dir(rtl) {
   margin-left: -2px;
-  border-left: 1px solid ${palette[1]};
+  border-left: 1px solid #${palette[1]};
 }
 
 .brisk-menu .categories-list {
@@ -7055,7 +7055,7 @@ na-tray-applet {
 
 .caja-side-pane notebook,
 .caja-notebook {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 .caja-side-pane notebook .frame,
@@ -7094,7 +7094,7 @@ na-tray-applet {
 .caja-navigation-window statusbar {
   margin: 0 -10px;
   padding: 0 4px;
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 .caja-notebook frame > border {
@@ -7102,7 +7102,7 @@ na-tray-applet {
 }
 
 #caja-extra-view-widget {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   background-color: #313244;
 }
 
@@ -7116,7 +7116,7 @@ na-tray-applet {
 .pluma-window statusbar {
   margin: 0 -10px;
   padding: 0 4px;
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 .pluma-window statusbar frame > border {
@@ -7134,7 +7134,7 @@ na-tray-applet {
 }
 
 .pluma-print-preview toolbar {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
 }
 
 .pluma-window paned.horizontal box.vertical box.horizontal button.flat {
@@ -7147,11 +7147,11 @@ na-tray-applet {
 
 .pluma-window paned.horizontal box.vertical notebook.frame {
   margin-top: -1px;
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 .pluma-window paned.horizontal box.vertical notebook.frame box.vertical toolbar.horizontal {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
 }
 
 /*********
@@ -7162,7 +7162,7 @@ na-tray-applet {
 }
 
 .atril-window paned.horizontal box.vertical notebook .frame {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 /* mate-screensaver lock dialog */
@@ -7190,7 +7190,7 @@ MsdOsdWindow.background.osd {
 
 MsdOsdWindow.background.osd .trough {
   border-radius: 0;
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 MsdOsdWindow.background.osd .progressbar {
@@ -7285,12 +7285,12 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-popover > frame.container > grid.horizontal > grid.horizontal > widget > grid.horizontal > stack {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 .budgie-popover.bottom > frame.container > grid.horizontal > grid.horizontal > widget > grid.horizontal > stack {
   border-top: none;
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
 }
 
 .budgie-popover.budgie-menu .container {
@@ -7304,7 +7304,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-popover.budgie-menu entry.search {
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
   border-image: none;
   border-radius: 0;
   box-shadow: none;
@@ -7346,7 +7346,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-popover.budgie-menu .budgie-menu-footer {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
   padding: 6px;
 }
 
@@ -7402,7 +7402,7 @@ MsdOsdWindow.background.osd .progressbar {
 .budgie-popover.places-menu .places-list:not(.always-expand) {
   margin-top: 3px;
   padding-top: 3px;
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 .budgie-popover.places-menu .alternative-label {
@@ -7415,7 +7415,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .workspace-switcher .workspace-layout {
-  border: 0 solid ${palette[1]};
+  border: 0 solid #${palette[1]};
 }
 
 .top .workspace-switcher .workspace-layout:dir(ltr), .bottom .workspace-switcher .workspace-layout:dir(ltr) {
@@ -7432,7 +7432,7 @@ MsdOsdWindow.background.osd .progressbar {
 
 .workspace-switcher .workspace-item,
 .workspace-switcher .workspace-add-button {
-  border: 0 solid ${palette[1]};
+  border: 0 solid #${palette[1]};
 }
 
 .top .workspace-switcher .workspace-item:dir(ltr), .bottom .workspace-switcher .workspace-item:dir(ltr), .top .workspace-switcher .workspace-add-button:dir(ltr), .bottom .workspace-switcher .workspace-add-button:dir(ltr) {
@@ -7477,7 +7477,7 @@ MsdOsdWindow.background.osd .progressbar {
 .budgie-panel {
   transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1);
   background-color: rgba(30, 30, 46, 0.6);
-  color: ${palette[1]};
+  color: #${palette[1]};
   font-weight: 500;
 }
 
@@ -7530,7 +7530,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-panel button {
-  color: ${palette[1]};
+  color: #${palette[1]};
   min-height: 24px;
   min-width: 24px;
   padding: 0;
@@ -7542,11 +7542,11 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-panel button:active {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .budgie-panel button.budgie-menu-launcher {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .budgie-panel button.budgie-menu-launcher:focus {
@@ -7556,7 +7556,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-panel button.raven-trigger {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .budgie-panel.horizontal button {
@@ -7568,7 +7568,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-panel separator {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 .budgie-panel .alert {
@@ -7614,7 +7614,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-panel .titlebar:not(headerbar) button:not(.suggested-action):not(.destructive-action) {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .budgie-panel .titlebar:not(headerbar) button:not(.suggested-action):not(.destructive-action):hover, .budgie-panel .titlebar:not(headerbar) button:not(.suggested-action):not(.destructive-action):active {
@@ -7623,14 +7623,14 @@ MsdOsdWindow.background.osd .progressbar {
 
 .budgie-panel menubar,
 .budgie-panel .menubar {
-  color: ${palette[1]};
+  color: #${palette[1]};
   box-shadow: none;
   border: none;
 }
 
 .budgie-panel menubar > menuitem,
 .budgie-panel .menubar > menuitem {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .budgie-panel menubar > menuitem:hover, .budgie-panel menubar > menuitem:active,
@@ -7641,7 +7641,7 @@ MsdOsdWindow.background.osd .progressbar {
 
 .budgie-panel menubar menu separator,
 .budgie-panel .menubar menu separator {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 .budgie-panel #tasklist-button {
@@ -7661,7 +7661,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-panel button.flat.launcher:not(:checked):hover, .budgie-panel button.flat.launcher:not(:checked):active {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .budgie-panel button.flat.launcher:not(:checked):disabled {
@@ -7760,7 +7760,7 @@ frame.raven-frame > border {
 
 .raven .raven-header.top {
   padding: 0;
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
 }
 
 .raven .raven-header.top stackswitcher button {
@@ -7770,7 +7770,7 @@ frame.raven-frame > border {
 }
 
 .raven .raven-header.bottom {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 .raven stack .raven-header {
@@ -7784,12 +7784,12 @@ frame.raven-frame > border {
 .raven .raven-background {
   border-style: solid none;
   border-width: 1px;
-  border-color: ${palette[1]};
+  border-color: #${palette[1]};
   background-color: #313244;
 }
 
 .raven .raven-background > overlay > widget > image {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .raven scrolledwindow.raven-background {
@@ -7864,8 +7864,8 @@ calendar.raven-calendar:selected {
 }
 
 image.raven-mpris {
-  background-color: ${palette[1]};
-  color: ${palette[1]};
+  background-color: #${palette[1]};
+  color: #${palette[1]};
   border-radius: 12px;
 }
 
@@ -7897,7 +7897,7 @@ image.raven-mpris {
 }
 
 .raven-notifications-view > .raven-background > viewport.frame > list > row.activatable list > row.activatable:hover, .raven-notifications-view > .raven-background > viewport.frame > list > row.activatable list > row.activatable:selected {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 .raven-notifications-view > .raven-background > viewport.frame > list > row.activatable:selected, .raven-notifications-view > .raven-background > viewport.frame > list > row.activatable:selected:hover, .raven-notifications-view > .raven-background > viewport.frame > list > row.activatable:hover, .raven-notifications-view > .raven-background > viewport.frame > list > row.activatable:active, .raven-notifications-view > .raven-background > viewport.frame > list > row.activatable:focus {
@@ -7914,7 +7914,7 @@ image.raven-mpris {
 }
 
 .budgie-notification .notification-body, .budgie-switcher .notification-body {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .budgie-osd .budgie-osd-text {
@@ -7979,7 +7979,7 @@ image.raven-mpris {
 .budgie-polkit-dialog .linked.horizontal > button,
 .budgie-run-dialog .linked.horizontal > button {
   padding: 8px 16px;
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
   border-radius: 0;
 }
 
@@ -7996,7 +7996,7 @@ image.raven-mpris {
 }
 
 .budgie-polkit-dialog .message {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .budgie-polkit-dialog .failure {
@@ -8020,7 +8020,7 @@ image.raven-mpris {
 }
 
 .budgie-run-dialog scrolledwindow {
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 /**************
@@ -8036,7 +8036,7 @@ image.raven-mpris {
 .xfce4-panel.background {
   border: none;
   background-color: rgba(30, 30, 46, 0.6);
-  color: ${palette[1]};
+  color: #${palette[1]};
   font-weight: 500;
 }
 
@@ -8114,7 +8114,7 @@ window#whiskermenu-window box.categories > button.radio {
 }
 
 window#whiskermenu-window box.categories > button.radio:hover {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
 }
 
 window#whiskermenu-window box.categories > button.radio:checked, window#whiskermenu-window box.categories > button.radio:active {
@@ -8141,7 +8141,7 @@ window#whiskermenu-window scrolledwindow.frame treeview.view:not(:hover):not(:se
 }
 
 window#whiskermenu-window scrolledwindow.frame treeview.view:selected:hover {
-  background-color: ${palette[1]};
+  background-color: #${palette[1]};
   color: #${palette[2]};
 }
 
@@ -8183,7 +8183,7 @@ dialog.xfsm-logout-dialog {
  * Thunar *
  **********/
 .thunar toolbar {
-  box-shadow: inset 0 -1px ${palette[1]};
+  box-shadow: inset 0 -1px #${palette[1]};
 }
 
 .thunar .standard-view.frame {
@@ -8202,7 +8202,7 @@ dialog.xfsm-logout-dialog {
 .thunar statusbar {
   margin: 0 -10px;
   padding: 0 4px;
-  border-top: 1px solid ${palette[1]};
+  border-top: 1px solid #${palette[1]};
 }
 
 .thunar > grid.horizontal
@@ -8227,7 +8227,7 @@ menubar.-vala-panel-background {
 
 menubar.-vala-panel-appmenu-private > menuitem,
 menubar.-vala-panel-background > menuitem {
-  color: ${palette[1]};
+  color: #${palette[1]};
   font-weight: normal;
 }
 
@@ -8264,7 +8264,7 @@ menubar.-vala-panel-background > menuitem:disabled {
 }
 
 #panel_window menubar > menuitem {
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 #panel_window menubar > menuitem:hover {
@@ -8306,7 +8306,7 @@ menubar.-vala-panel-background > menuitem:disabled {
  ********/
 .nemo-window .primary-toolbar {
   background-color: #${palette[0]};
-  border-bottom: 1px solid ${palette[1]};
+  border-bottom: 1px solid #${palette[1]};
 }
 
 .nemo-window .primary-toolbar entry {
@@ -8322,7 +8322,7 @@ menubar.-vala-panel-background > menuitem:disabled {
 .nemo-window .primary-toolbar button.text-button {
   padding-left: 8px;
   padding-right: 8px;
-  color: ${palette[1]};
+  color: #${palette[1]};
 }
 
 .nemo-window .primary-toolbar button.text-button:hover, .nemo-window .primary-toolbar button.text-button:active, .nemo-window .primary-toolbar button.text-button:checked {
@@ -8433,9 +8433,9 @@ menubar.-vala-panel-background > menuitem:disabled {
 /* insensitive color on backdrop windows */
 @define-color unfocused_insensitive_color rgba(239, 241, 245, 0.5);
 /* widgets main borders color */
-@define-color borders ${palette[1]};
+@define-color borders #${palette[1]};
 /* widgets main borders color on backdrop windows */
-@define-color unfocused_borders ${palette[1]};
+@define-color unfocused_borders #${palette[1]};
 /* these are pretty self explicative */
 @define-color warning_color #df8e1d;
 @define-color error_color #${palette[4]};
@@ -8443,7 +8443,7 @@ menubar.-vala-panel-background > menuitem:disabled {
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_focused_title #${palette[2]};
-@define-color wm_unfocused_title ${palette[1]};
+@define-color wm_unfocused_title #${palette[1]};
 @define-color wm_highlight rgba(239, 241, 245, 0.1);
 @define-color wm_border #0a0a0e;
 @define-color wm_focused_bg #${palette[0]};
