@@ -1398,7 +1398,7 @@ searchbar > revealer > box {
 }
 
 .titlebar:backdrop {
-  color: #252423;
+  color: #ddc7a1;
 }
 
 .titlebar:backdrop:disabled {
