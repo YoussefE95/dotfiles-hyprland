@@ -56,7 +56,7 @@ def main(stdscr):
 
         stdscr.refresh()
 
-        key = stdscr.getkey()
+        key = stdscr.getkey().lower()
 
         if key == 'h':
             if hover[1] > 0:
