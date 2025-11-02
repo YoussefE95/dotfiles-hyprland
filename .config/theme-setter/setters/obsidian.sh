@@ -54,7 +54,7 @@ output="$(cat << THEME
     --bright-orange_x:  #${palette[10]};
     --bright-orange:    var(--bright-orange_x);
 
-    --neutral-red_x:    #${palette[4]}
+    --neutral-red_x:    #${palette[4]};
     --neutral-red:      var(--neutral-red_x);
     --neutral-green_x:  #${palette[5]};
     --neutral-green:    var(--neutral-green_x);
@@ -217,6 +217,11 @@ body
 
     --tab-text-color-focused-active:         var(--neutral-yellow);
     --tab-text-color-focused-active-current: var(--bright-red);
+
+    --background-modifier-form-field: #${palette[1]};
+
+    --interactive-normal: #${palette[1]};
+    --interactive-hover: #${palette[3]};
 }
 
 .theme-light
