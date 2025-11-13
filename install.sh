@@ -27,7 +27,7 @@ yay -Syu && yay -S \
     hyprpolkitagent xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
     qt6ct-kde zsh zsh-autosuggestions zsh-history-substring-search \
     zsh-syntax-highlighting libappindicator-gtk3 archlinux-xdg-menu \
-    xwayland-satellite playerctl
+    xwayland-satellite playerctl pavucontrol-qt
 
 # Set wallpaper
 swww img ~/.local/share/wallpaper.jpg \

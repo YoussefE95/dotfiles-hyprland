@@ -74,7 +74,7 @@ window-rule {
 
 window-rule {
     match app-id="hyprland-share-picker"
-    match app-id=".*pulseaudio.*"
+    match app-id=".*pavucontrol.*"
     match title=".*olphin.*"
     match title=".*kitty_float.*"
     open-floating true
@@ -82,7 +82,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id=".*pulseaudio.*"
+    match app-id=".*pavucontrol.*"
     default-column-width {
         fixed 840;
     }

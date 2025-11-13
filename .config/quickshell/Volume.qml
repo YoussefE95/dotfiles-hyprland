@@ -23,7 +23,7 @@ Singleton {
     Process {
         id: volumeManagerProc
         command: [
-            "pavucontrol"
+            "pavucontrol-qt"
         ]
     }
 

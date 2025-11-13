@@ -21,6 +21,12 @@ output "eDP-1" {
     scale 1
 }
 
+
+output "HDMI-A-1" {
+    mode "1920x1080@60.000"
+    scale 1
+}
+
 layout {
     gaps 16
 
@@ -37,15 +43,15 @@ layout {
     focus-ring {
         off
         width 5
-        inactive-color "#252423"
-        active-gradient from="#e78a4e" to="#d8a657" angle=45
+        inactive-color "#2a273f"
+        active-gradient from="#ea9a97" to="#f6c177" angle=45
     }
 
     border {
         width 4
         active-color "#ffc87f"
-        inactive-color "#252423"
-        urgent-color "#ea6962"
+        inactive-color "#2a273f"
+        urgent-color "#eb6f92"
     }
 
     shadow {
@@ -58,7 +64,7 @@ layout {
 }
 
 cursor {
-    xcursor-theme "Capitaine-Cursors-Gruvbox-White"
+    xcursor-theme "Capitaine-Cursors-White"
     xcursor-size 24
 }
 
@@ -85,7 +91,7 @@ window-rule {
 
 window-rule {
     match app-id="hyprland-share-picker"
-    match app-id=".*pulseaudio.*"
+    match app-id=".*pavucontrol.*"
     match title=".*olphin.*"
     match title=".*kitty_float.*"
     open-floating true
@@ -93,7 +99,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id=".*pulseaudio.*"
+    match app-id=".*pavucontrol.*"
     default-column-width {
         fixed 840;
     }
