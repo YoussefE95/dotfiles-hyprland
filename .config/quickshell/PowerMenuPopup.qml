@@ -27,7 +27,7 @@ LazyLoader {
                 spacing: 10
                 PowerMenuButton {
                     icon: "󰍃"
-                    command: "hyprctl dispatch exit"
+                    command: "sh -c ~/.config/quickshell/scripts/quit.sh"
                 }
                 PowerMenuButton {
                     icon: ""
