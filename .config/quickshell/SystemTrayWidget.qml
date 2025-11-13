@@ -36,13 +36,18 @@ Rectangle {
                 height: 22
                 MouseArea {
                     anchors.fill: parent
+                    acceptedButtons: Qt.LeftButton | Qt.RightButton
                     onClicked: (mouse) => {
-                        if (modelData.hasMenu) {
-                            modelData.display(
-                                topBar,
-                                Quickshell.screens[0].width - mouse.x,
-                                mouse.y
-                            )
+                        if (mouse.button === Qt.LeftButton) {
+                            modelData.activate()
+                        } else if (mouse.button === Qt.RightButton) {
+                            if (modelData.hasMenu) {
+                                modelData.display(
+                                    topBar,
+                                    Quickshell.screens[0].width - mouse.x,
+                                    mouse.y
+                                )
+                            }
                         }
                     }
                 }
