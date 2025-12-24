@@ -43,15 +43,15 @@ layout {
     focus-ring {
         off
         width 5
-        inactive-color "#2a273f"
-        active-gradient from="#ea9a97" to="#f6c177" angle=45
+        inactive-color "#252423"
+        active-gradient from="#e78a4e" to="#d8a657" angle=45
     }
 
     border {
         width 4
         active-color "#ffc87f"
-        inactive-color "#2a273f"
-        urgent-color "#eb6f92"
+        inactive-color "#252423"
+        urgent-color "#ea6962"
     }
 
     shadow {
@@ -64,8 +64,12 @@ layout {
 }
 
 cursor {
-    xcursor-theme "Capitaine-Cursors-White"
+    xcursor-theme "Capitaine-Cursors-Gruvbox-White"
     xcursor-size 24
+}
+
+hotkey-overlay {
+    skip-at-startup
 }
 
 spawn-at-startup "qs"
