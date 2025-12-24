@@ -18,7 +18,7 @@ sudo cp /usr/share/xdg-desktop-portal/portals/hyprland.portal \
     /usr/share/xdg-desktop-portal/portals/niri.portal
 
 # Update and install packages
-yay -Syu && yay -S \
+paru -Syu && paru -S \
     uwsm hyprland hyprlock hyprshot niri swww quickshell kitty starship \
     neovim ranger nvtop htop obsidian dropbox discord obs-studio \
     spotify-launcher spicetify-cli kvantum dolphin dolphin-plugins okular \
