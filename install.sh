@@ -1,4 +1,16 @@
 #!/bin/bash
+# Update and install packages
+paru -Syu && paru -S \
+    uwsm hyprland hyprlock hyprshot niri swww quickshell kitty starship \
+    neovim ranger nvtop htop obsidian dropbox discord obs-studio \
+    spotify-launcher spicetify-cli kvantum dolphin dolphin-plugins okular \
+    gwenview ttf-jetbrains-mono ttf-jetbrains-mono-nerd brightnessctl \
+    jq python-pipx python-pillow docker docker-buildx ripgrep wl-clipboard \
+    hyprpolkitagent xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
+    qt6ct-kde zsh zsh-autosuggestions zsh-history-substring-search \
+    zsh-syntax-highlighting libappindicator-gtk3 archlinux-xdg-menu \
+    xwayland-satellite playerctl pavucontrol-qt
+
 # Delete unnecessary folders
 sudo rm -rf ~/Documents ~/Music ~/Public ~/Videos ~/Templates ~/Pictures
 
@@ -16,18 +28,6 @@ sudo cp /usr/share/xdg-desktop-portal/hyprland-portals.conf \
     /usr/share/xdg-desktop-portal/niri-portals.conf
 sudo cp /usr/share/xdg-desktop-portal/portals/hyprland.portal \
     /usr/share/xdg-desktop-portal/portals/niri.portal
-
-# Update and install packages
-paru -Syu && paru -S \
-    uwsm hyprland hyprlock hyprshot niri swww quickshell kitty starship \
-    neovim ranger nvtop htop obsidian dropbox discord obs-studio \
-    spotify-launcher spicetify-cli kvantum dolphin dolphin-plugins okular \
-    gwenview ttf-jetbrains-mono ttf-jetbrains-mono-nerd brightnessctl \
-    jq python-pipx python-pillow docker docker-buildx ripgrep wl-clipboard \
-    hyprpolkitagent xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
-    qt6ct-kde zsh zsh-autosuggestions zsh-history-substring-search \
-    zsh-syntax-highlighting libappindicator-gtk3 archlinux-xdg-menu \
-    xwayland-satellite playerctl pavucontrol-qt
 
 # Set wallpaper
 swww img ~/.local/share/wallpaper.jpg \
