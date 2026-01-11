@@ -24,7 +24,7 @@ Rectangle {
             buttonProc.running = true
         }
         onEntered: (mouse) => {
-            button.color = Theme.magenta
+            button.color = Theme.orange
             buttonIcon.color = Theme.background
         }
         onExited: (mouse) => {

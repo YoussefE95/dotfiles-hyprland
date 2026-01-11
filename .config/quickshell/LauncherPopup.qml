@@ -21,7 +21,7 @@ LazyLoader {
     }
 
     function highlight(entry) {
-        entry.rectColor = Theme.magenta
+        entry.rectColor = Theme.orange
         entry.textColor = Theme.background
     }
 

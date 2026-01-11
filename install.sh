@@ -1,7 +1,7 @@
 #!/bin/bash
 # Update and install packages
 paru -Syu && paru -S \
-    uwsm hyprland hyprlock hyprshot niri swww quickshell kitty starship \
+    uwsm hyprland hyprlock hyprshot niri swww quickshell-git kitty starship \
     neovim ranger nvtop htop obsidian dropbox discord obs-studio \
     spotify-launcher spicetify-cli kvantum dolphin dolphin-plugins okular \
     gwenview ttf-jetbrains-mono ttf-jetbrains-mono-nerd brightnessctl \

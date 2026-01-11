@@ -6,8 +6,16 @@ import QtQuick
 Row {
     spacing: 8
 
+    function current() {
+        if (!Hyprland.focusedMonitor) {
+            return Niri.workspaces;
+        } else {
+            return Hyprland.workspaces
+        }
+    }
+
     Repeater {
-        model: Hyprland.workspaces
+        model: current()
 
         Rectangle {
             color: modelData.focused ? Theme.orange : Theme.backgroundAlt
@@ -25,6 +33,14 @@ Row {
                 color: modelData.focused ? Theme.background : Theme.foreground
                 text: modelData.name
             }
+        }
+    }
+
+    IpcHandler {
+        target: "Niri"
+
+        function updateWorkspaces() {
+            Niri.update()
         }
     }
 }

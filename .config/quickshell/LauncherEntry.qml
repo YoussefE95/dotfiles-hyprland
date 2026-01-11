@@ -21,7 +21,7 @@ Rectangle {
             popupLoader.load()
         }
         onEntered: (mouse) => {
-            root.rectColor = Theme.magenta
+            root.rectColor = Theme.orange
             root.textColor = Theme.background
         }
         onExited: (mouse) => {
