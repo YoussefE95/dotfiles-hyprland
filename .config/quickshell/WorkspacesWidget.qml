@@ -8,53 +8,11 @@ Row {
 
     function current() {
         if (!Hyprland.focusedMonitor) {
-            console.log(niriEventStream)
-            niriEventStream.connected = true
-            return niriEventStream.workspaces
+            console.log("Starting Sockets")
+            Niri.startSockets()
+            return Niri.workspaces
         } else {
             return Hyprland.workspaces
-        }
-    }
-
-    Socket {
-        id: niriEventStream
-        path: Quickshell.env("NIRI_SOCKET")
-        connected: false
-
-        property var workspaces
-
-        onConnectedChanged: {
-            if (connected) {
-                try {
-                    console.log("Niri Socket Connected")
-                    niriEventStream.write(JSON.stringify("EventStream") + "\n")
-                    niriEventStream.flush()
-                } catch(error) {
-                    console.log(error)
-                }
-            }
-        }
-
-        parser: SplitParser {
-            onRead: data => {
-                try {
-                    const event = JSON.parse(data.trim())
-
-                    if (event.WorkspacesChanged) {
-                        const { workspaces } = event.WorkspacesChanged
-
-                        for (let i = 0; i < workspaces.length; i++) {
-                            const { id, output, is_active, is_focused }
-                                = workspaces[i]
-                            console.log(id, output, is_active, is_focused)
-                        }
-                    } else {
-                        console.log(`Event: ${event}`)
-                    }
-                } catch (error) {
-                    console.log(error)
-                }
-            }
         }
     }
 
@@ -79,12 +37,4 @@ Row {
             }
         }
     }
-
-    // IpcHandler {
-    //     target: "Niri"
-    //
-    //     function updateWorkspaces() {
-    //         Niri.update()
-    //     }
-    // }
 }
