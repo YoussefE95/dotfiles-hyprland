@@ -6,10 +6,15 @@ import QtQuick
 Row {
     spacing: 8
 
-    function current() {
+    Component.onCompleted: {
         if (!Hyprland.focusedMonitor) {
             console.log("Starting Sockets")
             Niri.startSockets()
+        }
+    }
+
+    function current() {
+        if (!Hyprland.focusedMonitor) {
             return Niri.workspaces
         } else {
             return Hyprland.workspaces
