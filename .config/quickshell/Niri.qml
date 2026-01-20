@@ -10,7 +10,6 @@ Singleton {
     property var workspaces: []
 
     function startSockets() {
-        console.log("Starting Event Stream")
         eventStream.connected = true
     }
 
@@ -20,6 +19,7 @@ Singleton {
     }
 
     function updateWorkspaces(allWorkspaces) {
+        const displays = {}
         let newWorkspaces = []
         let newFocus = -1
 
@@ -28,10 +28,17 @@ Singleton {
                 newFocus = newWorkspaces.length
             }
 
+            if (displays[allWorkspaces[i].output]) {
+                displays[allWorkspaces[i].output]++
+            } else {
+                displays[allWorkspaces[i].output] = 1
+            }
+
             newWorkspaces.push({
                 id: allWorkspaces[i].id,
                 focused: allWorkspaces[i].is_focused,
-                name: newWorkspaces.length + 1
+                name: displays[allWorkspaces[i].output],
+                screen: allWorkspaces[i].output
             })
         }
 
@@ -41,12 +48,12 @@ Singleton {
 
     function updateFocus(id) {
         const newFocus = root.workspaces.findIndex((ws) => ws.id === id)
-
         const newWorkspaces = root.workspaces.map((ws, index) => {
             return {
                 id: ws.id,
                 focused: ws.id === id,
-                name: ws.name
+                name: ws.name,
+                screen: ws.screen
             }
         })
 

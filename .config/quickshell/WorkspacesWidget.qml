@@ -8,7 +8,7 @@ Row {
 
     Component.onCompleted: {
         if (!Hyprland.focusedMonitor) {
-            console.log("Starting Sockets")
+            console.log(topBar.screen.name)
             Niri.startSockets()
         }
     }
@@ -25,6 +25,7 @@ Row {
         model: current()
 
         Rectangle {
+            visible: topBar.screen.name === modelData.screen
             color: modelData.focused ? Theme.orange : Theme.backgroundAlt
             width: 32
             height: 32
