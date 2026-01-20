@@ -8,7 +8,6 @@ Row {
 
     Component.onCompleted: {
         if (!Hyprland.focusedMonitor) {
-            console.log(topBar.screen.name)
             Niri.startSockets()
         }
     }
