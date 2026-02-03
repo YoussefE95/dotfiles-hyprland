@@ -24,7 +24,7 @@ Row {
         model: current()
 
         Rectangle {
-            visible: topBar.screen.name === modelData.screen
+            visible: modelData.screen ? topBar.screen.name === modelData.screen : true
             color: modelData.focused ? Theme.orange : Theme.backgroundAlt
             width: 32
             height: 32

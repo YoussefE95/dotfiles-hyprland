@@ -44,7 +44,7 @@ Rectangle {
                             if (modelData.hasMenu) {
                                 modelData.display(
                                     topBar,
-                                    Quickshell.screens[0].width - mouse.x,
+                                    topBar.screen.width - mouse.x,
                                     mouse.y
                                 )
                             }
