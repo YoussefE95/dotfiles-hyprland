@@ -1,2 +1,12 @@
 #!/bin/bash
-$HOME/.config/theme-setter/scripts/parser.sh $@
+parser="$HOME/.config/theme-setter/scripts/parser.sh"
+
+if [ "$1" == "--theme" ]; then
+    $parser --theme
+elif [ "$1" == "--mode" ]; then
+    $parser --mode
+elif [ "$1" == "--tone" ]; then
+    $parser --tone
+else
+    $parser --palette $1
+fi
