@@ -1,5 +1,18 @@
 [Added Associations]
+application/pdf=org.kde.okular.desktop;
+image/jpeg=org.kde.gwenview.desktop;
 image/png=org.kde.gwenview.desktop;org.kde.okular.desktop;
+video/mp4=org.kde.gwenview.desktop;
+video/quicktime=org.kde.gwenview.desktop;
 
 [Default Applications]
+application/pdf=org.kde.okular.desktop;
+image/jpeg=org.kde.gwenview.desktop;
 image/png=org.kde.gwenview.desktop;
+text/html=google-chrome.desktop
+video/mp4=org.kde.gwenview.desktop;
+video/quicktime=org.kde.gwenview.desktop;
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop

@@ -1,15 +1,15 @@
 [Colors:View]
-BackgroundAlternate=#24273a
-BackgroundNormal=#24273a
-DecorationFocus=#1e2030
-ForegroundActive=#cad3f5
-ForegroundInactive=#cad3f5
-ForegroundLink=#cad3f5
-ForegroundNegative=#cad3f5
-ForegroundNeutral=#cad3f5
-ForegroundNormal=#cad3f5
-ForegroundPositive=#cad3f5
-ForegroundVisited=#cad3f5
+BackgroundAlternate=#303446
+BackgroundNormal=#303446
+DecorationFocus=#292c3c
+ForegroundActive=#c6d0f5
+ForegroundInactive=#c6d0f5
+ForegroundLink=#c6d0f5
+ForegroundNegative=#c6d0f5
+ForegroundNeutral=#c6d0f5
+ForegroundNormal=#c6d0f5
+ForegroundPositive=#c6d0f5
+ForegroundVisited=#c6d0f5
 
 [General]
 LastUsedVersion=210800

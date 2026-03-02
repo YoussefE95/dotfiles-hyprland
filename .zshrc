@@ -24,8 +24,5 @@ source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export ARDUINO_DIRECTORIES_USER=$HOME/Dropbox/Work/Arduino/
-export PATH=$PATH:/home/younix/.spicetify
-
-if uwsm check may-start && uwsm select; then
-	exec uwsm start default
-fi
+export PATH=$PATH:$HOME/.spicetify
+export EDITOR=nvim

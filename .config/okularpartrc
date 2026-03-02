@@ -1,15 +1,13 @@
+[]
 update_info=okular.upd:annotation-toolbar,okular.upd:builtin-annotations
 
 [Dlg Accessibility]
-RecolorBackground=50,48,47
-RecolorForeground=221,199,161
+RecolorBackground=48,52,70
+RecolorForeground=198,208,245
 
 [Document]
 ChangeColors=true
 RenderMode=Recolor
-
-[Main View]
-ShowLeftPanel=false
 
 [PageView]
 BackgroundColor=40,40,40

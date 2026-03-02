@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$1" == "wallpaper" ]; then
-    $HOME/.config/theme-setter/setters/wallpaper.sh
+    $HOME/.config/theme-setter//setters/wallpaper.sh
 else
-    $HOME/.config/theme-setter/scripts/set.sh $1 $2 $3
+    $HOME/.config/theme-setter//scripts/set.sh $1 $2 $3
 fi

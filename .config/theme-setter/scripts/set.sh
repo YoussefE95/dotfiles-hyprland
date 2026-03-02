@@ -53,5 +53,6 @@ palette=(
     $setters/okular.sh ${palette[@]} &
     $setters/qt.sh $icons &
     $setters/quickshell.sh ${palette[@]} &
+    $setters/sddm.sh ${palette[@]} &
     $setters/spicetify.sh ${palette[@]} &
 } &> /dev/null

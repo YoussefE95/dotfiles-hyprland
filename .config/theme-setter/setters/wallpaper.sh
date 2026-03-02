@@ -38,3 +38,6 @@ swww img "$local_path/wallpaper.jpg" \
     --transition-type wipe \
     --transition-angle 30 \
     --transition-step 90
+
+cp "$local_path/wallpaper.jpg" \
+    "/usr/share/sddm/themes/dynamic/background.jpg"

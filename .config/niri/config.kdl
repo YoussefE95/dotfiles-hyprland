@@ -19,12 +19,14 @@ input {
 output "eDP-1" {
     mode "1920x1080@60.049"
     scale 1
+    position x=0 y=0
 }
 
 
 output "HDMI-A-1" {
     mode "1920x1080@60.000"
     scale 1
+    position x=0 y=-1080
 }
 
 layout {
@@ -43,15 +45,15 @@ layout {
     focus-ring {
         off
         width 5
-        inactive-color "#252423"
-        active-gradient from="#e78a4e" to="#d8a657" angle=45
+        inactive-color "#292c3c"
+        active-gradient from="#ef9f76" to="#e5c890" angle=45
     }
 
     border {
         width 4
         active-color "#ffc87f"
-        inactive-color "#252423"
-        urgent-color "#ea6962"
+        inactive-color "#292c3c"
+        urgent-color "#e78284"
     }
 
     shadow {
@@ -64,7 +66,7 @@ layout {
 }
 
 cursor {
-    xcursor-theme "Capitaine-Cursors-Gruvbox-White"
+    xcursor-theme "Capitaine-Cursors-White"
     xcursor-size 24
 }
 

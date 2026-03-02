@@ -1,7 +1,7 @@
 #!/bin/bash
 # Update and install packages
 paru -Syu && paru -S \
-    uwsm hyprland hyprlock hyprshot niri swww quickshell-git kitty starship \
+    sddm hyprland hyprlock hyprshot niri swww quickshell-git kitty starship \
     neovim ranger nvtop htop obsidian dropbox discord obs-studio \
     spotify-launcher spicetify-cli kvantum dolphin dolphin-plugins okular \
     gwenview ttf-jetbrains-mono ttf-jetbrains-mono-nerd brightnessctl \
@@ -29,15 +29,30 @@ sudo cp /usr/share/xdg-desktop-portal/hyprland-portals.conf \
 sudo cp /usr/share/xdg-desktop-portal/portals/hyprland.portal \
     /usr/share/xdg-desktop-portal/portals/niri.portal
 
+# Setup sddm
+if [ ! -d "/etc/sddm.conf.d" ]; then
+    sudo mkdir /etc/sddm.conf.d
+fi
+
+if [ ! -d "/usr/share/sddm/themes" ]; then
+    sudo mkdir -p /usr/share/sddm/themes
+fi
+
+sudo cp .local/share/sddm/default.conf /etc/sddm.conf.d
+sudo cp -r .local/share/sddm/themes/dynamic /usr/share/sddm/themes
+
+sudo chown $USER:$USER \
+    /usr/share/sddm/themes/dynamic/Main.qml \
+    /usr/share/sddm/themes/dynamic/background.jpg
+
 # Set wallpaper
 swww img ~/.local/share/wallpaper.jpg \
     --transition-type wipe \
     --transition-angle 30 \
     --transition-step 90
 
-# Enable Bluetooth and Docker
-sudo systemctl enable bluetooth
-sudo systemctl enable docker
+# Enable systemd services
+sudo systemctl enable bluetooth docker sddm
 
 # Add user to Docker group
 sudo gpasswd -a $USER docker

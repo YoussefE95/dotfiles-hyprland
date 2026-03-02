@@ -637,29 +637,29 @@
      y="730"
      rx="22.5"
      ry="22.5"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1;opacity:0.1" />
+     style="fill:#303446;fill-rule:evenodd;stroke:none;fill-opacity:1;opacity:0.1" />
   <g
      id="dial-notches"
      transform="translate(-76.5,66.75012)"
-     style="fill:#ddc7a1;fill-opacity:0.39215687;fill-rule:evenodd;stroke:none">
+     style="fill:#c6d0f5;fill-opacity:0.39215687;fill-rule:evenodd;stroke:none">
     <rect
        id="rect6567"
        width="45"
        height="45"
        x="202.5"
        y="667.5"
-       style="opacity:0;fill:#ddc7a1;fill-opacity:0.39215687" />
+       style="opacity:0;fill:#c6d0f5;fill-opacity:0.39215687" />
     <g
        id="g189"
-       style="fill:#ddc7a1;fill-opacity:0.39215687">
+       style="fill:#c6d0f5;fill-opacity:0.39215687">
       <path
          id="dial-notches0"
          d="m 214.625,670 -1.75,1 2.25,3.9063 1.75,-1 -2.25,-3.9063 z m 20.75,0 -2.25,3.9063 1.75,1 2.25,-3.9063 -1.75,-1 z m -32.875,19 0,2 4.5,0 0,-2 -4.5,0 z m 40.5,0 0,2 4.5,0 0,-2 -4.5,0 z m -27.875,16.0938 -2.25,3.9062 1.75,1 2.25,-3.9062 -1.75,-1 z m 19.75,0 -1.75,1 2.25,3.9062 1.75,-1 -2.25,-3.9062 z"
-         style="fill:#ddc7a1;fill-opacity:0.39215687" />
+         style="fill:#c6d0f5;fill-opacity:0.39215687" />
       <path
          id="path6572"
          d="m 222.9062,667.5938 -0.5,0.0625 0.3125,2.9688 0.5,-0.0312 -0.3125,-3 z m 4.1875,0 -0.3125,3 0.5,0.0312 0.3125,-2.9688 -0.5,-0.0625 z m -8.8125,0.9375 -0.4688,0.1562 0.9375,2.8438 0.4688,-0.1562 -0.9375,-2.8438 z m 13.4375,0 -0.9375,2.8438 0.4688,0.1562 0.9375,-2.8438 -0.4688,-0.1562 z m -21.5938,4.5938 -0.375,0.3125 2.0312,2.25 0.3438,-0.3438 -2,-2.2188 z m 29.75,0 -2,2.2188 0.3438,0.3438 2.0312,-2.25 -0.375,-0.3125 z m -32.9375,3.4375 -0.2812,0.4062 2.4062,1.7812 0.3125,-0.4062 -2.4375,-1.7812 z m 36.125,0 -2.4375,1.7812 0.3125,0.4062 2.4062,-1.7812 -0.2812,-0.4062 z m -38.5,4.0625 -0.2188,0.4375 2.75,1.25 0.1875,-0.4688 -2.7188,-1.2188 z m 40.875,0 -2.7188,1.2188 0.1875,0.4688 2.75,-1.25 -0.2188,-0.4375 z m -42.4062,4.4375 -0.0937,0.5 2.9375,0.625 0.0937,-0.5 -2.9375,-0.625 z m 43.9375,0 -2.9375,0.625 0.0937,0.5 2.9375,-0.625 -0.0937,-0.5 z m -41.0938,8.75 -2.9375,0.625 0.0937,0.5 2.9375,-0.625 -0.0937,-0.5 z m 38.25,0 -0.0937,0.5 2.9375,0.625 0.0937,-0.5 -2.9375,-0.625 z m -37.0312,3.875 -2.75,1.25 0.2188,0.4375 2.7188,-1.2188 -0.1875,-0.4688 z m 35.8125,0 -0.1875,0.4688 2.7188,1.2188 0.2188,-0.4375 -2.75,-1.25 z m -33.8438,3.5625 -2.4062,1.7812 0.2812,0.4062 2.4375,-1.7812 -0.3125,-0.4062 z m 31.875,0 -0.3125,0.4062 2.4375,1.7812 0.2812,-0.4062 -2.4062,-1.7812 z m -29.1562,3.0625 -2.0312,2.25 0.375,0.3125 2,-2.2188 -0.3438,-0.3438 z m 26.4375,0 -0.3438,0.3438 2,2.2188 0.375,-0.3125 -2.0312,-2.25 z"
-         style="fill:#ddc7a1;fill-opacity:0.39215687" />
+         style="fill:#c6d0f5;fill-opacity:0.39215687" />
     </g>
   </g>
   <circle
@@ -687,7 +687,7 @@
   <path
      id="titlebar-normal"
      d="m 397.5,322.5 0,32 32,0 0,-32 z"
-     style="fill:#252423;stroke:none;fill-opacity:1" />
+     style="fill:#292c3c;stroke:none;fill-opacity:1" />
   <g
      id="button-default-indicator"
      transform="translate(-367.5,-15.5)"
@@ -702,7 +702,7 @@
     <path
        id="path5406"
        d="m 396.25,86.25 -17.5,17.5 17.5,0 z"
-       style="opacity:0.00100002;fill:#ddc7a1;stroke-width:0.935;fill-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;stroke-width:0.935;fill-opacity:1" />
   </g>
   <g
      id="g143"
@@ -714,7 +714,7 @@
        height="20"
        x="305"
        y="805"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="menubar-normal-left"
        width="20"
@@ -722,7 +722,7 @@
        x="805"
        y="-305"
        transform="matrix(0,1,-1,0,0,0)"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="menubar-normal-topleft"
        width="5"
@@ -730,14 +730,14 @@
        x="800"
        y="-305"
        transform="matrix(0,1,-1,0,0,0)"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="menubar-normal-top"
        width="20"
        height="5"
        x="305"
        y="800"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="menubar-normal-right"
        width="20"
@@ -745,7 +745,7 @@
        x="805"
        y="-330"
        transform="matrix(0,1,-1,0,0,0)"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
   </g>
   <rect
      id="dock-normal"
@@ -753,18 +753,18 @@
      height="30"
      x="355"
      y="870"
-     style="fill:#252423;stroke:none;fill-opacity:1" />
+     style="fill:#292c3c;stroke:none;fill-opacity:1" />
   <g
      id="g163"
      transform="translate(0,-300)"
-     style="fill:#252423;stroke:none">
+     style="fill:#292c3c;stroke:none">
     <rect
        id="dock-focused-left"
        width="5"
        height="30"
        x="399.5"
        y="1170"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-focused-top"
        width="5"
@@ -772,28 +772,28 @@
        x="-1167.5"
        y="407"
        transform="matrix(0,-1,1,0,0,0)"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-focused-topleft"
        width="5"
        height="5"
        x="399.5"
        y="1162.5"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-focused-topright"
        width="5"
        height="5"
        x="439.5"
        y="1162.5"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-focused-right"
        width="5"
        height="30"
        x="439.5"
        y="1170"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-focused-bottom"
        width="5"
@@ -801,40 +801,40 @@
        x="-1207.5"
        y="407"
        transform="matrix(0,-1,1,0,0,0)"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-focused-bottomright"
        width="5"
        height="5"
        x="439.5"
        y="1202.5"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-focused-bottomleft"
        width="5"
        height="5"
        x="399.5"
        y="1202.5"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
   </g>
   <g
      id="g173"
      transform="translate(0,-300)"
-     style="fill:#252423;stroke:none">
+     style="fill:#292c3c;stroke:none">
     <rect
        id="dock-normal-left"
        width="5"
        height="30"
        x="347.5"
        y="1170"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-normal-topleft"
        width="5"
        height="5"
        x="347.5"
        y="1162.5"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-normal-top"
        width="5"
@@ -842,28 +842,28 @@
        x="1162.5"
        y="-385"
        transform="matrix(0,1,-1,0,0,0)"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-normal-topright"
        width="5"
        height="5"
        x="387.5"
        y="1162.5"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-normal-right"
        width="5"
        height="30"
        x="387.5"
        y="1170"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-normal-bottomright"
        width="5"
        height="5"
        x="387.5"
        y="1202.5"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-normal-bottom"
        width="5"
@@ -871,14 +871,14 @@
        x="-1207.5"
        y="355"
        transform="matrix(0,-1,1,0,0,0)"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="dock-normal-bottomleft"
        width="5"
        height="5"
        x="347.5"
        y="1202.5"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
   </g>
   <rect
      id="menubar-normal-topright"
@@ -887,7 +887,7 @@
      x="500"
      y="-330"
      transform="matrix(0,1,-1,0,0,0)"
-     style="fill:#252423;stroke:none;fill-opacity:1" />
+     style="fill:#292c3c;stroke:none;fill-opacity:1" />
   <use
      id="slider-toggled-bottomleft"
      width="450"
@@ -899,7 +899,7 @@
   <path
      id="toolbar-handle"
      d="m 245,93.2484 a 5,5 0 0 1 -10,0 5,5 0 1 1 10,0 z"
-     style="fill:#252423;stroke:none;fill-opacity:1" />
+     style="fill:#292c3c;stroke:none;fill-opacity:1" />
   <use
      id="slider-toggled-bottomright"
      width="450"
@@ -914,7 +914,7 @@
      height="30"
      x="407"
      y="870"
-     style="color:#000000;fill:#252423;stroke:none;fill-opacity:1" />
+     style="color:#000000;fill:#292c3c;stroke:none;fill-opacity:1" />
   <g
      id="radio-checked-normal"
      transform="translate(-0.5,7)"
@@ -929,7 +929,7 @@
       <path
          id="use3869"
          d="m 105.5,202 c 3.32567,0 6,2.67433 6,6 0,3.32567 -2.67433,6 -6,6 -3.32568,0 -6,-2.67432 -6,-6 3e-6,-3.32568 2.67432,-6 6,-6 z"
-         style="color-interpolation-filters:linearRGB;fill:#32302f;fill-opacity:1" />
+         style="color-interpolation-filters:linearRGB;fill:#303446;fill-opacity:1" />
     </g>
     <circle
        id="path6309-3"
@@ -961,7 +961,7 @@
   <path
      id="button-normal"
      d="m 7,27 0,32 32,0 0,-32 z"
-     style="color:#000000;fill:#252423;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="color:#000000;fill:#292c3c;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <g
      id="menuitem-tearoff-focused"
      transform="translate(101.5,-145.5)"
@@ -1094,7 +1094,7 @@
      y="0"
      transform="translate(0,-45)"
      xlink:href="#titlebar-normal"
-     style="fill:#252423;fill-opacity:1" />
+     style="fill:#292c3c;fill-opacity:1" />
   <g
      id="resize-grip-normal"
      transform="translate(-7.5,-63)"
@@ -1234,11 +1234,11 @@
   <path
      id="expand-progress-pattern-normal"
      d="m 410,147 0,10 10,0 0,-10 -10,0 z"
-     style="fill-rule:evenodd;stroke:none;fill:#32302f;fill-opacity:1" />
+     style="fill-rule:evenodd;stroke:none;fill:#303446;fill-opacity:1" />
   <path
      id="expand-progress-normal"
      d="m 410,157 0,10 10,0 0,-10 -10,0 z"
-     style="fill-rule:evenodd;stroke:none;fill:#32302f;fill-opacity:1" />
+     style="fill-rule:evenodd;stroke:none;fill:#303446;fill-opacity:1" />
   <rect
      id="grip-normal"
      width="10"
@@ -1249,39 +1249,39 @@
   <path
      id="menuitem-normal-left"
      d="m 252.5,502.5002 0,32.4998 -7.5,0 0,-32.5 z"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#303446;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <path
      id="menuitem-normal-bottomleft"
      d="m 252.5,542.5 -7.5,0 0,-7.5 7.5,0 z"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#303446;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <path
      id="menuitem-normal-topleft"
      d="m 245,502.5 0,-7.5 7.5,0 0,7.5 z"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#303446;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <path
      id="menuitem-normal-bottom"
      d="m 252.5002,535 32.4998,0 0,7.5 -32.5,0 z"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#303446;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <path
      id="menuitem-normal-top"
      d="m 285,502.5001 -32.4998,0 0,-7.5 32.5,0 z"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#303446;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <path
      id="menuitem-normal"
      d="m 252.5,535 0,-32.5 32.5,0 0,32.5 -32.5,0 z"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#ca9ee6;fill-rule:evenodd;stroke:none;fill-opacity:0.5" />
   <path
      id="menuitem-normal-right"
      d="m 285,502.5001 0,32.4998 7.5,0 0,-32.5 z"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#303446;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <path
      id="menuitem-normal-bottomright"
      d="m 285,542.5 7.5002,10e-5 L 292.5,535 285,535 Z"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#303446;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <path
      id="menuitem-normal-topright"
      d="m 292.4998,502.5 2e-4,-7.5 -7.5002,-10e-5 0,7.5 z"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#303446;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <g
      id="g322"
      transform="translate(0,7)"
@@ -1292,14 +1292,14 @@
        height="10"
        x="0"
        y="0"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <rect
        id="expand-lineedit-normal"
        width="10"
        height="10"
        x="285"
        y="72.5"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
   </g>
   <path
      id="button-toggled"
@@ -1308,7 +1308,7 @@
   <path
      id="tabframe-normal"
      d="m 285.5,583.5 0,32 32,0 0,-32 -32,0 z"
-     style="fill:#32302f;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#303446;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <g
      id="tabframe-normal-left"
      transform="matrix(0.8,0,0,0.98461538,264.5002,535.49842)"
@@ -1316,11 +1316,11 @@
     <path
        id="path5181"
        d="m 26.25,81.2514 0,-32.4998 -5,0 0,32.5 z"
-       style="fill:#32302f;fill-rule:evenodd;fill-opacity:1" />
+       style="fill:#303446;fill-rule:evenodd;fill-opacity:1" />
     <path
        id="path5183"
        d="m 21.25,48.7516 0,32.5 2.49975,0 0,-32.5 z"
-       style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;fill:#252423;stroke-width:1.41400003;fill-opacity:1" />
+       style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;fill:#292c3c;stroke-width:1.41400003;fill-opacity:1" />
   </g>
   <g
      id="tabframe-normal-topleft"
@@ -1329,11 +1329,11 @@
     <path
        id="path5188"
        d="m 26.25,41.2516 -5,0 0,5 5,0 z"
-       style="fill:#32302f;fill-rule:evenodd;fill-opacity:1" />
+       style="fill:#303446;fill-rule:evenodd;fill-opacity:1" />
     <path
        id="path5190"
        d="m 26.25,41.2516 -5,0 0,5 2.49987,0 -3e-4,-2.5 2.50013,0 z"
-       style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;fill:#252423;fill-opacity:1" />
+       style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;fill:#292c3c;fill-opacity:1" />
   </g>
   <g
      id="g349"
@@ -1408,12 +1408,12 @@
     <path
        id="path5553"
        d="m 268.7501,972 a 1.74961,1.74961 0 0 0 -1.21879,3.00483 l 3.9958,3.9935 -3.9958,3.9958 a 1.74961,1.74961 0 1 0 2.47403,2.47403 l 3.9958,-3.9958 3.9935,3.9958 a 1.74961,1.74961 0 1 0 2.47403,-2.47403 l -3.9935,-3.9958 3.9935,-3.9935 A 1.74961,1.74961 0 0 0 279.24988,972 a 1.74961,1.74961 0 0 0 -1.25524,0.5308 l -3.9935,3.9935 -3.9958,-3.9935 A 1.74961,1.74961 0 0 0 268.7501,972 Z"
-       style="color:#000000;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ddc7a1;fill-opacity:1;stroke-width:3;stroke-linecap:round;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto" />
+       style="color:#000000;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#c6d0f5;fill-opacity:1;stroke-width:3;stroke-linecap:round;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto" />
   </g>
   <path
      id="lineedit-normal-bottom"
      d="m 322.5,117 32,0 0,-2 -32,0 z"
-     style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;fill:#252423;stroke:none;stroke-width:0.88800001;fill-opacity:1" />
+     style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;fill:#292c3c;stroke:none;stroke-width:0.88800001;fill-opacity:1" />
   <path
      id="lineedit-focused-bottom"
      d="m 377.5,117.5 32,0 0,-3 -32,0 z"
@@ -1464,11 +1464,11 @@
     <path
        id="menu-normal-left"
        d="m 107.4994,802 h 5 v 48 h -5 z"
-       style="fill-opacity:1;fill:#252423" />
+       style="fill-opacity:1;fill:#292c3c" />
     <path
        id="menu-normal-topleft"
        d="m 112.4994,797 h -4.9989 l -0.001,5 h 5 z"
-       style="fill-opacity:1;fill:#252423" />
+       style="fill-opacity:1;fill:#292c3c" />
   </g>
   <path
      style="color:#000000;opacity:0.25;fill:url(#linearGradient6752-2);fill-rule:evenodd;stroke:none"
@@ -1531,27 +1531,27 @@
       <path
          id="menu-normal-top"
          d="m 160.4997,797 0,5 -48,0 0,-5 z"
-         style="fill-opacity:1;fill:#252423" />
+         style="fill-opacity:1;fill:#292c3c" />
       <path
          id="menu-normal-topright"
          d="m 165.4994,802 -3e-4,-4.9989 -5,-10e-4 0,5 z"
-         style="fill-opacity:1;fill:#252423" />
+         style="fill-opacity:1;fill:#292c3c" />
       <path
          id="menu-normal-right"
          d="m 165.4992,802 -5,0 0,48 5,0 z"
-         style="fill-opacity:1;fill:#252423" />
+         style="fill-opacity:1;fill:#292c3c" />
       <path
          id="menu-normal-bottomright"
          d="m 160.4992,855 4.9989,0 0.001,-5 -5,0 z"
-         style="fill-opacity:1;fill:#252423" />
+         style="fill-opacity:1;fill:#292c3c" />
       <path
          id="menu-normal-bottom"
          d="m 112.50015,855 3e-4,-5 48,0 -3e-4,5 z"
-         style="fill-opacity:1;fill:#252423" />
+         style="fill-opacity:1;fill:#292c3c" />
       <path
          id="menu-normal-bottomleft"
          d="m 107.4998,850 3e-4,4.9989 5,10e-4 0,-5 z"
-         style="fill-opacity:1;fill:#252423" />
+         style="fill-opacity:1;fill:#292c3c" />
     </g>
     <rect
        id="menu-normal"
@@ -1559,7 +1559,7 @@
        height="48"
        x="112.5"
        y="802"
-       style="fill:#32302f;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1" />
+       style="fill:#292c3c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1" />
   </g>
   <g
      id="splitter-grip-focused"
@@ -1664,35 +1664,35 @@
       <path
          id="header-normal-bottom"
          d="m 78.5,96.5 -6,0 0,6 6,0 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="header-normal-bottomleft"
          d="m 84.5,96.5 -6,0 0,6 6,0 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="header-normal-bottomright"
          d="m 90.5,96.5 -6,0 0,6 6,0 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="header-normal-left"
          d="m 90.5,90.5 0,-6 -6,0 0,6 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="header-normal-right"
          d="m 84.5,90.5 0,-6 -6,0 0,6 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="header-normal-top"
          d="m 78.5,90.5 -6,0 0,6 6,0 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="header-normal-topright"
          d="m 84.5,90.5 -6,0 0,6 6,0 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="header-normal-topleft"
          d="m 90.5,90.5 -6,0 0,6 6,0 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
     </g>
     <g
        id="g495"
@@ -1772,30 +1772,30 @@
   <path
      id="header-normal"
      d="m 78.5,97.5 0,-6 -6,0 0,6 z"
-     style="fill:#252423;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#292c3c;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <path
      id="header-pressed"
      d="m 146,91.5 -6,0 0,6 6,0 z"
-     style="fill:#252423;fill-rule:evenodd;stroke:none;fill-opacity:1" />
+     style="fill:#292c3c;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   <rect
      id="expand-combo-normal"
      width="10"
      height="10"
      x="10"
      y="7"
-     style="fill-rule:evenodd;stroke:none;stroke-width:3.60899997;stroke-linecap:round;stroke-linejoin:round;fill:#252423;fill-opacity:1" />
+     style="fill-rule:evenodd;stroke:none;stroke-width:3.60899997;stroke-linecap:round;stroke-linejoin:round;fill:#292c3c;fill-opacity:1" />
   <g
      id="tabBarFrame-normal-bottom"
      transform="matrix(0,-1,0.66666667,0,-533.83334,784)"
-     style="stroke:none;fill:#252423;fill-opacity:1">
+     style="stroke:none;fill:#292c3c;fill-opacity:1">
     <path
        id="path1767"
        d="m 174,921.5 -4,0 1.3e-4,-6 3.99987,0 z"
-       style="fill-opacity:1;fill-rule:evenodd;fill:#252423" />
+       style="fill-opacity:1;fill-rule:evenodd;fill:#292c3c" />
     <path
        id="path1769"
        d="m 172,921.5 -2,0 1e-4,-6 2,0 z"
-       style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;fill:#252423;fill-opacity:1" />
+       style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;fill:#292c3c;fill-opacity:1" />
   </g>
   <g
      id="tooltip-shadow-top"
@@ -1828,42 +1828,42 @@
       <path
          id="tooltip-normal-left"
          d="m 371.5,917 5,0 0,48 -5,0 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="tooltip-normal-topleft"
          d="m 376.5,912 -4.9989,3e-4 -0.001,5 5,0 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="tooltip-normal-top"
          d="m 424.5,912 0,5 -48,0 0,-5 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="tooltip-normal-topright"
          d="m 429.5,917 -3e-4,-4.9989 -5,-10e-4 0,5 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="tooltip-normal-right"
          d="m 429.49985,917 -5,0 0,48 5,-3e-4 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="tooltip-normal-bottomright"
          d="m 424.4998,970 4.9989,-3e-4 0.001,-5 -5,0 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="tooltip-normal-bottom"
          d="m 376.50075,970 3e-4,-5 48,0 -3e-4,5 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <path
          id="tooltip-normal-bottomleft"
          d="m 371.5005,965 3e-4,4.9989 5,10e-4 0,-5 z"
-         style="fill:#252423;fill-opacity:1" />
+         style="fill:#292c3c;fill-opacity:1" />
       <rect
          id="tooltip-normal"
          width="48"
          height="48"
          x="376.5"
          y="917"
-         style="stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:#252423;fill-opacity:1" />
+         style="stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:#292c3c;fill-opacity:1" />
     </g>
     <g
        id="tooltip-shadow-left"
@@ -1988,7 +1988,7 @@
     <path
        id="path1773"
        d="m 53,52 0,-32 -5,0 0,32 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.51200002;fill-opacity:1" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.51200002;fill-opacity:1" />
     <path
        id="path1775"
        d="m 46,20 0,32 2,0 0,-32 z"
@@ -2001,7 +2001,7 @@
     <path
        id="path1791"
        d="m 85,51 -32,0 0,3 32,0 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.51200002;fill-opacity:1" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.51200002;fill-opacity:1" />
     <path
        id="path1793"
        d="m 53,58 32,0 0,-4 -32,0 z"
@@ -2022,7 +2022,7 @@
     <path
        id="path5125"
        d="m 53,25 32,0 0,-6 -32,0 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.88800001;fill-opacity:1" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.88800001;fill-opacity:1" />
     <path
        id="path5127"
        d="m 85,18 -32,0 0,1 32,0 z"
@@ -2151,7 +2151,7 @@
     <path
        id="path1797"
        d="M 7,55 4,55 C 2.5,55 2,54.5 2,53 l 0,-1 5,0 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.46200001;fill-opacity:1" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.46200001;fill-opacity:1" />
     <g
        id="g615"
        style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;stroke-width:0.86400002">
@@ -2222,7 +2222,7 @@
     <path
        id="path5119"
        d="m 7,14 -3,0 c -1.5,0 -2,0.5 -2,2 l 0,4 5,0 z"
-       style="fill:#252423;fill-rule:evenodd;fill-opacity:1" />
+       style="fill:#292c3c;fill-rule:evenodd;fill-opacity:1" />
     <g
        id="g633"
        style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none">
@@ -2250,7 +2250,7 @@
      height="10"
      x="322.5"
      y="102"
-     style="text-indent:0;fill:#252423;stroke:none;stroke-width:1.15499997;fill-opacity:1" />
+     style="text-indent:0;fill:#292c3c;stroke:none;stroke-width:1.15499997;fill-opacity:1" />
   <path
      id="combo-pressed-bottom"
      d="m 415.5,117.5 32,0 0,-3 -32,0 z"
@@ -2261,7 +2261,7 @@
      height="10"
      x="416.5"
      y="88.5"
-     style="text-indent:0;fill:#252423;stroke:none;stroke-width:1.15499997;fill-opacity:1" />
+     style="text-indent:0;fill:#292c3c;stroke:none;stroke-width:1.15499997;fill-opacity:1" />
   <g
      id="g643"
      transform="translate(0,7)"
@@ -2269,7 +2269,7 @@
     <path
        id="combo-normal-bottom"
        d="m 415.5,97 32,0 0,-3 -32,0 z"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <path
        id="combo-focused-bottom"
        d="m 415.5,107.5 32,0 0,-3 -32,0 z"
@@ -2407,7 +2407,7 @@
   <path
      id="button-pressed"
      d="m 133,59 0,-32 -32,0 0,32 z"
-     style="text-indent:0;fill:#252423;fill-rule:evenodd;stroke:none;fill-opacity:0.86666667" />
+     style="text-indent:0;fill:#292c3c;fill-rule:evenodd;stroke:none;fill-opacity:0.86666667" />
   <g
      id="button-pressed-left"
      transform="translate(48,7)"
@@ -2415,7 +2415,7 @@
     <path
        id="path1588"
        d="m 53,52 0,-32 -5,0 0,32 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.51200002;fill-opacity:0.86666667" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.51200002;fill-opacity:0.86666667" />
     <path
        id="path1590"
        d="m 46,20 0,32 2,0 0,-32 z"
@@ -2428,7 +2428,7 @@
     <path
        id="path1594"
        d="m 85,51 -32,0 0,3 32,0 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.51200002;fill-opacity:0.86666667" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.51200002;fill-opacity:0.86666667" />
     <path
        id="path1596"
        d="m 53,58 32,0 0,-4 -32,0 z"
@@ -2441,7 +2441,7 @@
     <path
        id="path1600"
        d="m 53,25 32,0 0,-6 -32,0 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.88800001;fill-opacity:0.86666667" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.88800001;fill-opacity:0.86666667" />
     <path
        id="path1602"
        d="m 85,18 -32,0 0,1 32,0 z"
@@ -2450,7 +2450,7 @@
   <path
      id="button-focused"
      d="m 54,27 0,32 32,0 0,-32 z"
-     style="fill:#252423;fill-rule:evenodd;stroke:none;fill-opacity:0.93333334" />
+     style="fill:#292c3c;fill-rule:evenodd;stroke:none;fill-opacity:0.93333334" />
   <g
      id="button-focused-left"
      transform="translate(1,7)"
@@ -2458,7 +2458,7 @@
     <path
        id="path5064"
        d="m 53,52 0,-32 -5,0 0,32 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.72500002;fill-opacity:0.93333334" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.72500002;fill-opacity:0.93333334" />
     <path
        id="path5066"
        d="m 46,20 0,32 2,0 0,-32 z"
@@ -2471,7 +2471,7 @@
     <path
        id="path1620"
        d="m 53.0001,25 32,0 0,-6 -32,0 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.88800001;fill-opacity:0.93333334" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.88800001;fill-opacity:0.93333334" />
     <path
        id="path1622"
        d="m 85,18 -32,0 0,1 32,0 z"
@@ -2484,7 +2484,7 @@
     <path
        id="path1626"
        d="m 85,51 -32,0 0,2 32,0 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.51200002;fill-opacity:0.93333334" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.51200002;fill-opacity:0.93333334" />
     <path
        id="path1628"
        d="m 53,58 32,0 0,-5 -32,0 z"
@@ -2497,7 +2497,7 @@
     <path
        id="path1736"
        d="m 53,52 0,-32 -4,0 0,32 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.72500002;fill-opacity:0.93333334" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.72500002;fill-opacity:0.93333334" />
     <path
        id="path1738"
        d="m 46,20 0,32 3,0 0,-32 z"
@@ -2510,7 +2510,7 @@
     <path
        id="path1728"
        d="m 85,14 2,0 c 1.5,0 2,0.5 2,2 l 0,4 -4,0 z"
-       style="fill:#252423;fill-rule:evenodd;fill-opacity:0.93333334" />
+       style="fill:#292c3c;fill-rule:evenodd;fill-opacity:0.93333334" />
     <g
        id="g1559"
        style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none">
@@ -2531,7 +2531,7 @@
     <path
        id="path1745"
        d="m 85,54 2,0 c 1.5,0 2,-0.5 2,-2 l -4,0 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.46200001;fill-opacity:0.93333334" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.46200001;fill-opacity:0.93333334" />
     <g
        id="g1565"
        style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;stroke-width:0.86400002">
@@ -2552,7 +2552,7 @@
     <path
        id="path1816"
        d="m 53,54 -3,0 c -1.5,0 -2,-0.5 -2,-2 l 5,0 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.46200001;fill-opacity:0.93333334" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.46200001;fill-opacity:0.93333334" />
     <g
        id="g1571"
        style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;stroke-width:0.86400002">
@@ -2573,7 +2573,7 @@
     <path
        id="path5070"
        d="m 54,14 -3,0 c -1.5,0 -2,0.5 -2,2 l 0,4 5,0 z"
-       style="fill:#252423;fill-rule:evenodd;fill-opacity:0.93333334" />
+       style="fill:#292c3c;fill-rule:evenodd;fill-opacity:0.93333334" />
     <g
        id="g712"
        style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none">
@@ -2594,7 +2594,7 @@
     <path
        id="path2228"
        d="M 7,55 4,55 C 2.5,55 2,54.5 2,53 l 0,-1 5,0 z"
-       style="fill:#252423;fill-rule:evenodd;stroke-width:0.46200001;fill-opacity:0.86666667" />
+       style="fill:#292c3c;fill-rule:evenodd;stroke-width:0.46200001;fill-opacity:0.86666667" />
     <g
        id="g718"
        style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none;stroke-width:0.86400002">
@@ -2615,7 +2615,7 @@
     <path
        id="path2236"
        d="m 7,14 -3,0 c -1.5,0 -2,0.5 -2,2 l 0,4 5,0 z"
-       style="fill:#252423;fill-rule:evenodd;fill-opacity:0.86666667" />
+       style="fill:#292c3c;fill-rule:evenodd;fill-opacity:0.86666667" />
     <g
        id="g724"
        style="color:#000000;line-height:normal;font-family:Sans;text-indent:0;text-align:start;text-transform:none">
@@ -2782,7 +2782,7 @@
      y="0"
      transform="matrix(0,-1,1,0,-298,901)"
      xlink:href="#tabframe-normal-left"
-     style="fill:#32302f;fill-opacity:1" />
+     style="fill:#303446;fill-opacity:1" />
   <use
      id="tabframe-normal-bottomleft"
      width="100%"
@@ -2807,7 +2807,7 @@
      y="0"
      transform="translate(4,0)"
      xlink:href="#tabBarFrame-normal-bottom"
-     style="fill:#252423;fill-opacity:1" />
+     style="fill:#292c3c;fill-opacity:1" />
   <use
      id="tabBarFrame-normal-bottomleft"
      width="100%"
@@ -2816,7 +2816,7 @@
      y="0"
      transform="translate(-4,0)"
      xlink:href="#tabBarFrame-normal-bottom"
-     style="fill:#252423;fill-opacity:1" />
+     style="fill:#292c3c;fill-opacity:1" />
   <path
      id="header-toggled"
      d="m 124,91.5 -6,0 0,6 6,0 z"
@@ -2827,7 +2827,7 @@
      height="15"
      x="62.5"
      y="117"
-     style="fill-opacity:1;stroke:none;stroke-width:2;fill:#32302f" />
+     style="fill-opacity:1;stroke:none;stroke-width:2;fill:#303446" />
   <path
      id="header-focused"
      d="m 108,91.5 -6,0 0,6 6,0 z"
@@ -2873,31 +2873,31 @@
   <g
      id="mdi-close-normal"
      transform="translate(-19.999996,-99.03)"
-     style="opacity:0.5;fill:#ddc7a1;fill-opacity:1">
+     style="opacity:0.5;fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5239"
        width="16"
        height="16"
        x="54"
        y="428.03"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1" />
     <path
        id="path5210"
        class="ColorScheme-Text"
        d="m 65.002415,432.02406 a 1,1 0 0 0 -0.70703,0.29297 l -2.29297,2.29297 -2.2832,-2.2832 a 1,1 0 0 0 -0.01,-0.01 1,1 0 0 0 -0.70117,-0.28906 l -0.01,0.0137 a 1,1 0 0 0 -1,1 1,1 0 0 0 0.29297,0.70703 l 2.29297,2.29297 -2.29297,2.29297 a 1,1 0 0 0 -0.28906,0.69922 1,1 0 0 0 1,1 1,1 0 0 0 0.70703,-0.29297 l 2.29297,-2.29297 2.2832,2.2832 a 1,1 0 0 0 0.7168,0.30274 1,1 0 0 0 1,-1 1,1 0 0 0 -0.29297,-0.70703 l -2.30078,-2.29883 2.2832,-2.2832 a 1,1 0 0 0 0.31055,-0.72071 1,1 0 0 0 -1,-1 z"
-       style="color:#5c616c;opacity:1;fill:#ddc7a1;fill-opacity:1" />
+       style="color:#5c616c;opacity:1;fill:#c6d0f5;fill-opacity:1" />
   </g>
   <g
      id="mdi-minimize-normal"
      transform="translate(-19.999996,-99.03)"
-     style="opacity:0.5;fill:#ddc7a1;fill-opacity:1">
+     style="opacity:0.5;fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5241"
        width="16"
        height="16"
        x="72"
        y="428.03"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1" />
     <rect
        id="rect5237"
        width="8"
@@ -2906,39 +2906,39 @@
        y="435.03"
        rx="1"
        ry="1"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1" />
   </g>
   <g
      id="mdi-maximize-normal"
      transform="translate(-19.999996,-99.03)"
-     style="opacity:0.5;fill:#ddc7a1;fill-opacity:1">
+     style="opacity:0.5;fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5253"
        width="16"
        height="16"
        x="90"
        y="428.03"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1" />
     <path
        id="rect5255"
        d="m 98,432.0293 c -0.554,0 -1,0.446 -1,1 l 0,2 -2,0 c -0.554,0 -1,0.446 -1,1 0,0.554 0.446,1 1,1 l 2,0 0,2 c 0,0.554 0.446,1 1,1 0.554,0 1,-0.446 1,-1 l 0,-2 2,0 c 0.554,0 1,-0.446 1,-1 0,-0.554 -0.446,-1 -1,-1 l -2,0 0,-2 c 0,-0.554 -0.446,-1 -1,-1 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1" />
   </g>
   <g
      id="mdi-restore-normal"
      transform="translate(-19.999996,-99.03)"
-     style="opacity:0.5;fill:#ddc7a1;fill-opacity:1">
+     style="opacity:0.5;fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5263"
        width="16"
        height="16"
        x="108"
        y="428.03"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1" />
     <path
        id="path5269"
        d="m 116,432.0293 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 0,2 a 2,2 0 0 1 2,2 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1" />
   </g>
   <g
      id="mdi-close-focused"
@@ -3153,86 +3153,86 @@
   <g
      id="mdi-menu-normal"
      transform="translate(-19.999996,-99.03)"
-     style="opacity:0.5;fill:#ddc7a1;fill-opacity:1">
+     style="opacity:0.5;fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5372"
        width="16"
        height="16"
        x="135"
        y="428.03"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1" />
     <path
        id="rect5374"
        d="m 140,432.0293 c -0.554,0 -1,0.446 -1,1 0,0.554 0.446,1 1,1 l 6,0 c 0.554,0 1,-0.446 1,-1 0,-0.554 -0.446,-1 -1,-1 l -6,0 z m 0,3 c -0.554,0 -1,0.446 -1,1 0,0.554 0.446,1 1,1 l 6,0 c 0.554,0 1,-0.446 1,-1 0,-0.554 -0.446,-1 -1,-1 l -6,0 z m 0,3 c -0.554,0 -1,0.446 -1,1 0,0.554 0.446,1 1,1 l 6,0 c 0.554,0 1,-0.446 1,-1 0,-0.554 -0.446,-1 -1,-1 l -6,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1" />
   </g>
   <g
      id="tarrow-right-normal"
      transform="translate(-164,-269.99994)"
-     style="fill:#ddc7a1;fill-opacity:0.66666669">
+     style="fill:#c6d0f5;fill-opacity:0.66666669">
     <rect
        id="rect4999"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5001"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-right-focused"
      transform="translate(-154,-269.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5016"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5019"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-right-pressed"
      transform="translate(-144,-269.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5023"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5025"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-right-toggled"
      transform="translate(-134,-269.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5029"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5031"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-right-disabled"
@@ -3254,70 +3254,70 @@
   <g
      id="tarrow-left-normal"
      transform="matrix(-1,0,0,-1,216,807)"
-     style="fill:#ddc7a1;fill-opacity:0.66666669">
+     style="fill:#c6d0f5;fill-opacity:0.66666669">
     <rect
        id="rect5041"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5043"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-left-focused"
      transform="matrix(-1,0,0,-1,226,807)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5047"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5049"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-left-pressed"
      transform="matrix(-1,0,0,-1,236,807)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5053"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5055"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-left-toggled"
      transform="matrix(-1,0,0,-1,246,807)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5059"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5061"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-left-disabled"
@@ -3339,70 +3339,70 @@
   <g
      id="tarrow-up-normal"
      transform="matrix(0,-1,1,0,-507,475.00006)"
-     style="fill:#ddc7a1;fill-opacity:0.66666669">
+     style="fill:#c6d0f5;fill-opacity:0.66666669">
     <rect
        id="rect5071"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5073"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-up-focused"
      transform="matrix(0,-1,1,0,-497,475.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5077"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5080"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-up-pressed"
      transform="matrix(0,-1,1,0,-487,475.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5084"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5086"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-up-toggled"
      transform="matrix(0,-1,1,0,-477,475.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5090"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5092"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-up-disabled"
@@ -3424,70 +3424,70 @@
   <g
      id="tarrow-down-normal"
      transform="matrix(0,1,-1,0,559,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:0.66666669">
+     style="fill:#c6d0f5;fill-opacity:0.66666669">
     <rect
        id="rect5102"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5104"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:0.66666669;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-down-focused"
      transform="matrix(0,1,-1,0,569,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5108"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5110"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-down-pressed"
      transform="matrix(0,1,-1,0,579,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5114"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5116"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-down-toggled"
      transform="matrix(0,1,-1,0,589,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5120"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5122"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tarrow-down-disabled"
@@ -3509,70 +3509,70 @@
   <g
      id="arrow-right-normal"
      transform="translate(-109,-269.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5132"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5134"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-right-focused"
      transform="translate(-98.999996,-269.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5138"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5140"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-right-pressed"
      transform="translate(-88.999996,-269.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5144"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5146"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-right-toggled"
      transform="translate(-78.999986,-269.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5150"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5152"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-right-disabled"
@@ -3594,70 +3594,70 @@
   <g
      id="arrow-left-normal"
      transform="matrix(-1,0,0,-1,271,807)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5162"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5164"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-left-focused"
      transform="matrix(-1,0,0,-1,281,807)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5168"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5170"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-left-pressed"
      transform="matrix(-1,0,0,-1,291,807)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5174"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5176"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-left-toggled"
      transform="matrix(-1,0,0,-1,301,807)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5180"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5182"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-left-disabled"
@@ -3679,70 +3679,70 @@
   <g
      id="arrow-up-normal"
      transform="matrix(0,-1,1,0,-452,475.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5193"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5195"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-up-focused"
      transform="matrix(0,-1,1,0,-442,475.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5199"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5201"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-up-pressed"
      transform="matrix(0,-1,1,0,-432,475.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5205"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5207"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-up-toggled"
      transform="matrix(0,-1,1,0,-422,475.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5211"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5213"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-up-disabled"
@@ -3764,70 +3764,70 @@
   <g
      id="arrow-down-normal"
      transform="matrix(0,1,-1,0,614,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5223"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5225"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-down-focused"
      transform="matrix(0,1,-1,0,624,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5229"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5231"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-down-pressed"
      transform="matrix(0,1,-1,0,634,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5235"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5237"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-down-toggled"
      transform="matrix(0,1,-1,0,644,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5242"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5244"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-down-disabled"
@@ -3849,30 +3849,30 @@
   <g
      id="arrow-plus-normal"
      transform="translate(116,-57.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5252"
        width="8"
        height="8"
        x="15"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="rect5254"
        d="m 18,317 0,3 -3,0 0,2 3,0 0,3 2,0 0,-3 3,0 0,-2 -3,0 0,-3 -2,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-minus-normal"
      transform="translate(106,-46.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5258"
        width="8"
        height="8"
        x="25"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        id="rect5262"
        width="2"
@@ -3880,35 +3880,35 @@
        x="320"
        y="-33"
        transform="matrix(0,1,-1,0,0,0)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-plus-focused"
      transform="translate(126,-57.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5275"
        width="8"
        height="8"
        x="15"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5277"
        d="m 18,317 0,3 -3,0 0,2 3,0 0,3 2,0 0,-3 3,0 0,-2 -3,0 0,-3 -2,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-minus-focused"
      transform="translate(116.00001,-46.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5281"
        width="8"
        height="8"
        x="25"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        id="rect5283"
        width="2"
@@ -3916,35 +3916,35 @@
        x="320"
        y="-33"
        transform="matrix(0,1,-1,0,0,0)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-plus-pressed"
      transform="translate(136,-57.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5288"
        width="8"
        height="8"
        x="15"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5290"
        d="m 18,317 0,3 -3,0 0,2 3,0 0,3 2,0 0,-3 3,0 0,-2 -3,0 0,-3 -2,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-minus-pressed"
      transform="translate(126,-46.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5295"
        width="8"
        height="8"
        x="25"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        id="rect5297"
        width="2"
@@ -3952,35 +3952,35 @@
        x="320"
        y="-33"
        transform="matrix(0,1,-1,0,0,0)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-plus-toggled"
      transform="translate(146,-57.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5301"
        width="8"
        height="8"
        x="15"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5303"
        d="m 18,317 0,3 -3,0 0,2 3,0 0,3 2,0 0,-3 3,0 0,-2 -3,0 0,-3 -2,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-minus-toggled"
      transform="translate(136,-46.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5307"
        width="8"
        height="8"
        x="25"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        id="rect5309"
        width="2"
@@ -3988,7 +3988,7 @@
        x="320"
        y="-33"
        transform="matrix(0,1,-1,0,0,0)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="arrow-plus-disabled"
@@ -4029,70 +4029,70 @@
   <g
      id="tree-plus-normal"
      transform="translate(-54.999996,-247.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5330"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5333"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tree-plus-focused"
      transform="translate(-44.999996,-247.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5337"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5340"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tree-plus-pressed"
      transform="translate(-34.999996,-247.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5344"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5346"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tree-plus-toggled"
      transform="translate(-24.999986,-247.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5351"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5353"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tree-plus-disabled"
@@ -4114,70 +4114,70 @@
   <g
      id="tree-minus-normal"
      transform="matrix(0,1,-1,0,668,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5363"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5365"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tree-minus-focused"
      transform="matrix(0,1,-1,0,678,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5369"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5371"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tree-minus-pressed"
      transform="matrix(0,1,-1,0,688,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5375"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5377"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tree-minus-toggled"
      transform="matrix(0,1,-1,0,698,105.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5381"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5383"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="tree-minus-disabled"
@@ -4199,36 +4199,36 @@
   <g
      id="flat-arrow-down-normal"
      transform="matrix(0,1,-1,0,723,72.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5393"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5395"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="flat-arrow-down-focused"
      transform="matrix(0,1,-1,0,733,72.00006)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5399"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5401"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="flat-arrow-down-disabled"
@@ -4250,70 +4250,70 @@
   <g
      id="carrow-normal"
      transform="matrix(0,1,-1,0,668,117.00012)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5008"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5011"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="carrow-focused"
      transform="matrix(0,1,-1,0,678,117.00012)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5017"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5021"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="carrow-pressed"
      transform="matrix(0,1,-1,0,688,117.00012)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5025"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5027"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="carrow-toggled"
      transform="matrix(0,1,-1,0,698,117.00012)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5031"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5033"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="carrow-disabled"
@@ -4335,36 +4335,36 @@
   <g
      id="flat-arrow-up-normal"
      transform="matrix(0,-1,-1,0,723,463.00012)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5021"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5023"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="flat-arrow-up-focused"
      transform="matrix(0,-1,-1,0,733,463.00012)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5027"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5029"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="flat-arrow-up-disabled"
@@ -4386,36 +4386,36 @@
   <g
      id="flat-arrow-left-normal"
      transform="matrix(-1,0,0,-1,380,817.0001)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5051"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5053"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="flat-arrow-left-focused"
      transform="matrix(-1,0,0,-1,390,817.0001)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5057"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5059"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="flat-arrow-left-disabled"
@@ -4437,36 +4437,36 @@
   <g
      id="flat-arrow-right-normal"
      transform="matrix(1,0,0,-1,7.06e-6,828.0001)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5069"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5071"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="flat-arrow-right-focused"
      transform="matrix(1,0,0,-1,10.000007,828.0001)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5075"
        width="8"
        height="8"
        x="186"
        y="529"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5078"
        d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 0,-4 0,-4 3.4641,2 z"
        transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="flat-arrow-right-disabled"
@@ -4488,30 +4488,30 @@
   <g
      id="spin-plus-normal"
      transform="translate(204,-57.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5088"
        width="8"
        height="8"
        x="15"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5090"
        d="m 18,317 0,3 -3,0 0,2 3,0 0,3 2,0 0,-3 3,0 0,-2 -3,0 0,-3 -2,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-minus-normal"
      transform="translate(194,-46.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5094"
        width="8"
        height="8"
        x="25"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        id="rect5097"
        width="2"
@@ -4519,35 +4519,35 @@
        x="320"
        y="-33"
        transform="matrix(0,1,-1,0,0,0)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-plus-focused"
      transform="translate(214,-57.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5101"
        width="8"
        height="8"
        x="15"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5103"
        d="m 18,317 0,3 -3,0 0,2 3,0 0,3 2,0 0,-3 3,0 0,-2 -3,0 0,-3 -2,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-minus-focused"
      transform="translate(204,-46.99994)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5107"
        width="8"
        height="8"
        x="25"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        id="rect5110"
        width="2"
@@ -4555,35 +4555,35 @@
        x="320"
        y="-33"
        transform="matrix(0,1,-1,0,0,0)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-plus-pressed"
      transform="translate(224,-57.99994)"
-     style="opacity:0.305;fill:#ddc7a1;fill-opacity:1">
+     style="opacity:0.305;fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5115"
        width="8"
        height="8"
        x="15"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5117"
        d="m 18,317 0,3 -3,0 0,2 3,0 0,3 2,0 0,-3 3,0 0,-2 -3,0 0,-3 -2,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-minus-pressed"
      transform="translate(214,-46.99994)"
-     style="opacity:0.305;fill:#ddc7a1;fill-opacity:1">
+     style="opacity:0.305;fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5121"
        width="8"
        height="8"
        x="25"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        id="rect5123"
        width="2"
@@ -4591,7 +4591,7 @@
        x="320"
        y="-33"
        transform="matrix(0,1,-1,0,0,0)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-plus-disabled"
@@ -4632,30 +4632,30 @@
   <g
      id="spin-up-normal"
      transform="translate(204,-36.99988)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5152"
        width="8"
        height="8"
        x="15"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5154"
        d="m 18,317 0,3 -3,0 0,2 3,0 0,3 2,0 0,-3 3,0 0,-2 -3,0 0,-3 -2,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-down-normal"
      transform="translate(194,-25.99988)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5158"
        width="8"
        height="8"
        x="25"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        id="rect5160"
        width="2"
@@ -4663,35 +4663,35 @@
        x="320"
        y="-33"
        transform="matrix(0,1,-1,0,0,0)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-up-focused"
      transform="translate(214,-36.99988)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5164"
        width="8"
        height="8"
        x="15"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5166"
        d="m 18,317 0,3 -3,0 0,2 3,0 0,3 2,0 0,-3 3,0 0,-2 -3,0 0,-3 -2,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-down-focused"
      transform="translate(204,-25.99988)"
-     style="fill:#ddc7a1;fill-opacity:1">
+     style="fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5170"
        width="8"
        height="8"
        x="25"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        id="rect5172"
        width="2"
@@ -4699,35 +4699,35 @@
        x="320"
        y="-33"
        transform="matrix(0,1,-1,0,0,0)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-up-pressed"
      transform="translate(224,-36.99988)"
-     style="opacity:0.305;fill:#ddc7a1;fill-opacity:1">
+     style="opacity:0.305;fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5176"
        width="8"
        height="8"
        x="15"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path5178"
        d="m 18,317 0,3 -3,0 0,2 3,0 0,3 2,0 0,-3 3,0 0,-2 -3,0 0,-3 -2,0 z"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-down-pressed"
      transform="translate(214,-25.99988)"
-     style="opacity:0.305;fill:#ddc7a1;fill-opacity:1">
+     style="opacity:0.305;fill:#c6d0f5;fill-opacity:1">
     <rect
        id="rect5182"
        width="8"
        height="8"
        x="25"
        y="317"
-       style="opacity:0.00100002;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:0.00100002;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        id="rect5184"
        width="2"
@@ -4735,7 +4735,7 @@
        x="320"
        y="-33"
        transform="matrix(0,1,-1,0,0,0)"
-       style="opacity:1;fill:#ddc7a1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#c6d0f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      id="spin-up-disabled"
@@ -4924,11 +4924,11 @@
        height="30"
        x="271"
        y="1170"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <path
        id="path5131"
        d="m 272,1170 0,30 1,0 0,-30 z"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <path
        id="rect5135"
        d="m 270,1170 0,30 1,0 0,-30 z"
@@ -4942,11 +4942,11 @@
        id="rect5015"
        d="m 308.5,1173 -2,0 0,2 2,0 z"
        transform="translate(-35.5,-5)"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <path
        id="path5157"
        d="m 273,1169 -1,0 0,1 1,0 z"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <path
        id="path5159"
        d="m 273,1167 -3,0 0,3 1,0 c 0,-1.125 0.875,-2 2,-2 z"
@@ -5010,11 +5010,11 @@
        height="30"
        x="271"
        y="1170"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <path
        id="path4923"
        d="m 272,1170 0,30 1,0 0,-30 z"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <path
        id="path4925"
        d="m 270,1170 0,30 1,0 0,-30 z"
@@ -5028,11 +5028,11 @@
        id="path4929"
        d="m 308.5,1173 -2,0 0,2 2,0 z"
        transform="translate(-35.5,-5)"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <path
        id="path4931"
        d="m 273,1169 -1,0 0,1 1,0 z"
-       style="fill:#252423;fill-opacity:1" />
+       style="fill:#292c3c;fill-opacity:1" />
     <path
        id="path4933"
        d="m 273,1167 -3,0 0,3 1,0 c 0,-1.125 0.875,-2 2,-2 z"
